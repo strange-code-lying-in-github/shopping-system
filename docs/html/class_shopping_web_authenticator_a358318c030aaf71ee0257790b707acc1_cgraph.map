@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,176,254,176,254,181,222,181"/>
 <area shape="rect" id="Node000003" href="$class_shopping_business_layer_service.html#a3cfbc07d6e43baa50e39bfbb116f4c71" title="Validates the login credentials for the specified user and password." alt="" coords="574,158,828,199"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="526,176,559,176,559,181,526,181"/>
-<area shape="rect" id="Node000004" href="$class_shopping_business_layer_service.html#a371a77c8a18227ab2d89cca6c05b0bea" title=" " alt="" coords="889,237,1119,277"/>
+<area shape="rect" id="Node000004" href="$class_shopping_business_layer_service.html#a371a77c8a18227ab2d89cca6c05b0bea" title="Adds an audit trail entry with the specified message and user information." alt="" coords="889,237,1119,277"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="783,197,909,230,908,235,782,202"/>
 <area shape="rect" id="Node000016" href="$class_core_utils.html#a1228e598ba4a7b71f2541e344b0f68fc" title="Encodes a string using SHA&#45;256 algorithm and returns the encoded string." alt="" coords="1772,60,1972,86"/>
 <area shape="poly" id="edge19_Node000003_Node000016" title=" " alt="" coords="828,156,876,150,1122,125,1366,104,1756,77,1756,82,1366,110,1122,131,877,155,829,161"/>

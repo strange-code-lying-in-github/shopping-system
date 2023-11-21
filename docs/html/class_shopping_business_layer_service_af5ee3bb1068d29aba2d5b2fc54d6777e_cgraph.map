@@ -1,0 +1,5 @@
+<map id="ShoppingBusinessLayerService.configure" name="ShoppingBusinessLayerService.configure">
+<area shape="rect" id="Node000001" title="Configures the shopping business layer service." alt="" coords="5,5,268,31"/>
+<area shape="rect" id="Node000002" href="$class_shopping_payment_service.html#ab9a38a5313ee77cb4c89c3e3146f2a69" title="Configures the shopping payment service." alt="" coords="316,5,544,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,16,300,16,300,21,268,21"/>
+</map>

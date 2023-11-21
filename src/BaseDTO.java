@@ -129,8 +129,8 @@ public abstract class BaseDTO implements IDTO {
     @Override
     public String getLoadSql(String schema) {
         StringBuilder sb = new StringBuilder();
-        Boolean isFirst = true;
-        sb.append("SELECT * FROM " + schema + "." + this.getDtoName() + " WHERE ");
+        Boolean isFirst = false;
+        sb.append("SELECT * FROM " + schema + "." + this.getDtoName() + " WHERE 1=1 ");
         for (Map.Entry<String, DTOTypes> entry : fields.entrySet()) {
             String fieldName = entry.getKey();
             DTOTypes fieldType = entry.getValue();

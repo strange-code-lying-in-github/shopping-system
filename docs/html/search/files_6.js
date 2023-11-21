@@ -10,5 +10,6 @@ var searchData=
   ['ifactory_2ejava_7',['IFactory.java',['../_i_factory_8java.html',1,'']]],
   ['ihttpcookie_2ejava_8',['IHttpCookie.java',['../_i_http_cookie_8java.html',1,'']]],
   ['ihttprequestcontextinfo_2ejava_9',['IHttpRequestContextInfo.java',['../_i_http_request_context_info_8java.html',1,'']]],
-  ['ihttproutehandler_2ejava_10',['IHttpRouteHandler.java',['../_i_http_route_handler_8java.html',1,'']]]
+  ['ihttproutehandler_2ejava_10',['IHttpRouteHandler.java',['../_i_http_route_handler_8java.html',1,'']]],
+  ['iproductcatalog_2ejava_11',['IProductCatalog.java',['../_i_product_catalog_8java.html',1,'']]]
 ];

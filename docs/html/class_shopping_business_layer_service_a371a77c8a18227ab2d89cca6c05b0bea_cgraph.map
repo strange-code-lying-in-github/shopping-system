@@ -1,5 +1,5 @@
 <map id="ShoppingBusinessLayerService.addAuditTrail" name="ShoppingBusinessLayerService.addAuditTrail">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,41,236,81"/>
+<area shape="rect" id="Node000001" title="Adds an audit trail entry with the specified message and user information." alt="" coords="5,41,236,81"/>
 <area shape="rect" id="Node000002" href="$class_audit_trail_d_t_o_home.html#acd77bf6841a2c40bb0d7b73461343a30" title="Returns the singleton instance of AuditTrailDTOHome." alt="" coords="307,23,500,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,48,291,43,292,48,236,53"/>
 <area shape="rect" id="Node000003" href="$class_shopping_data_layer_service.html#ac76ccab0de4a7685450fa27ddc1a40c4" title="Saves the given DTO object." alt="" coords="284,72,523,98"/>

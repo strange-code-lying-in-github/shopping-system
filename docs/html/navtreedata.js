@@ -44,8 +44,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_app_constants_8java.html",
-"class_cart_item_d_t_o_home.html",
-"class_shopping_web_interface_controller.html#a44de6caebdeb1740c3edd8dd8feb3b84"
+"class_cart_d_t_o_home.html#a7db90b9b3855f78d931cf769aa7116aa",
+"class_shopping_data_layer_service.html#a608679b08225f44d5eb2416584f6e368",
+"interface_i_environment.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

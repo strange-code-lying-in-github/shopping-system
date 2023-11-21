@@ -1,0 +1,5 @@
+<map id="IProductCatalog" name="IProductCatalog">
+<area shape="rect" id="Node000001" title="This interface represents a product catalog." alt="" coords="5,5,188,71"/>
+<area shape="rect" id="Node000002" href="$class_product_catalog.html" title="The ProductCatalog class represents a catalog of products." alt="" coords="5,119,188,219"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,86,99,119,94,119,94,86"/>
+</map>
