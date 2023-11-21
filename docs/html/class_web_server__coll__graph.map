@@ -1,0 +1,16 @@
+<map id="WebServer" name="WebServer">
+<area shape="rect" id="Node000001" title="The WebServer class represents a web server that listens for HTTP requests and handles them according..." alt="" coords="258,655,471,889"/>
+<area shape="rect" id="Node000002" href="$class_app_logging_agent.html" title="The AppLoggingAgent class implements the IAppLoggingStream interface and provides methods for logging..." alt="" coords="5,263,207,562"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,560,254,629,262,640,258,643,250,632,201,563"/>
+<area shape="rect" id="Node000003" href="$interface_i_app_logging_stream.html" title="The IAppLoggingStream interface defines methods for logging messages and objects." alt="" coords="15,5,197,200"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,215,106,224,106,264,101,263,101,224,101,215"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="109,200,109,246,103,246,103,200"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="231,380,307,445"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="277,444,293,529,318,630,320,638,315,639,313,631,288,530,271,445"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="331,380,441,445"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="384,445,369,586,367,638,362,638,364,585,379,444"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="491,380,545,445"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="522,445,517,531,508,582,491,632,482,649,478,646,486,630,503,581,512,531,517,445"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="605,380,652,445"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="633,445,632,485,627,534,614,585,591,632,569,659,544,683,488,721,485,717,541,678,565,655,586,629,609,583,622,533,627,485,628,445"/>
+</map>

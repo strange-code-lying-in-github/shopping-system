@@ -1,0 +1,733 @@
+\doxysection{Test\+DTO.\+java}
+\hypertarget{_test_d_t_o_8java_source}{}\label{_test_d_t_o_8java_source}\mbox{\hyperlink{_test_d_t_o_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00001}00001\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{org}}.junit.Assert.assertNotNull;}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00002}00002\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{org}}.junit.Assert.assertNull;}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00004}00004\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.List;}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00006}00006\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{org}}.junit.jupiter.api.MethodOrderer;}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{org}}.junit.jupiter.api.Order;}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00008}00008\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{org}}.junit.jupiter.api.Test;}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{org}}.junit.jupiter.api.TestMethodOrder;}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00011}00011\ @\mbox{\hyperlink{class_i_factory}{TestMethodOrder}}(\mbox{\hyperlink{class_i_factory}{MethodOrderer}}.OrderAnnotation.class)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00012}\mbox{\hyperlink{class_test_d_t_o}{00012}}\ \mbox{\hyperlink{class_i_factory}{public}}\ \mbox{\hyperlink{class_i_factory}{class}}\ \mbox{\hyperlink{class_test_d_t_o}{TestDTO}}\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00014}\mbox{\hyperlink{class_test_d_t_o_aff718af63468112af34ee6a1d040b70d}{00014}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ logging\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00016}00016\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00017}00017\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00018}00018\ \textcolor{comment}{\ \ \ \ \ *\ put("{}first\_name"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00019}00019\ \textcolor{comment}{\ \ \ \ \ *\ put("{}last\_name"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ *\ put("{}email\_address"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ *\ put("{}password\_hash"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00022}00022\ \textcolor{comment}{\ \ \ \ \ *\ put("{}active"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00023}00023\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00024}00024\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00026}00026\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00027}00027\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(1)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00028}\mbox{\hyperlink{class_test_d_t_o_a227d327cf6c6edc3ef2254eb219221e6}{00028}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testUserDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}first\_name"{}},\ \textcolor{stringliteral}{"{}admin"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00035}00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}last\_name"{}},\ \textcolor{stringliteral}{"{}admin"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}admin"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00037}00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}password\_hash"{}},\ \mbox{\hyperlink{class_core_utils}{CoreUtils}}.\mbox{\hyperlink{class_core_utils_a1228e598ba4a7b71f2541e344b0f68fc}{encodeSha256String}}(\textcolor{stringliteral}{"{}admin"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00041}00041\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00043}00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00046}00046\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00047}00047\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(2)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00048}\mbox{\hyperlink{class_test_d_t_o_ac109f1965e826b7d4a74f7903611134a}{00048}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testUserDTO\_2()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00052}00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}first\_name"{}},\ \textcolor{stringliteral}{"{}joe"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00055}00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}last\_name"{}},\ \textcolor{stringliteral}{"{}sample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00056}00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}password\_hash"{}},\ \mbox{\hyperlink{class_core_utils}{CoreUtils}}.\mbox{\hyperlink{class_core_utils_a1228e598ba4a7b71f2541e344b0f68fc}{encodeSha256String}}(\textcolor{stringliteral}{"{}joesample"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00059}00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00060}00060\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00061}00061\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00063}00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00064}00064\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00066}00066\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00067}00067\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(3)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00068}\mbox{\hyperlink{class_test_d_t_o_a989e8eae6a6d1634198ff18c1950f58b}{00068}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testUserDTO\_3()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00069}00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00070}00070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00072}00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00074}00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}first\_name"{}},\ \textcolor{stringliteral}{"{}jill"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00075}00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}last\_name"{}},\ \textcolor{stringliteral}{"{}sample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00076}00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}jillsample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}password\_hash"{}},\ \mbox{\hyperlink{class_core_utils}{CoreUtils}}.\mbox{\hyperlink{class_core_utils_a1228e598ba4a7b71f2541e344b0f68fc}{encodeSha256String}}(\textcolor{stringliteral}{"{}jillsample"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00079}00079\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00080}00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ result.get(0);}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00083}00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00084}00084\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00086}00086\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00087}00087\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00088}00088\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00089}00089\ \textcolor{comment}{\ \ \ \ \ *\ put("{}name"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00090}00090\ \textcolor{comment}{\ \ \ \ \ *\ put("{}description"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00091}00091\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00092}00092\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00093}00093\ \textcolor{comment}{\ \ \ \ \ *\ \}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00094}00094\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00095}00095\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00096}00096\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(4)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00097}\mbox{\hyperlink{class_test_d_t_o_ac868a45d4c9103df7a314bc3e937350d}{00097}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testRoleDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00098}00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00099}00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00101}00101\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_role_d_t_o}{RoleDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_role_d_t_o}{RoleDTO}})\ \mbox{\hyperlink{class_role_d_t_o_home}{RoleDTOHome}}.\mbox{\hyperlink{class_role_d_t_o_home_a4530eb00e87bd465d5065821122aa3f3}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00103}00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}admin"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00104}00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}description"{}},\ \textcolor{stringliteral}{"{}administrator"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00106}00106\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00107}00107\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_role_d_t_o}{RoleDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00108}00108\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00110}00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00111}00111\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00113}00113\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00114}00114\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(5)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00115}\mbox{\hyperlink{class_test_d_t_o_aa5793ce0965d811bdc575e5b72def730}{00115}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testRoleDTO\_2()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00116}00116\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00117}00117\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00119}00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_role_d_t_o}{RoleDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_role_d_t_o}{RoleDTO}})\ \mbox{\hyperlink{class_role_d_t_o_home}{RoleDTOHome}}.\mbox{\hyperlink{class_role_d_t_o_home_a4530eb00e87bd465d5065821122aa3f3}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00121}00121\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}user"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00122}00122\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}description"{}},\ \textcolor{stringliteral}{"{}user"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00123}00123\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00124}00124\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00125}00125\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_role_d_t_o}{RoleDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00126}00126\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00128}00128\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00129}00129\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00131}00131\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00132}00132\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00133}00133\ \textcolor{comment}{\ \ \ \ \ *\ put("{}name"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00134}00134\ \textcolor{comment}{\ \ \ \ \ *\ put("{}description"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00135}00135\ \textcolor{comment}{\ \ \ \ \ *\ put("{}price"{},\ DTOTypes.FLOAT);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00136}00136\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00137}00137\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00138}00138\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00139}00139\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00140}00140\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(6)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00141}\mbox{\hyperlink{class_test_d_t_o_a5aa3bb26c0840ce84e1b1b9d08a73778}{00141}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testProductDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00142}00142\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00143}00143\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00144}00144\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00145}00145\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_product_d_t_o}{ProductDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ \mbox{\hyperlink{class_product_d_t_o_home}{ProductDTOHome}}.\mbox{\hyperlink{class_product_d_t_o_home_aae59eb3e738a5eb187202e156e7f8cf7}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00147}00147\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}cleaner"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00148}00148\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}description"{}},\ \textcolor{stringliteral}{"{}soap"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00149}00149\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}price"{}},\ 10.0);}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00150}00150\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00151}00151\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00152}00152\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00153}00153\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00154}00154\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00155}00155\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00156}00156\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00157}00157\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00158}00158\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00159}00159\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(7)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00160}\mbox{\hyperlink{class_test_d_t_o_ad4f3049c6fb17c8fc2afa2aa1a076fa3}{00160}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testProductDTO\_2()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00161}00161\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00162}00162\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00164}00164\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_product_d_t_o}{ProductDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ \mbox{\hyperlink{class_product_d_t_o_home}{ProductDTOHome}}.\mbox{\hyperlink{class_product_d_t_o_home_aae59eb3e738a5eb187202e156e7f8cf7}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00165}00165\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00166}00166\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}gasoline"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00167}00167\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}description"{}},\ \textcolor{stringliteral}{"{}UNL92"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00168}00168\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}price"{}},\ 4.5);}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00169}00169\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00170}00170\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00171}00171\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00172}00172\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00173}00173\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00174}00174\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00175}00175\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00176}00176\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00177}00177\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00178}00178\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(8)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00179}\mbox{\hyperlink{class_test_d_t_o_a9773f982a9bc1d147b5c0e6bccba31e8}{00179}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testProductDTO\_3()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00180}00180\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00181}00181\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00182}00182\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00183}00183\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_product_d_t_o}{ProductDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ \mbox{\hyperlink{class_product_d_t_o_home}{ProductDTOHome}}.\mbox{\hyperlink{class_product_d_t_o_home_aae59eb3e738a5eb187202e156e7f8cf7}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00184}00184\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00185}00185\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}tires"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00186}00186\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}description"{}},\ \textcolor{stringliteral}{"{}runflats"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00187}00187\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}price"{}},\ 300.0);}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00188}00188\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00189}00189\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00190}00190\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00191}00191\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00192}00192\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00193}00193\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00194}00194\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00195}00195\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00196}00196\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00197}00197\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(9)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00198}\mbox{\hyperlink{class_test_d_t_o_a9ab7d8a4e7a60d8b5a373f7642d10230}{00198}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testProductDTO\_4()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00199}00199\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00200}00200\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00201}00201\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00202}00202\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_product_d_t_o}{ProductDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ \mbox{\hyperlink{class_product_d_t_o_home}{ProductDTOHome}}.\mbox{\hyperlink{class_product_d_t_o_home_aae59eb3e738a5eb187202e156e7f8cf7}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00203}00203\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00204}00204\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}car"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00205}00205\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}description"{}},\ \textcolor{stringliteral}{"{}porsche"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00206}00206\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}price"{}},\ 300000.0);}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00207}00207\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00208}00208\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00209}00209\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00210}00210\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00211}00211\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00212}00212\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00213}00213\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00214}00214\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00215}00215\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00216}00216\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00217}00217\ \textcolor{comment}{\ \ \ \ \ *\ put("{}name"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00218}00218\ \textcolor{comment}{\ \ \ \ \ *\ put("{}description"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00219}00219\ \textcolor{comment}{\ \ \ \ \ *\ put("{}type"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00220}00220\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00221}00221\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00222}00222\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00223}00223\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00224}00224\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(10)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00225}\mbox{\hyperlink{class_test_d_t_o_ab154ea0e88d7f563ffaa37111b43d9f3}{00225}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testPaymentProfileDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00226}00226\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00227}00227\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00228}00228\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00229}00229\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_payment_profile_d_t_o_home}{PaymentProfileDTOHome}}.\mbox{\hyperlink{class_payment_profile_d_t_o_home_a8c14b76e58dd0306666c9aaa4b8bff93}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00230}00230\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00231}00231\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}ach"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00232}00232\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}description"{}},\ \textcolor{stringliteral}{"{}banking"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00233}00233\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}type"{}},\ \textcolor{stringliteral}{"{}ach"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00234}00234\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00235}00235\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00236}00236\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00237}00237\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00238}00238\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00239}00239\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00240}00240\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00241}00241\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00242}00242\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00243}00243\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(11)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00244}\mbox{\hyperlink{class_test_d_t_o_a05d4cea4f0461cab59cecf4f1871ecac}{00244}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testPaymentProfileDTO\_2()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00245}00245\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00246}00246\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00247}00247\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00248}00248\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_payment_profile_d_t_o_home}{PaymentProfileDTOHome}}.\mbox{\hyperlink{class_payment_profile_d_t_o_home_a8c14b76e58dd0306666c9aaa4b8bff93}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00249}00249\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00250}00250\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}cc"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00251}00251\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}description"{}},\ \textcolor{stringliteral}{"{}creditcard"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00252}00252\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}type"{}},\ \textcolor{stringliteral}{"{}cc"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00253}00253\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00254}00254\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00255}00255\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00256}00256\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00257}00257\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00258}00258\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00259}00259\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00260}00260\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00261}00261\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00262}00262\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00263}00263\ \textcolor{comment}{\ \ \ \ \ *\ put("{}user\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00264}00264\ \textcolor{comment}{\ \ \ \ \ *\ put("{}paymentprofile\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00265}00265\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00266}00266\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00267}00267\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00268}00268\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00269}00269\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(12)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00270}\mbox{\hyperlink{class_test_d_t_o_a0702e972caa0e151f139c5130e5cbcf2}{00270}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testUserProfileDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00271}00271\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00272}00272\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00273}00273\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00274}00274\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00275}00275\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00276}00276\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00277}00277\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00278}00278\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00279}00279\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_payment_profile_d_t_o_home}{PaymentProfileDTOHome}}.\mbox{\hyperlink{class_payment_profile_d_t_o_home_a8c14b76e58dd0306666c9aaa4b8bff93}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00280}00280\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}ach"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00281}00281\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{profiles}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{pdto}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00282}00282\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_i_factory}{profiles}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00283}00283\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00284}00284\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_profile_d_t_o}{UserProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_profile_d_t_o}{UserProfileDTO}})\ \mbox{\hyperlink{class_user_profile_d_t_o_home}{UserProfileDTOHome}}.\mbox{\hyperlink{class_user_profile_d_t_o_home_adf0d19fd5357f95557743b75c46e1a10}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00285}00285\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00286}00286\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}paymentprofile\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00287}00287\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00288}00288\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00289}00289\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_profile_d_t_o}{UserProfileDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00290}00290\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00291}00291\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00292}00292\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00293}00293\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00294}00294\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00295}00295\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00296}00296\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(13)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00297}\mbox{\hyperlink{class_test_d_t_o_ac620c5b27e4c5e54792ed4d535750ce0}{00297}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testUserProfileDTO\_2()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00298}00298\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00299}00299\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00300}00300\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00301}00301\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00302}00302\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}jillsample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00303}00303\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00304}00304\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00305}00305\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00306}00306\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_payment_profile_d_t_o_home}{PaymentProfileDTOHome}}.\mbox{\hyperlink{class_payment_profile_d_t_o_home_a8c14b76e58dd0306666c9aaa4b8bff93}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00307}00307\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}cc"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00308}00308\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{profiles}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{pdto}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00309}00309\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_i_factory}{profiles}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00310}00310\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00311}00311\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_profile_d_t_o}{UserProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_profile_d_t_o}{UserProfileDTO}})\ \mbox{\hyperlink{class_user_profile_d_t_o_home}{UserProfileDTOHome}}.\mbox{\hyperlink{class_user_profile_d_t_o_home_adf0d19fd5357f95557743b75c46e1a10}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00312}00312\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00313}00313\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}paymentprofile\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00314}00314\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00315}00315\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00316}00316\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_profile_d_t_o}{UserProfileDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00317}00317\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00318}00318\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00319}00319\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00320}00320\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00321}00321\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00322}00322\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00323}00323\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00324}00324\ \textcolor{comment}{\ \ \ \ \ *\ put("{}user\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00325}00325\ \textcolor{comment}{\ \ \ \ \ *\ put("{}paymentprofile\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00326}00326\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00327}00327\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00328}00328\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00329}00329\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00330}00330\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(14)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00331}\mbox{\hyperlink{class_test_d_t_o_a24ba399f6d6f956abc075706da8d73ef}{00331}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testPurchaseDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00332}00332\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00333}00333\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00334}00334\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00335}00335\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00336}00336\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00337}00337\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00338}00338\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00339}00339\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00340}00340\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_payment_profile_d_t_o_home}{PaymentProfileDTOHome}}.\mbox{\hyperlink{class_payment_profile_d_t_o_home_a8c14b76e58dd0306666c9aaa4b8bff93}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00341}00341\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}ach"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00342}00342\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{profiles}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{pdto}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00343}00343\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_i_factory}{profiles}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00344}00344\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00345}00345\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}})\ \mbox{\hyperlink{class_purchase_d_t_o_home}{PurchaseDTOHome}}.\mbox{\hyperlink{class_purchase_d_t_o_home_a128908f1c26ee85537858ce6b99a7ad6}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00346}00346\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00347}00347\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}paymentprofile\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00348}00348\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00349}00349\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00350}00350\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00351}00351\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00352}00352\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00353}00353\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00354}00354\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00355}00355\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00356}00356\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00357}00357\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(15)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00358}\mbox{\hyperlink{class_test_d_t_o_aff0477286933905cc55425ad674016f3}{00358}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testPurchaseDTO\_2()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00359}00359\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00360}00360\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00361}00361\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00362}00362\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00363}00363\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}jillsample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00364}00364\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00365}00365\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00366}00366\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00367}00367\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_payment_profile_d_t_o_home}{PaymentProfileDTOHome}}.\mbox{\hyperlink{class_payment_profile_d_t_o_home_a8c14b76e58dd0306666c9aaa4b8bff93}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00368}00368\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}cc"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00369}00369\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{profiles}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{pdto}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00370}00370\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_i_factory}{profiles}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00371}00371\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00372}00372\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}})\ \mbox{\hyperlink{class_purchase_d_t_o_home}{PurchaseDTOHome}}.\mbox{\hyperlink{class_purchase_d_t_o_home_a128908f1c26ee85537858ce6b99a7ad6}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00373}00373\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00374}00374\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}paymentprofile\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00375}00375\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00376}00376\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00377}00377\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00378}00378\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00379}00379\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00380}00380\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00381}00381\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00382}00382\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00383}00383\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00384}00384\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00385}00385\ \textcolor{comment}{\ \ \ \ \ *\ put("{}user\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00386}00386\ \textcolor{comment}{\ \ \ \ \ *\ put("{}status"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00387}00387\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00388}00388\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00389}00389\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00390}00390\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00391}00391\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(16)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00392}\mbox{\hyperlink{class_test_d_t_o_a5898642e0db021e1abfae323d8a400f6}{00392}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testCartDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00393}00393\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00394}00394\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00395}00395\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00396}00396\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00397}00397\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00398}00398\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00399}00399\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00400}00400\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00401}00401\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_d_t_o}{CartDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_cart_d_t_o_home}{CartDTOHome}}.\mbox{\hyperlink{class_cart_d_t_o_home_a9eb51d0e62df1ca30e1a3ce5ec913e5a}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00402}00402\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00403}00403\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}status"{}},\ \textcolor{stringliteral}{"{}pending"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00404}00404\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00405}00405\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00406}00406\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00407}00407\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00408}00408\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00409}00409\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00410}00410\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00411}00411\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00412}00412\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00413}00413\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(17)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00414}\mbox{\hyperlink{class_test_d_t_o_ad2d41aeba3ec084b268a9314ead3da2e}{00414}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testCartDTO\_2()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00415}00415\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00416}00416\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00417}00417\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00418}00418\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00419}00419\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}jillsample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00420}00420\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00421}00421\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00422}00422\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00423}00423\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_d_t_o}{CartDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_cart_d_t_o_home}{CartDTOHome}}.\mbox{\hyperlink{class_cart_d_t_o_home_a9eb51d0e62df1ca30e1a3ce5ec913e5a}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00424}00424\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00425}00425\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}status"{}},\ \textcolor{stringliteral}{"{}complete"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00426}00426\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00427}00427\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00428}00428\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00429}00429\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00430}00430\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00431}00431\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00432}00432\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00433}00433\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00434}00434\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00435}00435\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00436}00436\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00437}00437\ \textcolor{comment}{\ \ \ \ \ *\ put("{}cart\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00438}00438\ \textcolor{comment}{\ \ \ \ \ *\ put("{}product\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00439}00439\ \textcolor{comment}{\ \ \ \ \ *\ put("{}quantity"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00440}00440\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00441}00441\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00442}00442\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00443}00443\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00444}00444\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(18)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00445}\mbox{\hyperlink{class_test_d_t_o_a166e7a5c40de3be760caa6b39b68f7a1}{00445}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testCartItemDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00446}00446\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00447}00447\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00448}00448\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00449}00449\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00450}00450\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00451}00451\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00452}00452\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00453}00453\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00454}00454\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_d_t_o}{CartDTO}}\ \mbox{\hyperlink{class_i_factory}{cdto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_cart_d_t_o_home}{CartDTOHome}}.\mbox{\hyperlink{class_cart_d_t_o_home_a9eb51d0e62df1ca30e1a3ce5ec913e5a}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00455}00455\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00456}00456\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}.setValue(\textcolor{stringliteral}{"{}status"{}},\ \textcolor{stringliteral}{"{}pending"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00457}00457\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{carts}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{cdto}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00458}00458\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_i_factory}{carts}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00459}00459\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00460}00460\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_product_d_t_o}{ProductDTO}}\ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ \mbox{\hyperlink{class_product_d_t_o_home}{ProductDTOHome}}.\mbox{\hyperlink{class_product_d_t_o_home_aae59eb3e738a5eb187202e156e7f8cf7}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00461}00461\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}car"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00462}00462\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{products}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{pdto}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00463}00463\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ \mbox{\hyperlink{class_i_factory}{products}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00464}00464\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00465}00465\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}})\ \mbox{\hyperlink{class_cart_item_d_t_o_home}{CartItemDTOHome}}.\mbox{\hyperlink{class_cart_item_d_t_o_home_a14d79807211164813891abfd8d9b1c43}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00466}00466\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}cart\_id"{}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00467}00467\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}product\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00468}00468\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}quantity"{}},\ 2);}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00469}00469\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00470}00470\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00471}00471\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00472}00472\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00473}00473\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00474}00474\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00475}00475\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00476}00476\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00477}00477\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00478}00478\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(19)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00479}\mbox{\hyperlink{class_test_d_t_o_a530a31f5894f986a5bcff0911f3e867c}{00479}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testCartItemDTO\_2()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00480}00480\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00481}00481\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00482}00482\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00483}00483\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00484}00484\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00485}00485\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00486}00486\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00487}00487\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00488}00488\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_d_t_o}{CartDTO}}\ \mbox{\hyperlink{class_i_factory}{cdto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_cart_d_t_o_home}{CartDTOHome}}.\mbox{\hyperlink{class_cart_d_t_o_home_a9eb51d0e62df1ca30e1a3ce5ec913e5a}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00489}00489\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00490}00490\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}.setValue(\textcolor{stringliteral}{"{}status"{}},\ \textcolor{stringliteral}{"{}pending"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00491}00491\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{carts}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{cdto}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00492}00492\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_i_factory}{carts}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00493}00493\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00494}00494\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_product_d_t_o}{ProductDTO}}\ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ \mbox{\hyperlink{class_product_d_t_o_home}{ProductDTOHome}}.\mbox{\hyperlink{class_product_d_t_o_home_aae59eb3e738a5eb187202e156e7f8cf7}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00495}00495\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}gasoline"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00496}00496\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{products}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{pdto}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00497}00497\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ \mbox{\hyperlink{class_i_factory}{products}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00498}00498\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00499}00499\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}})\ \mbox{\hyperlink{class_cart_item_d_t_o_home}{CartItemDTOHome}}.\mbox{\hyperlink{class_cart_item_d_t_o_home_a14d79807211164813891abfd8d9b1c43}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00500}00500\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}cart\_id"{}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00501}00501\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}product\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00502}00502\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}quantity"{}},\ 10);}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00503}00503\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00504}00504\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00505}00505\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00506}00506\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00507}00507\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00508}00508\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00509}00509\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00510}00510\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00511}00511\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00512}00512\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00513}00513\ \textcolor{comment}{\ \ \ \ \ *\ put("{}user\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00514}00514\ \textcolor{comment}{\ \ \ \ \ *\ put("{}role\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00515}00515\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00516}00516\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00517}00517\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00518}00518\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00519}00519\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(20)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00520}\mbox{\hyperlink{class_test_d_t_o_a6d164732cb02ddc294e81037ef766bae}{00520}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testUserRoleDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00521}00521\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00522}00522\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00523}00523\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00524}00524\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00525}00525\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00526}00526\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00527}00527\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00528}00528\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00529}00529\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_role_d_t_o}{RoleDTO}}\ \mbox{\hyperlink{class_i_factory}{rdto}}\ =\ (\mbox{\hyperlink{class_role_d_t_o}{RoleDTO}})\ \mbox{\hyperlink{class_role_d_t_o_home}{RoleDTOHome}}.\mbox{\hyperlink{class_role_d_t_o_home_a4530eb00e87bd465d5065821122aa3f3}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00530}00530\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{rdto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}user"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00531}00531\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{roles}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{rdto}},\ \mbox{\hyperlink{class_i_factory}{rdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00532}00532\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{rdto}}\ =\ (\mbox{\hyperlink{class_role_d_t_o}{RoleDTO}})\ \mbox{\hyperlink{class_i_factory}{roles}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00533}00533\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00534}00534\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_role_d_t_o}{UserRoleDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_role_d_t_o}{UserRoleDTO}})\ \mbox{\hyperlink{class_user_role_d_t_o_home}{UserRoleDTOHome}}.\mbox{\hyperlink{class_user_role_d_t_o_home_a3d5ca375b0de262c1a081055be3223d7}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00535}00535\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00536}00536\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}role\_id"{}},\ \mbox{\hyperlink{class_i_factory}{rdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00537}00537\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00538}00538\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00539}00539\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_role_d_t_o}{UserRoleDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00540}00540\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00541}00541\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00542}00542\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00543}00543\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00544}00544\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00545}00545\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00546}00546\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(21)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00547}\mbox{\hyperlink{class_test_d_t_o_a895e05b7b83daca01a07617cb44c30f8}{00547}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testUserRoleDTO\_2()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00548}00548\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00549}00549\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00550}00550\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00551}00551\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00552}00552\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}admin"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00553}00553\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00554}00554\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00555}00555\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00556}00556\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_role_d_t_o}{RoleDTO}}\ \mbox{\hyperlink{class_i_factory}{rdto}}\ =\ (\mbox{\hyperlink{class_role_d_t_o}{RoleDTO}})\ \mbox{\hyperlink{class_role_d_t_o_home}{RoleDTOHome}}.\mbox{\hyperlink{class_role_d_t_o_home_a4530eb00e87bd465d5065821122aa3f3}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00557}00557\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{rdto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}admin"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00558}00558\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{roles}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{rdto}},\ \mbox{\hyperlink{class_i_factory}{rdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00559}00559\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{rdto}}\ =\ (\mbox{\hyperlink{class_role_d_t_o}{RoleDTO}})\ \mbox{\hyperlink{class_i_factory}{roles}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00560}00560\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00561}00561\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_role_d_t_o}{UserRoleDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_role_d_t_o}{UserRoleDTO}})\ \mbox{\hyperlink{class_user_role_d_t_o_home}{UserRoleDTOHome}}.\mbox{\hyperlink{class_user_role_d_t_o_home_a3d5ca375b0de262c1a081055be3223d7}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00562}00562\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00563}00563\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}role\_id"{}},\ \mbox{\hyperlink{class_i_factory}{rdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00564}00564\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00565}00565\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00566}00566\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_user_role_d_t_o}{UserRoleDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00567}00567\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00568}00568\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00569}00569\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00570}00570\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00571}00571\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00572}00572\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00573}00573\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00574}00574\ \textcolor{comment}{\ \ \ \ \ *\ put("{}purchase\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00575}00575\ \textcolor{comment}{\ \ \ \ \ *\ put("{}cart\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00576}00576\ \textcolor{comment}{\ \ \ \ \ *\ put("{}user\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00577}00577\ \textcolor{comment}{\ \ \ \ \ *\ put("{}status"{},\ DTOTypes.STRING);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00578}00578\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00579}00579\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00580}00580\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00581}00581\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00582}00582\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(22)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00583}\mbox{\hyperlink{class_test_d_t_o_a54b516a14b1782224097cd52c0541832}{00583}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testOrderDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00584}00584\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00585}00585\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00586}00586\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00587}00587\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00588}00588\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00589}00589\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00590}00590\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00591}00591\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00592}00592\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_d_t_o}{CartDTO}}\ \mbox{\hyperlink{class_i_factory}{cdto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_cart_d_t_o_home}{CartDTOHome}}.\mbox{\hyperlink{class_cart_d_t_o_home_a9eb51d0e62df1ca30e1a3ce5ec913e5a}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00593}00593\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00594}00594\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}.setValue(\textcolor{stringliteral}{"{}status"{}},\ \textcolor{stringliteral}{"{}pending"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00595}00595\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{carts}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{cdto}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00596}00596\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_i_factory}{carts}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00597}00597\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00598}00598\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{padto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_payment_profile_d_t_o_home}{PaymentProfileDTOHome}}.\mbox{\hyperlink{class_payment_profile_d_t_o_home_a8c14b76e58dd0306666c9aaa4b8bff93}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00599}00599\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{padto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}ach"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00600}00600\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{profiles}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{padto}},\ \mbox{\hyperlink{class_i_factory}{padto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00601}00601\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{padto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_i_factory}{profiles}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00602}00602\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00603}00603\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}}\ \mbox{\hyperlink{class_i_factory}{pudto}}\ =\ (\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}})\ \mbox{\hyperlink{class_purchase_d_t_o_home}{PurchaseDTOHome}}.\mbox{\hyperlink{class_purchase_d_t_o_home_a128908f1c26ee85537858ce6b99a7ad6}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00604}00604\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pudto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00605}00605\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pudto}}.setValue(\textcolor{stringliteral}{"{}paymentprofile\_id"{}},\ \mbox{\hyperlink{class_i_factory}{padto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00606}00606\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{purchases}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{pudto}},\ \mbox{\hyperlink{class_i_factory}{pudto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00607}00607\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pudto}}\ =\ (\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}})\ \mbox{\hyperlink{class_i_factory}{purchases}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00608}00608\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00609}00609\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_d_t_o}{OrderDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_order_d_t_o}{OrderDTO}})\ \mbox{\hyperlink{class_order_d_t_o_home}{OrderDTOHome}}.\mbox{\hyperlink{class_order_d_t_o_home_a8e2aaf2f1e1bc646152d072551c1879c}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00610}00610\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00611}00611\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}cart\_id"{}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00612}00612\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}purchase\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pudto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00613}00613\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}status"{}},\ \textcolor{stringliteral}{"{}pending"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00614}00614\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{orders}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00615}00615\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_order_d_t_o}{OrderDTO}})\ \mbox{\hyperlink{class_i_factory}{orders}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00616}00616\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00617}00617\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00618}00618\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00619}00619\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00620}00620\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00621}00621\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00622}00622\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(23)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00623}\mbox{\hyperlink{class_test_d_t_o_a5da180091ba785e50133ddf3731016f0}{00623}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testOrderDTO\_2()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00624}00624\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00625}00625\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00626}00626\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00627}00627\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00628}00628\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00629}00629\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00630}00630\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00631}00631\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00632}00632\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_d_t_o}{CartDTO}}\ \mbox{\hyperlink{class_i_factory}{cdto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_cart_d_t_o_home}{CartDTOHome}}.\mbox{\hyperlink{class_cart_d_t_o_home_a9eb51d0e62df1ca30e1a3ce5ec913e5a}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00633}00633\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00634}00634\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}.setValue(\textcolor{stringliteral}{"{}status"{}},\ \textcolor{stringliteral}{"{}pending"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00635}00635\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{carts}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{cdto}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00636}00636\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_i_factory}{carts}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00637}00637\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00638}00638\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_payment_profile_d_t_o_home}{PaymentProfileDTOHome}}.\mbox{\hyperlink{class_payment_profile_d_t_o_home_a8c14b76e58dd0306666c9aaa4b8bff93}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00639}00639\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}cc"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00640}00640\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{profiles}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{pdto}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00641}00641\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_i_factory}{profiles}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00642}00642\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00643}00643\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}}\ \mbox{\hyperlink{class_i_factory}{pudto}}\ =\ (\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}})\ \mbox{\hyperlink{class_purchase_d_t_o_home}{PurchaseDTOHome}}.\mbox{\hyperlink{class_purchase_d_t_o_home_a128908f1c26ee85537858ce6b99a7ad6}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00644}00644\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pudto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00645}00645\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pudto}}.setValue(\textcolor{stringliteral}{"{}paymentprofile\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00646}00646\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{purchases}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{pudto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00647}00647\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pudto}}\ =\ (\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}})\ \mbox{\hyperlink{class_i_factory}{purchases}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00648}00648\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00649}00649\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_d_t_o}{OrderDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_order_d_t_o}{OrderDTO}})\ \mbox{\hyperlink{class_order_d_t_o_home}{OrderDTOHome}}.\mbox{\hyperlink{class_order_d_t_o_home_a8e2aaf2f1e1bc646152d072551c1879c}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00650}00650\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00651}00651\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}cart\_id"{}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00652}00652\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}purchase\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pudto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00653}00653\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}status"{}},\ \textcolor{stringliteral}{"{}pending"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00654}00654\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{orders}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00655}00655\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_order_d_t_o}{OrderDTO}})\ \mbox{\hyperlink{class_i_factory}{orders}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00656}00656\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00657}00657\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00658}00658\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00659}00659\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00660}00660\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00661}00661\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00662}00662\ \textcolor{comment}{\ \ \ \ \ *\ put("{}id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00663}00663\ \textcolor{comment}{\ \ \ \ \ *\ put("{}cartitem\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00664}00664\ \textcolor{comment}{\ \ \ \ \ *\ put("{}order\_id"{},\ DTOTypes.INTEGER);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00665}00665\ \textcolor{comment}{\ \ \ \ \ *\ put("{}price"{},\ DTOTypes.FLOAT);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00666}00666\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_created"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00667}00667\ \textcolor{comment}{\ \ \ \ \ *\ put("{}date\_modified"{},\ DTOTypes.DATE);}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00668}00668\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00669}00669\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Test}}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00670}00670\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Order}}(24)}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00671}\mbox{\hyperlink{class_test_d_t_o_aee42b5e346322a4d94ac3a7df0c9280c}{00671}}\ \ \ \ \ \mbox{\hyperlink{class_i_factory}{void}}\ testOrderItemDTO\_1()\ \{}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00672}00672\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00673}00673\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.configure();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00674}00674\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00675}00675\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00676}00676\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ \textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00677}00677\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{users}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{udto}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00678}00678\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{udto}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{users}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00679}00679\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00680}00680\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_d_t_o}{CartDTO}}\ \mbox{\hyperlink{class_i_factory}{cdto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_cart_d_t_o_home}{CartDTOHome}}.\mbox{\hyperlink{class_cart_d_t_o_home_a9eb51d0e62df1ca30e1a3ce5ec913e5a}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00681}00681\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00682}00682\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}.setValue(\textcolor{stringliteral}{"{}status"{}},\ \textcolor{stringliteral}{"{}pending"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00683}00683\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{carts}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{cdto}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00684}00684\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cdto}}\ =\ (\mbox{\hyperlink{class_cart_d_t_o}{CartDTO}})\ \mbox{\hyperlink{class_i_factory}{carts}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00685}00685\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00686}00686\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_product_d_t_o}{ProductDTO}}\ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ \mbox{\hyperlink{class_product_d_t_o_home}{ProductDTOHome}}.\mbox{\hyperlink{class_product_d_t_o_home_aae59eb3e738a5eb187202e156e7f8cf7}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00687}00687\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}car"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00688}00688\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{products}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{pdto}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00689}00689\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pdto}}\ =\ (\mbox{\hyperlink{class_product_d_t_o}{ProductDTO}})\ \mbox{\hyperlink{class_i_factory}{products}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00690}00690\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00691}00691\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}}\ \mbox{\hyperlink{class_i_factory}{padto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_payment_profile_d_t_o_home}{PaymentProfileDTOHome}}.\mbox{\hyperlink{class_payment_profile_d_t_o_home_a8c14b76e58dd0306666c9aaa4b8bff93}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00692}00692\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{padto}}.setValue(\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}ach"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00693}00693\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{profiles}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{padto}},\ \mbox{\hyperlink{class_i_factory}{padto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00694}00694\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{padto}}\ =\ (\mbox{\hyperlink{class_payment_profile_d_t_o}{PaymentProfileDTO}})\ \mbox{\hyperlink{class_i_factory}{profiles}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00695}00695\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00696}00696\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}}\ \mbox{\hyperlink{class_i_factory}{pudto}}\ =\ (\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}})\ \mbox{\hyperlink{class_purchase_d_t_o_home}{PurchaseDTOHome}}.\mbox{\hyperlink{class_purchase_d_t_o_home_a128908f1c26ee85537858ce6b99a7ad6}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00697}00697\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pudto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00698}00698\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pudto}}.setValue(\textcolor{stringliteral}{"{}paymentprofile\_id"{}},\ \mbox{\hyperlink{class_i_factory}{padto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00699}00699\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{purchases}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{pudto}},\ \mbox{\hyperlink{class_i_factory}{pudto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00700}00700\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{pudto}}\ =\ (\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}})\ \mbox{\hyperlink{class_i_factory}{purchases}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00701}00701\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00702}00702\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}}\ \mbox{\hyperlink{class_i_factory}{cidto}}\ =\ (\mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}})\ \mbox{\hyperlink{class_cart_item_d_t_o_home}{CartItemDTOHome}}.\mbox{\hyperlink{class_cart_item_d_t_o_home_a14d79807211164813891abfd8d9b1c43}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00703}00703\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cidto}}.setValue(\textcolor{stringliteral}{"{}cart\_id"{}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00704}00704\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cidto}}.setValue(\textcolor{stringliteral}{"{}product\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00705}00705\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cidto}}.setValue(\textcolor{stringliteral}{"{}quantity"{}},\ 2);}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00706}00706\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{cartitems}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{cidto}},\ \mbox{\hyperlink{class_i_factory}{cidto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00707}00707\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{cidto}}\ =\ (\mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}})\ \mbox{\hyperlink{class_i_factory}{cartitems}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00708}00708\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00709}00709\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_d_t_o}{OrderDTO}}\ \mbox{\hyperlink{class_i_factory}{odto}}\ =\ (\mbox{\hyperlink{class_order_d_t_o}{OrderDTO}})\ \mbox{\hyperlink{class_order_d_t_o_home}{OrderDTOHome}}.\mbox{\hyperlink{class_order_d_t_o_home_a8e2aaf2f1e1bc646152d072551c1879c}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00710}00710\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{odto}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{udto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00711}00711\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{odto}}.setValue(\textcolor{stringliteral}{"{}cart\_id"{}},\ \mbox{\hyperlink{class_i_factory}{cdto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00712}00712\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{odto}}.setValue(\textcolor{stringliteral}{"{}purchase\_id"{}},\ \mbox{\hyperlink{class_i_factory}{pudto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00713}00713\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{odto}}.setValue(\textcolor{stringliteral}{"{}status"{}},\ \textcolor{stringliteral}{"{}pending"{}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00714}00714\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{orders}}\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.loadDTOs(\mbox{\hyperlink{class_i_factory}{odto}},\ \mbox{\hyperlink{class_i_factory}{odto}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00715}00715\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{odto}}\ =\ (\mbox{\hyperlink{class_order_d_t_o}{OrderDTO}})\ \mbox{\hyperlink{class_i_factory}{orders}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00716}00716\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00717}00717\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_item_d_t_o}{OrderItemDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_order_item_d_t_o}{OrderItemDTO}})\ \mbox{\hyperlink{class_order_item_d_t_o_home}{OrderItemDTOHome}}.\mbox{\hyperlink{class_order_item_d_t_o_home_a0639b402c911edfc1626baa82eaae8c2}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00718}00718\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}cartitem\_id"{}},\ \mbox{\hyperlink{class_i_factory}{cidto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00719}00719\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}order\_id"{}},\ \mbox{\hyperlink{class_i_factory}{odto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00720}00720\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}price"{}},\ 125000.0);}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00721}00721\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_i_factory}{dataLayerService}}.saveDTO(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00722}00722\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_order_item_d_t_o}{OrderItemDTO}})\ result.getFirst();}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00723}00723\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00724}00724\ \ \ \ \ \ \ \ \ logging.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00725}00725\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00726}00726\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00727}00727\ }
+\DoxyCodeLine{\Hypertarget{_test_d_t_o_8java_source_l00728}00728\ \}}
+
+\end{DoxyCode}

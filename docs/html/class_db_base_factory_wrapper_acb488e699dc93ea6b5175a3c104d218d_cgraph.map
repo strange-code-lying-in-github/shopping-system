@@ -1,0 +1,18 @@
+<map id="DbBaseFactoryWrapper.execute" name="DbBaseFactoryWrapper.execute">
+<area shape="rect" id="Node000001" title="Executes the given query and processes the result using the provided IDbResultProcessor." alt="" coords="5,66,215,92"/>
+<area shape="rect" id="Node000002" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="528,42,672,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,63,197,43,262,27,317,20,360,19,458,27,523,36,522,41,458,32,360,24,317,25,263,32,199,48,143,68"/>
+<area shape="rect" id="Node000006" href="$interface_i_db_result_processor.html#a2e5b07828a17cf0a74eb4d4db12f5080" title="Processes the given ResultSet." alt="" coords="506,92,694,117"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="178,90,263,102,380,107,490,106,491,112,380,112,262,107,177,95"/>
+<area shape="rect" id="Node000007" href="$class_db_base_factory_wrapper.html#af9f1b98732f15c34f507919a7827b7af" title="Executes the given query on the database and processes the result using the provided IDbResultProcess..." alt="" coords="263,66,458,92"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="215,76,247,76,247,82,215,82"/>
+<area shape="rect" id="Node000003" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="742,5,951,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="672,44,727,37,727,43,673,49"/>
+<area shape="rect" id="Node000005" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="768,70,925,96"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="673,61,753,70,753,75,672,66"/>
+<area shape="rect" id="Node000004" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="999,5,1184,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="951,23,983,23,983,28,951,28"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="458,67,512,61,513,66,459,72"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="459,87,491,90,490,95,458,92"/>
+<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="321,68,313,58,318,48,334,42,360,40,390,42,405,49,403,54,389,47,360,45,335,47,321,52,318,57,325,64"/>
+</map>

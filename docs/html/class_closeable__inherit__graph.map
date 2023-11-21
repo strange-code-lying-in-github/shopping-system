@@ -1,0 +1,9 @@
+<map id="Closeable" name="Closeable">
+<area shape="rect" id="Node000001" title=" " alt="" coords="62,5,133,71"/>
+<area shape="rect" id="Node000002" href="$interface_i_db_connection_wrapper.html" title="The interface is used to create instances of the IDbConnectionWrapper interface." alt="" coords="5,119,189,348"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,86,100,119,95,119,95,86"/>
+<area shape="rect" id="Node000003" href="$class_db_base_factory_wrapper.html" title="The class is a factory for creating instances of the IDbConnectionWrapper interface." alt="" coords="5,396,189,1188"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="100,363,100,396,95,396,95,363"/>
+<area shape="rect" id="Node000004" href="$class_db_base_factory_wrapper__postgres.html" title="The class is a factory for creating instances of the IDbConnectionWrapper interface." alt="" coords="16,1236,179,1371"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="100,1203,100,1236,95,1236,95,1203"/>
+</map>

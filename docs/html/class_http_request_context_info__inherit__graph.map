@@ -1,0 +1,5 @@
+<map id="HttpRequestContextInfo" name="HttpRequestContextInfo">
+<area shape="rect" id="Node000001" title="Represents the context information of an HTTP request." alt="" coords="5,303,225,771"/>
+<area shape="rect" id="Node000002" href="$interface_i_http_request_context_info.html" title="This interface represents the information about an HTTP request context." alt="" coords="5,5,225,255"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,269,118,303,113,303,113,269"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="EchoHandler" name="EchoHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="33,816,231,965"/>
+<area shape="rect" id="Node000002" href="$class_base_route_handler.html" title=" " alt="" coords="5,261,259,768"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,783,135,816,129,816,129,783"/>
+<area shape="rect" id="Node000003" href="$interface_i_http_route_handler.html" title="This interface represents a handler for HTTP routes." alt="" coords="5,119,259,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,229,135,262,129,262,129,229"/>
+<area shape="rect" id="Node000004" href="$class_http_handler.html" title=" " alt="" coords="91,5,173,71"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="135,86,135,119,129,119,129,86"/>
+</map>

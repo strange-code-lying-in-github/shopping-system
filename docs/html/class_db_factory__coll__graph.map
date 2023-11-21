@@ -1,0 +1,10 @@
+<map id="DbFactory" name="DbFactory">
+<area shape="rect" id="Node000001" title="The class is a factory for creating instances of the IDbConnectionWrapper interface." alt="" coords="148,943,221,1009"/>
+<area shape="rect" id="Node000002" href="$class_i_factory.html" title=" " alt="" coords="5,263,225,880"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,894,182,943,177,944,168,895"/>
+<area shape="rect" id="Node000003" href="$class_app_logging_agent.html" title="The AppLoggingAgent class implements the IAppLoggingStream interface and provides methods for logging..." alt="" coords="249,422,451,721"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="304,722,274,802,240,881,215,930,210,927,236,879,269,800,299,720"/>
+<area shape="rect" id="Node000004" href="$interface_i_app_logging_stream.html" title="The IAppLoggingStream interface defines methods for logging messages and objects." alt="" coords="257,5,440,200"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="349,215,349,224,349,422,344,422,343,224,343,215"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="352,199,352,405,347,405,346,200"/>
+</map>

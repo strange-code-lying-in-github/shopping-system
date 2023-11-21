@@ -1,0 +1,85 @@
+\doxysection{Http\+Request\+Context\+Info.\+java}
+\hypertarget{_http_request_context_info_8java_source}{}\label{_http_request_context_info_8java_source}\mbox{\hyperlink{_http_request_context_info_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00001}00001\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00002}00002\ \textcolor{keyword}{import}\ java.util.Map;}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00003}00003\ \textcolor{keyword}{import}\ java.util.TreeMap;}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00005}00005\ \textcolor{keyword}{import}\ com.sun.net.httpserver.Headers;}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00006}00006\ \textcolor{keyword}{import}\ com.sun.net.httpserver.HttpExchange;}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00007}00007\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00008}00008\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00009}00009\ \textcolor{comment}{\ *\ Represents\ the\ context\ information\ of\ an\ HTTP\ request.}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00010}00010\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00011}\mbox{\hyperlink{class_http_request_context_info}{00011}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_http_request_context_info}{HttpRequestContextInfo}}\ \textcolor{keyword}{implements}\ \mbox{\hyperlink{interface_i_http_request_context_info}{IHttpRequestContextInfo}}\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00013}\mbox{\hyperlink{class_http_request_context_info_a785d3ca2d99cf38d279ded2059f0d25b}{00013}}\ \ \ \ \ \textcolor{keyword}{private}\ HttpExchange\ \mbox{\hyperlink{class_http_request_context_info_a785d3ca2d99cf38d279ded2059f0d25b}{httpExchange}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00014}\mbox{\hyperlink{class_http_request_context_info_a4134d982c2f1dd05d932dd1b99f0df92}{00014}}\ \ \ \ \ \textcolor{keyword}{private}\ String\ \mbox{\hyperlink{class_http_request_context_info_a4134d982c2f1dd05d932dd1b99f0df92}{uri}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00015}\mbox{\hyperlink{class_http_request_context_info_a9394db6ac8ae6f23112da6718adf6119}{00015}}\ \ \ \ \ \textcolor{keyword}{private}\ String\ \mbox{\hyperlink{class_http_request_context_info_a9394db6ac8ae6f23112da6718adf6119}{uriPath}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00016}\mbox{\hyperlink{class_http_request_context_info_a0e06484ea8bef9b3079510d92e12242b}{00016}}\ \ \ \ \ \textcolor{keyword}{private}\ String\ \mbox{\hyperlink{class_http_request_context_info_a0e06484ea8bef9b3079510d92e12242b}{queryString}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00017}\mbox{\hyperlink{class_http_request_context_info_a409d6c164ff19dae96dc89a27c843a1b}{00017}}\ \ \ \ \ \textcolor{keyword}{private}\ Map<String,\ String>\ \mbox{\hyperlink{class_http_request_context_info_a409d6c164ff19dae96dc89a27c843a1b}{queryMap}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00018}\mbox{\hyperlink{class_http_request_context_info_a40b855ede45f9d582e157c5c9357cd40}{00018}}\ \ \ \ \ \textcolor{keyword}{private}\ Map<String,\ List<String>>\ \mbox{\hyperlink{class_http_request_context_info_a40b855ede45f9d582e157c5c9357cd40}{headers}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00019}\mbox{\hyperlink{class_http_request_context_info_ab2b14779e2a9583520442fb1d6d2ec64}{00019}}\ \ \ \ \ \textcolor{keyword}{private}\ Map<String,\ String>\ \mbox{\hyperlink{class_http_request_context_info_ab2b14779e2a9583520442fb1d6d2ec64}{cookies}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00020}\mbox{\hyperlink{class_http_request_context_info_a7b0fef5a8ad05adec4caa43489a7f926}{00020}}\ \ \ \ \ \textcolor{keyword}{private}\ String\ \mbox{\hyperlink{class_http_request_context_info_a7b0fef5a8ad05adec4caa43489a7f926}{requestMethod}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00022}\mbox{\hyperlink{class_http_request_context_info_a71b234ca4cc9ca399579951c445b7c23}{00022}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_http_request_context_info_a71b234ca4cc9ca399579951c445b7c23}{HttpRequestContextInfo}}(HttpExchange\ \mbox{\hyperlink{class_http_request_context_info_a785d3ca2d99cf38d279ded2059f0d25b}{httpExchange}})\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00023}00023\ \ \ \ \ \ \ \ \ this.httpExchange\ =\ \mbox{\hyperlink{class_http_request_context_info_a785d3ca2d99cf38d279ded2059f0d25b}{httpExchange}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00025}00025\ \ \ \ \ \ \ \ \ this.uri\ =\ \mbox{\hyperlink{class_http_request_context_info_a785d3ca2d99cf38d279ded2059f0d25b}{httpExchange}}.getRequestURI().toString();}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00026}00026\ \ \ \ \ \ \ \ \ this.uriPath\ =\ \mbox{\hyperlink{class_http_helpers}{HttpHelpers}}.\mbox{\hyperlink{class_http_helpers_a4a17fc89b582e1ad200310b993acb787}{getPath}}(this.uri);}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00027}00027\ \ \ \ \ \ \ \ \ this.queryString\ =\ \mbox{\hyperlink{class_http_helpers}{HttpHelpers}}.\mbox{\hyperlink{class_http_helpers_a63f65f8f210281cbfdac723a8e8cfaa3}{getQueryString}}(this.uri);}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ this.queryMap\ =\ \mbox{\hyperlink{class_http_helpers}{HttpHelpers}}.\mbox{\hyperlink{class_http_helpers_a248b80a053fbee13680b06655ef8045e}{getQueryMap}}(this.queryString);}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ Headers\ \mbox{\hyperlink{class_http_request_context_info_a40b855ede45f9d582e157c5c9357cd40}{headers}}\ =\ \mbox{\hyperlink{class_http_request_context_info_a785d3ca2d99cf38d279ded2059f0d25b}{httpExchange}}.getRequestHeaders();}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ this.headers\ =\ \textcolor{keyword}{new}\ TreeMap<>(String.CASE\_INSENSITIVE\_ORDER);}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ header\ :\ \mbox{\hyperlink{class_http_request_context_info_a40b855ede45f9d582e157c5c9357cd40}{headers}}.keySet())\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ this.headers.put(header,\ \mbox{\hyperlink{class_http_request_context_info_a40b855ede45f9d582e157c5c9357cd40}{headers}}.get(header));}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00035}00035\ \ \ \ \ \ \ \ \ this.cookies\ =\ this.headers.containsKey(\textcolor{stringliteral}{"{}Cookie"{}})\ ?\ \mbox{\hyperlink{class_http_helpers}{HttpHelpers}}.\mbox{\hyperlink{class_http_helpers_a473ffd81b8b174b2e9153bfa14398e62}{parseCookies}}(this.headers.get(\textcolor{stringliteral}{"{}Cookie"{}}))}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \textcolor{keyword}{new}\ TreeMap<>(String.CASE\_INSENSITIVE\_ORDER);}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00037}00037\ \ \ \ \ \ \ \ \ this.requestMethod\ =\ \mbox{\hyperlink{class_http_request_context_info_a785d3ca2d99cf38d279ded2059f0d25b}{httpExchange}}.getRequestMethod();}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00040}00040\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00041}\mbox{\hyperlink{class_http_request_context_info_ac873a8e5a36232ac60da0943d08d0e86}{00041}}\ \ \ \ \ \textcolor{keyword}{public}\ HttpExchange\ \mbox{\hyperlink{class_http_request_context_info_ac873a8e5a36232ac60da0943d08d0e86}{getHttpExchange}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_http_request_context_info_a785d3ca2d99cf38d279ded2059f0d25b}{httpExchange}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00043}00043\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00045}00045\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00046}\mbox{\hyperlink{class_http_request_context_info_a6e6b545e3a679dd7ccb6e4a227550f5a}{00046}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{class_http_request_context_info_a6e6b545e3a679dd7ccb6e4a227550f5a}{getUri}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_http_request_context_info_a4134d982c2f1dd05d932dd1b99f0df92}{uri}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00048}00048\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00050}00050\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00051}\mbox{\hyperlink{class_http_request_context_info_a4d2914b53559fff9e2c8e75fa28b5c00}{00051}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{class_http_request_context_info_a4d2914b53559fff9e2c8e75fa28b5c00}{getUriPath}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_http_request_context_info_a9394db6ac8ae6f23112da6718adf6119}{uriPath}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00053}00053\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00055}00055\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00056}\mbox{\hyperlink{class_http_request_context_info_ad474eec9e0dee16094d3c4c679322b79}{00056}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{class_http_request_context_info_ad474eec9e0dee16094d3c4c679322b79}{getQueryString}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_http_request_context_info_a0e06484ea8bef9b3079510d92e12242b}{queryString}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00058}00058\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00060}00060\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00061}\mbox{\hyperlink{class_http_request_context_info_a52a179587fc0cf1011f5dc08f5f4c24c}{00061}}\ \ \ \ \ \textcolor{keyword}{public}\ Map<String,\ String>\ \mbox{\hyperlink{class_http_request_context_info_a52a179587fc0cf1011f5dc08f5f4c24c}{getQueryMap}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00062}00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_http_request_context_info_a409d6c164ff19dae96dc89a27c843a1b}{queryMap}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00063}00063\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00065}00065\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00066}\mbox{\hyperlink{class_http_request_context_info_a65eb33353e922cecdb9c1a152312c5a0}{00066}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{class_http_request_context_info_a65eb33353e922cecdb9c1a152312c5a0}{getRequestMethod}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00067}00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_http_request_context_info_a7b0fef5a8ad05adec4caa43489a7f926}{requestMethod}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00068}00068\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00070}00070\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00071}\mbox{\hyperlink{class_http_request_context_info_a82a5cf25a7369a2fec2d293495dcea15}{00071}}\ \ \ \ \ \textcolor{keyword}{public}\ Map<String,\ List<String>>\ \mbox{\hyperlink{class_http_request_context_info_a82a5cf25a7369a2fec2d293495dcea15}{getHeaders}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00072}00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_http_request_context_info_a40b855ede45f9d582e157c5c9357cd40}{headers}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00073}00073\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00075}00075\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00076}\mbox{\hyperlink{class_http_request_context_info_a561b4c81bb9f06da2a22b0d0d0c8ed4e}{00076}}\ \ \ \ \ \textcolor{keyword}{public}\ Map<String,\ String>\ \mbox{\hyperlink{class_http_request_context_info_a561b4c81bb9f06da2a22b0d0d0c8ed4e}{getCookies}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_http_request_context_info_ab2b14779e2a9583520442fb1d6d2ec64}{cookies}};}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00078}00078\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_http_request_context_info_8java_source_l00080}00080\ \}}
+
+\end{DoxyCode}

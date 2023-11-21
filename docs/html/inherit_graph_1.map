@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_closeable.html" title=" " alt="" coords="5,13,85,39"/>
+<area shape="rect" id="Node000001" href="$interface_i_db_connection_wrapper.html" title="The interface is used to create instances of the IDbConnectionWrapper interface." alt="" coords="169,13,325,39"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="100,23,168,23,168,28,100,28"/>
+<area shape="rect" id="Node000002" href="$class_db_base_factory_wrapper.html" title="The class is a factory for creating instances of the IDbConnectionWrapper interface." alt="" coords="409,13,569,39"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="341,23,408,23,408,28,341,28"/>
+<area shape="rect" id="Node000003" href="$class_db_base_factory_wrapper__postgres.html" title="The class is a factory for creating instances of the IDbConnectionWrapper interface." alt="" coords="617,5,778,46"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="585,23,617,23,617,28,585,28"/>
+<area shape="rect" id="Node000004" href="$class_i_factory.html" title=" " alt="" coords="133,62,361,88"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="328,56,422,37,423,42,329,61"/>
+<area shape="rect" id="Node000005" href="$class_db_factory.html" title="The class is a factory for creating instances of the IDbConnectionWrapper interface." alt="" coords="448,62,530,88"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="377,72,448,72,448,78,377,78"/>
+</map>

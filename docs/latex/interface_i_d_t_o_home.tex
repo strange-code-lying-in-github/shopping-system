@@ -1,0 +1,157 @@
+\doxysection{IDTOHome Interface Reference}
+\hypertarget{interface_i_d_t_o_home}{}\label{interface_i_d_t_o_home}\index{IDTOHome@{IDTOHome}}
+
+
+This interface represents a home for Data Transfer Objects (DTOs).  
+
+
+
+
+Inheritance diagram for IDTOHome\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_i_d_t_o_home__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IDTOHome\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{interface_i_d_t_o_home__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{interface_i_d_t_o_home_abf30d43be237560b06c15ac684b05411}{query\+DTOs}} (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto\+Query}})
+\begin{DoxyCompactList}\small\item\em Queries the DTOs based on the provided DTO query. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{interface_i_d_t_o_home_a90e590738ea81461d05bbea75db13519}{save\+DTO}} (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}})
+\begin{DoxyCompactList}\small\item\em Saves a single DTO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{interface_i_d_t_o_home_ab2c99a025f11602e49c4e33e53f034ed}{save\+DTOs}} (\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_i_factory}{dtos}})
+\begin{DoxyCompactList}\small\item\em Saves a list of DTOs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{interface_i_d_t_o_home_acfeba8e0f0e397bc49dc6220f68765f3}{new\+DTOInstance}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new instance of the DTO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{interface_i_d_t_o_home_abf58ea5e096a57f52a213a98d9b7bd98}{get\+Load\+Processor}} ()
+\begin{DoxyCompactList}\small\item\em Gets the result processor for loading data from the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface represents a home for Data Transfer Objects (DTOs). 
+
+It provides methods for querying and saving DTOs, as well as creating new instances of DTOs. 
+
+Definition at line \mbox{\hyperlink{_i_d_t_o_home_8java_source_l00007}{7}} of file \mbox{\hyperlink{_i_d_t_o_home_8java_source}{IDTOHome.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_i_d_t_o_home_abf58ea5e096a57f52a213a98d9b7bd98}\label{interface_i_d_t_o_home_abf58ea5e096a57f52a213a98d9b7bd98} 
+\index{IDTOHome@{IDTOHome}!getLoadProcessor@{getLoadProcessor}}
+\index{getLoadProcessor@{getLoadProcessor}!IDTOHome@{IDTOHome}}
+\doxysubsubsection{\texorpdfstring{getLoadProcessor()}{getLoadProcessor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} IDTOHome.\+get\+Load\+Processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the result processor for loading data from the database. 
+
+\begin{DoxyReturn}{Returns}
+The result processor for loading data from the database. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_home_a8289bf6abc4bc4ae0e6436a7624183fe}{Base\+DTOHome}}.
+
+\Hypertarget{interface_i_d_t_o_home_acfeba8e0f0e397bc49dc6220f68765f3}\label{interface_i_d_t_o_home_acfeba8e0f0e397bc49dc6220f68765f3} 
+\index{IDTOHome@{IDTOHome}!newDTOInstance@{newDTOInstance}}
+\index{newDTOInstance@{newDTOInstance}!IDTOHome@{IDTOHome}}
+\doxysubsubsection{\texorpdfstring{newDTOInstance()}{newDTOInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} IDTOHome.\+new\+DTOInstance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new instance of the DTO. 
+
+\begin{DoxyReturn}{Returns}
+A new instance of the DTO. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_audit_trail_d_t_o_home_abd1e6b6a1dfacb780b1425c516242e9f}{Audit\+Trail\+DTOHome}}, \mbox{\hyperlink{class_base_d_t_o_home_ab00036133ffbc9bba46c9786295b3fb8}{Base\+DTOHome}}, \mbox{\hyperlink{class_cart_d_t_o_home_a7db90b9b3855f78d931cf769aa7116aa}{Cart\+DTOHome}}, \mbox{\hyperlink{class_cart_item_d_t_o_home_a088a6d2db563f8d0b093b13dcee2371d}{Cart\+Item\+DTOHome}}, \mbox{\hyperlink{class_order_d_t_o_home_a29a1187de3cd2e09aee6f9686dce816d}{Order\+DTOHome}}, \mbox{\hyperlink{class_order_item_d_t_o_home_a657ddb15942a3853300242c0e3a8d648}{Order\+Item\+DTOHome}}, \mbox{\hyperlink{class_payment_profile_d_t_o_home_a8464a03cc83a2ad63722e5a311841f6f}{Payment\+Profile\+DTOHome}}, \mbox{\hyperlink{class_product_d_t_o_home_a8228da5b4f0cbb42fa358f43846a166f}{Product\+DTOHome}}, \mbox{\hyperlink{class_purchase_d_t_o_home_ad476e8d1915fda9103c33cc92dcde311}{Purchase\+DTOHome}}, \mbox{\hyperlink{class_role_d_t_o_home_ad74dc5a210991c8ee0373592b164d02d}{Role\+DTOHome}}, \mbox{\hyperlink{class_user_d_t_o_home_ad98823155a90be7b051e1f263eeb47e9}{User\+DTOHome}}, \mbox{\hyperlink{class_user_profile_d_t_o_home_aa4c264450724e75766623419f4e36909}{User\+Profile\+DTOHome}}, and \mbox{\hyperlink{class_user_role_d_t_o_home_a5d5910e02c034999413311c110340c71}{User\+Role\+DTOHome}}.
+
+\Hypertarget{interface_i_d_t_o_home_abf30d43be237560b06c15ac684b05411}\label{interface_i_d_t_o_home_abf30d43be237560b06c15ac684b05411} 
+\index{IDTOHome@{IDTOHome}!queryDTOs@{queryDTOs}}
+\index{queryDTOs@{queryDTOs}!IDTOHome@{IDTOHome}}
+\doxysubsubsection{\texorpdfstring{queryDTOs()}{queryDTOs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ IDTOHome.\+query\+DTOs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}}]{dto\+Query }\end{DoxyParamCaption})}
+
+
+
+Queries the DTOs based on the provided DTO query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dto\+Query} & The DTO query used for filtering the results. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of DTOs that match the query. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_home_afd42de12b88d4ddb7d5c2a3344f43462}{Base\+DTOHome}}.
+
+\Hypertarget{interface_i_d_t_o_home_a90e590738ea81461d05bbea75db13519}\label{interface_i_d_t_o_home_a90e590738ea81461d05bbea75db13519} 
+\index{IDTOHome@{IDTOHome}!saveDTO@{saveDTO}}
+\index{saveDTO@{saveDTO}!IDTOHome@{IDTOHome}}
+\doxysubsubsection{\texorpdfstring{saveDTO()}{saveDTO()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} IDTOHome.\+save\+DTO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}}]{dto }\end{DoxyParamCaption})}
+
+
+
+Saves a single DTO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dto} & The DTO to be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the DTO is successfully saved, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_home_a92aa0e3eaca4185e33cec3554f69f8e6}{Base\+DTOHome}}.
+
+\Hypertarget{interface_i_d_t_o_home_ab2c99a025f11602e49c4e33e53f034ed}\label{interface_i_d_t_o_home_ab2c99a025f11602e49c4e33e53f034ed} 
+\index{IDTOHome@{IDTOHome}!saveDTOs@{saveDTOs}}
+\index{saveDTOs@{saveDTOs}!IDTOHome@{IDTOHome}}
+\doxysubsubsection{\texorpdfstring{saveDTOs()}{saveDTOs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} IDTOHome.\+save\+DTOs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$}]{dtos }\end{DoxyParamCaption})}
+
+
+
+Saves a list of DTOs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dtos} & The list of DTOs to be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if all DTOs are successfully saved, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_home_aac9def567b8e91c556c9c24d22bebabd}{Base\+DTOHome}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_d_t_o_home_8java}{IDTOHome.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\doxysection{IHttp\+Route\+Handler Interface Reference}
+\hypertarget{interface_i_http_route_handler}{}\label{interface_i_http_route_handler}\index{IHttpRouteHandler@{IHttpRouteHandler}}
+
+
+This interface represents a handler for HTTP routes.  
+
+
+
+
+Inheritance diagram for IHttp\+Route\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{interface_i_http_route_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IHttp\+Route\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{interface_i_http_route_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{interface_i_http_route_handler_a8319153bb62d6a1b5de4b709b50445bb}{build\+Response}} (String \mbox{\hyperlink{class_i_factory}{response\+String}}, \mbox{\hyperlink{enum_http_response_text_type}{Http\+Response\+Text\+Type}} \mbox{\hyperlink{class_i_factory}{response\+Type}})
+\begin{DoxyCompactList}\small\item\em Builds the response string based on the given response string and response type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface represents a handler for HTTP routes. 
+
+It extends the \doxylink{class_http_handler}{Http\+Handler} interface. 
+
+Definition at line \mbox{\hyperlink{_i_http_route_handler_8java_source_l00007}{7}} of file \mbox{\hyperlink{_i_http_route_handler_8java_source}{IHttp\+Route\+Handler.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_i_http_route_handler_a8319153bb62d6a1b5de4b709b50445bb}\label{interface_i_http_route_handler_a8319153bb62d6a1b5de4b709b50445bb} 
+\index{IHttpRouteHandler@{IHttpRouteHandler}!buildResponse@{buildResponse}}
+\index{buildResponse@{buildResponse}!IHttpRouteHandler@{IHttpRouteHandler}}
+\doxysubsubsection{\texorpdfstring{buildResponse()}{buildResponse()}}
+{\footnotesize\ttfamily String IHttp\+Route\+Handler.\+build\+Response (\begin{DoxyParamCaption}\item[{String}]{response\+String,  }\item[{\mbox{\hyperlink{enum_http_response_text_type}{Http\+Response\+Text\+Type}}}]{response\+Type }\end{DoxyParamCaption})}
+
+
+
+Builds the response string based on the given response string and response type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em response\+String} & The response string to be built. \\
+\hline
+{\em response\+Type} & The type of the response text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The built response string. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{Base\+Route\+Handler}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_http_route_handler_8java}{IHttp\+Route\+Handler.\+java}}\end{DoxyCompactItemize}

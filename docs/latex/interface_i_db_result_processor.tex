@@ -1,0 +1,97 @@
+\doxysection{IDb\+Result\+Processor Interface Reference}
+\hypertarget{interface_i_db_result_processor}{}\label{interface_i_db_result_processor}\index{IDbResultProcessor@{IDbResultProcessor}}
+
+
+This interface represents a processor for database query results.  
+
+
+
+
+Inheritance diagram for IDb\+Result\+Processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{interface_i_db_result_processor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IDb\+Result\+Processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{interface_i_db_result_processor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{interface_i_db_result_processor_a2e5b07828a17cf0a74eb4d4db12f5080}{process}} (\mbox{\hyperlink{class_i_factory}{Result\+Set}} \mbox{\hyperlink{class_i_factory}{rs}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}}
+\begin{DoxyCompactList}\small\item\em Processes the given Result\+Set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{interface_i_db_result_processor_add418957f47f615fc619d8d2a3b6b63b}{get\+Results}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of results obtained from the processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface represents a processor for database query results. 
+
+Definition at line \mbox{\hyperlink{_i_db_result_processor_8java_source_l00008}{8}} of file \mbox{\hyperlink{_i_db_result_processor_8java_source}{IDb\+Result\+Processor.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_i_db_result_processor_add418957f47f615fc619d8d2a3b6b63b}\label{interface_i_db_result_processor_add418957f47f615fc619d8d2a3b6b63b} 
+\index{IDbResultProcessor@{IDbResultProcessor}!getResults@{getResults}}
+\index{getResults@{getResults}!IDbResultProcessor@{IDbResultProcessor}}
+\doxysubsubsection{\texorpdfstring{getResults()}{getResults()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ IDb\+Result\+Processor.\+get\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of results obtained from the processing. 
+
+\begin{DoxyReturn}{Returns}
+the list of results 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_string_db_result_processor_a64df9c81d5ed59fc2bbbbf6be4343252}{String\+Db\+Result\+Processor}}.
+
+\Hypertarget{interface_i_db_result_processor_a2e5b07828a17cf0a74eb4d4db12f5080}\label{interface_i_db_result_processor_a2e5b07828a17cf0a74eb4d4db12f5080} 
+\index{IDbResultProcessor@{IDbResultProcessor}!process@{process}}
+\index{process@{process}!IDbResultProcessor@{IDbResultProcessor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} IDb\+Result\+Processor.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Result\+Set}}}]{rs }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}}}
+
+
+
+Processes the given Result\+Set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rs} & the Result\+Set to be processed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the processing is successful, false otherwise 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em SQLException} & if an error occurs while processing the Result\+Set \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_string_db_result_processor_a316a559dab60f83204685d13a28d02dd}{String\+Db\+Result\+Processor}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00234}{Db\+Base\+Factory\+Wrapper.\+execute()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00207}{Db\+Base\+Factory\+Wrapper.\+query()}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_db_result_processor_8java}{IDb\+Result\+Processor.\+java}}\end{DoxyCompactItemize}

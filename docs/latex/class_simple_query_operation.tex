@@ -1,0 +1,86 @@
+\doxysection{Simple\+Query\+Operation Class Reference}
+\hypertarget{class_simple_query_operation}{}\label{class_simple_query_operation}\index{SimpleQueryOperation@{SimpleQueryOperation}}
+
+
+The Simple\+Query class is a subclass of the \doxylink{interface_i_db_connection_operation}{IDb\+Connection\+Operation} interface.  
+
+
+
+
+Inheritance diagram for Simple\+Query\+Operation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{class_simple_query_operation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simple\+Query\+Operation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{class_simple_query_operation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_simple_query_operation_aeb861a0f5aa5fb9532f05c4557c9ecd8}{execute}} (\mbox{\hyperlink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper}} \mbox{\hyperlink{class_i_factory}{db\+Connection\+Wrapper}}, String \mbox{\hyperlink{class_i_factory}{sql}}, \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_i_factory}{result\+Processor}})
+\begin{DoxyCompactList}\small\item\em Executes a query operation on the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Simple\+Query class is a subclass of the \doxylink{interface_i_db_connection_operation}{IDb\+Connection\+Operation} interface. 
+
+It implements the execute method of the \doxylink{interface_i_db_connection_operation}{IDb\+Connection\+Operation} interface. 
+
+Definition at line \mbox{\hyperlink{_simple_query_operation_8java_source_l00007}{7}} of file \mbox{\hyperlink{_simple_query_operation_8java_source}{Simple\+Query\+Operation.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_simple_query_operation_aeb861a0f5aa5fb9532f05c4557c9ecd8}\label{class_simple_query_operation_aeb861a0f5aa5fb9532f05c4557c9ecd8} 
+\index{SimpleQueryOperation@{SimpleQueryOperation}!execute@{execute}}
+\index{execute@{execute}!SimpleQueryOperation@{SimpleQueryOperation}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Simple\+Query\+Operation.\+execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper}}}]{db\+Connection\+Wrapper,  }\item[{String}]{sql,  }\item[{\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}}}]{result\+Processor }\end{DoxyParamCaption})}
+
+
+
+Executes a query operation on the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Connection\+Wrapper} & The database connection wrapper. \\
+\hline
+{\em sql} & The SQL query to execute. \\
+\hline
+{\em result\+Processor} & The result processor for handling the query result. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the query was executed successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_db_connection_operation_a1cde13c23c84a5308a422883dc4a8d12}{IDb\+Connection\+Operation}}.
+
+
+
+Definition at line \mbox{\hyperlink{_simple_query_operation_8java_source_l00016}{16}} of file \mbox{\hyperlink{_simple_query_operation_8java_source}{Simple\+Query\+Operation.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}}.query(\mbox{\hyperlink{class_i_factory}{sql}},\ \mbox{\hyperlink{class_i_factory}{resultProcessor}});}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_simple_query_operation_8java}{Simple\+Query\+Operation.\+java}}\end{DoxyCompactItemize}

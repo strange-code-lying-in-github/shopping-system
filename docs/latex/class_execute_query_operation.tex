@@ -1,0 +1,98 @@
+\doxysection{Execute\+Query\+Operation Class Reference}
+\hypertarget{class_execute_query_operation}{}\label{class_execute_query_operation}\index{ExecuteQueryOperation@{ExecuteQueryOperation}}
+
+
+The Execute\+Query class is a subclass of the \doxylink{interface_i_db_connection_operation}{IDb\+Connection\+Operation} interface.  
+
+
+
+
+Inheritance diagram for Execute\+Query\+Operation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{class_execute_query_operation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Execute\+Query\+Operation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{class_execute_query_operation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_execute_query_operation_a3ca09cf329b584e71be2af9feaee6f93}{execute}} (\mbox{\hyperlink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper}} \mbox{\hyperlink{class_i_factory}{db\+Connection\+Wrapper}}, String \mbox{\hyperlink{class_i_factory}{sql}}, \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_i_factory}{result\+Processor}})
+\begin{DoxyCompactList}\small\item\em Executes the operation on the specified database connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Execute\+Query class is a subclass of the \doxylink{interface_i_db_connection_operation}{IDb\+Connection\+Operation} interface. 
+
+It implements the execute method of the \doxylink{interface_i_db_connection_operation}{IDb\+Connection\+Operation} interface. 
+
+Definition at line \mbox{\hyperlink{_execute_query_operation_8java_source_l00007}{7}} of file \mbox{\hyperlink{_execute_query_operation_8java_source}{Execute\+Query\+Operation.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_execute_query_operation_a3ca09cf329b584e71be2af9feaee6f93}\label{class_execute_query_operation_a3ca09cf329b584e71be2af9feaee6f93} 
+\index{ExecuteQueryOperation@{ExecuteQueryOperation}!execute@{execute}}
+\index{execute@{execute}!ExecuteQueryOperation@{ExecuteQueryOperation}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Execute\+Query\+Operation.\+execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper}}}]{db\+Connection\+Wrapper,  }\item[{String}]{sql,  }\item[{\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}}}]{result\+Processor }\end{DoxyParamCaption})}
+
+
+
+Executes the operation on the specified database connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Connection\+Wrapper} & The wrapper for the database connection. \\
+\hline
+{\em sql} & The SQL statement to be executed. \\
+\hline
+{\em result\+Processor} & The processor for the result of the operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the operation was executed successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_db_connection_operation_a1cde13c23c84a5308a422883dc4a8d12}{IDb\+Connection\+Operation}}.
+
+
+
+Definition at line \mbox{\hyperlink{_execute_query_operation_8java_source_l00008}{8}} of file \mbox{\hyperlink{_execute_query_operation_8java_source}{Execute\+Query\+Operation.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}}.execute(\mbox{\hyperlink{class_i_factory}{sql}},\ \mbox{\hyperlink{class_i_factory}{resultProcessor}});}
+\DoxyCodeLine{00010\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{interface_i_db_connection_wrapper_affe24a6593d9be4a09dcccc7700369ac}{IDb\+Connection\+Wrapper.\+execute()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_execute_query_operation_a3ca09cf329b584e71be2af9feaee6f93_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_execute_query_operation_8java}{Execute\+Query\+Operation.\+java}}\end{DoxyCompactItemize}

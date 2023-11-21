@@ -1,0 +1,6 @@
+<map id="IFactory.convertUrlToString" name="IFactory.convertUrlToString">
+<area shape="rect" id="Node000001" title="The function converts the content of an InputStream into a String using the specified character encod..." alt="" coords="5,37,185,63"/>
+<area shape="rect" id="Node000002" href="$class_i_factory.html#aeba2e37bd4787a74f6b23f4205804e22" title="The function transfers data from an InputStreamReader to a StringWriter using a buffer." alt="" coords="233,29,404,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,47,217,47,217,52,185,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="276,29,274,19,281,10,296,5,318,3,343,5,357,11,355,16,341,10,318,8,297,10,284,15,279,21,281,28"/>
+</map>

@@ -1,0 +1,27 @@
+<map id="BaseShoppingSystemHandler" name="BaseShoppingSystemHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="219,1582,467,1864"/>
+<area shape="rect" id="Node000002" href="$class_base_route_handler.html" title=" " alt="" coords="85,700,339,1206"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,1221,322,1582,316,1582,255,1222"/>
+<area shape="rect" id="Node000003" href="$interface_i_http_route_handler.html" title="This interface represents a handler for HTTP routes." alt="" coords="5,365,259,460"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,474,177,700,172,701,138,475"/>
+<area shape="rect" id="Node000004" href="$class_http_handler.html" title=" " alt="" coords="91,70,173,135"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="135,150,135,365,129,365,129,150"/>
+<area shape="rect" id="Node000005" href="$class_app_logging_agent.html" title="The AppLoggingAgent class implements the IAppLoggingStream interface and provides methods for logging..." alt="" coords="283,263,485,562"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="333,562,325,586,293,685,288,683,319,585,328,560"/>
+<area shape="rect" id="Node000007" href="$class_shopping_business_layer_service.html" title="The ShoppingBusinessLayerService class represents the business layer service for shopping operations." alt="" coords="413,1269,621,1519"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="380,562,375,728,375,913,382,1084,390,1153,402,1206,421,1253,416,1255,396,1207,385,1154,377,1084,370,914,370,728,375,561"/>
+<area shape="rect" id="Node000009" href="$class_shopping_data_layer_service.html" title="The ShoppingDataLayerService class is responsible for handling data layer operations related to shopp..." alt="" coords="459,750,687,1156"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="436,561,475,675,496,733,491,735,470,677,431,562"/>
+<area shape="rect" id="Node000006" href="$interface_i_app_logging_stream.html" title="The IAppLoggingStream interface defines methods for logging messages and objects." alt="" coords="293,5,475,200"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="383,215,383,224,382,264,377,263,377,224,378,215"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="387,200,387,246,381,246,381,200"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="454,1519,428,1568,423,1566,449,1517"/>
+<area shape="rect" id="Node000008" href="$interface_i_environment.html" title="This interface represents an environment that provides access to command line arguments and key&#45;value..." alt="" coords="671,350,873,475"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="780,475,785,610,781,795,772,898,757,1003,734,1107,702,1207,674,1260,635,1306,631,1302,670,1257,698,1205,729,1106,752,1002,767,897,776,795,780,610,775,475"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="740,476,687,587,636,734,631,733,683,585,735,474"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="550,1157,538,1253,533,1252,545,1156"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="509,380,555,445"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="534,445,532,586,531,631,532,675,538,733,533,733,527,676,525,631,527,586,529,445"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="609,380,636,445"/>
+<area shape="poly" id="edge14_Node000009_Node000011" title=" " alt="" coords="622,445,596,733,591,732,617,445"/>
+</map>

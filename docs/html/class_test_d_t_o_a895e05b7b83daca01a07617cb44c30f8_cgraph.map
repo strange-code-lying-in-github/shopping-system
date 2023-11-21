@@ -1,0 +1,19 @@
+<map id="TestDTO.testUserRoleDTO_2" name="TestDTO.testUserRoleDTO_2">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,203,130"/>
+<area shape="rect" id="Node000002" href="$class_environment.html#ae31191f88d1cd997ba32eb753a5fa4cc" title="Represents an interface for the environment." alt="" coords="273,5,422,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,101,181,71,250,40,268,33,270,38,252,45,183,76,129,106"/>
+<area shape="rect" id="Node000003" href="$class_role_d_t_o_home.html#a4530eb00e87bd465d5065821122aa3f3" title="Returns the singleton instance of RoleDTOHome." alt="" coords="265,55,430,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,101,265,81,266,87,172,106"/>
+<area shape="rect" id="Node000004" href="$class_user_d_t_o_home.html#a27fd9be7fdf49c5bce57889a40f3bdeb" title="Returns the singleton instance of UserDTOHome." alt="" coords="264,104,431,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,114,248,114,248,120,203,120"/>
+<area shape="rect" id="Node000005" href="$class_user_role_d_t_o_home.html#a3d5ca375b0de262c1a081055be3223d7" title="Returns the singleton instance of UserRoleDTOHome." alt="" coords="251,153,444,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="172,128,266,147,265,152,171,133"/>
+<area shape="rect" id="Node000006" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="275,203,420,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="129,128,183,158,252,189,270,195,268,200,250,194,181,163,126,132"/>
+<area shape="rect" id="Node000007" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="492,166,700,207"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="420,204,477,198,477,203,420,210"/>
+<area shape="rect" id="Node000009" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="518,231,674,256"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="420,221,503,230,502,236,420,226"/>
+<area shape="rect" id="Node000008" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="748,166,934,207"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="701,184,732,184,732,189,701,189"/>
+</map>

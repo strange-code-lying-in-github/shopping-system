@@ -1,0 +1,11 @@
+<map id="BaseRouteHandler" name="BaseRouteHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="127,261,380,768"/>
+<area shape="rect" id="Node000004" href="$class_base_shopping_system_handler.html" title=" " alt="" coords="5,816,253,1113"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,783,173,817,168,816,177,782"/>
+<area shape="rect" id="Node000005" href="$class_echo_handler.html" title=" " alt="" coords="278,890,477,1039"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="330,782,360,889,354,891,325,783"/>
+<area shape="rect" id="Node000002" href="$interface_i_http_route_handler.html" title="This interface represents a handler for HTTP routes." alt="" coords="127,119,380,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,229,256,262,251,262,251,229"/>
+<area shape="rect" id="Node000003" href="$class_http_handler.html" title=" " alt="" coords="212,5,295,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="256,86,256,119,251,119,251,86"/>
+</map>

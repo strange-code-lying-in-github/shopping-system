@@ -1,0 +1,103 @@
+\doxysection{Shopping\+Web\+Interface\+Controller.\+java}
+\hypertarget{_shopping_web_interface_controller_8java_source}{}\label{_shopping_web_interface_controller_8java_source}\mbox{\hyperlink{_shopping_web_interface_controller_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00001}00001\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00002}00002\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00003}00003\ \textcolor{comment}{\ *\ The\ ShoppingWebInterfaceController\ class\ represents\ a\ controller\ for\ the}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00004}00004\ \textcolor{comment}{\ *\ shopping\ web\ interface.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00005}00005\ \textcolor{comment}{\ *\ It\ handles\ the\ configuration\ of\ routes\ and\ provides\ access\ to\ the}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00006}00006\ \textcolor{comment}{\ *\ environment,\ data\ layer\ service,}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00007}00007\ \textcolor{comment}{\ *\ business\ layer\ service,\ and\ web\ server.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00008}00008\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00009}\mbox{\hyperlink{class_shopping_web_interface_controller}{00009}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shopping_web_interface_controller}{ShoppingWebInterfaceController}}\ \{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00010}00010\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00011}00011\ \textcolor{comment}{\ \ \ \ \ *\ The\ logging\ agent\ used\ for\ logging\ events\ in\ the\ shopping\ web\ interface}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ *\ controller.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00013}00013\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00014}\mbox{\hyperlink{class_shopping_web_interface_controller_a4c8e364b2e1d41a640c5862061c96e6a}{00014}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a4c8e364b2e1d41a640c5862061c96e6a}{logging}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00015}00015\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00016}00016\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00017}00017\ \textcolor{comment}{\ \ \ \ \ *\ The\ environment\ object\ used\ by\ the\ ShoppingWebInterfaceController.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00018}00018\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00019}\mbox{\hyperlink{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952}{00019}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952}{environment}};\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ *\ The\ shopping\ data\ service\ used\ by\ the\ shopping\ web\ interface\ controller.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00022}00022\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00023}\mbox{\hyperlink{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488}{00023}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488}{shoppingDataService}};\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00024}00024\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ *\ The\ shopping\ business\ layer\ service\ used\ by\ the\ web\ interface\ controller.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00027}\mbox{\hyperlink{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}{00027}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}{shoppingBusinessService}};\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00028}00028\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00029}00029\ \textcolor{comment}{\ \ \ \ \ *\ The\ web\ server\ used\ by\ the\ shopping\ web\ interface\ controller.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00031}\mbox{\hyperlink{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}{00031}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_web_server}{WebServer}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}{server}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00033}\mbox{\hyperlink{class_shopping_web_interface_controller_a315b89e40398f45073b62e655fc7854f}{00033}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_shopping_web_authenticator}{ShoppingWebAuthenticator}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a315b89e40398f45073b62e655fc7854f}{authenticator}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00035}\mbox{\hyperlink{class_shopping_web_interface_controller_a6c1b6ceac36235a57570c7596e9afa93}{00035}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a6c1b6ceac36235a57570c7596e9afa93}{ShoppingWebInterfaceController}}(\mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952}{environment}},\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488}{shoppingDataService}},}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}{shoppingBusinessService}},\ \mbox{\hyperlink{class_web_server}{WebServer}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}{server}})\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00037}00037\ \ \ \ \ \ \ \ \ this.environment\ =\ \mbox{\hyperlink{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952}{environment}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00038}00038\ \ \ \ \ \ \ \ \ this.shoppingDataService\ =\ \mbox{\hyperlink{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488}{shoppingDataService}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ this.shoppingBusinessService\ =\ \mbox{\hyperlink{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}{shoppingBusinessService}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ this.server\ =\ \mbox{\hyperlink{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}{server}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00041}00041\ \ \ \ \ \ \ \ \ this.authenticator\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_web_authenticator}{ShoppingWebAuthenticator}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00042}00042\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00043}00043\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00044}00044\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ *\ Configures\ the\ shopping\ web\ interface\ controller.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ *\ Adds\ a\ route\ for\ "{}/echo/"{}\ with\ the\ EchoHandler.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00047}00047\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00048}\mbox{\hyperlink{class_shopping_web_interface_controller_a778e4971eff3694151cbe921a1700511}{00048}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a778e4971eff3694151cbe921a1700511}{configure}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ this.server.\mbox{\hyperlink{class_web_server_a93b6dd74881e1f8f8f2271ab2db5dc9c}{addRoute}}(\textcolor{stringliteral}{"{}/echo/"{}},\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_echo_handler}{EchoHandler}}(),\ this.authenticator);}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00051}00051\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00052}00052\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00053}00053\ \textcolor{comment}{\ \ \ \ \ *\ Returns\ the\ environment\ object.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00054}00054\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00055}00055\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ environment\ object}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00056}00056\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00057}\mbox{\hyperlink{class_shopping_web_interface_controller_ab5855b7b67ba2de8d832a25d6118887f}{00057}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_ab5855b7b67ba2de8d832a25d6118887f}{getEnvironment}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00058}00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952}{environment}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00059}00059\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00060}00060\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00061}00061\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00062}00062\ \textcolor{comment}{\ \ \ \ \ *\ Returns\ the\ ShoppingDataLayerService\ instance\ used\ by\ this\ controller.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00063}00063\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00064}00064\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ ShoppingDataLayerService\ instance}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00065}00065\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00066}\mbox{\hyperlink{class_shopping_web_interface_controller_a8ac4ac89facd06d734e210868335dc87}{00066}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a8ac4ac89facd06d734e210868335dc87}{getShoppingDataService}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00067}00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488}{shoppingDataService}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00068}00068\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00069}00069\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00070}00070\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00071}00071\ \textcolor{comment}{\ \ \ \ \ *\ Returns\ the\ ShoppingBusinessLayerService\ instance\ used\ by\ this\ controller.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00072}00072\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00073}00073\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ ShoppingBusinessLayerService\ instance}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00074}00074\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00075}\mbox{\hyperlink{class_shopping_web_interface_controller_a057b9f24f31dee8b3cf902a22236b716}{00075}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a057b9f24f31dee8b3cf902a22236b716}{getShoppingBusinessService}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}{shoppingBusinessService}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00077}00077\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00078}00078\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00079}00079\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00080}00080\ \textcolor{comment}{\ \ \ \ \ *\ Returns\ the\ WebServer\ object\ associated\ with\ this\ controller.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00081}00081\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00082}00082\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ WebServer\ object}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00083}00083\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00084}\mbox{\hyperlink{class_shopping_web_interface_controller_a6c67c99d310d39e96767b44742f4ffc1}{00084}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_web_server}{WebServer}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a6c67c99d310d39e96767b44742f4ffc1}{getServer}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00085}00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}{server}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00086}00086\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00087}00087\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00088}00088\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00089}00089\ \textcolor{comment}{\ \ \ \ \ *\ Validates\ the\ login\ credentials\ of\ a\ user.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00090}00090\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00091}00091\ \textcolor{comment}{\ \ \ \ \ *\ @param\ user\ The\ username\ of\ the\ user.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00092}00092\ \textcolor{comment}{\ \ \ \ \ *\ @param\ pwd\ \ The\ password\ of\ the\ user.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00093}00093\ \textcolor{comment}{\ \ \ \ \ *\ @return\ true\ if\ the\ login\ credentials\ are\ valid,\ false\ otherwise.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00094}00094\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00095}\mbox{\hyperlink{class_shopping_web_interface_controller_a44de6caebdeb1740c3edd8dd8feb3b84}{00095}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_shopping_web_interface_controller_a44de6caebdeb1740c3edd8dd8feb3b84}{validateLogin}}(String\ \mbox{\hyperlink{class_i_factory}{user}},\ String\ \mbox{\hyperlink{class_i_factory}{pwd}})\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00096}00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_a3cfbc07d6e43baa50e39bfbb116f4c71}{validateLogin}}(\mbox{\hyperlink{class_i_factory}{user}},\ \mbox{\hyperlink{class_i_factory}{pwd}});}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00097}00097\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_interface_controller_8java_source_l00098}00098\ \}}
+
+\end{DoxyCode}

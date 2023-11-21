@@ -1,0 +1,468 @@
+\doxysection{App\+Logging\+Agent Class Reference}
+\hypertarget{class_app_logging_agent}{}\label{class_app_logging_agent}\index{AppLoggingAgent@{AppLoggingAgent}}
+
+
+The \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class implements the \doxylink{interface_i_app_logging_stream}{IApp\+Logging\+Stream} interface and provides methods for logging messages, objects, arrays of messages, and throwable objects to the application stream.  
+
+
+
+
+Inheritance diagram for App\+Logging\+Agent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_app_logging_agent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for App\+Logging\+Agent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{class_app_logging_agent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent_a979cf85ca7a3820190f75dc52a075d34}{App\+Logging\+Agent}} (\mbox{\hyperlink{interface_i_app_logging_stream}{IApp\+Logging\+Stream}} \mbox{\hyperlink{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df}{app\+Stream}})
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}} (String \mbox{\hyperlink{class_i_factory}{message}})
+\begin{DoxyCompactList}\small\item\em The log function logs a message to the application stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_agent_a89c45845bc495559c88f8e323326e94b}{log}} (\mbox{\hyperlink{class_i_factory}{Object}} \mbox{\hyperlink{class_i_factory}{object}})
+\begin{DoxyCompactList}\small\item\em The log function logs an object to the application stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_agent_a2dc139046d633c01fd556a833bd8df96}{log}} (String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory}{messages}})
+\begin{DoxyCompactList}\small\item\em The log function takes an array of messages and logs them using the \+\_\+app\+Stream object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_agent_a13ef66319ea050438348ea404ef01d17}{log}} (\mbox{\hyperlink{class_i_factory}{Throwable}} \mbox{\hyperlink{class_i_factory}{throwable}})
+\begin{DoxyCompactList}\small\item\em The log function logs a throwable object to the app stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_agent_aeeaf5bd6e902b14eef84dcd4fb63277a}{log}} (String \mbox{\hyperlink{class_i_factory}{message}}, \mbox{\hyperlink{class_i_factory}{Throwable}} \mbox{\hyperlink{class_i_factory}{throwable}})
+\begin{DoxyCompactList}\small\item\em The log function logs a message and a throwable object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_agent_a3ad7cf5d943640655583595d9d6002f0}{flush}} ()
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_app_logging_agent_a3ad7cf5d943640655583595d9d6002f0}{flush()} function flushes the output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_i_app_logging_stream}{IApp\+Logging\+Stream}} \mbox{\hyperlink{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df}{app\+Stream}}
+\begin{DoxyCompactList}\small\item\em The {\ttfamily app\+Stream} property is an instance of the {\ttfamily \doxylink{interface_i_app_logging_stream}{IApp\+Logging\+Stream}} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_app_logging_agent_adc7272a61a36119a4416b16f302843f1}{get\+Calling\+Method\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Returns the calling method information as a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_app_logging_agent_aa91e56af2da6676601b055a0983d10f9}{get\+Log\+Header\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the log header. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class implements the \doxylink{interface_i_app_logging_stream}{IApp\+Logging\+Stream} interface and provides methods for logging messages, objects, arrays of messages, and throwable objects to the application stream. 
+
+It also provides a method for flushing the output stream. 
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00011}{11}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_app_logging_agent_a979cf85ca7a3820190f75dc52a075d34}\label{class_app_logging_agent_a979cf85ca7a3820190f75dc52a075d34} 
+\index{AppLoggingAgent@{AppLoggingAgent}!AppLoggingAgent@{AppLoggingAgent}}
+\index{AppLoggingAgent@{AppLoggingAgent}!AppLoggingAgent@{AppLoggingAgent}}
+\doxysubsubsection{\texorpdfstring{AppLoggingAgent()}{AppLoggingAgent()}}
+{\footnotesize\ttfamily App\+Logging\+Agent.\+App\+Logging\+Agent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_app_logging_stream}{IApp\+Logging\+Stream}}}]{app\+Stream }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Stream} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00021}{21}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ this.appStream\ =\ \mbox{\hyperlink{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df}{appStream}};}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00016}{app\+Stream}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_logging_agent_a3ad7cf5d943640655583595d9d6002f0}\label{class_app_logging_agent_a3ad7cf5d943640655583595d9d6002f0} 
+\index{AppLoggingAgent@{AppLoggingAgent}!flush@{flush}}
+\index{flush@{flush}!AppLoggingAgent@{AppLoggingAgent}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Agent.\+flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The \doxylink{class_app_logging_agent_a3ad7cf5d943640655583595d9d6002f0}{flush()} function flushes the output stream. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00136}{136}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df}{appStream}}.\mbox{\hyperlink{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7}{flush}}();}
+\DoxyCodeLine{00138\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7}{IApp\+Logging\+Stream.\+flush()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_app_logging_agent_a3ad7cf5d943640655583595d9d6002f0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_app_logging_agent_adc7272a61a36119a4416b16f302843f1}\label{class_app_logging_agent_adc7272a61a36119a4416b16f302843f1} 
+\index{AppLoggingAgent@{AppLoggingAgent}!getCallingMethodInfo@{getCallingMethodInfo}}
+\index{getCallingMethodInfo@{getCallingMethodInfo}!AppLoggingAgent@{AppLoggingAgent}}
+\doxysubsubsection{\texorpdfstring{getCallingMethodInfo()}{getCallingMethodInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String App\+Logging\+Agent.\+get\+Calling\+Method\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Returns the calling method information as a string. 
+
+\begin{DoxyReturn}{Returns}
+the calling method information 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00030}{30}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Thread}}\ \mbox{\hyperlink{class_i_factory}{currentThread}}\ =\ \mbox{\hyperlink{class_i_factory}{Thread}}.currentThread();}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{StackTraceElement}}\ \mbox{\hyperlink{class_i_factory}{stack}}\ =\ \mbox{\hyperlink{class_i_factory}{currentThread}}.getStackTrace()[4];}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{StringBuffer}}\ \mbox{\hyperlink{class_i_factory}{sb}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{StringBuffer}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\mbox{\hyperlink{class_i_factory}{stack}}.getClassName())}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\textcolor{stringliteral}{"{}."{}})}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\mbox{\hyperlink{class_i_factory}{stack}}.getMethodName())}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\textcolor{stringliteral}{"{}:"{}})}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\mbox{\hyperlink{class_i_factory}{stack}}.getLineNumber())}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\textcolor{stringliteral}{"{}\ |\ "{}})}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\mbox{\hyperlink{class_i_factory}{currentThread}}.threadId());}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{sb}}.toString();}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_app_logging_agent_8java_source_l00052}{get\+Log\+Header\+String()}}.
+
+\Hypertarget{class_app_logging_agent_aa91e56af2da6676601b055a0983d10f9}\label{class_app_logging_agent_aa91e56af2da6676601b055a0983d10f9} 
+\index{AppLoggingAgent@{AppLoggingAgent}!getLogHeaderString@{getLogHeaderString}}
+\index{getLogHeaderString@{getLogHeaderString}!AppLoggingAgent@{AppLoggingAgent}}
+\doxysubsubsection{\texorpdfstring{getLogHeaderString()}{getLogHeaderString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String App\+Logging\+Agent.\+get\+Log\+Header\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Returns a string representation of the log header. 
+
+\begin{DoxyReturn}{Returns}
+the log header string 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00052}{52}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{StringBuffer}}\ \mbox{\hyperlink{class_i_factory}{sb}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{StringBuffer}}();}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\mbox{\hyperlink{class_i_factory}{Instant}}.now().toString())}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\textcolor{stringliteral}{"{}\ |\ "{}})}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\mbox{\hyperlink{class_app_logging_agent_adc7272a61a36119a4416b16f302843f1}{getCallingMethodInfo}}())}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\textcolor{stringliteral}{"{}\ |\ "{}});}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{sb}}.toString();}
+\DoxyCodeLine{00061\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00030}{get\+Calling\+Method\+Info()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_app_logging_agent_8java_source_l00083}{log()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{log()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00129}{log()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00095}{log()}}, and \mbox{\hyperlink{_app_logging_agent_8java_source_l00112}{log()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_app_logging_agent_aa91e56af2da6676601b055a0983d10f9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_app_logging_agent_a89c45845bc495559c88f8e323326e94b}\label{class_app_logging_agent_a89c45845bc495559c88f8e323326e94b} 
+\index{AppLoggingAgent@{AppLoggingAgent}!log@{log}}
+\index{log@{log}!AppLoggingAgent@{AppLoggingAgent}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Agent.\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Object}}}]{object }\end{DoxyParamCaption})}
+
+
+
+The log function logs an object to the application stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The "{}object"{} parameter is an instance of the Object class, which is the base class for all classes in Java. It represents an object that can be used to store any type of data. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_afd9935ad95e271fe768061f09383d920}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00083}{83}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df}{appStream}}.\mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{log}}(\mbox{\hyperlink{class_app_logging_agent_aa91e56af2da6676601b055a0983d10f9}{getLogHeaderString}}()\ +\ \textcolor{keywordtype}{object}.toString());}
+\DoxyCodeLine{00085\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00052}{get\+Log\+Header\+String()}}, and \mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{IApp\+Logging\+Stream.\+log()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_app_logging_agent_a89c45845bc495559c88f8e323326e94b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}\label{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2} 
+\index{AppLoggingAgent@{AppLoggingAgent}!log@{log}}
+\index{log@{log}!AppLoggingAgent@{AppLoggingAgent}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Agent.\+log (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})}
+
+
+
+The log function logs a message to the application stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message parameter is a string that represents the log message that you want to log. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{70}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df}{appStream}}.\mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{log}}(\mbox{\hyperlink{class_app_logging_agent_aa91e56af2da6676601b055a0983d10f9}{getLogHeaderString}}()\ +\ \mbox{\hyperlink{class_i_factory}{message}});}
+\DoxyCodeLine{00072\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00052}{get\+Log\+Header\+String()}}, and \mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{IApp\+Logging\+Stream.\+log()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_route_handler_8java_source_l00023}{Base\+Route\+Handler.\+build\+Response()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00194}{Db\+Base\+Factory\+Wrapper.\+close()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00169}{Db\+Base\+Factory\+Wrapper.\+connection\+Properties()}}, \mbox{\hyperlink{_i_factory_8java_source_l00073}{IFactory$<$ T $>$.\+create()}}, \mbox{\hyperlink{_db_base_factory_wrapper__postgres_8java_source_l00011}{Db\+Base\+Factory\+Wrapper\+\_\+postgres.\+Db\+Base\+Factory\+Wrapper\+\_\+postgres()}}, \mbox{\hyperlink{_core_utils_8java_source_l00045}{Core\+Utils.\+encode\+Sha256\+Bytes()}}, \mbox{\hyperlink{_core_utils_8java_source_l00029}{Core\+Utils.\+encode\+Sha256\+String()}}, \mbox{\hyperlink{_environment_8java_source_l00047}{Environment.\+Environment()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00234}{Db\+Base\+Factory\+Wrapper.\+execute()}}, \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00094}{Shopping\+Data\+Layer\+Service.\+execute\+Command()}}, \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00115}{Shopping\+Data\+Layer\+Service.\+execute\+Query()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00087}{Base\+DTO.\+format\+Value\+For\+Query()}}, \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00032}{Base\+Shopping\+System\+Handler.\+handle()}}, \mbox{\hyperlink{_echo_handler_8java_source_l00014}{Echo\+Handler.\+handle()}}, \mbox{\hyperlink{_base_route_handler_8java_source_l00077}{Base\+Route\+Handler.\+handle\+Response()}}, \mbox{\hyperlink{_i_factory_8java_source_l00251}{IFactory$<$ T $>$.\+process\+Path()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00207}{Db\+Base\+Factory\+Wrapper.\+query()}}, \mbox{\hyperlink{_db_utils_8java_source_l00024}{Db\+Utils.\+result\+Set\+To\+String()}}, \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00171}{Shopping\+Data\+Layer\+Service.\+save\+DTOs()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00392}{Test\+DTO.\+test\+Cart\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00414}{Test\+DTO.\+test\+Cart\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00445}{Test\+DTO.\+test\+Cart\+Item\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00479}{Test\+DTO.\+test\+Cart\+Item\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00583}{Test\+DTO.\+test\+Order\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00623}{Test\+DTO.\+test\+Order\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00671}{Test\+DTO.\+test\+Order\+Item\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00225}{Test\+DTO.\+test\+Payment\+Profile\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00244}{Test\+DTO.\+test\+Payment\+Profile\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00141}{Test\+DTO.\+test\+Product\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00160}{Test\+DTO.\+test\+Product\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00179}{Test\+DTO.\+test\+Product\+DTO\+\_\+3()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00198}{Test\+DTO.\+test\+Product\+DTO\+\_\+4()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00331}{Test\+DTO.\+test\+Purchase\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00358}{Test\+DTO.\+test\+Purchase\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00097}{Test\+DTO.\+test\+Role\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00115}{Test\+DTO.\+test\+Role\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00028}{Test\+DTO.\+test\+User\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00048}{Test\+DTO.\+test\+User\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00068}{Test\+DTO.\+test\+User\+DTO\+\_\+3()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00270}{Test\+DTO.\+test\+User\+Profile\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00297}{Test\+DTO.\+test\+User\+Profile\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00520}{Test\+DTO.\+test\+User\+Role\+DTO\+\_\+1()}}, and \mbox{\hyperlink{_test_d_t_o_8java_source_l00547}{Test\+DTO.\+test\+User\+Role\+DTO\+\_\+2()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_app_logging_agent_aeeaf5bd6e902b14eef84dcd4fb63277a}\label{class_app_logging_agent_aeeaf5bd6e902b14eef84dcd4fb63277a} 
+\index{AppLoggingAgent@{AppLoggingAgent}!log@{log}}
+\index{log@{log}!AppLoggingAgent@{AppLoggingAgent}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Agent.\+log (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{\mbox{\hyperlink{class_i_factory}{Throwable}}}]{throwable }\end{DoxyParamCaption})}
+
+
+
+The log function logs a message and a throwable object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message parameter is a string that represents the log message to be logged. It can contain any information that you want to include in the log, such as error messages, debug information, or general information about the state of the application. \\
+\hline
+{\em throwable} & The "{}throwable"{} parameter is used to pass an exception or error object. It allows you to log an exception along with a message. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_a64840174268902c21881ebc8cac8651d}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00129}{129}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df}{appStream}}.\mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{log}}(\mbox{\hyperlink{class_app_logging_agent_aa91e56af2da6676601b055a0983d10f9}{getLogHeaderString}}()\ +\ \mbox{\hyperlink{class_i_factory}{message}},\ \mbox{\hyperlink{class_i_factory}{throwable}});}
+\DoxyCodeLine{00131\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00052}{get\+Log\+Header\+String()}}, and \mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{IApp\+Logging\+Stream.\+log()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_app_logging_agent_aeeaf5bd6e902b14eef84dcd4fb63277a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_app_logging_agent_a2dc139046d633c01fd556a833bd8df96}\label{class_app_logging_agent_a2dc139046d633c01fd556a833bd8df96} 
+\index{AppLoggingAgent@{AppLoggingAgent}!log@{log}}
+\index{log@{log}!AppLoggingAgent@{AppLoggingAgent}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Agent.\+log (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{messages }\end{DoxyParamCaption})}
+
+
+
+The log function takes an array of messages and logs them using the \+\_\+app\+Stream object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messages} & The "{}messages"{} parameter is an array of strings. It is used to pass multiple log messages to the "{}log"{} method. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_a21d58084a30ed9137b00d5921cd9f26b}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00095}{95}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{ArrayList<String>}}\ \mbox{\hyperlink{class_i_factory}{logMessages}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{ArrayList<String>}}();}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ \mbox{\hyperlink{class_i_factory}{message}}\ :\ \mbox{\hyperlink{class_i_factory}{messages}})\ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{logMessages}}.add(\mbox{\hyperlink{class_app_logging_agent_aa91e56af2da6676601b055a0983d10f9}{getLogHeaderString}}()\ +\ \mbox{\hyperlink{class_i_factory}{message}});}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df}{appStream}}.\mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{log}}(logMessages);}
+\DoxyCodeLine{00101\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00052}{get\+Log\+Header\+String()}}, and \mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{IApp\+Logging\+Stream.\+log()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_app_logging_agent_a2dc139046d633c01fd556a833bd8df96_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_app_logging_agent_a13ef66319ea050438348ea404ef01d17}\label{class_app_logging_agent_a13ef66319ea050438348ea404ef01d17} 
+\index{AppLoggingAgent@{AppLoggingAgent}!log@{log}}
+\index{log@{log}!AppLoggingAgent@{AppLoggingAgent}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Agent.\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Throwable}}}]{throwable }\end{DoxyParamCaption})}
+
+
+
+The log function logs a throwable object to the app stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em throwable} & The "{}throwable"{} parameter is an instance of the Throwable class, which represents an object that can be thrown and caught. It is typically used to handle exceptions and errors in Java. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_a2ae8561471fb4276f8095365094d3e8c}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00112}{112}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df}{appStream}}.\mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{log}}(\mbox{\hyperlink{class_app_logging_agent_aa91e56af2da6676601b055a0983d10f9}{getLogHeaderString}}(),\ throwable);}
+\DoxyCodeLine{00114\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00052}{get\+Log\+Header\+String()}}, and \mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{IApp\+Logging\+Stream.\+log()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_app_logging_agent_a13ef66319ea050438348ea404ef01d17_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df}\label{class_app_logging_agent_a97b4f2e2ccac3d4c806443648d45a1df} 
+\index{AppLoggingAgent@{AppLoggingAgent}!appStream@{appStream}}
+\index{appStream@{appStream}!AppLoggingAgent@{AppLoggingAgent}}
+\doxysubsubsection{\texorpdfstring{appStream}{appStream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_app_logging_stream}{IApp\+Logging\+Stream}} App\+Logging\+Agent.\+app\+Stream}
+
+
+
+The {\ttfamily app\+Stream} property is an instance of the {\ttfamily \doxylink{interface_i_app_logging_stream}{IApp\+Logging\+Stream}} interface. 
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_agent_8java_source_l00016}{16}} of file \mbox{\hyperlink{_app_logging_agent_8java_source}{App\+Logging\+Agent.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_app_logging_agent_8java_source_l00021}{App\+Logging\+Agent()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_app_logging_agent_8java}{App\+Logging\+Agent.\+java}}\end{DoxyCompactItemize}

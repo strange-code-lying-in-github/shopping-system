@@ -1,0 +1,8 @@
+<map id="ShoppingWebInterfaceAdapter.configure" name="ShoppingWebInterfaceAdapter.configure">
+<area shape="rect" id="Node000001" title="Configures the web interface by calling the configure method of the web interface controller." alt="" coords="5,29,259,55"/>
+<area shape="rect" id="Node000002" href="$class_shopping_web_interface_controller.html#a778e4971eff3694151cbe921a1700511" title="Configures the shopping web interface controller." alt="" coords="307,29,571,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,40,291,40,291,45,259,45"/>
+<area shape="rect" id="Node000003" href="$class_web_server.html#a93b6dd74881e1f8f8f2271ab2db5dc9c" title="Adds a route to the web server." alt="" coords="619,29,763,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="572,40,603,40,603,45,572,45"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="650,31,641,21,646,11,663,5,691,3,723,5,738,13,736,17,721,11,691,8,664,10,650,15,647,20,654,27"/>
+</map>

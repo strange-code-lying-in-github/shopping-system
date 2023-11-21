@@ -1,0 +1,12 @@
+<map id="BaseDTOHome.getLoadSql" name="BaseDTOHome.getLoadSql">
+<area shape="rect" id="Node000001" title="Returns the SQL query for loading data from the database based on the provided DTO object." alt="" coords="5,120,189,145"/>
+<area shape="rect" id="Node000002" href="$class_base_d_t_o_home.html#a21acf202defee2daf4cd35a14fcf7d88" title="Formats the given value for query based on the specified DTO type." alt="" coords="237,29,443,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,116,236,79,255,73,257,78,238,84,134,121"/>
+<area shape="rect" id="Node000003" href="$interface_i_d_t_o.html#a9a5fbcbad264bc94101cbf230e35fc8c" title="Returns the name of the DTO (Data Transfer Object)." alt="" coords="274,94,406,120"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="189,120,258,113,259,118,189,125"/>
+<area shape="rect" id="Node000004" href="$interface_i_d_t_o.html#a89ca7a2809f6812e6dcac7e608cfa439" title="Returns a map of fields in the DTO object." alt="" coords="285,144,395,169"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="189,139,269,147,269,152,189,144"/>
+<area shape="rect" id="Node000005" href="$interface_i_d_t_o.html#afe3cf82928d45d5fbc1708e818203527" title="Retrieves the value of a field specified by the given field name." alt="" coords="286,193,394,219"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="134,143,237,179,272,188,270,193,236,184,132,148"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="294,29,292,19,299,10,316,5,340,3,366,5,382,11,380,16,365,10,340,8,317,10,302,15,297,21,299,28"/>
+</map>

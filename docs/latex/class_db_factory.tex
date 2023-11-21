@@ -1,0 +1,88 @@
+\doxysection{Db\+Factory Class Reference}
+\hypertarget{class_db_factory}{}\label{class_db_factory}\index{DbFactory@{DbFactory}}
+
+
+The class is a factory for creating instances of the \doxylink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper} interface.  
+
+
+
+
+Inheritance diagram for Db\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_db_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Db\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_db_factory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_db_factory_ac4264a8a7afc2f67fac58a0445148169}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_i_factory}{IFactory$<$ IDb\+Connection\+Wrapper $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_i_factory_a5355830e31244a3c7063b8fa85172b20}{register}} (String \mbox{\hyperlink{class_i_factory}{registration\+Name}}, \mbox{\hyperlink{class_i_factory}{Class}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ instance)
+\begin{DoxyCompactList}\small\item\em The function registers a class with the factory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{T}} \mbox{\hyperlink{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1}{create}} (String \mbox{\hyperlink{class_i_factory}{factory\+String}})
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ String \mbox{\hyperlink{class_i_factory_a48d714a3008100beb7aca8a9f3228023}{convert\+Url\+To\+String}} (\mbox{\hyperlink{class_i_factory}{final}} \mbox{\hyperlink{class_i_factory}{Input\+Stream}} \mbox{\hyperlink{class_i_factory}{input}}, \mbox{\hyperlink{class_i_factory}{final}} String \mbox{\hyperlink{class_i_factory}{string}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em The function converts the content of an Input\+Stream into a String using the specified character encoding. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory_ad86bd52dafe672241749c67cc6e393ce}{get\+Registered}} ()
+\begin{DoxyCompactList}\small\item\em The function returns an array of strings representing the names of the registered classes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory_aaaf8786a2c4ca69722db2dc171ac264c}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_i_factory}{IFactory$<$ IDb\+Connection\+Wrapper $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{IFactory}} ()
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Package Functions inherited from \mbox{\hyperlink{class_i_factory}{IFactory$<$ IDb\+Connection\+Wrapper $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory_a987a37e38b2edbc0c0d7ba986f7273c5}{\mbox{[}static initializer\mbox{]}}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class is a factory for creating instances of the \doxylink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper} interface. 
+
+Definition at line \mbox{\hyperlink{_db_factory_8java_source_l00009}{9}} of file \mbox{\hyperlink{_db_factory_8java_source}{Db\+Factory.\+java}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_db_factory_ac4264a8a7afc2f67fac58a0445148169}\label{class_db_factory_ac4264a8a7afc2f67fac58a0445148169} 
+\index{DbFactory@{DbFactory}!logging@{logging}}
+\index{logging@{logging}!DbFactory@{DbFactory}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Db\+Factory.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The function returns an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_factory_8java_source_l00015}{15}} of file \mbox{\hyperlink{_db_factory_8java_source}{Db\+Factory.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_db_factory_8java}{Db\+Factory.\+java}}\end{DoxyCompactItemize}

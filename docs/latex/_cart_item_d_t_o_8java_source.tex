@@ -1,0 +1,57 @@
+\doxysection{Cart\+Item\+DTO.\+java}
+\hypertarget{_cart_item_d_t_o_8java_source}{}\label{_cart_item_d_t_o_8java_source}\mbox{\hyperlink{_cart_item_d_t_o_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00002}00002\ \textcolor{keyword}{import}\ java.util.Date;}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00003}00003\ \textcolor{keyword}{import}\ java.util.HashMap;}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00004}00004\ \textcolor{keyword}{import}\ java.util.Map;}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00005}00005\ \textcolor{keyword}{import}\ java.util.TreeMap;}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00006}00006\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00007}00007\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00008}00008\ \textcolor{comment}{\ *\ Represents\ a\ data\ transfer\ object\ for\ a\ cart\ item.}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00009}00009\ \textcolor{comment}{\ *\ Extends\ the\ BaseDTO\ class.}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00010}00010\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00011}\mbox{\hyperlink{class_cart_item_d_t_o}{00011}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}}\ \textcolor{keyword}{extends}\ \mbox{\hyperlink{class_base_d_t_o}{BaseDTO}}\ \{}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00013}00013\ \ \ \ \ \textcolor{comment}{//\ Fields\ and\ their\ corresponding\ data\ types}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00014}\mbox{\hyperlink{class_cart_item_d_t_o_a2ba182696da2895a5a5a197bcf5c4dcd}{00014}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keyword}{static}\ Map<String,\ DTOTypes>\ \mbox{\hyperlink{class_cart_item_d_t_o_a2ba182696da2895a5a5a197bcf5c4dcd}{\_fields}}\ =\ \textcolor{keyword}{new}\ TreeMap<String,\ DTOTypes>()\ \{}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00015}00015\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ put(\textcolor{stringliteral}{"{}id"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ put(\textcolor{stringliteral}{"{}cart\_id"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ put(\textcolor{stringliteral}{"{}product\_id"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ put(\textcolor{stringliteral}{"{}quantity"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ put(\textcolor{stringliteral}{"{}date\_created"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a3013a07b90adab5266ab5d66eb124c9b}{DATE}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ put(\textcolor{stringliteral}{"{}date\_modified"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a3013a07b90adab5266ab5d66eb124c9b}{DATE}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00022}00022\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00023}00023\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00025}00025\ \ \ \ \ \textcolor{comment}{//\ Mapping\ of\ field\ order\ to\ field\ names}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00026}\mbox{\hyperlink{class_cart_item_d_t_o_a2082d754cc69a86f95f0b6c67a0a7762}{00026}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keyword}{static}\ Map<Integer,\ String>\ \mbox{\hyperlink{class_cart_item_d_t_o_a2082d754cc69a86f95f0b6c67a0a7762}{\_fieldsOrderMap}}\ =\ \textcolor{keyword}{new}\ HashMap<Integer,\ String>()\ \{}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00027}00027\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ put(0,\ \textcolor{stringliteral}{"{}id"{}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ put(1,\ \textcolor{stringliteral}{"{}cart\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ put(2,\ \textcolor{stringliteral}{"{}product\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ put(3,\ \textcolor{stringliteral}{"{}quantity"{}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ put(4,\ \textcolor{stringliteral}{"{}date\_created"{}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ put(5,\ \textcolor{stringliteral}{"{}date\_modified"{}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00035}00035\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00036}00036\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00037}00037\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00038}00038\ \textcolor{comment}{\ \ \ \ \ *\ Constructs\ a\ CartItemDTO\ object.}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00039}00039\ \textcolor{comment}{\ \ \ \ \ *\ Initializes\ the\ fields\ and\ field\ order\ map.}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00040}00040\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00041}\mbox{\hyperlink{class_cart_item_d_t_o_afeef949c530612a22a9eb79e771ea307}{00041}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_cart_item_d_t_o_afeef949c530612a22a9eb79e771ea307}{CartItemDTO}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ super(\textcolor{stringliteral}{"{}cartitem"{}},\ \mbox{\hyperlink{class_cart_item_d_t_o_a2ba182696da2895a5a5a197bcf5c4dcd}{\_fields}},\ \mbox{\hyperlink{class_cart_item_d_t_o_a2082d754cc69a86f95f0b6c67a0a7762}{\_fieldsOrderMap}});}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00043}00043\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00044}00044\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ *\ Gets\ the\ DTO\ home\ for\ CartItemDTO.}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00047}00047\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ instance\ of\ CartItemDTOHome.}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00048}00048\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00049}\mbox{\hyperlink{class_cart_item_d_t_o_ac14569306b68492a37f1b874f7c5fc11}{00049}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}}\ \mbox{\hyperlink{class_cart_item_d_t_o_ac14569306b68492a37f1b874f7c5fc11}{getDtoHome}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_cart_item_d_t_o_home}{CartItemDTOHome}}.\mbox{\hyperlink{class_cart_item_d_t_o_home_a14d79807211164813891abfd8d9b1c43}{Instance}}();}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00051}00051\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_cart_item_d_t_o_8java_source_l00052}00052\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,12 @@
+<map id="EchoHandler.handleGetRequest" name="EchoHandler.handleGetRequest">
+<area shape="rect" id="Node000001" title="Handles the GET request and returns a formatted string containing information about the request." alt="" coords="5,132,213,157"/>
+<area shape="rect" id="Node000002" href="$class_http_helpers.html#a675234b48cbe48a03e2ce0e81b7d16bf" title="Escapes the given response string using the specified text type." alt="" coords="266,29,462,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,129,260,81,281,73,283,78,262,85,142,133"/>
+<area shape="rect" id="Node000003" href="$interface_i_http_request_context_info.html#a8dbc757430fc97b0f8edb9c528f6a598" title="Returns a map of the query parameters." alt="" coords="269,95,459,135"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="213,130,253,125,254,130,214,135"/>
+<area shape="rect" id="Node000004" href="$interface_i_http_request_context_info.html#a8863ec8c07849e679ef7461adfaea46f" title="Returns the URI of the request." alt="" coords="261,160,467,185"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="214,153,246,157,245,162,213,158"/>
+<area shape="rect" id="Node000005" href="$interface_i_http_request_context_info.html#a60f030fe6578ebdfe56e9eb61fa29ccd" title="Returns the path component of the URI." alt="" coords="269,209,459,250"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="148,155,262,195,282,202,280,207,260,200,146,160"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="316,29,314,19,322,10,338,5,364,3,391,5,408,11,406,16,390,10,364,8,339,10,325,15,319,21,321,28"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="IFactory.Instance" name="IFactory.Instance">
+<area shape="rect" id="Node000001" title="The function returns an instance of the IFactory class." alt="" coords="5,13,127,39"/>
+<area shape="rect" id="Node000002" href="$class_i_factory_1_1_instance_holder.html#a62a1ab22fa68ef2f3f533c502ffc1d3f" title=" " alt="" coords="175,5,337,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,23,159,23,159,28,127,28"/>
+<area shape="rect" id="Node000003" href="$class_i_factory.html#a456b12973815b2eebc7fcb50f14c9c53" title="The function returns an instance of the IFactory class." alt="" coords="385,13,504,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="337,23,370,23,370,28,337,28"/>
+</map>

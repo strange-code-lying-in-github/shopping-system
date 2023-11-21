@@ -1,0 +1,144 @@
+\doxysection{Shopping\+Web\+Interface\+Adapter Class Reference}
+\hypertarget{class_shopping_web_interface_adapter}{}\label{class_shopping_web_interface_adapter}\index{ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}}
+
+
+The \doxylink{class_shopping_web_interface_adapter}{Shopping\+Web\+Interface\+Adapter} class is responsible for adapting the web interface to the shopping system.  
+
+
+
+
+Collaboration diagram for Shopping\+Web\+Interface\+Adapter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_web_interface_adapter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopping_web_interface_adapter_a4765b43edc59797b2f7adcdc1627f1c5}{Shopping\+Web\+Interface\+Adapter}} (\mbox{\hyperlink{interface_i_environment}{IEnvironment}} environment, \mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} shopping\+Data\+Service, \mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} shopping\+Business\+Service, \mbox{\hyperlink{class_web_server}{Web\+Server}} server)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_shopping_web_interface_adapter}{Shopping\+Web\+Interface\+Adapter} with the specified environment, shopping data service, shopping business service, and web server. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_shopping_web_interface_adapter_a2738d99c717b1ab0824e4886eaf9a59a}{configure}} ()
+\begin{DoxyCompactList}\small\item\em Configures the web interface by calling the configure method of the web interface controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_shopping_web_interface_adapter_a48409a03ad3618eef8c98c2a86ac04b7}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\item 
+\mbox{\hyperlink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller}} \mbox{\hyperlink{class_shopping_web_interface_adapter_a96834381843073b4c8d62e8db40db565}{controller}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_shopping_web_interface_adapter}{Shopping\+Web\+Interface\+Adapter} class is responsible for adapting the web interface to the shopping system. 
+
+It provides a convenient interface for configuring and interacting with the web interface controller. 
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source_l00006}{6}} of file \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source}{Shopping\+Web\+Interface\+Adapter.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopping_web_interface_adapter_a4765b43edc59797b2f7adcdc1627f1c5}\label{class_shopping_web_interface_adapter_a4765b43edc59797b2f7adcdc1627f1c5} 
+\index{ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}!ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}}
+\index{ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}!ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}}
+\doxysubsubsection{\texorpdfstring{ShoppingWebInterfaceAdapter()}{ShoppingWebInterfaceAdapter()}}
+{\footnotesize\ttfamily Shopping\+Web\+Interface\+Adapter.\+Shopping\+Web\+Interface\+Adapter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_environment}{IEnvironment}}}]{environment,  }\item[{\mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}}}]{shopping\+Data\+Service,  }\item[{\mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}}}]{shopping\+Business\+Service,  }\item[{\mbox{\hyperlink{class_web_server}{Web\+Server}}}]{server }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_shopping_web_interface_adapter}{Shopping\+Web\+Interface\+Adapter} with the specified environment, shopping data service, shopping business service, and web server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em environment} & the environment for the shopping system \\
+\hline
+{\em shopping\+Data\+Service} & the shopping data service for accessing shopping data \\
+\hline
+{\em shopping\+Business\+Service} & the shopping business service for performing business logic operations \\
+\hline
+{\em server} & the web server for hosting the web interface \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source_l00020}{20}} of file \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source}{Shopping\+Web\+Interface\+Adapter.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ this.controller\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_web_interface_controller}{ShoppingWebInterfaceController}}(environment,\ shoppingDataService,\ shoppingBusinessService,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ server);}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopping_web_interface_adapter_a2738d99c717b1ab0824e4886eaf9a59a}\label{class_shopping_web_interface_adapter_a2738d99c717b1ab0824e4886eaf9a59a} 
+\index{ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}!configure@{configure}}
+\index{configure@{configure}!ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Shopping\+Web\+Interface\+Adapter.\+configure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Configures the web interface by calling the configure method of the web interface controller. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source_l00029}{29}} of file \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source}{Shopping\+Web\+Interface\+Adapter.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_shopping_web_interface_adapter_a96834381843073b4c8d62e8db40db565}{controller}}.\mbox{\hyperlink{class_shopping_web_interface_controller_a778e4971eff3694151cbe921a1700511}{configure}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00048}{Shopping\+Web\+Interface\+Controller.\+configure()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_system_8java_source_l00036}{Shopping\+System.\+start()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_web_interface_adapter_a2738d99c717b1ab0824e4886eaf9a59a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_shopping_web_interface_adapter_a96834381843073b4c8d62e8db40db565}\label{class_shopping_web_interface_adapter_a96834381843073b4c8d62e8db40db565} 
+\index{ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}!controller@{controller}}
+\index{controller@{controller}!ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}}
+\doxysubsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller}} Shopping\+Web\+Interface\+Adapter.\+controller\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source_l00009}{9}} of file \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source}{Shopping\+Web\+Interface\+Adapter.\+java}}.
+
+\Hypertarget{class_shopping_web_interface_adapter_a48409a03ad3618eef8c98c2a86ac04b7}\label{class_shopping_web_interface_adapter_a48409a03ad3618eef8c98c2a86ac04b7} 
+\index{ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}!logging@{logging}}
+\index{logging@{logging}!ShoppingWebInterfaceAdapter@{ShoppingWebInterfaceAdapter}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Shopping\+Web\+Interface\+Adapter.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source_l00008}{8}} of file \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source}{Shopping\+Web\+Interface\+Adapter.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_shopping_web_interface_adapter_8java}{Shopping\+Web\+Interface\+Adapter.\+java}}\end{DoxyCompactItemize}

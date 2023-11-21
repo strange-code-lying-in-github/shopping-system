@@ -1,0 +1,9 @@
+<map id="AppLoggingAgent.log" name="AppLoggingAgent.log">
+<area shape="rect" id="Node000001" title="The log function logs a message to the application stream." alt="" coords="5,42,150,68"/>
+<area shape="rect" id="Node000002" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="198,5,406,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,43,182,39,183,44,151,48"/>
+<area shape="rect" id="Node000004" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="224,70,380,96"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,61,209,69,208,74,150,67"/>
+<area shape="rect" id="Node000003" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="454,5,639,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,23,438,23,438,28,407,28"/>
+</map>

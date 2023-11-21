@@ -1,0 +1,239 @@
+\doxysection{IDTO Interface Reference}
+\hypertarget{interface_i_d_t_o}{}\label{interface_i_d_t_o}\index{IDTO@{IDTO}}
+
+
+The \doxylink{interface_i_d_t_o}{IDTO} interface represents a Data Transfer Object (DTO) in the shopping system.  
+
+
+
+
+Inheritance diagram for IDTO\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_i_d_t_o__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IDTO\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{interface_i_d_t_o__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{interface_i_d_t_o_a9a5fbcbad264bc94101cbf230e35fc8c}{get\+Dto\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the DTO (Data Transfer Object). \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{interface_i_d_t_o_a1b985a9dbfa8d2342428334ea96aa906}{get\+Load\+Sql}} (String schema)
+\begin{DoxyCompactList}\small\item\em Gets the SQL statement for loading data from the database. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{interface_i_d_t_o_a3a28666fc2c10953ec6e8e8f824ca907}{get\+Save\+Sql}} (String schema)
+\begin{DoxyCompactList}\small\item\em Gets the SQL statement for saving data to the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} $>$ \mbox{\hyperlink{interface_i_d_t_o_a89ca7a2809f6812e6dcac7e608cfa439}{get\+Fields}} ()
+\begin{DoxyCompactList}\small\item\em Returns a map of fields in the DTO object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Object}} \mbox{\hyperlink{interface_i_d_t_o_afe3cf82928d45d5fbc1708e818203527}{get\+Value}} (String \mbox{\hyperlink{class_i_factory}{field\+Name}})
+\begin{DoxyCompactList}\small\item\em Retrieves the value of a field specified by the given field name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{interface_i_d_t_o_a7d9af4922550d95cf9af660707303519}{set\+Value}} (String \mbox{\hyperlink{class_i_factory}{field\+Name}}, \mbox{\hyperlink{class_i_factory}{Object}} value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a field in the DTO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{interface_i_d_t_o_a6ab4dad514f7758235a29088a835a20e}{get\+Load\+Processor}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{interface_i_d_t_o_a8a9e40b816188d2537100fa5e155722d}{get\+Save\+Processor}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}} \mbox{\hyperlink{interface_i_d_t_o_acb229dc78372d7ac840c9b609de79037}{get\+Dto\+Home}} ()
+\begin{DoxyCompactList}\small\item\em This interface represents the home for \doxylink{interface_i_d_t_o}{IDTO} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{interface_i_d_t_o}{IDTO} interface represents a Data Transfer Object (DTO) in the shopping system. 
+
+It defines methods for retrieving SQL statements and result processors for loading and saving data. 
+
+Definition at line \mbox{\hyperlink{_i_d_t_o_8java_source_l00009}{9}} of file \mbox{\hyperlink{_i_d_t_o_8java_source}{IDTO.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_i_d_t_o_acb229dc78372d7ac840c9b609de79037}\label{interface_i_d_t_o_acb229dc78372d7ac840c9b609de79037} 
+\index{IDTO@{IDTO}!getDtoHome@{getDtoHome}}
+\index{getDtoHome@{getDtoHome}!IDTO@{IDTO}}
+\doxysubsubsection{\texorpdfstring{getDtoHome()}{getDtoHome()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}} IDTO.\+get\+Dto\+Home (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This interface represents the home for \doxylink{interface_i_d_t_o}{IDTO} objects. 
+
+It provides methods to interact with \doxylink{interface_i_d_t_o}{IDTO} objects. 
+
+Implemented in \mbox{\hyperlink{class_audit_trail_d_t_o_a187493708d83ec7b5109fc40d9530e80}{Audit\+Trail\+DTO}}, \mbox{\hyperlink{class_cart_d_t_o_ae1bf38d523ff48721a65c08f1d91311e}{Cart\+DTO}}, \mbox{\hyperlink{class_cart_item_d_t_o_ac14569306b68492a37f1b874f7c5fc11}{Cart\+Item\+DTO}}, \mbox{\hyperlink{class_order_d_t_o_ab88901aa0f8f941ee1b4e149779044cd}{Order\+DTO}}, \mbox{\hyperlink{class_order_item_d_t_o_ab551c5d09bfc75c60a9c2a48e577a812}{Order\+Item\+DTO}}, \mbox{\hyperlink{class_payment_profile_d_t_o_a0351ac60d03a085054eb2da6f53aabb7}{Payment\+Profile\+DTO}}, \mbox{\hyperlink{class_product_d_t_o_a6c3bdba71a841d6e6b32234244da592d}{Product\+DTO}}, \mbox{\hyperlink{class_purchase_d_t_o_a6fcfe419f01b0d02196e569f2f6d588c}{Purchase\+DTO}}, \mbox{\hyperlink{class_role_d_t_o_a4961afb422e722a4525099e2bc46ec22}{Role\+DTO}}, \mbox{\hyperlink{class_user_d_t_o_a97884f364f8df0f21c89a24a9413fb5b}{User\+DTO}}, \mbox{\hyperlink{class_user_profile_d_t_o_a9259450ff4834aa0d98d4a8e1fcac195}{User\+Profile\+DTO}}, and \mbox{\hyperlink{class_user_role_d_t_o_ad9d38d6b3817653bcbc725201c691cba}{User\+Role\+DTO}}.
+
+\Hypertarget{interface_i_d_t_o_a9a5fbcbad264bc94101cbf230e35fc8c}\label{interface_i_d_t_o_a9a5fbcbad264bc94101cbf230e35fc8c} 
+\index{IDTO@{IDTO}!getDtoName@{getDtoName}}
+\index{getDtoName@{getDtoName}!IDTO@{IDTO}}
+\doxysubsubsection{\texorpdfstring{getDtoName()}{getDtoName()}}
+{\footnotesize\ttfamily String IDTO.\+get\+Dto\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the DTO (Data Transfer Object). 
+
+\begin{DoxyReturn}{Returns}
+the name of the DTO 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_a3996e030f3efa169beee9185fadba3ba}{Base\+DTO}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_home_8java_source_l00272}{Base\+DTOHome.\+build\+Insert\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_home_8java_source_l00298}{Base\+DTOHome.\+build\+Update\+Sql()}}, and \mbox{\hyperlink{_base_d_t_o_home_8java_source_l00170}{Base\+DTOHome.\+get\+Load\+Sql()}}.
+
+\Hypertarget{interface_i_d_t_o_a89ca7a2809f6812e6dcac7e608cfa439}\label{interface_i_d_t_o_a89ca7a2809f6812e6dcac7e608cfa439} 
+\index{IDTO@{IDTO}!getFields@{getFields}}
+\index{getFields@{getFields}!IDTO@{IDTO}}
+\doxysubsubsection{\texorpdfstring{getFields()}{getFields()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} $>$ IDTO.\+get\+Fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a map of fields in the DTO object. 
+
+\begin{DoxyReturn}{Returns}
+a map containing the fields of the DTO object 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_a560ad66fc2fd597728299d688b6c585d}{Base\+DTO}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_home_8java_source_l00272}{Base\+DTOHome.\+build\+Insert\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_home_8java_source_l00298}{Base\+DTOHome.\+build\+Update\+Sql()}}, and \mbox{\hyperlink{_base_d_t_o_home_8java_source_l00170}{Base\+DTOHome.\+get\+Load\+Sql()}}.
+
+\Hypertarget{interface_i_d_t_o_a6ab4dad514f7758235a29088a835a20e}\label{interface_i_d_t_o_a6ab4dad514f7758235a29088a835a20e} 
+\index{IDTO@{IDTO}!getLoadProcessor@{getLoadProcessor}}
+\index{getLoadProcessor@{getLoadProcessor}!IDTO@{IDTO}}
+\doxysubsubsection{\texorpdfstring{getLoadProcessor()}{getLoadProcessor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} IDTO.\+get\+Load\+Processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO}. 
+
+\begin{DoxyReturn}{Returns}
+the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_a373c60917eabb7242371873b31ca562f}{Base\+DTO}}.
+
+\Hypertarget{interface_i_d_t_o_a1b985a9dbfa8d2342428334ea96aa906}\label{interface_i_d_t_o_a1b985a9dbfa8d2342428334ea96aa906} 
+\index{IDTO@{IDTO}!getLoadSql@{getLoadSql}}
+\index{getLoadSql@{getLoadSql}!IDTO@{IDTO}}
+\doxysubsubsection{\texorpdfstring{getLoadSql()}{getLoadSql()}}
+{\footnotesize\ttfamily String IDTO.\+get\+Load\+Sql (\begin{DoxyParamCaption}\item[{String}]{schema }\end{DoxyParamCaption})}
+
+
+
+Gets the SQL statement for loading data from the database. 
+
+\begin{DoxyReturn}{Returns}
+The SQL statement for loading data. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_a083f9d044b18ab3932e33decfc57c3fd}{Base\+DTO}}.
+
+\Hypertarget{interface_i_d_t_o_a8a9e40b816188d2537100fa5e155722d}\label{interface_i_d_t_o_a8a9e40b816188d2537100fa5e155722d} 
+\index{IDTO@{IDTO}!getSaveProcessor@{getSaveProcessor}}
+\index{getSaveProcessor@{getSaveProcessor}!IDTO@{IDTO}}
+\doxysubsubsection{\texorpdfstring{getSaveProcessor()}{getSaveProcessor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} IDTO.\+get\+Save\+Processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO}. 
+
+\begin{DoxyReturn}{Returns}
+the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_a252dec45478ad93325d48591c354976a}{Base\+DTO}}.
+
+\Hypertarget{interface_i_d_t_o_a3a28666fc2c10953ec6e8e8f824ca907}\label{interface_i_d_t_o_a3a28666fc2c10953ec6e8e8f824ca907} 
+\index{IDTO@{IDTO}!getSaveSql@{getSaveSql}}
+\index{getSaveSql@{getSaveSql}!IDTO@{IDTO}}
+\doxysubsubsection{\texorpdfstring{getSaveSql()}{getSaveSql()}}
+{\footnotesize\ttfamily String IDTO.\+get\+Save\+Sql (\begin{DoxyParamCaption}\item[{String}]{schema }\end{DoxyParamCaption})}
+
+
+
+Gets the SQL statement for saving data to the database. 
+
+\begin{DoxyReturn}{Returns}
+The SQL statement for saving data. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_afc2393d96d4e4f846e16362e29ac6579}{Base\+DTO}}.
+
+\Hypertarget{interface_i_d_t_o_afe3cf82928d45d5fbc1708e818203527}\label{interface_i_d_t_o_afe3cf82928d45d5fbc1708e818203527} 
+\index{IDTO@{IDTO}!getValue@{getValue}}
+\index{getValue@{getValue}!IDTO@{IDTO}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Object}} IDTO.\+get\+Value (\begin{DoxyParamCaption}\item[{String}]{field\+Name }\end{DoxyParamCaption})}
+
+
+
+Retrieves the value of a field specified by the given field name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+Name} & the name of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0}{Base\+DTO}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_home_8java_source_l00272}{Base\+DTOHome.\+build\+Insert\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_home_8java_source_l00298}{Base\+DTOHome.\+build\+Update\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_home_8java_source_l00170}{Base\+DTOHome.\+get\+Load\+Sql()}}, and \mbox{\hyperlink{_base_d_t_o_home_8java_source_l00253}{Base\+DTOHome.\+get\+Save\+Sql()}}.
+
+\Hypertarget{interface_i_d_t_o_a7d9af4922550d95cf9af660707303519}\label{interface_i_d_t_o_a7d9af4922550d95cf9af660707303519} 
+\index{IDTO@{IDTO}!setValue@{setValue}}
+\index{setValue@{setValue}!IDTO@{IDTO}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} IDTO.\+set\+Value (\begin{DoxyParamCaption}\item[{String}]{field\+Name,  }\item[{\mbox{\hyperlink{class_i_factory}{Object}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of a field in the DTO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+Name} & the name of the field \\
+\hline
+{\em value} & the value to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the value was successfully set, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_base_d_t_o_a456710ad08c5b0b16b0074cb80c0863b}{Base\+DTO}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_d_t_o_8java}{IDTO.\+java}}\end{DoxyCompactItemize}

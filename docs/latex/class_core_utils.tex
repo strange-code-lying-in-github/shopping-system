@@ -1,0 +1,265 @@
+\doxysection{Core\+Utils Class Reference}
+\hypertarget{class_core_utils}{}\label{class_core_utils}\index{CoreUtils@{CoreUtils}}
+
+
+The \doxylink{class_core_utils}{Core\+Utils} class provides utility methods for encoding strings using SHA-\/256 algorithm.  
+
+
+
+
+Collaboration diagram for Core\+Utils\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_core_utils__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_core_utils_a1228e598ba4a7b71f2541e344b0f68fc}{encode\+Sha256\+String}} (\mbox{\hyperlink{class_i_factory}{final}} String \mbox{\hyperlink{class_i_factory}{unencoded\+String}})
+\begin{DoxyCompactList}\small\item\em Encodes a string using SHA-\/256 algorithm and returns the encoded string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{byte}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_core_utils_a2ce7beedff007a45f465de0b41f5c206}{encode\+Sha256\+Bytes}} (\mbox{\hyperlink{class_i_factory}{final}} String \mbox{\hyperlink{class_i_factory}{unencoded\+String}})
+\begin{DoxyCompactList}\small\item\em Encodes a string using SHA-\/256 algorithm and returns the encoded bytes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_core_utils_ad30abf52cddd27e7c863aa52ceabf4f4}{bytes\+To\+Hex}} (\mbox{\hyperlink{class_i_factory}{byte}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory}{hash}})
+\begin{DoxyCompactList}\small\item\em Converts a byte array to a hexadecimal string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_core_utils_ad5e55b25dca7dd40df9026a3f75cf389}{Core\+Utils}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_core_utils_af8a556be4bbc7558e6e485cc61da96b3}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The logging agent used for logging application events. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Object}} \mbox{\hyperlink{class_core_utils_a573fcee334dd61bab7d86237bb20ccef}{digest\+Lock}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Object}}()
+\begin{DoxyCompactList}\small\item\em A lock object used for synchronization when accessing the digest. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_core_utils}{Core\+Utils} class provides utility methods for encoding strings using SHA-\/256 algorithm. 
+
+Definition at line \mbox{\hyperlink{_core_utils_8java_source_l00007}{7}} of file \mbox{\hyperlink{_core_utils_8java_source}{Core\+Utils.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_core_utils_ad5e55b25dca7dd40df9026a3f75cf389}\label{class_core_utils_ad5e55b25dca7dd40df9026a3f75cf389} 
+\index{CoreUtils@{CoreUtils}!CoreUtils@{CoreUtils}}
+\index{CoreUtils@{CoreUtils}!CoreUtils@{CoreUtils}}
+\doxysubsubsection{\texorpdfstring{CoreUtils()}{CoreUtils()}}
+{\footnotesize\ttfamily Core\+Utils.\+Core\+Utils (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_core_utils_8java_source_l00014}{14}} of file \mbox{\hyperlink{_core_utils_8java_source}{Core\+Utils.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_core_utils_ad30abf52cddd27e7c863aa52ceabf4f4}\label{class_core_utils_ad30abf52cddd27e7c863aa52ceabf4f4} 
+\index{CoreUtils@{CoreUtils}!bytesToHex@{bytesToHex}}
+\index{bytesToHex@{bytesToHex}!CoreUtils@{CoreUtils}}
+\doxysubsubsection{\texorpdfstring{bytesToHex()}{bytesToHex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String Core\+Utils.\+bytes\+To\+Hex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{byte}}\mbox{[}$\,$\mbox{]}}]{hash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a byte array to a hexadecimal string representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash} & the byte array to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the hexadecimal string representation of the byte array 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_core_utils_8java_source_l00063}{63}} of file \mbox{\hyperlink{_core_utils_8java_source}{Core\+Utils.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{StringBuilder}}\ \mbox{\hyperlink{class_i_factory}{hexString}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{StringBuilder}}(2\ *\ \mbox{\hyperlink{class_i_factory}{hash}}.length);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_i_factory}{i}}\ =\ 0;\ \mbox{\hyperlink{class_i_factory}{i}}\ <\ \mbox{\hyperlink{class_i_factory}{hash}}.length;\ \mbox{\hyperlink{class_i_factory}{i}}++)\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{hex}}\ =\ Integer.toHexString(0\mbox{\hyperlink{class_i_factory}{xff}}\ \&\ \mbox{\hyperlink{class_i_factory}{hash}}[\mbox{\hyperlink{class_i_factory}{i}}]);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{hex}}.length()\ ==\ 1)\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{hexString}}.append(\textcolor{charliteral}{'0'});}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{hexString}}.append(\mbox{\hyperlink{class_i_factory}{hex}});}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{hexString}}.toString();}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_core_utils_8java_source_l00029}{encode\+Sha256\+String()}}.
+
+\Hypertarget{class_core_utils_a2ce7beedff007a45f465de0b41f5c206}\label{class_core_utils_a2ce7beedff007a45f465de0b41f5c206} 
+\index{CoreUtils@{CoreUtils}!encodeSha256Bytes@{encodeSha256Bytes}}
+\index{encodeSha256Bytes@{encodeSha256Bytes}!CoreUtils@{CoreUtils}}
+\doxysubsubsection{\texorpdfstring{encodeSha256Bytes()}{encodeSha256Bytes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{byte}}\mbox{[}$\,$\mbox{]} Core\+Utils.\+encode\+Sha256\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{final}} String}]{unencoded\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Encodes a string using SHA-\/256 algorithm and returns the encoded bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unencoded\+String} & the string to be encoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the encoded bytes 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & if an error occurs during encoding \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_core_utils_8java_source_l00045}{45}} of file \mbox{\hyperlink{_core_utils_8java_source}{Core\+Utils.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{synchronized}\ (\mbox{\hyperlink{class_core_utils_a573fcee334dd61bab7d86237bb20ccef}{digestLock}})\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{MessageDigest}}\ \mbox{\hyperlink{class_i_factory}{digest}}\ =\ \mbox{\hyperlink{class_i_factory}{MessageDigest}}.getInstance(\textcolor{stringliteral}{"{}SHA-\/256"{}});}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{digest}}.digest(\mbox{\hyperlink{class_i_factory}{unencodedString}}.getBytes(\mbox{\hyperlink{class_i_factory}{StandardCharsets}}.UTF\_8));}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{ex}})\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_core_utils_af8a556be4bbc7558e6e485cc61da96b3}{logging}}.log(\textcolor{stringliteral}{"{}Error\ encoding\ string"{}},\ \mbox{\hyperlink{class_i_factory}{ex}});}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{RuntimeException}}(\mbox{\hyperlink{class_i_factory}{ex}});}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_core_utils_8java_source_l00020}{digest\+Lock}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_core_utils_8java_source_l00012}{logging}}.
+
+
+
+Referenced by \mbox{\hyperlink{_core_utils_8java_source_l00029}{encode\+Sha256\+String()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_core_utils_a2ce7beedff007a45f465de0b41f5c206_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_core_utils_a1228e598ba4a7b71f2541e344b0f68fc}\label{class_core_utils_a1228e598ba4a7b71f2541e344b0f68fc} 
+\index{CoreUtils@{CoreUtils}!encodeSha256String@{encodeSha256String}}
+\index{encodeSha256String@{encodeSha256String}!CoreUtils@{CoreUtils}}
+\doxysubsubsection{\texorpdfstring{encodeSha256String()}{encodeSha256String()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String Core\+Utils.\+encode\+Sha256\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{final}} String}]{unencoded\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Encodes a string using SHA-\/256 algorithm and returns the encoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unencoded\+String} & the string to be encoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the encoded string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & if an error occurs during encoding \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_core_utils_8java_source_l00029}{29}} of file \mbox{\hyperlink{_core_utils_8java_source}{Core\+Utils.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_core_utils_ad30abf52cddd27e7c863aa52ceabf4f4}{bytesToHex}}(\mbox{\hyperlink{class_core_utils_a2ce7beedff007a45f465de0b41f5c206}{encodeSha256Bytes}}(\mbox{\hyperlink{class_i_factory}{unencodedString}}));}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{ex}})\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_core_utils_af8a556be4bbc7558e6e485cc61da96b3}{logging}}.log(\textcolor{stringliteral}{"{}Error\ encoding\ string"{}},\ \mbox{\hyperlink{class_i_factory}{ex}});}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{RuntimeException}}(\mbox{\hyperlink{class_i_factory}{ex}});}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_core_utils_8java_source_l00063}{bytes\+To\+Hex()}}, \mbox{\hyperlink{_core_utils_8java_source_l00045}{encode\+Sha256\+Bytes()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_core_utils_8java_source_l00012}{logging}}.
+
+
+
+Referenced by \mbox{\hyperlink{_test_d_t_o_8java_source_l00028}{Test\+DTO.\+test\+User\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00048}{Test\+DTO.\+test\+User\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00068}{Test\+DTO.\+test\+User\+DTO\+\_\+3()}}, and \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00075}{Shopping\+Business\+Layer\+Service.\+validate\+Login()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_core_utils_a1228e598ba4a7b71f2541e344b0f68fc_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_core_utils_a573fcee334dd61bab7d86237bb20ccef}\label{class_core_utils_a573fcee334dd61bab7d86237bb20ccef} 
+\index{CoreUtils@{CoreUtils}!digestLock@{digestLock}}
+\index{digestLock@{digestLock}!CoreUtils@{CoreUtils}}
+\doxysubsubsection{\texorpdfstring{digestLock}{digestLock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Object}} Core\+Utils.\+digest\+Lock = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Object}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+A lock object used for synchronization when accessing the digest. 
+
+
+
+Definition at line \mbox{\hyperlink{_core_utils_8java_source_l00020}{20}} of file \mbox{\hyperlink{_core_utils_8java_source}{Core\+Utils.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_core_utils_8java_source_l00045}{encode\+Sha256\+Bytes()}}.
+
+\Hypertarget{class_core_utils_af8a556be4bbc7558e6e485cc61da96b3}\label{class_core_utils_af8a556be4bbc7558e6e485cc61da96b3} 
+\index{CoreUtils@{CoreUtils}!logging@{logging}}
+\index{logging@{logging}!CoreUtils@{CoreUtils}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Core\+Utils.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The logging agent used for logging application events. 
+
+
+
+Definition at line \mbox{\hyperlink{_core_utils_8java_source_l00012}{12}} of file \mbox{\hyperlink{_core_utils_8java_source}{Core\+Utils.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_core_utils_8java_source_l00045}{encode\+Sha256\+Bytes()}}, and \mbox{\hyperlink{_core_utils_8java_source_l00029}{encode\+Sha256\+String()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_core_utils_8java}{Core\+Utils.\+java}}\end{DoxyCompactItemize}

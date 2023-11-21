@@ -1,0 +1,591 @@
+\doxysection{IFactory\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_i_factory}{}\label{class_i_factory}\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+
+
+The {\ttfamily \doxylink{class_i_factory}{IFactory}} class is a generic factory class that allows the creation of instances of a specified class type.  
+
+
+
+
+Collaboration diagram for IFactory\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_i_factory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_i_factory_1_1_instance_holder}{Instance\+Holder}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_i_factory_a5355830e31244a3c7063b8fa85172b20}{register}} (String \mbox{\hyperlink{class_i_factory}{registration\+Name}}, \mbox{\hyperlink{class_i_factory}{Class}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ instance)
+\begin{DoxyCompactList}\small\item\em The function registers a class with the factory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{T}} \mbox{\hyperlink{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1}{create}} (String \mbox{\hyperlink{class_i_factory}{factory\+String}})
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ String \mbox{\hyperlink{class_i_factory_a48d714a3008100beb7aca8a9f3228023}{convert\+Url\+To\+String}} (\mbox{\hyperlink{class_i_factory}{final}} \mbox{\hyperlink{class_i_factory}{Input\+Stream}} \mbox{\hyperlink{class_i_factory}{input}}, \mbox{\hyperlink{class_i_factory}{final}} String \mbox{\hyperlink{class_i_factory}{string}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em The function converts the content of an Input\+Stream into a String using the specified character encoding. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory_ad86bd52dafe672241749c67cc6e393ce}{get\+Registered}} ()
+\begin{DoxyCompactList}\small\item\em The function returns an array of strings representing the names of the registered classes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory_aaaf8786a2c4ca69722db2dc171ac264c}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{IFactory}} ()
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory_a987a37e38b2edbc0c0d7ba986f7273c5}{\mbox{[}static initializer\mbox{]}}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_i_factory_aeba2e37bd4787a74f6b23f4205804e22}{transfer\+Reader\+To\+Writer}} (\mbox{\hyperlink{class_i_factory}{Input\+Stream\+Reader}} \mbox{\hyperlink{class_i_factory}{input\+Reader}}, \mbox{\hyperlink{class_i_factory}{String\+Writer}} \mbox{\hyperlink{class_i_factory}{str\+Writer}}, \mbox{\hyperlink{class_i_factory}{char}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory}{buffer}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em The function transfers data from an Input\+Stream\+Reader to a String\+Writer using a buffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_i_factory_af4cae9f823503d9bad4a02bfd0ac41d9}{transfer\+Reader\+To\+Writer}} (\mbox{\hyperlink{class_i_factory}{Input\+Stream\+Reader}} \mbox{\hyperlink{class_i_factory}{input\+Reader}}, \mbox{\hyperlink{class_i_factory}{String\+Writer}} \mbox{\hyperlink{class_i_factory}{str\+Writer}}, \mbox{\hyperlink{class_i_factory}{char}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory}{buffer}}, int \mbox{\hyperlink{class_i_factory}{num\+Bytes}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em The function transfers data from an Input\+Stream\+Reader to a String\+Writer and returns the resulting string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_i_factory_ad89a790adf80c397c71bac9f19a348f2}{load\+Via\+Classloader}} (\mbox{\hyperlink{class_i_factory}{Class\+Loader}} \mbox{\hyperlink{class_i_factory}{class\+Loader}}, String \mbox{\hyperlink{class_i_factory}{package\+Path}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{Exception}} 
+\begin{DoxyCompactList}\small\item\em The function loads classes from a specified package path using a class loader. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory_a5a1ecabe737a999615c1b4994683597d}{get\+Class\+List}} (\mbox{\hyperlink{class_i_factory}{Class\+Loader}} \mbox{\hyperlink{class_i_factory}{class\+Loader}}, String \mbox{\hyperlink{class_i_factory}{package\+Path}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em The function takes a Class\+Loader and a package path, retrieves the list of classes in that package, and returns an array of class names. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_i_factory_a5b0695c23e6c10f1894537b101bcd695}{process\+Path}} (String \mbox{\hyperlink{class_i_factory}{str\+Path}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{Class\+Not\+Found\+Exception}} 
+\begin{DoxyCompactList}\small\item\em The function processes a given path and loads a class if the path ends with "{}.\+class"{} and starts with "{}\+Db\+Factory\+W\+\_\+"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{final}} \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{class_i_factory}{Class}}$<$?$>$ $>$ \mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{factory\+Table}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Hash\+Map}}$<$$>$()
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \doxylink{class_i_factory}{IFactory}} class is a generic factory class that allows the creation of instances of a specified class type. 
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00017}{17}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}\label{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!IFactory@{IFactory}}
+\index{IFactory@{IFactory}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IFactory()}{IFactory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.\mbox{\hyperlink{class_i_factory}{IFactory}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. 
+
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00033}{33}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_i_factory_8java_source_l00266}{IFactory$<$ T $>$.\+Instance\+Holder$<$ T $>$.\+INSTANCE()}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_factory_a987a37e38b2edbc0c0d7ba986f7273c5}\label{class_i_factory_a987a37e38b2edbc0c0d7ba986f7273c5} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!\mbox{[}static initializer\mbox{]}@{[static initializer]}}
+\index{\mbox{[}static initializer\mbox{]}@{[static initializer]}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{[static initializer]()}{[static initializer]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.\mbox{[}\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{initializer}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\Hypertarget{class_i_factory_a48d714a3008100beb7aca8a9f3228023}\label{class_i_factory_a48d714a3008100beb7aca8a9f3228023} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!convertUrlToString@{convertUrlToString}}
+\index{convertUrlToString@{convertUrlToString}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{convertUrlToString()}{convertUrlToString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ String \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.convert\+Url\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{final}} \mbox{\hyperlink{class_i_factory}{Input\+Stream}}}]{input,  }\item[{\mbox{\hyperlink{class_i_factory}{final}} String}]{string }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The function converts the content of an Input\+Stream into a String using the specified character encoding. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input parameter is an Input\+Stream, which represents the input stream from which the data will be read. This can be any type of input stream, such as a File\+Input\+Stream or a \doxylink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{URLConnection.\+get\+Input\+Stream()}. \\
+\hline
+{\em string} & The "{}string"{} parameter in the method represents the character encoding to be used when converting the input stream to a string. It specifies the character set that should be used to interpret the bytes from the input stream and convert them into characters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The method is returning a String. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00106}{106}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (\mbox{\hyperlink{class_i_factory}{InputStreamReader}}\ \mbox{\hyperlink{class_i_factory}{inputStreamReader}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{InputStreamReader}}(\mbox{\hyperlink{class_i_factory}{input}},\ \textcolor{keywordtype}{string}))\ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (\mbox{\hyperlink{class_i_factory}{StringWriter}}\ \mbox{\hyperlink{class_i_factory}{stringWriter}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{StringWriter}}())\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}[]\ \mbox{\hyperlink{class_i_factory}{buffer}}\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[\mbox{\hyperlink{class_app_constants}{AppConstants}}.\mbox{\hyperlink{class_app_constants_a9451852beadf062cbd32233da41f662c}{READ\_BUFFER\_SIZE}}];}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory_aeba2e37bd4787a74f6b23f4205804e22}{transferReaderToWriter}}(\mbox{\hyperlink{class_i_factory}{inputStreamReader}},\ \mbox{\hyperlink{class_i_factory}{stringWriter}},\ \mbox{\hyperlink{class_i_factory}{buffer}});}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_constants_8java_source_l00019}{App\+Constants.\+READ\+\_\+\+BUFFER\+\_\+\+SIZE}}, and \mbox{\hyperlink{_i_factory_8java_source_l00138}{IFactory$<$ T $>$.\+transfer\+Reader\+To\+Writer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_i_factory_8java_source_l00224}{IFactory$<$ T $>$.\+get\+Class\+List()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_factory_a48d714a3008100beb7aca8a9f3228023_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1}\label{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!create@{create}}
+\index{create@{create}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{T}} \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.create (\begin{DoxyParamCaption}\item[{String}]{factory\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em factory\+String} & The parameter "{}factory\+String"{} is a string that represents the name of the class to be created. It is used to create an instance of the \doxylink{class_i_factory}{IFactory} class with the specified class type. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00073}{73}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}{logging}}.log(\textcolor{stringliteral}{"{}factoryString:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{factoryString}});}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{factoryTable}}.containsKey(\mbox{\hyperlink{class_i_factory}{factoryString}}))\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ have\ to\ force\ load\ so\ the\ static\ instance\ registration\ is\ called}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Class<?>}}\ \mbox{\hyperlink{class_i_factory}{clazz}}\ =\ \mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{factoryTable}}.get(\mbox{\hyperlink{class_i_factory}{factoryString}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_i_factory}{T}})\ \mbox{\hyperlink{class_i_factory}{clazz}}.getDeclaredConstructor().newInstance();}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}{logging}}.log(\mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00086\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_i_factory_8java_source_l00021}{IFactory$<$ T $>$.\+factory\+Table}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_i_factory_8java_source_l00028}{IFactory$<$ T $>$.\+logging}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00094}{Shopping\+Data\+Layer\+Service.\+execute\+Command()}}, \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00115}{Shopping\+Data\+Layer\+Service.\+execute\+Query()}}, and \mbox{\hyperlink{_web_server_8java_source_l00061}{Web\+Server.\+Web\+Server()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_i_factory_a5a1ecabe737a999615c1b4994683597d}\label{class_i_factory_a5a1ecabe737a999615c1b4994683597d} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!getClassList@{getClassList}}
+\index{getClassList@{getClassList}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getClassList()}{getClassList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.get\+Class\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Class\+Loader}}}]{class\+Loader,  }\item[{String}]{package\+Path }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The function takes a Class\+Loader and a package path, retrieves the list of classes in that package, and returns an array of class names. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Loader} & The "{}class\+Loader"{} parameter is the Class\+Loader object that is used to load classes and resources. It is responsible for finding and loading classes at runtime. \\
+\hline
+{\em package\+Path} & The package\+Path parameter is a string representing the path of the package containing the classes you want to retrieve. It should be in the format of a file system path, using forward slashes ("{}/"{}) to separate directories. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The method is returning an array of strings. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00224}{224}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{cleanPackagePath}}\ =\ \mbox{\hyperlink{class_i_factory}{packagePath}}.replaceAll(\textcolor{stringliteral}{"{}[/]"{}},\ \textcolor{stringliteral}{"{}."{}});}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{URL}}\ \mbox{\hyperlink{class_i_factory}{classPackageUrl}}\ =\ \mbox{\hyperlink{class_i_factory}{classLoader}}.getResource(\mbox{\hyperlink{class_i_factory}{cleanPackagePath}});}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{URLConnection}}\ \mbox{\hyperlink{class_i_factory}{connection}}\ =\ \mbox{\hyperlink{class_i_factory}{classPackageUrl}}.openConnection();}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{classList}}\ =\ \mbox{\hyperlink{class_i_factory_a48d714a3008100beb7aca8a9f3228023}{convertUrlToString}}(\mbox{\hyperlink{class_i_factory}{connection}}.getInputStream(),\ \textcolor{stringliteral}{"{}UTF-\/8"{}});}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_i_factory}{classList}}\ !=\ \textcolor{keyword}{null})\ ?\ \mbox{\hyperlink{class_i_factory}{classList}}.split(\textcolor{stringliteral}{"{}\(\backslash\)n"{}})\ :\ \textcolor{keyword}{new}\ String[0];}
+\DoxyCodeLine{00231\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_i_factory_8java_source_l00106}{IFactory$<$ T $>$.\+convert\+Url\+To\+String()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_i_factory_8java_source_l00200}{IFactory$<$ T $>$.\+load\+Via\+Classloader()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_factory_a5a1ecabe737a999615c1b4994683597d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_i_factory_ad86bd52dafe672241749c67cc6e393ce}\label{class_i_factory_ad86bd52dafe672241749c67cc6e393ce} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!getRegistered@{getRegistered}}
+\index{getRegistered@{getRegistered}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getRegistered()}{getRegistered()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.get\+Registered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The function returns an array of strings representing the names of the registered classes. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning an array of strings. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00239}{239}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<String>}}\ \mbox{\hyperlink{class_i_factory}{registered}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{ArrayList<String>}}(\mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{factoryTable}}.keySet());}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{registered}}.toArray(\textcolor{keyword}{new}\ String[\mbox{\hyperlink{class_i_factory}{registered}}.size()]);}
+\DoxyCodeLine{00242\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_i_factory_8java_source_l00021}{IFactory$<$ T $>$.\+factory\+Table}}.
+
+\Hypertarget{class_i_factory_aaaf8786a2c4ca69722db2dc171ac264c}\label{class_i_factory_aaaf8786a2c4ca69722db2dc171ac264c} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!Instance@{Instance}}
+\index{Instance@{Instance}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning an instance of the \doxylink{class_i_factory}{IFactory} class. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00276}{276}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ InstanceHolder.INSTANCE();}
+\DoxyCodeLine{00278\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_i_factory_8java_source_l00266}{IFactory$<$ T $>$.\+Instance\+Holder$<$ T $>$.\+INSTANCE()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_factory_aaaf8786a2c4ca69722db2dc171ac264c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_i_factory_ad89a790adf80c397c71bac9f19a348f2}\label{class_i_factory_ad89a790adf80c397c71bac9f19a348f2} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!loadViaClassloader@{loadViaClassloader}}
+\index{loadViaClassloader@{loadViaClassloader}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{loadViaClassloader()}{loadViaClassloader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.load\+Via\+Classloader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Class\+Loader}}}]{class\+Loader,  }\item[{String}]{package\+Path }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{Exception}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The function loads classes from a specified package path using a class loader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Loader} & The "{}class\+Loader"{} parameter is a Class\+Loader object that is used to load classes and resources. It is responsible for finding and loading classes at runtime. \\
+\hline
+{\em package\+Path} & The package\+Path parameter is a string representing the path to a package in the file system. It should be in the format of a file system path, using forward slashes ("{}/"{}) to separate directories. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00200}{200}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ String[]\ \mbox{\hyperlink{class_i_factory}{classList}}\ =\ \mbox{\hyperlink{class_i_factory_a5a1ecabe737a999615c1b4994683597d}{getClassList}}(\mbox{\hyperlink{class_i_factory}{classLoader}},\ \mbox{\hyperlink{class_i_factory}{packagePath}});}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ \mbox{\hyperlink{class_i_factory}{p}}\ :\ \mbox{\hyperlink{class_i_factory}{classList}})\ \{}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a5b0695c23e6c10f1894537b101bcd695}{processPath}}(\mbox{\hyperlink{class_i_factory}{p}});}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00205\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_i_factory_8java_source_l00224}{IFactory$<$ T $>$.\+get\+Class\+List()}}, and \mbox{\hyperlink{_i_factory_8java_source_l00251}{IFactory$<$ T $>$.\+process\+Path()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_factory_ad89a790adf80c397c71bac9f19a348f2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_i_factory_a5b0695c23e6c10f1894537b101bcd695}\label{class_i_factory_a5b0695c23e6c10f1894537b101bcd695} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!processPath@{processPath}}
+\index{processPath@{processPath}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{processPath()}{processPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.process\+Path (\begin{DoxyParamCaption}\item[{String}]{str\+Path }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{Class\+Not\+Found\+Exception}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The function processes a given path and loads a class if the path ends with "{}.\+class"{} and starts with "{}\+Db\+Factory\+W\+\_\+"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Path} & The parameter "{}str\+Path"{} is a string representing a file path. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00251}{251}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{strPath}}.endsWith(\textcolor{stringliteral}{"{}.class"{}})\ \&\&\ \mbox{\hyperlink{class_i_factory}{strPath}}.startsWith(\mbox{\hyperlink{class_app_constants}{AppConstants}}.\mbox{\hyperlink{class_app_constants_a3b34e3cdc980a2cacc57e54dfa6bfc49}{DB\_CLASSNAME\_PREFIX}}))\ \{}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}{logging}}.log(\textcolor{stringliteral}{"{}loading\ class:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{strPath}});}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Class}}.forName(\mbox{\hyperlink{class_i_factory}{strPath}}.substring(0,\ \mbox{\hyperlink{class_i_factory}{strPath}}.lastIndexOf(\textcolor{charliteral}{'.'})));}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00256\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_constants_8java_source_l00016}{App\+Constants.\+DB\+\_\+\+CLASSNAME\+\_\+\+PREFIX}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_i_factory_8java_source_l00028}{IFactory$<$ T $>$.\+logging}}.
+
+
+
+Referenced by \mbox{\hyperlink{_i_factory_8java_source_l00200}{IFactory$<$ T $>$.\+load\+Via\+Classloader()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_factory_a5b0695c23e6c10f1894537b101bcd695_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_i_factory_a5355830e31244a3c7063b8fa85172b20}\label{class_i_factory_a5355830e31244a3c7063b8fa85172b20} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!register@{register}}
+\index{register@{register}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.register (\begin{DoxyParamCaption}\item[{String}]{registration\+Name,  }\item[{\mbox{\hyperlink{class_i_factory}{Class}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The function registers a class with the factory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em registration\+Name} & The parameter "{}registration\+Name"{} is a string that represents the name of the class to be registered. It is used to register a class with the factory. \\
+\hline
+{\em instance} & The parameter "{}instance"{} is a Class object that represents the class to be registered. It is used to register a class with the factory. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00058}{58}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{registrationName}}\ !=\ \textcolor{keyword}{null}\ \&\&\ instance\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{factoryTable}}.put(\mbox{\hyperlink{class_i_factory}{registrationName}},\ instance);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_i_factory_8java_source_l00021}{IFactory$<$ T $>$.\+factory\+Table}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_db_base_factory_wrapper__postgres_a706650efd5b767748b5b06cc71e010e2}{Db\+Base\+Factory\+Wrapper\+\_\+postgres.\mbox{[}static initializer\mbox{]}()}}.
+
+\Hypertarget{class_i_factory_aeba2e37bd4787a74f6b23f4205804e22}\label{class_i_factory_aeba2e37bd4787a74f6b23f4205804e22} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!transferReaderToWriter@{transferReaderToWriter}}
+\index{transferReaderToWriter@{transferReaderToWriter}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{transferReaderToWriter()}{transferReaderToWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.transfer\+Reader\+To\+Writer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Input\+Stream\+Reader}}}]{input\+Reader,  }\item[{\mbox{\hyperlink{class_i_factory}{String\+Writer}}}]{str\+Writer,  }\item[{\mbox{\hyperlink{class_i_factory}{char}}\mbox{[}$\,$\mbox{]}}]{buffer }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The function transfers data from an Input\+Stream\+Reader to a String\+Writer using a buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Reader} & The "{}input\+Reader"{} parameter is an Input\+Stream\+Reader object, which is used to read characters from an input stream. It is the source from which characters will be read. \\
+\hline
+{\em str\+Writer} & The parameter "{}str\+Writer"{} is a String\+Writer object that is used to write the data read from the Input\+Stream\+Reader. \\
+\hline
+{\em buffer} & The {\ttfamily buffer} parameter is an array of characters that is used to store the data read from the {\ttfamily Input\+Stream\+Reader} and write it to the {\ttfamily String\+Writer}. It is used as a temporary storage for the data during the transfer process. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The method is returning a String. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00138}{138}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory_aeba2e37bd4787a74f6b23f4205804e22}{transferReaderToWriter}}(\mbox{\hyperlink{class_i_factory}{inputReader}},\ \mbox{\hyperlink{class_i_factory}{strWriter}},\ \mbox{\hyperlink{class_i_factory}{buffer}},\ 0);}
+\DoxyCodeLine{00141\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_i_factory_8java_source_l00138}{IFactory$<$ T $>$.\+transfer\+Reader\+To\+Writer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_i_factory_8java_source_l00106}{IFactory$<$ T $>$.\+convert\+Url\+To\+String()}}, and \mbox{\hyperlink{_i_factory_8java_source_l00138}{IFactory$<$ T $>$.\+transfer\+Reader\+To\+Writer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_i_factory_aeba2e37bd4787a74f6b23f4205804e22_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_i_factory_af4cae9f823503d9bad4a02bfd0ac41d9}\label{class_i_factory_af4cae9f823503d9bad4a02bfd0ac41d9} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!transferReaderToWriter@{transferReaderToWriter}}
+\index{transferReaderToWriter@{transferReaderToWriter}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{transferReaderToWriter()}{transferReaderToWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.transfer\+Reader\+To\+Writer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Input\+Stream\+Reader}}}]{input\+Reader,  }\item[{\mbox{\hyperlink{class_i_factory}{String\+Writer}}}]{str\+Writer,  }\item[{\mbox{\hyperlink{class_i_factory}{char}}\mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{num\+Bytes }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The function transfers data from an Input\+Stream\+Reader to a String\+Writer and returns the resulting string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Reader} & The "{}input\+Reader"{} parameter is an Input\+Stream\+Reader, which is used to read characters from an Input\+Stream. It is the input source from which characters will be read. \\
+\hline
+{\em str\+Writer} & The parameter "{}str\+Writer"{} is a String\+Writer object. It is used to write the contents read from the Input\+Stream\+Reader. \\
+\hline
+{\em buffer} & The {\ttfamily buffer} parameter is a character array used to store the data read from the {\ttfamily Input\+Stream\+Reader} and write to the {\ttfamily String\+Writer}. It is used to read and write data in chunks, rather than one character at a time, which can improve performance. The size of the buffer determines how \\
+\hline
+{\em num\+Bytes} & The parameter "{}num\+Bytes"{} is an integer that represents the number of characters read from the input stream. It is used to keep track of the number of characters read in each iteration of the while loop. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The method is returning a String. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00176}{176}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{class_app_constants}{AppConstants}}.\mbox{\hyperlink{class_app_constants_aa335dfc59a594b312f9072f09813570b}{EOF}}\ !=\ (\mbox{\hyperlink{class_i_factory}{numBytes}}\ =\ \mbox{\hyperlink{class_i_factory}{inputReader}}.read(\mbox{\hyperlink{class_i_factory}{buffer}})))\ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{strWriter}}.write(\mbox{\hyperlink{class_i_factory}{buffer}},\ 0,\ \mbox{\hyperlink{class_i_factory}{numBytes}});}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{strWriter}}.toString();}
+\DoxyCodeLine{00183\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_constants_8java_source_l00018}{App\+Constants.\+EOF}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}\label{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!factoryTable@{factoryTable}}
+\index{factoryTable@{factoryTable}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{factoryTable}{factoryTable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{final}} \mbox{\hyperlink{class_i_factory}{Map}}$<$String, \mbox{\hyperlink{class_i_factory}{Class}}$<$?$>$ $>$ \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.factory\+Table = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Hash\+Map}}$<$$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00021}{21}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_i_factory_8java_source_l00073}{IFactory$<$ T $>$.\+create()}}, \mbox{\hyperlink{_i_factory_8java_source_l00239}{IFactory$<$ T $>$.\+get\+Registered()}}, and \mbox{\hyperlink{_i_factory_8java_source_l00058}{IFactory$<$ T $>$.\+register()}}.
+
+\Hypertarget{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}\label{class_i_factory_a69907f6fede7b560b8a8b0a25d871551} 
+\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}!logging@{logging}}
+\index{logging@{logging}!IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$.logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The function returns an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_i_factory_8java_source_l00028}{28}} of file \mbox{\hyperlink{_i_factory_8java_source}{IFactory.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_i_factory_8java_source_l00073}{IFactory$<$ T $>$.\+create()}}, and \mbox{\hyperlink{_i_factory_8java_source_l00251}{IFactory$<$ T $>$.\+process\+Path()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_factory_8java}{IFactory.\+java}}\end{DoxyCompactItemize}

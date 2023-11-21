@@ -1,0 +1,153 @@
+\doxysection{IDb\+Connection\+Wrapper Interface Reference}
+\hypertarget{interface_i_db_connection_wrapper}{}\label{interface_i_db_connection_wrapper}\index{IDbConnectionWrapper@{IDbConnectionWrapper}}
+
+
+The interface is used to create instances of the \doxylink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper} interface.  
+
+
+
+
+Inheritance diagram for IDb\+Connection\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{interface_i_db_connection_wrapper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IDb\+Connection\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{interface_i_db_connection_wrapper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{interface_i_db_connection_wrapper_a64824f4265bd344e7674529bac9d34d0}{close}} ()  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}}
+\begin{DoxyCompactList}\small\item\em The function closes the connection to the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{interface_i_db_connection_wrapper_a7dc882fb4b56079d66577bcfc2cd6759}{connection\+Properties}} (String \mbox{\hyperlink{class_i_factory}{user}}, String \mbox{\hyperlink{class_i_factory}{pass}}, int port, String host, String database, String schema)
+\begin{DoxyCompactList}\small\item\em The function sets the connection properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{interface_i_db_connection_wrapper_a9e4dad92cdfb8b858de7ca6b2321ef6f}{query}} (String query, \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_i_factory}{result\+Processor}})
+\begin{DoxyCompactList}\small\item\em Executes a database query and processes the result. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{interface_i_db_connection_wrapper_affe24a6593d9be4a09dcccc7700369ac}{execute}} (String \mbox{\hyperlink{interface_i_db_connection_wrapper_a9e4dad92cdfb8b858de7ca6b2321ef6f}{query}}, \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_i_factory}{result\+Processor}})
+\begin{DoxyCompactList}\small\item\em Executes a database query and processes the result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The interface is used to create instances of the \doxylink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper} interface. 
+
+Definition at line \mbox{\hyperlink{_i_db_connection_wrapper_8java_source_l00008}{8}} of file \mbox{\hyperlink{_i_db_connection_wrapper_8java_source}{IDb\+Connection\+Wrapper.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_i_db_connection_wrapper_a64824f4265bd344e7674529bac9d34d0}\label{interface_i_db_connection_wrapper_a64824f4265bd344e7674529bac9d34d0} 
+\index{IDbConnectionWrapper@{IDbConnectionWrapper}!close@{close}}
+\index{close@{close}!IDbConnectionWrapper@{IDbConnectionWrapper}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} IDb\+Connection\+Wrapper.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}}}
+
+
+
+The function closes the connection to the database. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_db_base_factory_wrapper_aaeb6fa71a0b1ed3693ef771ec8d7ae1f}{Db\+Base\+Factory\+Wrapper}}.
+
+\Hypertarget{interface_i_db_connection_wrapper_a7dc882fb4b56079d66577bcfc2cd6759}\label{interface_i_db_connection_wrapper_a7dc882fb4b56079d66577bcfc2cd6759} 
+\index{IDbConnectionWrapper@{IDbConnectionWrapper}!connectionProperties@{connectionProperties}}
+\index{connectionProperties@{connectionProperties}!IDbConnectionWrapper@{IDbConnectionWrapper}}
+\doxysubsubsection{\texorpdfstring{connectionProperties()}{connectionProperties()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} IDb\+Connection\+Wrapper.\+connection\+Properties (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{pass,  }\item[{int}]{port,  }\item[{String}]{host,  }\item[{String}]{database,  }\item[{String}]{schema }\end{DoxyParamCaption})}
+
+
+
+The function sets the connection properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The username for the database. \\
+\hline
+{\em pass} & The password for the database. \\
+\hline
+{\em port} & The port for the database. \\
+\hline
+{\em host} & The host for the database. \\
+\hline
+{\em database} & The database name. \\
+\hline
+{\em schema} & The schema name. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_db_base_factory_wrapper_a77a725ebae8ac44873dcda9e9ea44f5f}{Db\+Base\+Factory\+Wrapper}}.
+
+\Hypertarget{interface_i_db_connection_wrapper_affe24a6593d9be4a09dcccc7700369ac}\label{interface_i_db_connection_wrapper_affe24a6593d9be4a09dcccc7700369ac} 
+\index{IDbConnectionWrapper@{IDbConnectionWrapper}!execute@{execute}}
+\index{execute@{execute}!IDbConnectionWrapper@{IDbConnectionWrapper}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} IDb\+Connection\+Wrapper.\+execute (\begin{DoxyParamCaption}\item[{String}]{query,  }\item[{\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}}}]{result\+Processor }\end{DoxyParamCaption})}
+
+
+
+Executes a database query and processes the result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & the SQL query to execute \\
+\hline
+{\em result\+Processor} & the processor to handle the result of the query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the query was successfully executed, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_db_base_factory_wrapper_acb488e699dc93ea6b5175a3c104d218d}{Db\+Base\+Factory\+Wrapper}}.
+
+
+
+Referenced by \mbox{\hyperlink{_execute_query_operation_8java_source_l00008}{Execute\+Query\+Operation.\+execute()}}.
+
+\Hypertarget{interface_i_db_connection_wrapper_a9e4dad92cdfb8b858de7ca6b2321ef6f}\label{interface_i_db_connection_wrapper_a9e4dad92cdfb8b858de7ca6b2321ef6f} 
+\index{IDbConnectionWrapper@{IDbConnectionWrapper}!query@{query}}
+\index{query@{query}!IDbConnectionWrapper@{IDbConnectionWrapper}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} IDb\+Connection\+Wrapper.\+query (\begin{DoxyParamCaption}\item[{String}]{query,  }\item[{\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}}}]{result\+Processor }\end{DoxyParamCaption})}
+
+
+
+Executes a database query and processes the result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The SQL query to be executed. \\
+\hline
+{\em result\+Processor} & The processor to handle the query result. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the query was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_db_base_factory_wrapper_af9f1b98732f15c34f507919a7827b7af}{Db\+Base\+Factory\+Wrapper}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_db_connection_wrapper_8java}{IDb\+Connection\+Wrapper.\+java}}\end{DoxyCompactItemize}

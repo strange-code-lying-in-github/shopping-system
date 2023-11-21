@@ -1,0 +1,129 @@
+\doxysection{Web\+Server.\+java}
+\hypertarget{_web_server_8java_source}{}\label{_web_server_8java_source}\mbox{\hyperlink{_web_server_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00001}00001\ \textcolor{keyword}{import}\ com.sun.net.httpserver.*;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.net.InetSocketAddress;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00004}00004\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.time.*;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00005}00005\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.time.format.*;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00006}00006\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.*;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.nio.charset.StandardCharsets;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00008}00008\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.net.*;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.io.*;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00010}00010\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.concurrent.*;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00011}00011\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.net.InetSocketAddress;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00012}00012\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.concurrent.ExecutorService;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00013}00013\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.concurrent.Executors;}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00014}00014\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00015}00015\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00016}00016\ \textcolor{comment}{\ *\ The\ WebServer\ class\ represents\ a\ web\ server\ that\ listens\ for\ HTTP\ requests\ and\ handles\ them\ accordingly.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00017}00017\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00018}\mbox{\hyperlink{class_web_server}{00018}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_web_server}{WebServer}}\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00019}00019\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ *\ The\ AppLoggingAgent\ class\ represents\ an\ agent\ responsible\ for\ logging\ application\ events.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00022}00022\ \textcolor{comment}{\ \ \ \ \ *\ It\ provides\ methods\ to\ log\ messages,\ errors,\ and\ other\ events.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00023}00023\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00024}\mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{00024}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{logger}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ *\ Represents\ the\ HTTP\ server\ for\ the\ shopping\ system.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00028}\mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{00028}}\ \ \ \ \ \textcolor{keyword}{private}\ HttpServer\ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}};\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00029}00029\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ *\ The\ executor\ service\ used\ for\ managing\ threads\ in\ the\ web\ server.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00032}\mbox{\hyperlink{class_web_server_af4163602b0bbfd76ca4a20edbdc66191}{00032}}\ \ \ \ \ \textcolor{keyword}{private}\ ExecutorService\ \mbox{\hyperlink{class_web_server_af4163602b0bbfd76ca4a20edbdc66191}{threadPoolExecutor}};}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00033}00033\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00034}00034\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00035}00035\ \textcolor{comment}{\ \ \ \ \ *\ The\ maximum\ depth\ of\ the\ queue\ for\ incoming\ requests.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ *\ The\ value\ is\ obtained\ from\ the\ environment\ variable\ "{}QUEUE\_DEPTH"{}.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00037}00037\ \textcolor{comment}{\ \ \ \ \ *\ If\ the\ environment\ variable\ is\ not\ set,\ the\ default\ value\ is\ 100.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00038}00038\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00039}\mbox{\hyperlink{class_web_server_aaa2da54e0d4832cf859ba085d33bb60d}{00039}}\ \ \ \ \ \textcolor{keyword}{private}\ Integer\ \mbox{\hyperlink{class_web_server_aaa2da54e0d4832cf859ba085d33bb60d}{queueDepth}}\ =\ Integer}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ .parseInt(\mbox{\hyperlink{class_i_factory}{System}}.getenv().containsKey(\textcolor{stringliteral}{"{}QUEUE\_DEPTH"{}})\ ?\ \mbox{\hyperlink{class_i_factory}{System}}.getenv(\textcolor{stringliteral}{"{}QUEUE\_DEPTH"{}})\ :\ \textcolor{stringliteral}{"{}100"{}});\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00041}00041\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00042}00042\ \textcolor{comment}{\ \ \ \ \ *\ The\ port\ number\ for\ the\ web\ server.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00043}00043\ \textcolor{comment}{\ \ \ \ \ *\ If\ the\ environment\ variable\ "{}PORT"{}\ is\ set,\ the\ port\ number\ will\ be\ parsed\ from\ it.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ *\ Otherwise,\ the\ default\ port\ number\ is\ 8001.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00046}\mbox{\hyperlink{class_web_server_a888b5845afc66e66b68bd2e2eb448053}{00046}}\ \ \ \ \ \textcolor{keyword}{private}\ Integer\ \mbox{\hyperlink{class_web_server_a888b5845afc66e66b68bd2e2eb448053}{port}}\ =\ Integer.parseInt(\mbox{\hyperlink{class_i_factory}{System}}.getenv().containsKey(\textcolor{stringliteral}{"{}PORT"{}})\ ?\ \mbox{\hyperlink{class_i_factory}{System}}.getenv(\textcolor{stringliteral}{"{}PORT"{}})\ :\ \textcolor{stringliteral}{"{}8001"{}});\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00047}00047\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00048}00048\ \textcolor{comment}{\ \ \ \ \ *\ The\ maximum\ number\ of\ threads\ that\ the\ web\ server\ can\ handle.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00049}00049\ \textcolor{comment}{\ \ \ \ \ *\ The\ value\ is\ obtained\ from\ the\ environment\ variable\ "{}MAX\_THREADS"{}.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00050}00050\ \textcolor{comment}{\ \ \ \ \ *\ If\ the\ environment\ variable\ is\ not\ set,\ the\ default\ value\ is\ 25.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00051}00051\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00052}\mbox{\hyperlink{class_web_server_a654123232d560a8267e33293f79fc414}{00052}}\ \ \ \ \ \textcolor{keyword}{private}\ Integer\ \mbox{\hyperlink{class_web_server_a654123232d560a8267e33293f79fc414}{maxThreads}}\ =\ Integer}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ .parseInt(\mbox{\hyperlink{class_i_factory}{System}}.getenv().containsKey(\textcolor{stringliteral}{"{}MAX\_THREADS"{}})\ ?\ \mbox{\hyperlink{class_i_factory}{System}}.getenv(\textcolor{stringliteral}{"{}MAX\_THREADS"{}})\ :\ \textcolor{stringliteral}{"{}25"{}});\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00054}00054\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00055}00055\ \textcolor{comment}{\ \ \ \ \ *\ The\ hostname\ of\ the\ web\ server.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00056}00056\ \textcolor{comment}{\ \ \ \ \ *\ It\ is\ determined\ by\ the\ value\ of\ the\ "{}HOST\_NAME"{}\ environment\ variable,\ }}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00057}00057\ \textcolor{comment}{\ \ \ \ \ *\ or\ defaults\ to\ "{}0.0.0.0"{}\ if\ the\ environment\ variable\ is\ not\ set.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00058}00058\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00059}\mbox{\hyperlink{class_web_server_a5d4d86d589750b20f4dfd7aef395de4f}{00059}}\ \ \ \ \ \textcolor{keyword}{private}\ String\ \mbox{\hyperlink{class_web_server_a5d4d86d589750b20f4dfd7aef395de4f}{hostname}}\ =\ \mbox{\hyperlink{class_i_factory}{System}}.getenv().containsKey(\textcolor{stringliteral}{"{}HOST\_NAME"{}})\ ?\ \mbox{\hyperlink{class_i_factory}{System}}.getenv(\textcolor{stringliteral}{"{}HOST\_NAME"{}})\ :\ \textcolor{stringliteral}{"{}0.0.0.0"{}};}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00061}\mbox{\hyperlink{class_web_server_a7ee296476dbbc49bee90522899166110}{00061}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_web_server_a7ee296476dbbc49bee90522899166110}{WebServer}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00062}00062\ \ \ \ \ \ \ \ \ this.threadPoolExecutor\ =\ \mbox{\hyperlink{class_i_factory}{Executors}}.newFixedThreadPool(\mbox{\hyperlink{class_web_server_a654123232d560a8267e33293f79fc414}{maxThreads}});}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00063}00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ this.server\ =\ HttpServer.\mbox{\hyperlink{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1}{create}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{InetSocketAddress}}(this.hostname,\ this.port),\ \mbox{\hyperlink{class_web_server_aaa2da54e0d4832cf859ba085d33bb60d}{queueDepth}});}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ this.server.setExecutor(\mbox{\hyperlink{class_web_server_af4163602b0bbfd76ca4a20edbdc66191}{threadPoolExecutor}});}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00066}00066\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{IOException}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{System}}.out.println(\textcolor{stringliteral}{"{}Error\ creating\ server"{}});}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00068}00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00070}00070\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00071}00071\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00072}00072\ \textcolor{comment}{\ \ \ \ \ *\ Starts\ the\ web\ server.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00073}00073\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00074}\mbox{\hyperlink{class_web_server_a95cc2c7822d190092b3e57a9f2738048}{00074}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_web_server_a95cc2c7822d190092b3e57a9f2738048}{start}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00075}00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{logger}}.log(\textcolor{stringliteral}{"{}Server\ started"{}});}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}.start();}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{logger}}.log(\textcolor{stringliteral}{"{}\ Starting\ server\ at\ =>\ "{}}\ +\ this.hostname\ +\ \textcolor{stringliteral}{"{}:"{}}\ +\ this.port);}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00079}00079\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{logger}}.log(\textcolor{stringliteral}{"{}Error\ running\ server"{}},\ \mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00082}00082\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00083}00083\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00084}00084\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00085}00085\ \textcolor{comment}{\ \ \ \ \ *\ Adds\ a\ route\ to\ the\ web\ server.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00086}00086\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00087}00087\ \textcolor{comment}{\ \ \ \ \ *\ @param\ route\ \ \ the\ route\ to\ be\ added}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00088}00088\ \textcolor{comment}{\ \ \ \ \ *\ @param\ handler\ the\ handler\ for\ the\ route}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00089}00089\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ HttpContext\ object\ representing\ the\ added\ route}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00090}00090\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00091}\mbox{\hyperlink{class_web_server_a93b6dd74881e1f8f8f2271ab2db5dc9c}{00091}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{HttpContext}}\ \mbox{\hyperlink{class_web_server_a93b6dd74881e1f8f8f2271ab2db5dc9c}{addRoute}}(String\ \mbox{\hyperlink{class_i_factory}{route}},\ \mbox{\hyperlink{class_http_handler}{HttpHandler}}\ \mbox{\hyperlink{class_i_factory}{handler}})\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_web_server_a93b6dd74881e1f8f8f2271ab2db5dc9c}{addRoute}}(\mbox{\hyperlink{class_i_factory}{route}},\ \mbox{\hyperlink{class_i_factory}{handler}},\ \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00093}00093\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00094}00094\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00095}00095\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00096}00096\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ Adds\ a\ route\ to\ the\ web\ server\ with\ the\ specified\ route\ path,\ handler,\ and\ authenticator.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00097}00097\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00098}00098\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ @param\ route\ The\ route\ path\ for\ the\ request.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00099}00099\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ @param\ handler\ The\ handler\ to\ be\ executed\ for\ the\ route.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00100}00100\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ @param\ authenticator\ The\ authenticator\ to\ be\ used\ for\ the\ route.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00101}00101\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ @return\ The\ HttpContext\ object\ representing\ the\ added\ route,\ or\ null\ if\ an\ error\ occurred.}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00102}00102\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00103}\mbox{\hyperlink{class_web_server_a83af6d8ed2948089b91369c5f6e12f15}{00103}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{HttpContext}}\ \mbox{\hyperlink{class_web_server_a83af6d8ed2948089b91369c5f6e12f15}{addRoute}}(String\ \mbox{\hyperlink{class_i_factory}{route}},\ \mbox{\hyperlink{class_http_handler}{HttpHandler}}\ \mbox{\hyperlink{class_i_factory}{handler}},\ com.sun.net.httpserver.Authenticator\ authenticator)\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00104}00104\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{HttpContext}}\ \mbox{\hyperlink{class_i_factory}{context}}\ =\ this.server.createContext(\mbox{\hyperlink{class_i_factory}{route}},\ \mbox{\hyperlink{class_i_factory}{handler}});}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (authenticator\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{context}}.setAuthenticator(authenticator);}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{context}};}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00110}00110\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{logger}}.log(\textcolor{stringliteral}{"{}Error\ adding\ route"{}},\ \mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00113}00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00114}00114\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00116}\mbox{\hyperlink{class_web_server_aef5e4fe37da907d510b05d8d7fa52eac}{00116}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_web_server_aef5e4fe37da907d510b05d8d7fa52eac}{main}}(String[]\ args)\ \{}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00117}00117\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server}{WebServer}}\ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_web_server_a7ee296476dbbc49bee90522899166110}{WebServer}}();}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00119}00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}.addRoute(\textcolor{stringliteral}{"{}/"{}},\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_echo_handler}{EchoHandler}}());}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00120}00120\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}.addRoute(\textcolor{stringliteral}{"{}/echo/"{}},\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_echo_handler}{EchoHandler}}());}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00121}00121\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}.start();}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00123}00123\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_server_8java_source_l00124}00124\ \}}
+
+\end{DoxyCode}

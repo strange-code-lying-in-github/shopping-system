@@ -1,0 +1,169 @@
+\doxysection{String\+Db\+Result\+Processor Class Reference}
+\hypertarget{class_string_db_result_processor}{}\label{class_string_db_result_processor}\index{StringDbResultProcessor@{StringDbResultProcessor}}
+
+
+Inheritance diagram for String\+Db\+Result\+Processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{class_string_db_result_processor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for String\+Db\+Result\+Processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_string_db_result_processor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_string_db_result_processor_a449d40ce4b643ea2996a7f6457620a10}{get\+Result}} ()
+\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_string_db_result_processor_a316a559dab60f83204685d13a28d02dd}{process}} (\mbox{\hyperlink{class_i_factory}{Result\+Set}} \mbox{\hyperlink{class_i_factory}{rs}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}} 
+\begin{DoxyCompactList}\small\item\em Processes the given Result\+Set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_string_db_result_processor_a64df9c81d5ed59fc2bbbbf6be4343252}{get\+Results}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of results obtained from the processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697}{result}} = "{}"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_string_db_result_processor_8java_source_l00005}{5}} of file \mbox{\hyperlink{_string_db_result_processor_8java_source}{String\+Db\+Result\+Processor.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_string_db_result_processor_a449d40ce4b643ea2996a7f6457620a10}\label{class_string_db_result_processor_a449d40ce4b643ea2996a7f6457620a10} 
+\index{StringDbResultProcessor@{StringDbResultProcessor}!getResult@{getResult}}
+\index{getResult@{getResult}!StringDbResultProcessor@{StringDbResultProcessor}}
+\doxysubsubsection{\texorpdfstring{getResult()}{getResult()}}
+{\footnotesize\ttfamily String String\+Db\+Result\+Processor.\+get\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_string_db_result_processor_8java_source_l00008}{8}} of file \mbox{\hyperlink{_string_db_result_processor_8java_source}{String\+Db\+Result\+Processor.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697}{result}};}
+\DoxyCodeLine{00010\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_string_db_result_processor_8java_source_l00006}{result}}.
+
+\Hypertarget{class_string_db_result_processor_a64df9c81d5ed59fc2bbbbf6be4343252}\label{class_string_db_result_processor_a64df9c81d5ed59fc2bbbbf6be4343252} 
+\index{StringDbResultProcessor@{StringDbResultProcessor}!getResults@{getResults}}
+\index{getResults@{getResults}!StringDbResultProcessor@{StringDbResultProcessor}}
+\doxysubsubsection{\texorpdfstring{getResults()}{getResults()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ String\+Db\+Result\+Processor.\+get\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of results obtained from the processing. 
+
+\begin{DoxyReturn}{Returns}
+the list of results 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_db_result_processor_add418957f47f615fc619d8d2a3b6b63b}{IDb\+Result\+Processor}}.
+
+
+
+Definition at line \mbox{\hyperlink{_string_db_result_processor_8java_source_l00019}{19}} of file \mbox{\hyperlink{_string_db_result_processor_8java_source}{String\+Db\+Result\+Processor.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TODO\ Auto-\/generated\ method\ stub}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{UnsupportedOperationException}}(\textcolor{stringliteral}{"{}Unimplemented\ method\ 'getResults'"{}});}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_string_db_result_processor_a316a559dab60f83204685d13a28d02dd}\label{class_string_db_result_processor_a316a559dab60f83204685d13a28d02dd} 
+\index{StringDbResultProcessor@{StringDbResultProcessor}!process@{process}}
+\index{process@{process}!StringDbResultProcessor@{StringDbResultProcessor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} String\+Db\+Result\+Processor.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Result\+Set}}}]{rs }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}}}
+
+
+
+Processes the given Result\+Set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rs} & the Result\+Set to be processed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the processing is successful, false otherwise 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em SQLException} & if an error occurs while processing the Result\+Set \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_i_db_result_processor_a2e5b07828a17cf0a74eb4d4db12f5080}{IDb\+Result\+Processor}}.
+
+
+
+Definition at line \mbox{\hyperlink{_string_db_result_processor_8java_source_l00013}{13}} of file \mbox{\hyperlink{_string_db_result_processor_8java_source}{String\+Db\+Result\+Processor.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697}{result}}\ =\ \mbox{\hyperlink{class_db_utils}{DbUtils}}.\mbox{\hyperlink{class_db_utils_a40f468fe0132be10a6553ed72024bc20}{resultSetToString}}(\mbox{\hyperlink{class_i_factory}{rs}});}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697}{result}}\ !=\ \textcolor{keyword}{null});}
+\DoxyCodeLine{00016\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_string_db_result_processor_8java_source_l00006}{result}}, and \mbox{\hyperlink{_db_utils_8java_source_l00024}{Db\+Utils.\+result\+Set\+To\+String()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_string_db_result_processor_a316a559dab60f83204685d13a28d02dd_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697}\label{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697} 
+\index{StringDbResultProcessor@{StringDbResultProcessor}!result@{result}}
+\index{result@{result}!StringDbResultProcessor@{StringDbResultProcessor}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily String String\+Db\+Result\+Processor.\+result = "{}"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_string_db_result_processor_8java_source_l00006}{6}} of file \mbox{\hyperlink{_string_db_result_processor_8java_source}{String\+Db\+Result\+Processor.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_string_db_result_processor_8java_source_l00008}{get\+Result()}}, and \mbox{\hyperlink{_string_db_result_processor_8java_source_l00013}{process()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_string_db_result_processor_8java}{String\+Db\+Result\+Processor.\+java}}\end{DoxyCompactItemize}

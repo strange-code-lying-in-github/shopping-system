@@ -1,0 +1,135 @@
+\doxysection{IEnvironment Interface Reference}
+\hypertarget{interface_i_environment}{}\label{interface_i_environment}\index{IEnvironment@{IEnvironment}}
+
+
+This interface represents an environment that provides access to command line arguments and key-\/value pairs.  
+
+
+
+
+Inheritance diagram for IEnvironment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{interface_i_environment__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IEnvironment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{interface_i_environment__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_i_environment_a2e9d2ec207af9080929487dd684e6733}{get\+Comnand\+Line\+Args}} ()
+\begin{DoxyCompactList}\small\item\em Returns an array of command line arguments. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}{get\+Value}} (String \mbox{\hyperlink{class_i_factory}{key}})
+\begin{DoxyCompactList}\small\item\em Returns the value associated with the specified key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ String $>$ \mbox{\hyperlink{interface_i_environment_a427aada8d3082c054b53332d6f8d430c}{get\+Keys}} ()
+\begin{DoxyCompactList}\small\item\em Returns a list of all keys in the environment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{interface_i_environment_a7449b7feb0308ebb17bb4554506ef1b5}{Has\+Key}} (String \mbox{\hyperlink{class_i_factory}{key}})
+\begin{DoxyCompactList}\small\item\em Checks if the environment contains the specified key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface represents an environment that provides access to command line arguments and key-\/value pairs. 
+
+Definition at line \mbox{\hyperlink{_i_environment_8java_source_l00006}{6}} of file \mbox{\hyperlink{_i_environment_8java_source}{IEnvironment.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_i_environment_a2e9d2ec207af9080929487dd684e6733}\label{interface_i_environment_a2e9d2ec207af9080929487dd684e6733} 
+\index{IEnvironment@{IEnvironment}!getComnandLineArgs@{getComnandLineArgs}}
+\index{getComnandLineArgs@{getComnandLineArgs}!IEnvironment@{IEnvironment}}
+\doxysubsubsection{\texorpdfstring{getComnandLineArgs()}{getComnandLineArgs()}}
+{\footnotesize\ttfamily String\mbox{[}$\,$\mbox{]} IEnvironment.\+get\+Comnand\+Line\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns an array of command line arguments. 
+
+\begin{DoxyReturn}{Returns}
+an array of command line arguments 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_environment_a395eb7f345e4c2146ff698ae75f42124}{Environment}}.
+
+\Hypertarget{interface_i_environment_a427aada8d3082c054b53332d6f8d430c}\label{interface_i_environment_a427aada8d3082c054b53332d6f8d430c} 
+\index{IEnvironment@{IEnvironment}!getKeys@{getKeys}}
+\index{getKeys@{getKeys}!IEnvironment@{IEnvironment}}
+\doxysubsubsection{\texorpdfstring{getKeys()}{getKeys()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ String $>$ IEnvironment.\+get\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a list of all keys in the environment. 
+
+\begin{DoxyReturn}{Returns}
+a list of all keys in the environment 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_environment_aa53b3f0ee353c45adcb129e3ba446ddb}{Environment}}.
+
+\Hypertarget{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}\label{interface_i_environment_a9d2f700317385e87efdb77a94df1966f} 
+\index{IEnvironment@{IEnvironment}!getValue@{getValue}}
+\index{getValue@{getValue}!IEnvironment@{IEnvironment}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily String IEnvironment.\+get\+Value (\begin{DoxyParamCaption}\item[{String}]{key }\end{DoxyParamCaption})}
+
+
+
+Returns the value associated with the specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key whose associated value is to be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value to which the specified key is mapped, or null if the key is not found 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_environment_a343e9ee063043034d7d99b6aa02aef93}{Environment}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00075}{Shopping\+Data\+Layer\+Service.\+load\+Configuration()}}.
+
+\Hypertarget{interface_i_environment_a7449b7feb0308ebb17bb4554506ef1b5}\label{interface_i_environment_a7449b7feb0308ebb17bb4554506ef1b5} 
+\index{IEnvironment@{IEnvironment}!HasKey@{HasKey}}
+\index{HasKey@{HasKey}!IEnvironment@{IEnvironment}}
+\doxysubsubsection{\texorpdfstring{HasKey()}{HasKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} IEnvironment.\+Has\+Key (\begin{DoxyParamCaption}\item[{String}]{key }\end{DoxyParamCaption})}
+
+
+
+Checks if the environment contains the specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the environment contains the key, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_environment_a241d85d54357b361f03889f1e420629e}{Environment}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_environment_8java}{IEnvironment.\+java}}\end{DoxyCompactItemize}

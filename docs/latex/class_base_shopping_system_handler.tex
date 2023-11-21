@@ -1,0 +1,338 @@
+\doxysection{Base\+Shopping\+System\+Handler Class Reference}
+\hypertarget{class_base_shopping_system_handler}{}\label{class_base_shopping_system_handler}\index{BaseShoppingSystemHandler@{BaseShoppingSystemHandler}}
+
+
+Inheritance diagram for Base\+Shopping\+System\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_base_shopping_system_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+Shopping\+System\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_base_shopping_system_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_base_shopping_system_handler_ab66f5de8f3cdab96038b3d4ef889014e}{Base\+Shopping\+System\+Handler}} (\mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} \mbox{\hyperlink{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b}{shopping\+Business\+Service}})
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_base_shopping_system_handler}{Base\+Shopping\+System\+Handler} object with the specified shopping business layer service. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_shopping_system_handler_a8c6b20632402b431aed39b0cf4c23ff1}{handle}} (Http\+Exchange http\+Exchange)  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em Handles the HTTP request by processing the given Http\+Exchange object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base_route_handler}{Base\+Route\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{build\+Response}} (String \mbox{\hyperlink{class_i_factory}{response\+String}}, \mbox{\hyperlink{enum_http_response_text_type}{Http\+Response\+Text\+Type}} \mbox{\hyperlink{class_i_factory}{response\+Type}})
+\begin{DoxyCompactList}\small\item\em Builds a response string based on the given response string and response type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} \mbox{\hyperlink{class_base_shopping_system_handler_a6f3b4faedffce7df6a670baa588ee5e2}{get\+Shopping\+Business\+Service}} ()
+\item 
+\mbox{\hyperlink{class_i_factory}{abstract}} String \mbox{\hyperlink{class_base_shopping_system_handler_a52959a96185a173360caf33e873d050c}{handle\+Get\+Request}} (Http\+Exchange http\+Exchange)
+\begin{DoxyCompactList}\small\item\em Handles the GET request and returns a response as a String. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{abstract}} String \mbox{\hyperlink{class_base_shopping_system_handler_aa5b9dff4d4b7242d801f3ea0c271442e}{handle\+Post\+Request}} (Http\+Exchange http\+Exchange)
+\begin{DoxyCompactList}\small\item\em Handles the POST request and returns a string response. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_base_route_handler}{Base\+Route\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_base_route_handler_aff734730e7e7b3aceca4922d1ae995a3}{build\+Response}} (String \mbox{\hyperlink{class_i_factory}{response\+String}})
+\begin{DoxyCompactList}\small\item\em Builds a response string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_route_handler_a33479321f0597168c7f5e31073237283}{handle\+Response}} (Http\+Exchange http\+Exchange, String \mbox{\hyperlink{class_i_factory}{response\+String}}, Integer \mbox{\hyperlink{class_i_factory}{response\+Code}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em Handles the HTTP response by sending the specified response string and response code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_route_handler_a69011e9ecc3e4cb895f616f970a01f76}{handle\+Response}} (Http\+Exchange http\+Exchange, \mbox{\hyperlink{enum_http_response_text_type}{Http\+Response\+Text\+Type}} \mbox{\hyperlink{class_i_factory}{response\+Type}}, String \mbox{\hyperlink{class_i_factory}{response\+String}}, Integer \mbox{\hyperlink{class_i_factory}{response\+Code}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em Handles the HTTP response by setting the response content type, sending the response headers, and writing the response string to the output stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_route_handler_a426d25bf07fc6cd306ec944f774dc663}{set\+Response\+Content\+Type}} (Http\+Exchange http\+Exchange)
+\begin{DoxyCompactList}\small\item\em Sets the response content type for the given Http\+Exchange object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_route_handler_a6dd9d325ffc8a8dcea2c95a996815a27}{set\+Response\+Content\+Type}} (Http\+Exchange http\+Exchange, \mbox{\hyperlink{enum_http_response_text_type}{Http\+Response\+Text\+Type}} \mbox{\hyperlink{class_i_factory}{response\+Type}})
+\begin{DoxyCompactList}\small\item\em Sets the response content type based on the specified \doxylink{enum_http_response_text_type}{Http\+Response\+Text\+Type}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_http_request_context_info}{IHttp\+Request\+Context\+Info}} \mbox{\hyperlink{class_base_route_handler_a031d87cc184e5c217c64f40e70fe4f4d}{process\+Uri}} (Http\+Exchange http\+Exchange)
+\begin{DoxyCompactList}\small\item\em Processes the URI of the HTTP request and returns an instance of \doxylink{interface_i_http_request_context_info}{IHttp\+Request\+Context\+Info}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_route_handler_a506d52b2bf42554720a3eacd5dfba5d6}{add\+Cookie}} (Http\+Exchange http\+Exchange, \mbox{\hyperlink{interface_i_http_cookie}{IHttp\+Cookie}} \mbox{\hyperlink{class_i_factory}{cookie}})
+\begin{DoxyCompactList}\small\item\em Adds a cookie to the response headers of the given Http\+Exchange. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_base_shopping_system_handler_a794005bacbd1af24f1312045df789672}{handle\+Method\+Request}} (Http\+Exchange http\+Exchange, \mbox{\hyperlink{class_i_factory}{final}} String \mbox{\hyperlink{class_i_factory}{method}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{Exception}} 
+\begin{DoxyCompactList}\small\item\em Handles the method request based on the HTTP method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} \mbox{\hyperlink{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b}{shopping\+Business\+Service}}
+\begin{DoxyCompactList}\small\item\em The service responsible for handling the business logic of the shopping system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_base_route_handler}{Base\+Route\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ \mbox{\hyperlink{class_base_route_handler_acadf372f62b7d6551ea9586da133fd89}{parse\+Form\+Data}} (String \mbox{\hyperlink{class_i_factory}{form\+Data}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{Unsupported\+Encoding\+Exception}} 
+\begin{DoxyCompactList}\small\item\em Parses the given form data and returns a map of key-\/value pairs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_base_route_handler}{Base\+Route\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00006}{6}} of file \mbox{\hyperlink{_base_shopping_system_handler_8java_source}{Base\+Shopping\+System\+Handler.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_base_shopping_system_handler_ab66f5de8f3cdab96038b3d4ef889014e}\label{class_base_shopping_system_handler_ab66f5de8f3cdab96038b3d4ef889014e} 
+\index{BaseShoppingSystemHandler@{BaseShoppingSystemHandler}!BaseShoppingSystemHandler@{BaseShoppingSystemHandler}}
+\index{BaseShoppingSystemHandler@{BaseShoppingSystemHandler}!BaseShoppingSystemHandler@{BaseShoppingSystemHandler}}
+\doxysubsubsection{\texorpdfstring{BaseShoppingSystemHandler()}{BaseShoppingSystemHandler()}}
+{\footnotesize\ttfamily Base\+Shopping\+System\+Handler.\+Base\+Shopping\+System\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}}}]{shopping\+Business\+Service }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_base_shopping_system_handler}{Base\+Shopping\+System\+Handler} object with the specified shopping business layer service. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shopping\+Business\+Service} & The shopping business layer service. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00019}{19}} of file \mbox{\hyperlink{_base_shopping_system_handler_8java_source}{Base\+Shopping\+System\+Handler.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ this.shoppingBusinessService\ =\ \mbox{\hyperlink{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b}{shoppingBusinessService}};}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00011}{shopping\+Business\+Service}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_base_shopping_system_handler_a6f3b4faedffce7df6a670baa588ee5e2}\label{class_base_shopping_system_handler_a6f3b4faedffce7df6a670baa588ee5e2} 
+\index{BaseShoppingSystemHandler@{BaseShoppingSystemHandler}!getShoppingBusinessService@{getShoppingBusinessService}}
+\index{getShoppingBusinessService@{getShoppingBusinessService}!BaseShoppingSystemHandler@{BaseShoppingSystemHandler}}
+\doxysubsubsection{\texorpdfstring{getShoppingBusinessService()}{getShoppingBusinessService()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} Base\+Shopping\+System\+Handler.\+get\+Shopping\+Business\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+the shopping\+Business\+Service 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00074}{74}} of file \mbox{\hyperlink{_base_shopping_system_handler_8java_source}{Base\+Shopping\+System\+Handler.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b}{shoppingBusinessService}};}
+\DoxyCodeLine{00076\ \ \ \ \ \};}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00011}{shopping\+Business\+Service}}.
+
+\Hypertarget{class_base_shopping_system_handler_a8c6b20632402b431aed39b0cf4c23ff1}\label{class_base_shopping_system_handler_a8c6b20632402b431aed39b0cf4c23ff1} 
+\index{BaseShoppingSystemHandler@{BaseShoppingSystemHandler}!handle@{handle}}
+\index{handle@{handle}!BaseShoppingSystemHandler@{BaseShoppingSystemHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Base\+Shopping\+System\+Handler.\+handle (\begin{DoxyParamCaption}\item[{Http\+Exchange}]{http\+Exchange }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}}}
+
+
+
+Handles the HTTP request by processing the given Http\+Exchange object. 
+
+This method is responsible for logging the request details, handling the request method, building the response, and handling any exceptions that may occur.
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Exchange} & The Http\+Exchange object representing the HTTP request. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an I/O error occurs while handling the request. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00032}{32}} of file \mbox{\hyperlink{_base_shopping_system_handler_8java_source}{Base\+Shopping\+System\+Handler.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_i_factory}{responseCode}}\ =\ 500;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}httpExchange:\ "{}}\ +\ httpExchange.getRequestMethod()\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ httpExchange.getRequestURI());}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ String\ \mbox{\hyperlink{class_i_factory}{method}}\ =\ httpExchange.getRequestMethod().toString().toUpperCase();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{requestParamValue}}\ =\ \mbox{\hyperlink{class_base_shopping_system_handler_a794005bacbd1af24f1312045df789672}{handleMethodRequest}}(httpExchange,\ \mbox{\hyperlink{class_i_factory}{method}});}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}\ =\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}(\mbox{\hyperlink{class_i_factory}{requestParamValue}});}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Response:\ "{}}\ +\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Error\ handling\ request"{}},\ \mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}\ =\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}(\mbox{\hyperlink{class_i_factory}{e}}.getMessage());}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{responseCode}}\ =\ 500;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_base_route_handler_a33479321f0597168c7f5e31073237283}{handleResponse}}(httpExchange,\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}},\ \mbox{\hyperlink{class_i_factory}{responseCode}});}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_route_handler_8java_source_l00023}{Base\+Route\+Handler.\+build\+Response()}}, \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00060}{handle\+Method\+Request()}}, \mbox{\hyperlink{_base_route_handler_8java_source_l00062}{Base\+Route\+Handler.\+handle\+Response()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_base_route_handler_8java_source_l00011}{Base\+Route\+Handler.\+logger}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_shopping_system_handler_a8c6b20632402b431aed39b0cf4c23ff1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_shopping_system_handler_a52959a96185a173360caf33e873d050c}\label{class_base_shopping_system_handler_a52959a96185a173360caf33e873d050c} 
+\index{BaseShoppingSystemHandler@{BaseShoppingSystemHandler}!handleGetRequest@{handleGetRequest}}
+\index{handleGetRequest@{handleGetRequest}!BaseShoppingSystemHandler@{BaseShoppingSystemHandler}}
+\doxysubsubsection{\texorpdfstring{handleGetRequest()}{handleGetRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{abstract}} String Base\+Shopping\+System\+Handler.\+handle\+Get\+Request (\begin{DoxyParamCaption}\item[{Http\+Exchange}]{http\+Exchange }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Handles the GET request and returns a response as a String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Exchange} & the HTTP exchange object representing the request and response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a String representing the response to the GET request 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00060}{handle\+Method\+Request()}}.
+
+\Hypertarget{class_base_shopping_system_handler_a794005bacbd1af24f1312045df789672}\label{class_base_shopping_system_handler_a794005bacbd1af24f1312045df789672} 
+\index{BaseShoppingSystemHandler@{BaseShoppingSystemHandler}!handleMethodRequest@{handleMethodRequest}}
+\index{handleMethodRequest@{handleMethodRequest}!BaseShoppingSystemHandler@{BaseShoppingSystemHandler}}
+\doxysubsubsection{\texorpdfstring{handleMethodRequest()}{handleMethodRequest()}}
+{\footnotesize\ttfamily String Base\+Shopping\+System\+Handler.\+handle\+Method\+Request (\begin{DoxyParamCaption}\item[{Http\+Exchange}]{http\+Exchange,  }\item[{\mbox{\hyperlink{class_i_factory}{final}} String}]{method }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{Exception}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the method request based on the HTTP method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Exchange} & The HTTP exchange object. \\
+\hline
+{\em method} & The HTTP method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response string. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & If an unsupported HTTP method is provided. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00060}{60}} of file \mbox{\hyperlink{_base_shopping_system_handler_8java_source}{Base\+Shopping\+System\+Handler.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_i_factory}{method}})\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}GET"{}}:}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_shopping_system_handler_a52959a96185a173360caf33e873d050c}{handleGetRequest}}(httpExchange);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}POST"{}}:}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_shopping_system_handler_aa5b9dff4d4b7242d801f3ea0c271442e}{handlePostRequest}}(httpExchange);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{Exception}}(\textcolor{stringliteral}{"{}Unsupported\ HTTP\ method:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{method}});}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_base_shopping_system_handler_a52959a96185a173360caf33e873d050c}{handle\+Get\+Request()}}, and \mbox{\hyperlink{class_base_shopping_system_handler_aa5b9dff4d4b7242d801f3ea0c271442e}{handle\+Post\+Request()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00032}{handle()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_shopping_system_handler_a794005bacbd1af24f1312045df789672_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_shopping_system_handler_aa5b9dff4d4b7242d801f3ea0c271442e}\label{class_base_shopping_system_handler_aa5b9dff4d4b7242d801f3ea0c271442e} 
+\index{BaseShoppingSystemHandler@{BaseShoppingSystemHandler}!handlePostRequest@{handlePostRequest}}
+\index{handlePostRequest@{handlePostRequest}!BaseShoppingSystemHandler@{BaseShoppingSystemHandler}}
+\doxysubsubsection{\texorpdfstring{handlePostRequest()}{handlePostRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{abstract}} String Base\+Shopping\+System\+Handler.\+handle\+Post\+Request (\begin{DoxyParamCaption}\item[{Http\+Exchange}]{http\+Exchange }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Handles the POST request and returns a string response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Exchange} & the HTTP exchange object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string response 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00060}{handle\+Method\+Request()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b}\label{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b} 
+\index{BaseShoppingSystemHandler@{BaseShoppingSystemHandler}!shoppingBusinessService@{shoppingBusinessService}}
+\index{shoppingBusinessService@{shoppingBusinessService}!BaseShoppingSystemHandler@{BaseShoppingSystemHandler}}
+\doxysubsubsection{\texorpdfstring{shoppingBusinessService}{shoppingBusinessService}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} Base\+Shopping\+System\+Handler.\+shopping\+Business\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The service responsible for handling the business logic of the shopping system. 
+
+
+
+Definition at line \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00011}{11}} of file \mbox{\hyperlink{_base_shopping_system_handler_8java_source}{Base\+Shopping\+System\+Handler.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00019}{Base\+Shopping\+System\+Handler()}}, and \mbox{\hyperlink{_base_shopping_system_handler_8java_source_l00074}{get\+Shopping\+Business\+Service()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_base_shopping_system_handler_8java}{Base\+Shopping\+System\+Handler.\+java}}\end{DoxyCompactItemize}

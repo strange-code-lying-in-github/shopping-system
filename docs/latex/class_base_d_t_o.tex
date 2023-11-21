@@ -1,0 +1,890 @@
+\doxysection{Base\+DTO Class Reference}
+\hypertarget{class_base_d_t_o}{}\label{class_base_d_t_o}\index{BaseDTO@{BaseDTO}}
+
+
+Inheritance diagram for Base\+DTO\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_d_t_o__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+DTO\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_d_t_o__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_base_d_t_o_a3996e030f3efa169beee9185fadba3ba}{get\+Dto\+Name}} ()
+\item 
+\mbox{\hyperlink{class_base_d_t_o_a77b33bf9ea6de332817868b53c6b77db}{Base\+DTO}} (String \mbox{\hyperlink{class_base_d_t_o_a4f332907173df7e236bbdee85569567e}{dto\+Name}}, \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} $>$ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}}, \mbox{\hyperlink{class_i_factory}{Map}}$<$ Integer, String $>$ \mbox{\hyperlink{class_base_d_t_o_ab67358f97b0ce540e8d4715b947e0788}{fields\+Order\+Map}})
+\item 
+\mbox{\hyperlink{class_base_d_t_o_acbdf0a5e365503ea8767bdd255f11922}{Base\+DTO}} (\mbox{\hyperlink{class_base_d_t_o}{Base\+DTO}} \mbox{\hyperlink{class_i_factory}{base\+DTO}})
+\item 
+\mbox{\hyperlink{class_i_factory}{Object}} \mbox{\hyperlink{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0}{get\+Value}} (String \mbox{\hyperlink{class_i_factory}{field\+Name}})
+\begin{DoxyCompactList}\small\item\em Retrieves the value of a field specified by the given field name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_base_d_t_o_a456710ad08c5b0b16b0074cb80c0863b}{set\+Value}} (String \mbox{\hyperlink{class_i_factory}{field\+Name}}, \mbox{\hyperlink{class_i_factory}{Object}} value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a field in the DTO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} $>$ \mbox{\hyperlink{class_base_d_t_o_a560ad66fc2fd597728299d688b6c585d}{get\+Fields}} ()
+\begin{DoxyCompactList}\small\item\em Returns a map of fields in the DTO object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_base_d_t_o_a1d205169b7c0871f7c7f79eb8c948adf}{update\+Schema}} ()
+\item 
+\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_base_d_t_o_a373c60917eabb7242371873b31ca562f}{get\+Load\+Processor}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_base_d_t_o_a083f9d044b18ab3932e33decfc57c3fd}{get\+Load\+Sql}} (String schema)
+\begin{DoxyCompactList}\small\item\em Gets the SQL statement for loading data from the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_base_d_t_o_a252dec45478ad93325d48591c354976a}{get\+Save\+Processor}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_base_d_t_o_afc2393d96d4e4f846e16362e29ac6579}{get\+Save\+Sql}} (String schema)
+\begin{DoxyCompactList}\small\item\em Gets the SQL statement for saving data to the database. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_base_d_t_o_a5377404c337979b7a2b96774ac91e95e}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_i_d_t_o}{IDTO}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}} \mbox{\hyperlink{interface_i_d_t_o_acb229dc78372d7ac840c9b609de79037}{get\+Dto\+Home}} ()
+\begin{DoxyCompactList}\small\item\em This interface represents the home for \doxylink{interface_i_d_t_o}{IDTO} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_base_d_t_o_a1b3ff160fc4b902a7a0c505cb33a5af2}{process\+Load\+Result}} (\mbox{\hyperlink{class_i_factory}{Result\+Set}} \mbox{\hyperlink{class_i_factory}{rs}}, \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_i_factory}{load\+Results}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}} 
+\item 
+\mbox{\hyperlink{class_i_factory}{Object}} \mbox{\hyperlink{class_base_d_t_o_ac022ce37eaae9b3a65c121f3219ce7a4}{get\+Value\+From\+Result\+Set}} (\mbox{\hyperlink{class_i_factory}{Result\+Set}} \mbox{\hyperlink{class_i_factory}{rs}}, String \mbox{\hyperlink{class_i_factory}{field\+Name}}, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} \mbox{\hyperlink{class_i_factory}{dto\+Types}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}} 
+\item 
+String \mbox{\hyperlink{class_base_d_t_o_a2027207bbe235b0fc082d89855696fe1}{format\+Value\+For\+Query}} (\mbox{\hyperlink{class_i_factory}{Object}} value, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} \mbox{\hyperlink{class_i_factory}{dto\+Types}})
+\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_base_d_t_o_a6bdc4f7d6d17ddb27ce70b16aa56c7e2}{process\+Save\+Result}} (\mbox{\hyperlink{class_i_factory}{Result\+Set}} \mbox{\hyperlink{class_i_factory}{rs}}, \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_i_factory}{save\+Results}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}} 
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_d_t_o_ae4c228b69fefd36ddde04697977f2974}{build\+Insert\+Sql}} (\mbox{\hyperlink{class_i_factory}{String\+Builder}} \mbox{\hyperlink{class_i_factory}{sb}}, String schema)
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_d_t_o_a08cb6adb1af9bb1c7069922968713ec7}{build\+Update\+Sql}} (\mbox{\hyperlink{class_i_factory}{String\+Builder}} \mbox{\hyperlink{class_i_factory}{sb}}, String schema)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_base_d_t_o_a435d5aba9f4c412f20cfc99aa7e692bd}{Base\+DTO}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_base_d_t_o_a1a9760b94f39d9c13b8e11bbff608054}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\item 
+\mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} $>$ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Hash\+Map}}$<$String, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}$>$()
+\item 
+\mbox{\hyperlink{class_i_factory}{Map}}$<$ Integer, String $>$ \mbox{\hyperlink{class_base_d_t_o_ab67358f97b0ce540e8d4715b947e0788}{fields\+Order\+Map}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Hash\+Map}}$<$Integer, String$>$()
+\item 
+\mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{class_i_factory}{Object}} $>$ \mbox{\hyperlink{class_base_d_t_o_af1e34540e5f526b9db0c9dfcec09e705}{values}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Hash\+Map}}$<$String, \mbox{\hyperlink{class_i_factory}{Object}}$>$()
+\item 
+String \mbox{\hyperlink{class_base_d_t_o_a4f332907173df7e236bbdee85569567e}{dto\+Name}} = "{}"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00011}{11}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_base_d_t_o_a435d5aba9f4c412f20cfc99aa7e692bd}\label{class_base_d_t_o_a435d5aba9f4c412f20cfc99aa7e692bd} 
+\index{BaseDTO@{BaseDTO}!BaseDTO@{BaseDTO}}
+\index{BaseDTO@{BaseDTO}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{BaseDTO()}{BaseDTO()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Base\+DTO.\+Base\+DTO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00028}{28}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_base_d_t_o_a77b33bf9ea6de332817868b53c6b77db}\label{class_base_d_t_o_a77b33bf9ea6de332817868b53c6b77db} 
+\index{BaseDTO@{BaseDTO}!BaseDTO@{BaseDTO}}
+\index{BaseDTO@{BaseDTO}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{BaseDTO()}{BaseDTO()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Base\+DTO.\+Base\+DTO (\begin{DoxyParamCaption}\item[{String}]{dto\+Name,  }\item[{\mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} $>$}]{fields,  }\item[{\mbox{\hyperlink{class_i_factory}{Map}}$<$ Integer, String $>$}]{fields\+Order\+Map }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00031}{31}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ this.dtoName\ =\ \mbox{\hyperlink{class_base_d_t_o_a4f332907173df7e236bbdee85569567e}{dtoName}};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ this.fields\ =\ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ this.fieldsOrderMap\ =\ \mbox{\hyperlink{class_base_d_t_o_ab67358f97b0ce540e8d4715b947e0788}{fieldsOrderMap}};}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00018}{dto\+Name}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00015}{fields}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00016}{fields\+Order\+Map}}.
+
+\Hypertarget{class_base_d_t_o_acbdf0a5e365503ea8767bdd255f11922}\label{class_base_d_t_o_acbdf0a5e365503ea8767bdd255f11922} 
+\index{BaseDTO@{BaseDTO}!BaseDTO@{BaseDTO}}
+\index{BaseDTO@{BaseDTO}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{BaseDTO()}{BaseDTO()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Base\+DTO.\+Base\+DTO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_base_d_t_o}{Base\+DTO}}}]{base\+DTO }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00037}{37}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ this.fields\ =\ \mbox{\hyperlink{class_i_factory}{baseDTO}}.fields;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ this.fieldsOrderMap\ =\ \mbox{\hyperlink{class_i_factory}{baseDTO}}.fieldsOrderMap;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ this.values\ =\ \mbox{\hyperlink{class_i_factory}{baseDTO}}.values;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ this.dtoName\ =\ \mbox{\hyperlink{class_i_factory}{baseDTO}}.dtoName;}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00018}{dto\+Name}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00015}{fields}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00016}{fields\+Order\+Map}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00017}{values}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_base_d_t_o_ae4c228b69fefd36ddde04697977f2974}\label{class_base_d_t_o_ae4c228b69fefd36ddde04697977f2974} 
+\index{BaseDTO@{BaseDTO}!buildInsertSql@{buildInsertSql}}
+\index{buildInsertSql@{buildInsertSql}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{buildInsertSql()}{buildInsertSql()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Base\+DTO.\+build\+Insert\+Sql (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{String\+Builder}}}]{sb,  }\item[{String}]{schema }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00200}{200}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\textcolor{stringliteral}{"{}INSERT\ INTO\ "{}}\ +\ schema\ +\ \textcolor{stringliteral}{"{}."{}}\ +\ this.\mbox{\hyperlink{class_base_d_t_o_a3996e030f3efa169beee9185fadba3ba}{getDtoName}}()\ +\ \textcolor{stringliteral}{"{}\ ("{}});}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_i_factory}{Map}}.Entry<String,\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}>\ \mbox{\hyperlink{class_i_factory}{entry}}\ :\ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}}.\mbox{\hyperlink{class_i_factory}{entrySet}}())\ \{}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{fieldName}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getKey();}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}\ \mbox{\hyperlink{class_i_factory}{fieldType}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getValue();}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Object}}\ value\ =\ \mbox{\hyperlink{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0}{getValue}}(\mbox{\hyperlink{class_i_factory}{fieldName}});}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\mbox{\hyperlink{class_i_factory}{fieldName}}\ +\ \textcolor{stringliteral}{"{},\ "{}});}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.delete(\mbox{\hyperlink{class_i_factory}{sb}}.length()\ -\/\ 2,\ \mbox{\hyperlink{class_i_factory}{sb}}.length());}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\textcolor{stringliteral}{"{})\ VALUES\ ("{}});}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_i_factory}{Map}}.Entry<String,\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}>\ \mbox{\hyperlink{class_i_factory}{entry}}\ :\ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}}.\mbox{\hyperlink{class_i_factory}{entrySet}}())\ \{}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{fieldName}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getKey();}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}\ \mbox{\hyperlink{class_i_factory}{fieldType}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getValue();}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Object}}\ value\ =\ \mbox{\hyperlink{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0}{getValue}}(\mbox{\hyperlink{class_i_factory}{fieldName}});}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\mbox{\hyperlink{class_base_d_t_o_a2027207bbe235b0fc082d89855696fe1}{formatValueForQuery}}(value,\ \mbox{\hyperlink{class_i_factory}{fieldType}})\ +\ \textcolor{stringliteral}{"{},\ "{}});}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.delete(\mbox{\hyperlink{class_i_factory}{sb}}.length()\ -\/\ 2,\ \mbox{\hyperlink{class_i_factory}{sb}}.length());}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\textcolor{stringliteral}{"{})"{}});}
+\DoxyCodeLine{00222\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00015}{fields}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00087}{format\+Value\+For\+Query()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00024}{get\+Dto\+Name()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00044}{get\+Value()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00187}{get\+Save\+Sql()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_d_t_o_ae4c228b69fefd36ddde04697977f2974_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_d_t_o_a08cb6adb1af9bb1c7069922968713ec7}\label{class_base_d_t_o_a08cb6adb1af9bb1c7069922968713ec7} 
+\index{BaseDTO@{BaseDTO}!buildUpdateSql@{buildUpdateSql}}
+\index{buildUpdateSql@{buildUpdateSql}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{buildUpdateSql()}{buildUpdateSql()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Base\+DTO.\+build\+Update\+Sql (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{String\+Builder}}}]{sb,  }\item[{String}]{schema }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00224}{224}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\textcolor{stringliteral}{"{}UPDATE\ "{}}\ +\ schema\ +\ \textcolor{stringliteral}{"{}."{}}\ +\ this.\mbox{\hyperlink{class_base_d_t_o_a3996e030f3efa169beee9185fadba3ba}{getDtoName}}()\ +\ \textcolor{stringliteral}{"{}\ SET\ "{}});}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_i_factory}{Map}}.Entry<String,\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}>\ \mbox{\hyperlink{class_i_factory}{entry}}\ :\ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}}.\mbox{\hyperlink{class_i_factory}{entrySet}}())\ \{}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{fieldName}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getKey();}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}\ \mbox{\hyperlink{class_i_factory}{fieldType}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getValue();}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Object}}\ value\ =\ \mbox{\hyperlink{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0}{getValue}}(\mbox{\hyperlink{class_i_factory}{fieldName}});}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\mbox{\hyperlink{class_i_factory}{fieldName}}\ +\ \textcolor{stringliteral}{"{}\ =\ "{}}\ +\ \mbox{\hyperlink{class_base_d_t_o_a2027207bbe235b0fc082d89855696fe1}{formatValueForQuery}}(value,\ \mbox{\hyperlink{class_i_factory}{fieldType}})\ +\ \textcolor{stringliteral}{"{},\ "{}});}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.delete(\mbox{\hyperlink{class_i_factory}{sb}}.length()\ -\/\ 2,\ \mbox{\hyperlink{class_i_factory}{sb}}.length());}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\textcolor{stringliteral}{"{}\ WHERE\ id\ =\ "{}}\ +\ \mbox{\hyperlink{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0}{getValue}}(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00234\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00015}{fields}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00087}{format\+Value\+For\+Query()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00024}{get\+Dto\+Name()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00044}{get\+Value()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00187}{get\+Save\+Sql()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_d_t_o_a08cb6adb1af9bb1c7069922968713ec7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_d_t_o_a2027207bbe235b0fc082d89855696fe1}\label{class_base_d_t_o_a2027207bbe235b0fc082d89855696fe1} 
+\index{BaseDTO@{BaseDTO}!formatValueForQuery@{formatValueForQuery}}
+\index{formatValueForQuery@{formatValueForQuery}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{formatValueForQuery()}{formatValueForQuery()}}
+{\footnotesize\ttfamily String Base\+DTO.\+format\+Value\+For\+Query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Object}}}]{value,  }\item[{\mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}}]{dto\+Types }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00087}{87}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_i_factory}{dtoTypes}})\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ INTEGER:}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ value\ +\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ DATE:}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{SimpleDateFormat}}\ \mbox{\hyperlink{class_i_factory}{sdf}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{SimpleDateFormat}}(\textcolor{stringliteral}{"{}yyyy-\/MM-\/dd\ HH:mm:ss\ z"{}});}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sdf}}.setTimeZone(\mbox{\hyperlink{class_i_factory}{TimeZone}}.getTimeZone(\textcolor{stringliteral}{"{}UTC"{}}));}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_d_t_o_a2027207bbe235b0fc082d89855696fe1}{formatValueForQuery}}(\mbox{\hyperlink{class_i_factory}{sdf}}.format(value),\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a7ad1519b212993a169dde17696d0b601}{STRING}});}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}'"{}}\ +\ value\ +\ \textcolor{stringliteral}{"{}'"{}};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_d_t_o_a1a9760b94f39d9c13b8e11bbff608054}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(value.toString(),\ \mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_i_factory}{e}};}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00103\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00087}{format\+Value\+For\+Query()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00013}{logging}}, and \mbox{\hyperlink{_d_t_o_types_8java_source_l00007}{DTOTypes.\+STRING}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00200}{build\+Insert\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00224}{build\+Update\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00087}{format\+Value\+For\+Query()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00130}{get\+Load\+Sql()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_d_t_o_a2027207bbe235b0fc082d89855696fe1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_d_t_o_a3996e030f3efa169beee9185fadba3ba}\label{class_base_d_t_o_a3996e030f3efa169beee9185fadba3ba} 
+\index{BaseDTO@{BaseDTO}!getDtoName@{getDtoName}}
+\index{getDtoName@{getDtoName}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{getDtoName()}{getDtoName()}}
+{\footnotesize\ttfamily String Base\+DTO.\+get\+Dto\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the dto\+Name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_d_t_o_a9a5fbcbad264bc94101cbf230e35fc8c}{IDTO}}.
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00024}{24}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_d_t_o_a4f332907173df7e236bbdee85569567e}{dtoName}};}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00018}{dto\+Name}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00200}{build\+Insert\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00224}{build\+Update\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00130}{get\+Load\+Sql()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00237}{to\+String()}}.
+
+\Hypertarget{class_base_d_t_o_a560ad66fc2fd597728299d688b6c585d}\label{class_base_d_t_o_a560ad66fc2fd597728299d688b6c585d} 
+\index{BaseDTO@{BaseDTO}!getFields@{getFields}}
+\index{getFields@{getFields}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{getFields()}{getFields()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} $>$ Base\+DTO.\+get\+Fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a map of fields in the DTO object. 
+
+\begin{DoxyReturn}{Returns}
+a map containing the fields of the DTO object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_d_t_o_a89ca7a2809f6812e6dcac7e608cfa439}{IDTO}}.
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00055}{55}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}};}
+\DoxyCodeLine{00057\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00015}{fields}}.
+
+\Hypertarget{class_base_d_t_o_a373c60917eabb7242371873b31ca562f}\label{class_base_d_t_o_a373c60917eabb7242371873b31ca562f} 
+\index{BaseDTO@{BaseDTO}!getLoadProcessor@{getLoadProcessor}}
+\index{getLoadProcessor@{getLoadProcessor}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{getLoadProcessor()}{getLoadProcessor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} Base\+DTO.\+get\+Load\+Processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO}. 
+
+\begin{DoxyReturn}{Returns}
+the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_d_t_o_a6ab4dad514f7758235a29088a835a20e}{IDTO}}.
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00106}{106}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_factory}{LoadResultProcessor}}\ \textcolor{keyword}{implements}\ \mbox{\hyperlink{interface_i_db_result_processor}{IDbResultProcessor}}\ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{LoadResultProcessor}}(\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}})\ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.dto\ =\ \mbox{\hyperlink{class_i_factory}{dto}};}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Override}}}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{Boolean}}\ process(\mbox{\hyperlink{class_i_factory}{ResultSet}}\ \mbox{\hyperlink{class_i_factory}{rs}})\ \textcolor{keywordflow}{throws}\ \mbox{\hyperlink{class_i_factory}{SQLException}}\ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ processLoadResult(\mbox{\hyperlink{class_i_factory}{rs}},\ \mbox{\hyperlink{class_i_factory}{loadResults}});}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{loadResults}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{ArrayList<>}}();}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ getResults()\ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{loadResults}};}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{LoadResultProcessor}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{00127\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_base_d_t_o_a083f9d044b18ab3932e33decfc57c3fd}\label{class_base_d_t_o_a083f9d044b18ab3932e33decfc57c3fd} 
+\index{BaseDTO@{BaseDTO}!getLoadSql@{getLoadSql}}
+\index{getLoadSql@{getLoadSql}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{getLoadSql()}{getLoadSql()}}
+{\footnotesize\ttfamily String Base\+DTO.\+get\+Load\+Sql (\begin{DoxyParamCaption}\item[{String}]{schema }\end{DoxyParamCaption})}
+
+
+
+Gets the SQL statement for loading data from the database. 
+
+\begin{DoxyReturn}{Returns}
+The SQL statement for loading data. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_d_t_o_a1b985a9dbfa8d2342428334ea96aa906}{IDTO}}.
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00130}{130}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{StringBuilder}}\ \mbox{\hyperlink{class_i_factory}{sb}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{StringBuilder}}();}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_i_factory}{isFirst}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\textcolor{stringliteral}{"{}SELECT\ *\ FROM\ "{}}\ +\ schema\ +\ \textcolor{stringliteral}{"{}."{}}\ +\ this.\mbox{\hyperlink{class_base_d_t_o_a3996e030f3efa169beee9185fadba3ba}{getDtoName}}()\ +\ \textcolor{stringliteral}{"{}\ WHERE\ "{}});}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_i_factory}{Map}}.Entry<String,\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}>\ \mbox{\hyperlink{class_i_factory}{entry}}\ :\ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}}.\mbox{\hyperlink{class_i_factory}{entrySet}}())\ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{fieldName}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getKey();}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}\ \mbox{\hyperlink{class_i_factory}{fieldType}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getValue();}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Object}}\ value\ =\ \mbox{\hyperlink{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0}{getValue}}(\mbox{\hyperlink{class_i_factory}{fieldName}});}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_i_factory}{isFirst}})}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\textcolor{stringliteral}{"{}\ AND\ "{}});}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{isFirst}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\mbox{\hyperlink{class_i_factory}{fieldName}}\ +\ \textcolor{stringliteral}{"{}\ =\ "{}}\ +\ \mbox{\hyperlink{class_base_d_t_o_a2027207bbe235b0fc082d89855696fe1}{formatValueForQuery}}(value,\ \mbox{\hyperlink{class_i_factory}{fieldType}}));}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{sb}}.toString();}
+\DoxyCodeLine{00148\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00015}{fields}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00087}{format\+Value\+For\+Query()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00024}{get\+Dto\+Name()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00044}{get\+Value()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_d_t_o_a083f9d044b18ab3932e33decfc57c3fd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_d_t_o_a252dec45478ad93325d48591c354976a}\label{class_base_d_t_o_a252dec45478ad93325d48591c354976a} 
+\index{BaseDTO@{BaseDTO}!getSaveProcessor@{getSaveProcessor}}
+\index{getSaveProcessor@{getSaveProcessor}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{getSaveProcessor()}{getSaveProcessor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} Base\+DTO.\+get\+Save\+Processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO}. 
+
+\begin{DoxyReturn}{Returns}
+the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} associated with this \doxylink{interface_i_d_t_o}{IDTO} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_d_t_o_a8a9e40b816188d2537100fa5e155722d}{IDTO}}.
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00164}{164}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_factory}{SaveResultProcessor}}\ \textcolor{keyword}{implements}\ \mbox{\hyperlink{interface_i_db_result_processor}{IDbResultProcessor}}\ \{}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}};}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{SaveResultProcessor}}(\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}})\ \{}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.dto\ =\ \mbox{\hyperlink{class_i_factory}{dto}};}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Override}}}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{Boolean}}\ process(\mbox{\hyperlink{class_i_factory}{ResultSet}}\ \mbox{\hyperlink{class_i_factory}{rs}})\ \textcolor{keywordflow}{throws}\ \mbox{\hyperlink{class_i_factory}{SQLException}}\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ processSaveResult(\mbox{\hyperlink{class_i_factory}{rs}},\ \mbox{\hyperlink{class_i_factory}{saveResults}});}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{saveResults}}\ =\ \mbox{\hyperlink{class_i_factory}{Arrays}}.asList(this.dto);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ getResults()\ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{saveResults}};}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{SaveResultProcessor}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{00184\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_base_d_t_o_afc2393d96d4e4f846e16362e29ac6579}\label{class_base_d_t_o_afc2393d96d4e4f846e16362e29ac6579} 
+\index{BaseDTO@{BaseDTO}!getSaveSql@{getSaveSql}}
+\index{getSaveSql@{getSaveSql}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{getSaveSql()}{getSaveSql()}}
+{\footnotesize\ttfamily String Base\+DTO.\+get\+Save\+Sql (\begin{DoxyParamCaption}\item[{String}]{schema }\end{DoxyParamCaption})}
+
+
+
+Gets the SQL statement for saving data to the database. 
+
+\begin{DoxyReturn}{Returns}
+The SQL statement for saving data. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_d_t_o_a3a28666fc2c10953ec6e8e8f824ca907}{IDTO}}.
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00187}{187}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{StringBuilder}}\ \mbox{\hyperlink{class_i_factory}{sb}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{StringBuilder}}();}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Object}}\ value\ =\ \mbox{\hyperlink{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0}{getValue}}(\textcolor{stringliteral}{"{}id"{}});}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_i_factory}{isInsert}}\ =\ value\ ==\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{isInsert}})}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_d_t_o_ae4c228b69fefd36ddde04697977f2974}{buildInsertSql}}(\mbox{\hyperlink{class_i_factory}{sb}},\ schema);}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_d_t_o_a08cb6adb1af9bb1c7069922968713ec7}{buildUpdateSql}}(\mbox{\hyperlink{class_i_factory}{sb}},\ schema);}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{sb}}.toString();}
+\DoxyCodeLine{00198\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00200}{build\+Insert\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00224}{build\+Update\+Sql()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00044}{get\+Value()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_d_t_o_afc2393d96d4e4f846e16362e29ac6579_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0}\label{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0} 
+\index{BaseDTO@{BaseDTO}!getValue@{getValue}}
+\index{getValue@{getValue}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Object}} Base\+DTO.\+get\+Value (\begin{DoxyParamCaption}\item[{String}]{field\+Name }\end{DoxyParamCaption})}
+
+
+
+Retrieves the value of a field specified by the given field name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+Name} & the name of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_d_t_o_afe3cf82928d45d5fbc1708e818203527}{IDTO}}.
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00044}{44}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_base_d_t_o_af1e34540e5f526b9db0c9dfcec09e705}{values}}.containsKey(\mbox{\hyperlink{class_i_factory}{fieldName}}))}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_d_t_o_af1e34540e5f526b9db0c9dfcec09e705}{values}}.get(\mbox{\hyperlink{class_i_factory}{fieldName}});}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00048\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00017}{values}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00200}{build\+Insert\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00224}{build\+Update\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00130}{get\+Load\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00187}{get\+Save\+Sql()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00237}{to\+String()}}.
+
+\Hypertarget{class_base_d_t_o_ac022ce37eaae9b3a65c121f3219ce7a4}\label{class_base_d_t_o_ac022ce37eaae9b3a65c121f3219ce7a4} 
+\index{BaseDTO@{BaseDTO}!getValueFromResultSet@{getValueFromResultSet}}
+\index{getValueFromResultSet@{getValueFromResultSet}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{getValueFromResultSet()}{getValueFromResultSet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Object}} Base\+DTO.\+get\+Value\+From\+Result\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Result\+Set}}}]{rs,  }\item[{String}]{field\+Name,  }\item[{\mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}}]{dto\+Types }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00076}{76}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_i_factory}{dtoTypes}})\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ INTEGER:}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{rs}}.getInt(\mbox{\hyperlink{class_i_factory}{fieldName}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ DATE:}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{rs}}.getDate(\mbox{\hyperlink{class_i_factory}{fieldName}});}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{rs}}.getString(\mbox{\hyperlink{class_i_factory}{fieldName}});}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00063}{process\+Load\+Result()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00150}{process\+Save\+Result()}}.
+
+\Hypertarget{class_base_d_t_o_a1b3ff160fc4b902a7a0c505cb33a5af2}\label{class_base_d_t_o_a1b3ff160fc4b902a7a0c505cb33a5af2} 
+\index{BaseDTO@{BaseDTO}!processLoadResult@{processLoadResult}}
+\index{processLoadResult@{processLoadResult}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{processLoadResult()}{processLoadResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Base\+DTO.\+process\+Load\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Result\+Set}}}]{rs,  }\item[{\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$}]{load\+Results }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00063}{63}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{rs}}\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_i_factory}{Map}}.Entry<String,\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}>\ \mbox{\hyperlink{class_i_factory}{entry}}\ :\ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}}.\mbox{\hyperlink{class_i_factory}{entrySet}}())\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{fieldName}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getKey();}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}\ \mbox{\hyperlink{class_i_factory}{fieldType}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getValue();}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Object}}\ value\ =\ \mbox{\hyperlink{class_base_d_t_o_ac022ce37eaae9b3a65c121f3219ce7a4}{getValueFromResultSet}}(\mbox{\hyperlink{class_i_factory}{rs}},\ \mbox{\hyperlink{class_i_factory}{fieldName}},\ \mbox{\hyperlink{class_i_factory}{fieldType}});}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_d_t_o_a456710ad08c5b0b16b0074cb80c0863b}{setValue}}(\mbox{\hyperlink{class_i_factory}{fieldName}},\ value);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{loadResults}}.add(\textcolor{keyword}{this});}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00074\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00015}{fields}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00076}{get\+Value\+From\+Result\+Set()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00050}{set\+Value()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_d_t_o_a1b3ff160fc4b902a7a0c505cb33a5af2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_d_t_o_a6bdc4f7d6d17ddb27ce70b16aa56c7e2}\label{class_base_d_t_o_a6bdc4f7d6d17ddb27ce70b16aa56c7e2} 
+\index{BaseDTO@{BaseDTO}!processSaveResult@{processSaveResult}}
+\index{processSaveResult@{processSaveResult}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{processSaveResult()}{processSaveResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Base\+DTO.\+process\+Save\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Result\+Set}}}]{rs,  }\item[{\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$}]{save\+Results }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00150}{150}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{rs}}\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_i_factory}{Map}}.Entry<String,\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}>\ \mbox{\hyperlink{class_i_factory}{entry}}\ :\ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}}.\mbox{\hyperlink{class_i_factory}{entrySet}}())\ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{fieldName}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getKey();}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}\ \mbox{\hyperlink{class_i_factory}{fieldType}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getValue();}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Object}}\ value\ =\ \mbox{\hyperlink{class_base_d_t_o_ac022ce37eaae9b3a65c121f3219ce7a4}{getValueFromResultSet}}(\mbox{\hyperlink{class_i_factory}{rs}},\ \mbox{\hyperlink{class_i_factory}{fieldName}},\ \mbox{\hyperlink{class_i_factory}{fieldType}});}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_d_t_o_a456710ad08c5b0b16b0074cb80c0863b}{setValue}}(\mbox{\hyperlink{class_i_factory}{fieldName}},\ value);}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{saveResults}}.add(\textcolor{keyword}{this});}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00161\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00015}{fields}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00076}{get\+Value\+From\+Result\+Set()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00050}{set\+Value()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_d_t_o_a6bdc4f7d6d17ddb27ce70b16aa56c7e2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_d_t_o_a456710ad08c5b0b16b0074cb80c0863b}\label{class_base_d_t_o_a456710ad08c5b0b16b0074cb80c0863b} 
+\index{BaseDTO@{BaseDTO}!setValue@{setValue}}
+\index{setValue@{setValue}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Base\+DTO.\+set\+Value (\begin{DoxyParamCaption}\item[{String}]{field\+Name,  }\item[{\mbox{\hyperlink{class_i_factory}{Object}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of a field in the DTO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+Name} & the name of the field \\
+\hline
+{\em value} & the value to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the value was successfully set, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_d_t_o_a7d9af4922550d95cf9af660707303519}{IDTO}}.
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00050}{50}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_d_t_o_af1e34540e5f526b9db0c9dfcec09e705}{values}}.put(\mbox{\hyperlink{class_i_factory}{fieldName}},\ value);}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00017}{values}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00063}{process\+Load\+Result()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00150}{process\+Save\+Result()}}.
+
+\Hypertarget{class_base_d_t_o_a5377404c337979b7a2b96774ac91e95e}\label{class_base_d_t_o_a5377404c337979b7a2b96774ac91e95e} 
+\index{BaseDTO@{BaseDTO}!toString@{toString}}
+\index{toString@{toString}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Base\+DTO.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00237}{237}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{StringBuilder}}\ \mbox{\hyperlink{class_i_factory}{sb}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{StringBuilder}}();}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(this.\mbox{\hyperlink{class_base_d_t_o_a3996e030f3efa169beee9185fadba3ba}{getDtoName}}()\ +\ \textcolor{stringliteral}{"{}:\ "{}});}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_i_factory}{Map}}.Entry<String,\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}>\ \mbox{\hyperlink{class_i_factory}{entry}}\ :\ \mbox{\hyperlink{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}{fields}}.\mbox{\hyperlink{class_i_factory}{entrySet}}())\ \{}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{fieldName}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getKey();}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}\ \mbox{\hyperlink{class_i_factory}{fieldType}}\ =\ \mbox{\hyperlink{class_i_factory}{entry}}.getValue();}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Object}}\ value\ =\ \mbox{\hyperlink{class_base_d_t_o_af6fd52e9c03a748fcac532d8de5f4fa0}{getValue}}(\mbox{\hyperlink{class_i_factory}{fieldName}});}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.append(\mbox{\hyperlink{class_i_factory}{fieldName}}\ +\ \textcolor{stringliteral}{"{}\ =\ "{}}\ +\ value\ +\ \textcolor{stringliteral}{"{},\ "{}});}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}.delete(\mbox{\hyperlink{class_i_factory}{sb}}.length()\ -\/\ 2,\ \mbox{\hyperlink{class_i_factory}{sb}}.length());}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{sb}}.toString();}
+\DoxyCodeLine{00248\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_d_t_o_8java_source_l00015}{fields}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00024}{get\+Dto\+Name()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00044}{get\+Value()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_base_d_t_o_a5377404c337979b7a2b96774ac91e95e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_d_t_o_a1d205169b7c0871f7c7f79eb8c948adf}\label{class_base_d_t_o_a1d205169b7c0871f7c7f79eb8c948adf} 
+\index{BaseDTO@{BaseDTO}!updateSchema@{updateSchema}}
+\index{updateSchema@{updateSchema}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{updateSchema()}{updateSchema()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Base\+DTO.\+update\+Schema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00059}{59}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00061\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_base_d_t_o_a4f332907173df7e236bbdee85569567e}\label{class_base_d_t_o_a4f332907173df7e236bbdee85569567e} 
+\index{BaseDTO@{BaseDTO}!dtoName@{dtoName}}
+\index{dtoName@{dtoName}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{dtoName}{dtoName}}
+{\footnotesize\ttfamily String Base\+DTO.\+dto\+Name = "{}"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00018}{18}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00037}{Base\+DTO()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00031}{Base\+DTO()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00024}{get\+Dto\+Name()}}.
+
+\Hypertarget{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a}\label{class_base_d_t_o_ae8f19fb573dc4ee8f7f9d260ef4e000a} 
+\index{BaseDTO@{BaseDTO}!fields@{fields}}
+\index{fields@{fields}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{fields}{fields}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Map}}$<$String, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}$>$ Base\+DTO.\+fields = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Hash\+Map}}$<$String, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00015}{15}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00037}{Base\+DTO()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00031}{Base\+DTO()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00200}{build\+Insert\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00224}{build\+Update\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00055}{get\+Fields()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00130}{get\+Load\+Sql()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00063}{process\+Load\+Result()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00150}{process\+Save\+Result()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00237}{to\+String()}}.
+
+\Hypertarget{class_base_d_t_o_ab67358f97b0ce540e8d4715b947e0788}\label{class_base_d_t_o_ab67358f97b0ce540e8d4715b947e0788} 
+\index{BaseDTO@{BaseDTO}!fieldsOrderMap@{fieldsOrderMap}}
+\index{fieldsOrderMap@{fieldsOrderMap}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{fieldsOrderMap}{fieldsOrderMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Map}}$<$Integer, String$>$ Base\+DTO.\+fields\+Order\+Map = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Hash\+Map}}$<$Integer, String$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00016}{16}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00037}{Base\+DTO()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00031}{Base\+DTO()}}.
+
+\Hypertarget{class_base_d_t_o_a1a9760b94f39d9c13b8e11bbff608054}\label{class_base_d_t_o_a1a9760b94f39d9c13b8e11bbff608054} 
+\index{BaseDTO@{BaseDTO}!logging@{logging}}
+\index{logging@{logging}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Base\+DTO.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00013}{13}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00087}{format\+Value\+For\+Query()}}.
+
+\Hypertarget{class_base_d_t_o_af1e34540e5f526b9db0c9dfcec09e705}\label{class_base_d_t_o_af1e34540e5f526b9db0c9dfcec09e705} 
+\index{BaseDTO@{BaseDTO}!values@{values}}
+\index{values@{values}!BaseDTO@{BaseDTO}}
+\doxysubsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Map}}$<$String, \mbox{\hyperlink{class_i_factory}{Object}}$>$ Base\+DTO.\+values = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Hash\+Map}}$<$String, \mbox{\hyperlink{class_i_factory}{Object}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_base_d_t_o_8java_source_l00017}{17}} of file \mbox{\hyperlink{_base_d_t_o_8java_source}{Base\+DTO.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_base_d_t_o_8java_source_l00037}{Base\+DTO()}}, \mbox{\hyperlink{_base_d_t_o_8java_source_l00044}{get\+Value()}}, and \mbox{\hyperlink{_base_d_t_o_8java_source_l00050}{set\+Value()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_base_d_t_o_8java}{Base\+DTO.\+java}}\end{DoxyCompactItemize}

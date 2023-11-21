@@ -1,0 +1,29 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$interface_i_d_t_o_home.html" title="This interface represents a home for Data Transfer Objects (DTOs)." alt="" coords="5,277,94,303"/>
+<area shape="rect" id="Node000001" href="$class_base_d_t_o_home.html" title=" " alt="" coords="142,277,256,303"/>
+<area shape="poly" id="edge29_Node000000_Node000001" title=" " alt="" coords="109,288,142,288,142,293,109,293"/>
+<area shape="rect" id="Node000002" href="$class_audit_trail_d_t_o_home.html" title="The AuditTrailDTOHome class is responsible for managing the creation of AuditTrailDTO objects." alt="" coords="321,5,460,31"/>
+<area shape="poly" id="edge30_Node000001_Node000002" title=" " alt="" coords="201,262,211,214,229,154,259,93,279,65,302,40,319,29,322,33,306,44,283,68,264,96,234,156,216,215,206,263"/>
+<area shape="rect" id="Node000003" href="$class_cart_d_t_o_home.html" title="This class represents a home for CartDTO objects." alt="" coords="336,55,445,80"/>
+<area shape="poly" id="edge31_Node000001_Node000003" title=" " alt="" coords="205,261,217,223,237,176,265,129,302,89,334,73,337,78,306,94,269,133,242,179,222,225,210,263"/>
+<area shape="rect" id="Node000004" href="$class_cart_item_d_t_o_home.html" title="This class represents a home for CartItemDTO objects." alt="" coords="323,104,458,130"/>
+<area shape="poly" id="edge32_Node000001_Node000004" title=" " alt="" coords="210,262,245,200,271,167,302,139,322,128,325,133,306,143,275,170,250,203,214,264"/>
+<area shape="rect" id="Node000005" href="$class_order_d_t_o_home.html" title="This class represents a home for OrderDTO objects." alt="" coords="333,153,449,179"/>
+<area shape="poly" id="edge33_Node000001_Node000005" title=" " alt="" coords="218,263,255,224,303,188,331,176,333,180,305,192,258,228,222,267"/>
+<area shape="rect" id="Node000006" href="$class_order_item_d_t_o_home.html" title="This class represents a home for OrderItemDTO objects." alt="" coords="320,203,462,228"/>
+<area shape="poly" id="edge34_Node000001_Node000006" title=" " alt="" coords="236,267,303,237,335,226,337,231,305,242,239,272"/>
+<area shape="rect" id="Node000007" href="$class_payment_profile_d_t_o_home.html" title="This class represents a home for PaymentProfileDTO objects." alt="" coords="304,252,477,278"/>
+<area shape="poly" id="edge35_Node000001_Node000007" title=" " alt="" coords="271,278,303,274,304,279,272,283"/>
+<area shape="rect" id="Node000008" href="$class_product_d_t_o_home.html" title="This class represents a home for ProductDTO objects." alt="" coords="326,301,455,327"/>
+<area shape="poly" id="edge36_Node000001_Node000008" title=" " alt="" coords="272,297,326,303,325,309,271,302"/>
+<area shape="rect" id="Node000009" href="$class_purchase_d_t_o_home.html" title="The PurchaseDTOHome class represents a home for PurchaseDTO objects." alt="" coords="321,351,460,376"/>
+<area shape="poly" id="edge37_Node000001_Node000009" title=" " alt="" coords="239,308,305,337,337,347,335,353,303,342,237,313"/>
+<area shape="rect" id="Node000010" href="$class_role_d_t_o_home.html" title="This class represents a home for RoleDTO objects." alt="" coords="335,400,446,426"/>
+<area shape="poly" id="edge38_Node000001_Node000010" title=" " alt="" coords="222,313,258,351,305,387,336,399,333,404,303,391,255,355,218,317"/>
+<area shape="rect" id="Node000011" href="$class_user_d_t_o_home.html" title="This class represents a home for UserDTO objects." alt="" coords="335,449,447,475"/>
+<area shape="poly" id="edge39_Node000001_Node000011" title=" " alt="" coords="214,316,250,377,275,409,305,436,335,450,333,455,303,440,271,413,245,380,210,318"/>
+<area shape="rect" id="Node000012" href="$class_user_profile_d_t_o_home.html" title="This class represents a home for UserProfileDTO objects." alt="" coords="316,499,465,524"/>
+<area shape="poly" id="edge40_Node000001_Node000012" title=" " alt="" coords="210,317,222,355,242,401,269,447,306,485,323,496,320,500,302,490,265,450,237,403,217,357,205,319"/>
+<area shape="rect" id="Node000013" href="$class_user_role_d_t_o_home.html" title="This class represents a home for UserRoleDTO objects." alt="" coords="321,548,460,574"/>
+<area shape="poly" id="edge41_Node000001_Node000013" title=" " alt="" coords="207,318,216,365,235,424,264,484,283,511,306,535,322,545,319,550,302,539,279,514,259,486,230,426,211,366,201,319"/>
+</map>

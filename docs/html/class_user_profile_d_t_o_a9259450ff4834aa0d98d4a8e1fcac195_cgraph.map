@@ -1,0 +1,5 @@
+<map id="UserProfileDTO.getDtoHome" name="UserProfileDTO.getDtoHome">
+<area shape="rect" id="Node000001" title="Gets the home interface for the UserProfileDTO." alt="" coords="5,5,198,31"/>
+<area shape="rect" id="Node000002" href="$class_user_profile_d_t_o_home.html#adf0d19fd5357f95557743b75c46e1a10" title="Returns the singleton instance of UserProfileDTOHome." alt="" coords="246,5,449,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,16,230,16,230,21,198,21"/>
+</map>

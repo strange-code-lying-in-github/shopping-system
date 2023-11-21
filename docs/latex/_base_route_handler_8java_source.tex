@@ -1,0 +1,163 @@
+\doxysection{Base\+Route\+Handler.\+java}
+\hypertarget{_base_route_handler_8java_source}{}\label{_base_route_handler_8java_source}\mbox{\hyperlink{_base_route_handler_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00001}00001\ \textcolor{keyword}{import}\ java.io.IOException;}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00002}00002\ \textcolor{keyword}{import}\ java.io.OutputStream;}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00003}00003\ \textcolor{keyword}{import}\ java.io.UnsupportedEncodingException;}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00004}00004\ \textcolor{keyword}{import}\ java.util.Map;}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00006}00006\ \textcolor{keyword}{import}\ com.sun.net.httpserver.Headers;}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00007}00007\ \textcolor{keyword}{import}\ com.sun.net.httpserver.HttpExchange;}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00009}\mbox{\hyperlink{class_base_route_handler}{00009}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{abstract}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_base_route_handler}{BaseRouteHandler}}\ \textcolor{keyword}{implements}\ \mbox{\hyperlink{interface_i_http_route_handler}{IHttpRouteHandler}}\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00011}\mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{00011}}\ \ \ \ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00012}00012\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00013}00013\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00014}00014\ \textcolor{comment}{\ \ \ \ \ *\ Builds\ a\ response\ string\ based\ on\ the\ given\ response\ string\ and\ response\ type.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00015}00015\ \textcolor{comment}{\ \ \ \ \ *\ If\ the\ response\ type\ is\ JSON,\ TXT,\ or\ XML,\ the\ response\ string\ is\ appended\ as\ is.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00016}00016\ \textcolor{comment}{\ \ \ \ \ *\ Otherwise,\ the\ response\ string\ is\ wrapped\ in\ HTML\ tags.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00017}00017\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00018}00018\ \textcolor{comment}{\ \ \ \ \ *\ @param\ responseString\ The\ response\ string\ to\ be\ included\ in\ the\ response.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00019}00019\ \textcolor{comment}{\ \ \ \ \ *\ @param\ responseType\ \ \ The\ type\ of\ the\ response\ (JSON,\ TXT,\ XML,\ etc.).}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ built\ response\ string.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00022}00022\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00023}\mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{00023}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}(String\ responseString,\ \mbox{\hyperlink{enum_http_response_text_type}{HttpResponseTextType}}\ responseType)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00024}00024\ \ \ \ \ \ \ \ \ StringBuilder\ responseBuilder\ =\ \textcolor{keyword}{new}\ StringBuilder();}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (responseType)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ JSON:}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ TXT:}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ XML:}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ responseBuilder.append(responseString);}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ responseBuilder.append(\textcolor{stringliteral}{"{}<html>"{}}).append(\textcolor{stringliteral}{"{}<body>"{}})}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(responseString)}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\textcolor{stringliteral}{"{}</body>"{}})}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\textcolor{stringliteral}{"{}</html>"{}});}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00037}00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00038}00038\ \ \ \ \ \ \ \ \ String\ responseBuilderString\ =\ responseBuilder.toString();}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}[BaseRouteHandler]\ Response:\ "{}}\ +\ responseBuilderString);}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ responseBuilderString;}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00042}00042\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00043}00043\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ *\ Builds\ a\ response\ string.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ *\ @param\ responseString\ The\ response\ string\ to\ be\ built.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00047}00047\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ built\ response\ string.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00048}00048\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00049}\mbox{\hyperlink{class_base_route_handler_aff734730e7e7b3aceca4922d1ae995a3}{00049}}\ \ \ \ \ \textcolor{keyword}{protected}\ String\ \mbox{\hyperlink{class_base_route_handler_aff734730e7e7b3aceca4922d1ae995a3}{buildResponse}}(String\ responseString)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}(responseString,\ \mbox{\hyperlink{enum_http_response_text_type}{HttpResponseTextType}}.\mbox{\hyperlink{enum_http_response_text_type_a0651ce948063d1fc1bf2b6d5344efd4b}{HTML}});}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00051}00051\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00052}00052\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00053}00053\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00054}00054\ \textcolor{comment}{\ \ \ \ \ *\ Handles\ the\ HTTP\ response\ by\ sending\ the\ specified\ response\ string\ and\ response\ code.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00055}00055\ \textcolor{comment}{\ \ \ \ \ *\ This\ method\ is\ used\ internally\ by\ the\ class\ and\ should\ not\ be\ called\ directly.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00056}00056\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00057}00057\ \textcolor{comment}{\ \ \ \ \ *\ @param\ httpExchange\ The\ HttpExchange\ object\ representing\ the\ HTTP\ request\ and\ response.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00058}00058\ \textcolor{comment}{\ \ \ \ \ *\ @param\ responseString\ The\ string\ to\ be\ sent\ as\ the\ response\ body.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00059}00059\ \textcolor{comment}{\ \ \ \ \ *\ @param\ responseCode\ The\ HTTP\ response\ code\ to\ be\ sent.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00060}00060\ \textcolor{comment}{\ \ \ \ \ *\ @throws\ IOException\ If\ an\ I/O\ error\ occurs\ while\ sending\ the\ response.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00061}00061\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00062}\mbox{\hyperlink{class_base_route_handler_a33479321f0597168c7f5e31073237283}{00062}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_route_handler_a33479321f0597168c7f5e31073237283}{handleResponse}}(HttpExchange\ httpExchange,\ String\ responseString,\ Integer\ responseCode)}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throws}\ IOException\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00064}00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_a33479321f0597168c7f5e31073237283}{handleResponse}}(httpExchange,\ \mbox{\hyperlink{enum_http_response_text_type}{HttpResponseTextType}}.\mbox{\hyperlink{enum_http_response_text_type_a0651ce948063d1fc1bf2b6d5344efd4b}{HTML}},\ responseString,\ responseCode);}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00065}00065\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00066}00066\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00067}00067\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00068}00068\ \textcolor{comment}{\ \ \ \ \ *\ Handles\ the\ HTTP\ response\ by\ setting\ the\ response\ content\ type,\ sending\ the\ response\ headers,}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00069}00069\ \textcolor{comment}{\ \ \ \ \ *\ and\ writing\ the\ response\ string\ to\ the\ output\ stream.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00070}00070\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00071}00071\ \textcolor{comment}{\ \ \ \ \ *\ @param\ httpExchange\ \ \ The\ HTTP\ exchange\ object.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00072}00072\ \textcolor{comment}{\ \ \ \ \ *\ @param\ responseType\ \ \ The\ type\ of\ the\ response\ text.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00073}00073\ \textcolor{comment}{\ \ \ \ \ *\ @param\ responseString\ The\ response\ string\ to\ be\ sent.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00074}00074\ \textcolor{comment}{\ \ \ \ \ *\ @param\ responseCode\ \ \ The\ HTTP\ response\ code.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00075}00075\ \textcolor{comment}{\ \ \ \ \ *\ @throws\ IOException\ If\ an\ I/O\ error\ occurs\ while\ handling\ the\ response.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00076}00076\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00077}\mbox{\hyperlink{class_base_route_handler_a69011e9ecc3e4cb895f616f970a01f76}{00077}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_route_handler_a69011e9ecc3e4cb895f616f970a01f76}{handleResponse}}(HttpExchange\ httpExchange,\ \mbox{\hyperlink{enum_http_response_text_type}{HttpResponseTextType}}\ responseType,\ String\ responseString,}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ Integer\ responseCode)}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throws}\ IOException\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_a426d25bf07fc6cd306ec944f774dc663}{setResponseContentType}}(httpExchange,\ responseType);}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00082}00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (OutputStream\ outputStream\ =\ httpExchange.getResponseBody())\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ httpExchange.sendResponseHeaders(responseCode,\ responseString.length());}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ outputStream.write(responseString.getBytes());}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ outputStream.flush();}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00086}00086\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (IOException\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Error\ handling\ response"{}},\ e);}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ e;}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00089}00089\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00090}00090\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00091}00091\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00092}00092\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00093}00093\ \textcolor{comment}{\ \ \ \ \ *\ Sets\ the\ response\ content\ type\ for\ the\ given\ HttpExchange\ object.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00094}00094\ \textcolor{comment}{\ \ \ \ \ *\ The\ content\ type\ is\ set\ to\ HttpResponseTextType.HTML\ by\ default.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00095}00095\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00096}00096\ \textcolor{comment}{\ \ \ \ \ *\ @param\ httpExchange\ The\ HttpExchange\ object\ for\ which\ to\ set\ the\ response\ content\ type.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00097}00097\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00098}\mbox{\hyperlink{class_base_route_handler_a426d25bf07fc6cd306ec944f774dc663}{00098}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_route_handler_a426d25bf07fc6cd306ec944f774dc663}{setResponseContentType}}(HttpExchange\ httpExchange)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00099}00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_a426d25bf07fc6cd306ec944f774dc663}{setResponseContentType}}(httpExchange,\ \mbox{\hyperlink{enum_http_response_text_type}{HttpResponseTextType}}.\mbox{\hyperlink{enum_http_response_text_type_a0651ce948063d1fc1bf2b6d5344efd4b}{HTML}});}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00100}00100\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00101}00101\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00102}00102\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00103}00103\ \textcolor{comment}{\ \ \ \ \ *\ Sets\ the\ response\ content\ type\ based\ on\ the\ specified\ HttpResponseTextType.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00104}00104\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00105}00105\ \textcolor{comment}{\ \ \ \ \ *\ @param\ httpExchange\ The\ HttpExchange\ object\ representing\ the\ HTTP\ request\ and\ response.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00106}00106\ \textcolor{comment}{\ \ \ \ \ *\ @param\ responseType\ The\ HttpResponseTextType\ indicating\ the\ desired\ response\ content\ type.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00107}00107\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00108}\mbox{\hyperlink{class_base_route_handler_a6dd9d325ffc8a8dcea2c95a996815a27}{00108}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_route_handler_a6dd9d325ffc8a8dcea2c95a996815a27}{setResponseContentType}}(HttpExchange\ httpExchange,\ \mbox{\hyperlink{enum_http_response_text_type}{HttpResponseTextType}}\ responseType)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00109}00109\ \ \ \ \ \ \ \ \ Headers\ h\ =\ httpExchange.getResponseHeaders();}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00110}00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (responseType)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ JSON:}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ h.set(\textcolor{stringliteral}{"{}Content-\/Type"{}},\ \textcolor{stringliteral}{"{}application/json"{}});}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ XML:}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ h.set(\textcolor{stringliteral}{"{}Content-\/Type"{}},\ \textcolor{stringliteral}{"{}application/xml"{}});}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ TXT:}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ h.set(\textcolor{stringliteral}{"{}Content-\/Type"{}},\ \textcolor{stringliteral}{"{}text/plain"{}});}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ h.set(\textcolor{stringliteral}{"{}Content-\/Type"{}},\ \textcolor{stringliteral}{"{}text/html"{}});}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00123}00123\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00124}00124\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00125}00125\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00126}00126\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00127}00127\ \textcolor{comment}{\ \ \ \ \ *\ Processes\ the\ URI\ of\ the\ HTTP\ request\ and\ returns\ an\ instance\ of\ IHttpRequestContextInfo.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00128}00128\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00129}00129\ \textcolor{comment}{\ \ \ \ \ *\ @param\ httpExchange\ The\ HttpExchange\ object\ representing\ the\ HTTP\ request.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00130}00130\ \textcolor{comment}{\ \ \ \ \ *\ @return\ An\ instance\ of\ IHttpRequestContextInfo\ containing\ information\ about\ the\ HTTP\ request.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00131}00131\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00132}\mbox{\hyperlink{class_base_route_handler_a031d87cc184e5c217c64f40e70fe4f4d}{00132}}\ \ \ \ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{interface_i_http_request_context_info}{IHttpRequestContextInfo}}\ \mbox{\hyperlink{class_base_route_handler_a031d87cc184e5c217c64f40e70fe4f4d}{processUri}}(HttpExchange\ httpExchange)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00133}00133\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_http_request_context_info}{HttpRequestContextInfo}}(httpExchange);}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00134}00134\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00135}00135\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00136}00136\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00137}00137\ \textcolor{comment}{\ \ \ \ \ *\ Adds\ a\ cookie\ to\ the\ response\ headers\ of\ the\ given\ HttpExchange.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00138}00138\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00139}00139\ \textcolor{comment}{\ \ \ \ \ *\ @param\ httpExchange\ The\ HttpExchange\ object\ representing\ the\ HTTP\ request\ and\ response.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00140}00140\ \textcolor{comment}{\ \ \ \ \ *\ @param\ cookie\ The\ IHttpCookie\ object\ representing\ the\ cookie\ to\ be\ added.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00141}00141\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00142}\mbox{\hyperlink{class_base_route_handler_a506d52b2bf42554720a3eacd5dfba5d6}{00142}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_route_handler_a506d52b2bf42554720a3eacd5dfba5d6}{addCookie}}(HttpExchange\ httpExchange,\ \mbox{\hyperlink{interface_i_http_cookie}{IHttpCookie}}\ cookie)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00143}00143\ \ \ \ \ \ \ \ \ Headers\ respHeaders\ =\ httpExchange.getResponseHeaders();}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00144}00144\ \ \ \ \ \ \ \ \ respHeaders.add(\textcolor{stringliteral}{"{}Set-\/Cookie"{}},\ cookie.\mbox{\hyperlink{interface_i_http_cookie_a1ec263269ce81f8b921de750ea78289f}{toString}}());}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00145}00145\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00146}00146\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00147}00147\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00148}00148\ \textcolor{comment}{\ \ \ \ \ *\ Parses\ the\ given\ form\ data\ and\ returns\ a\ map\ of\ key-\/value\ pairs.}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00149}00149\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00150}00150\ \textcolor{comment}{\ \ \ \ \ *\ @param\ formData\ the\ form\ data\ to\ be\ parsed}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00151}00151\ \textcolor{comment}{\ \ \ \ \ *\ @return\ a\ map\ containing\ the\ parsed\ key-\/value\ pairs}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00152}00152\ \textcolor{comment}{\ \ \ \ \ *\ @throws\ UnsupportedEncodingException\ if\ the\ encoding\ is\ not\ supported}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00153}00153\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00154}\mbox{\hyperlink{class_base_route_handler_acadf372f62b7d6551ea9586da133fd89}{00154}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ Map<String,\ String>\ \mbox{\hyperlink{class_base_route_handler_acadf372f62b7d6551ea9586da133fd89}{parseFormData}}(String\ formData)\ \textcolor{keywordflow}{throws}\ UnsupportedEncodingException\ \{}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00155}00155\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_http_helpers}{HttpHelpers}}.\mbox{\hyperlink{class_http_helpers_a8ef8502a796a27eb6ef0dc06c8891baf}{parseFormData}}(formData);}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00156}00156\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00157}00157\ }
+\DoxyCodeLine{\Hypertarget{_base_route_handler_8java_source_l00158}00158\ \}}
+
+\end{DoxyCode}

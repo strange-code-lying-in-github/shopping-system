@@ -1,0 +1,7 @@
+<map id="PurchaseDTOHome" name="PurchaseDTOHome">
+<area shape="rect" id="Node000001" title="The PurchaseDTOHome class represents a home for PurchaseDTO objects." alt="" coords="21,856,209,976"/>
+<area shape="rect" id="Node000002" href="$class_base_d_t_o_home.html" title=" " alt="" coords="5,243,225,808"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,823,118,856,113,856,113,823"/>
+<area shape="rect" id="Node000003" href="$interface_i_d_t_o_home.html" title="This interface represents a home for Data Transfer Objects (DTOs)." alt="" coords="19,5,211,195"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,210,118,243,113,243,113,210"/>
+</map>

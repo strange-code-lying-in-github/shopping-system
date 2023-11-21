@@ -1,0 +1,176 @@
+\doxysection{IApp\+Logging\+Stream Interface Reference}
+\hypertarget{interface_i_app_logging_stream}{}\label{interface_i_app_logging_stream}\index{IAppLoggingStream@{IAppLoggingStream}}
+
+
+The \doxylink{interface_i_app_logging_stream}{IApp\+Logging\+Stream} interface defines methods for logging messages and objects.  
+
+
+
+
+Inheritance diagram for IApp\+Logging\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_i_app_logging_stream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IApp\+Logging\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{interface_i_app_logging_stream__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{log}} (String \mbox{\hyperlink{class_i_factory}{message}})
+\begin{DoxyCompactList}\small\item\em The log function is used to print a message to the console. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{interface_i_app_logging_stream_afd9935ad95e271fe768061f09383d920}{log}} (\mbox{\hyperlink{class_i_factory}{Object}} \mbox{\hyperlink{class_i_factory}{object}})
+\begin{DoxyCompactList}\small\item\em The log function is used to print an object to the console. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{interface_i_app_logging_stream_a21d58084a30ed9137b00d5921cd9f26b}{log}} (String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory}{messages}})
+\begin{DoxyCompactList}\small\item\em The log function takes an array of strings as input and logs each string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{interface_i_app_logging_stream_a64840174268902c21881ebc8cac8651d}{log}} (String \mbox{\hyperlink{class_i_factory}{message}}, \mbox{\hyperlink{class_i_factory}{Throwable}} \mbox{\hyperlink{class_i_factory}{throwable}})
+\begin{DoxyCompactList}\small\item\em The log function logs a message and an associated throwable object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{interface_i_app_logging_stream_a2ae8561471fb4276f8095365094d3e8c}{log}} (\mbox{\hyperlink{class_i_factory}{Throwable}} \mbox{\hyperlink{class_i_factory}{throwable}})
+\begin{DoxyCompactList}\small\item\em The log function is used to log an exception or error. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7}{flush}} ()
+\begin{DoxyCompactList}\small\item\em The \doxylink{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7}{flush()} function is used to clear any buffered output and write it to the output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{interface_i_app_logging_stream}{IApp\+Logging\+Stream} interface defines methods for logging messages and objects. 
+
+Definition at line \mbox{\hyperlink{_i_app_logging_stream_8java_source_l00006}{6}} of file \mbox{\hyperlink{_i_app_logging_stream_8java_source}{IApp\+Logging\+Stream.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7}\label{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7} 
+\index{IAppLoggingStream@{IAppLoggingStream}!flush@{flush}}
+\index{flush@{flush}!IAppLoggingStream@{IAppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} IApp\+Logging\+Stream.\+flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The \doxylink{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7}{flush()} function is used to clear any buffered output and write it to the output stream. 
+
+
+
+Implemented in \mbox{\hyperlink{class_app_logging_agent_a3ad7cf5d943640655583595d9d6002f0}{App\+Logging\+Agent}}, and \mbox{\hyperlink{class_app_logging_stream_a637eb2d25c9a2df1175517f0ab3e80d9}{App\+Logging\+Stream}}.
+
+
+
+Referenced by \mbox{\hyperlink{_app_logging_agent_8java_source_l00136}{App\+Logging\+Agent.\+flush()}}.
+
+\Hypertarget{interface_i_app_logging_stream_afd9935ad95e271fe768061f09383d920}\label{interface_i_app_logging_stream_afd9935ad95e271fe768061f09383d920} 
+\index{IAppLoggingStream@{IAppLoggingStream}!log@{log}}
+\index{log@{log}!IAppLoggingStream@{IAppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} IApp\+Logging\+Stream.\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Object}}}]{object }\end{DoxyParamCaption})}
+
+
+
+The log function is used to print an object to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The parameter "{}object"{} is of type Object, which means it can hold any type of object. It is used to pass an object that you want to log or display. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_app_logging_agent_a89c45845bc495559c88f8e323326e94b}{App\+Logging\+Agent}}, and \mbox{\hyperlink{class_app_logging_stream_af09cc8fb81d0cd73aeef49407b8fc4e8}{App\+Logging\+Stream}}.
+
+\Hypertarget{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}\label{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a} 
+\index{IAppLoggingStream@{IAppLoggingStream}!log@{log}}
+\index{log@{log}!IAppLoggingStream@{IAppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} IApp\+Logging\+Stream.\+log (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})}
+
+
+
+The log function is used to print a message to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The parameter "{}message"{} is of type String, which means it can hold a sequence of characters. It is used to pass a message that you want to log or display. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{App\+Logging\+Agent}}, and \mbox{\hyperlink{class_app_logging_stream_a5423b45be366ef8faba299f4e107f334}{App\+Logging\+Stream}}.
+
+
+
+Referenced by \mbox{\hyperlink{_app_logging_agent_8java_source_l00083}{App\+Logging\+Agent.\+log()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00129}{App\+Logging\+Agent.\+log()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00095}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_app_logging_agent_8java_source_l00112}{App\+Logging\+Agent.\+log()}}.
+
+\Hypertarget{interface_i_app_logging_stream_a64840174268902c21881ebc8cac8651d}\label{interface_i_app_logging_stream_a64840174268902c21881ebc8cac8651d} 
+\index{IAppLoggingStream@{IAppLoggingStream}!log@{log}}
+\index{log@{log}!IAppLoggingStream@{IAppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} IApp\+Logging\+Stream.\+log (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{\mbox{\hyperlink{class_i_factory}{Throwable}}}]{throwable }\end{DoxyParamCaption})}
+
+
+
+The log function logs a message and an associated throwable object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & A string that represents the log message to be logged. This can be any information or description that you want to include in the log. \\
+\hline
+{\em throwable} & The "{}throwable"{} parameter is used to pass an exception or error object. It allows you to log an error message along with the stack trace of the exception. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_app_logging_agent_aeeaf5bd6e902b14eef84dcd4fb63277a}{App\+Logging\+Agent}}, and \mbox{\hyperlink{class_app_logging_stream_a0bc37eca9b2ea6e81f9fd42b7cbf703c}{App\+Logging\+Stream}}.
+
+\Hypertarget{interface_i_app_logging_stream_a21d58084a30ed9137b00d5921cd9f26b}\label{interface_i_app_logging_stream_a21d58084a30ed9137b00d5921cd9f26b} 
+\index{IAppLoggingStream@{IAppLoggingStream}!log@{log}}
+\index{log@{log}!IAppLoggingStream@{IAppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} IApp\+Logging\+Stream.\+log (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{messages }\end{DoxyParamCaption})}
+
+
+
+The log function takes an array of strings as input and logs each string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messages} & An array of strings that represents the messages to be logged. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_app_logging_agent_a2dc139046d633c01fd556a833bd8df96}{App\+Logging\+Agent}}, and \mbox{\hyperlink{class_app_logging_stream_af56eb81085f284d32dc24a58a60bf1a2}{App\+Logging\+Stream}}.
+
+\Hypertarget{interface_i_app_logging_stream_a2ae8561471fb4276f8095365094d3e8c}\label{interface_i_app_logging_stream_a2ae8561471fb4276f8095365094d3e8c} 
+\index{IAppLoggingStream@{IAppLoggingStream}!log@{log}}
+\index{log@{log}!IAppLoggingStream@{IAppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} IApp\+Logging\+Stream.\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Throwable}}}]{throwable }\end{DoxyParamCaption})}
+
+
+
+The log function is used to log an exception or error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em throwable} & The "{}throwable"{} parameter is of type Throwable, which is the base class for all exceptions and errors in Java. It represents an object that can be thrown and caught to handle exceptional conditions in a program. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_app_logging_agent_a13ef66319ea050438348ea404ef01d17}{App\+Logging\+Agent}}, and \mbox{\hyperlink{class_app_logging_stream_a4f3785154d0188f594f23fe127bfa571}{App\+Logging\+Stream}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_app_logging_stream_8java}{IApp\+Logging\+Stream.\+java}}\end{DoxyCompactItemize}

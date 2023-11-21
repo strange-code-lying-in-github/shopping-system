@@ -1,0 +1,618 @@
+\doxysection{Shopping\+Data\+Layer\+Service Class Reference}
+\hypertarget{class_shopping_data_layer_service}{}\label{class_shopping_data_layer_service}\index{ShoppingDataLayerService@{ShoppingDataLayerService}}
+
+
+The \doxylink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service} class is responsible for handling data layer operations related to shopping functionality.  
+
+
+
+
+Collaboration diagram for Shopping\+Data\+Layer\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_shopping_data_layer_service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopping_data_layer_service_a469eac25c5746e502204c188903bb365}{Shopping\+Data\+Layer\+Service}} (\mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}})
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_shopping_data_layer_service_a7741dea82cfac6ba06bbe75032bc7f15}{configure}} ()
+\begin{DoxyCompactList}\small\item\em Configures the shopping data layer service. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_shopping_data_layer_service_a0c5e5fa32b3f272b33f2705a4f793935}{execute\+Command}} (String \mbox{\hyperlink{class_i_factory}{sql}}, \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_i_factory}{result\+Processor}})
+\begin{DoxyCompactList}\small\item\em Executes a database command and returns a Boolean indicating the success or failure of the operation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_shopping_data_layer_service_ae9c18a0f36c3cafc7e5d5434545677a0}{execute\+Query}} (String \mbox{\hyperlink{class_i_factory}{sql}}, \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_i_factory}{result\+Processor}})
+\begin{DoxyCompactList}\small\item\em Executes a SQL query and processes the result using the specified \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_shopping_data_layer_service_a9f4bc4d863f57a0eae76b584755a82ae}{load\+DTOs}} (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}}, \mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}} \mbox{\hyperlink{class_i_factory}{dto\+Home}})
+\begin{DoxyCompactList}\small\item\em Loads the specified DTO using the provided SQL query and processor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_shopping_data_layer_service_ac76ccab0de4a7685450fa27ddc1a40c4}{save\+DTO}} (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}})
+\begin{DoxyCompactList}\small\item\em Saves the given DTO object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_shopping_data_layer_service_a2285698617bbd833bdcf549c24ec2969}{save\+DTOs}} (\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_i_factory}{dtos}})
+\begin{DoxyCompactList}\small\item\em Saves a list of \doxylink{interface_i_d_t_o}{IDTO} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopping_data_layer_service_a5177d45fd091bbd26247e031049c456e}{\mbox{[}static initializer\mbox{]}}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_shopping_data_layer_service_a8564e3cead63a33a0d18c33504f3b3dd}{load\+Configuration}} (\mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}})
+\begin{DoxyCompactList}\small\item\em Loads the configuration values from the given environment object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_shopping_data_layer_service_a3ef55e17b54ae2f79c4a2efe03fe142c}{get\+Database\+Connection\+Information}} (\mbox{\hyperlink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper}} \mbox{\hyperlink{class_i_factory}{db\+Connection\+Wrapper}})
+\begin{DoxyCompactList}\small\item\em Prompts the user to enter database connection information and sets the connection properties for the given \doxylink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_shopping_data_layer_service_a37582bd7043be10c20bf5f34c3e88496}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The logging agent used for logging in the shopping data layer service. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}}
+\begin{DoxyCompactList}\small\item\em Represents an interface for accessing the environment settings. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_shopping_data_layer_service_a608679b08225f44d5eb2416584f6e368}{driver}}
+\begin{DoxyCompactList}\small\item\em The driver used for the shopping data layer service. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_shopping_data_layer_service_a559f7df69080f2d16bf6352fc7376cf3}{user\+Name}}
+\begin{DoxyCompactList}\small\item\em The username associated with the shopping data layer service. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_shopping_data_layer_service_ae2064a54062c9acf494151448cf51445}{password}}
+\begin{DoxyCompactList}\small\item\em The password used for authentication. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_shopping_data_layer_service_a55a0371b47c44ba63e597fae30f39a0f}{host}}
+\begin{DoxyCompactList}\small\item\em The host of the shopping data layer service. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_shopping_data_layer_service_a31bfb6a0eff0d1a6546eeaa376e2d32a}{database}}
+\begin{DoxyCompactList}\small\item\em The name of the database used by the shopping data layer service. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_shopping_data_layer_service_a8d65ce8aa099b7320505857efc8e0f52}{port}}
+\begin{DoxyCompactList}\small\item\em The port number used by the \doxylink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_shopping_data_layer_service_a3e64e8c9ab51a77f8fdfaee6745eb89c}{schema}}
+\begin{DoxyCompactList}\small\item\em The schema used for the shopping data layer service. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service} class is responsible for handling data layer operations related to shopping functionality. 
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00010}{10}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopping_data_layer_service_a469eac25c5746e502204c188903bb365}\label{class_shopping_data_layer_service_a469eac25c5746e502204c188903bb365} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{ShoppingDataLayerService()}{ShoppingDataLayerService()}}
+{\footnotesize\ttfamily Shopping\+Data\+Layer\+Service.\+Shopping\+Data\+Layer\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_environment}{IEnvironment}}}]{environment }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00056}{56}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ this.environment\ =\ \mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}};}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00025}{environment}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopping_data_layer_service_a5177d45fd091bbd26247e031049c456e}\label{class_shopping_data_layer_service_a5177d45fd091bbd26247e031049c456e} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!\mbox{[}static initializer\mbox{]}@{[static initializer]}}
+\index{\mbox{[}static initializer\mbox{]}@{[static initializer]}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{[static initializer]()}{[static initializer]()}}
+{\footnotesize\ttfamily Shopping\+Data\+Layer\+Service.\mbox{[}\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{initializer}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\Hypertarget{class_shopping_data_layer_service_a7741dea82cfac6ba06bbe75032bc7f15}\label{class_shopping_data_layer_service_a7741dea82cfac6ba06bbe75032bc7f15} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!configure@{configure}}
+\index{configure@{configure}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Shopping\+Data\+Layer\+Service.\+configure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Configures the shopping data layer service. 
+
+Loads the configuration based on the current environment. 
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00064}{64}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service_a8564e3cead63a33a0d18c33504f3b3dd}{loadConfiguration}}(this.\mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}});}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00075}{load\+Configuration()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_system_8java_source_l00036}{Shopping\+System.\+start()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_data_layer_service_a7741dea82cfac6ba06bbe75032bc7f15_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_shopping_data_layer_service_a0c5e5fa32b3f272b33f2705a4f793935}\label{class_shopping_data_layer_service_a0c5e5fa32b3f272b33f2705a4f793935} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!executeCommand@{executeCommand}}
+\index{executeCommand@{executeCommand}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{executeCommand()}{executeCommand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ Shopping\+Data\+Layer\+Service.\+execute\+Command (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}}}]{result\+Processor }\end{DoxyParamCaption})}
+
+
+
+Executes a database command and returns a Boolean indicating the success or failure of the operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & The SQL command to be executed. \\
+\hline
+{\em result\+Processor} & The result processor for handling the query result. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the command is executed successfully, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00094}{94}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (\mbox{\hyperlink{interface_i_db_connection_wrapper}{IDbConnectionWrapper}}\ \mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}}\ =\ \mbox{\hyperlink{class_db_factory}{DbFactory}}.\mbox{\hyperlink{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1}{create}}(\textcolor{keyword}{this}.driver))\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service_a3ef55e17b54ae2f79c4a2efe03fe142c}{getDatabaseConnectionInformation}}(\mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}});}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Boolean}}\ result\ =\ (\textcolor{keyword}{new}\ \mbox{\hyperlink{class_execute_query_operation}{ExecuteQueryOperation}}()).execute(\mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}},\ \mbox{\hyperlink{class_i_factory}{sql}},\ \mbox{\hyperlink{class_i_factory}{resultProcessor}});}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result)\ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{resultProcessor}}.getResults();}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service_a37582bd7043be10c20bf5f34c3e88496}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Error\ executing\ command"{}},\ \mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{ArrayList<IDTO>}}();}
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_i_factory_8java_source_l00073}{IFactory$<$ T $>$.\+create()}}, \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00136}{get\+Database\+Connection\+Information()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00015}{logging}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00157}{save\+DTO()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_data_layer_service_a0c5e5fa32b3f272b33f2705a4f793935_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_shopping_data_layer_service_ae9c18a0f36c3cafc7e5d5434545677a0}\label{class_shopping_data_layer_service_ae9c18a0f36c3cafc7e5d5434545677a0} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!executeQuery@{executeQuery}}
+\index{executeQuery@{executeQuery}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{executeQuery()}{executeQuery()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ Shopping\+Data\+Layer\+Service.\+execute\+Query (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}}}]{result\+Processor }\end{DoxyParamCaption})}
+
+
+
+Executes a SQL query and processes the result using the specified \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & The SQL query to execute. \\
+\hline
+{\em result\+Processor} & The \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} to process the query result. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the query was executed successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00115}{115}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (\mbox{\hyperlink{interface_i_db_connection_wrapper}{IDbConnectionWrapper}}\ \mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}}\ =\ \mbox{\hyperlink{class_db_factory}{DbFactory}}.\mbox{\hyperlink{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1}{create}}(\textcolor{keyword}{this}.driver))\ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service_a3ef55e17b54ae2f79c4a2efe03fe142c}{getDatabaseConnectionInformation}}(\mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}});}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Boolean}}\ result\ =\ (\textcolor{keyword}{new}\ \mbox{\hyperlink{class_simple_query_operation}{SimpleQueryOperation}}()).execute(\mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}},\ \mbox{\hyperlink{class_i_factory}{sql}},\ \mbox{\hyperlink{class_i_factory}{resultProcessor}});}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result)}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{resultProcessor}}.getResults();}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service_a37582bd7043be10c20bf5f34c3e88496}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Error\ executing\ command"{}},\ \mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{ArrayList<IDTO>}}();}
+\DoxyCodeLine{00126\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_i_factory_8java_source_l00073}{IFactory$<$ T $>$.\+create()}}, \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00136}{get\+Database\+Connection\+Information()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00015}{logging}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00147}{load\+DTOs()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_data_layer_service_ae9c18a0f36c3cafc7e5d5434545677a0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_shopping_data_layer_service_a3ef55e17b54ae2f79c4a2efe03fe142c}\label{class_shopping_data_layer_service_a3ef55e17b54ae2f79c4a2efe03fe142c} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!getDatabaseConnectionInformation@{getDatabaseConnectionInformation}}
+\index{getDatabaseConnectionInformation@{getDatabaseConnectionInformation}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{getDatabaseConnectionInformation()}{getDatabaseConnectionInformation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Shopping\+Data\+Layer\+Service.\+get\+Database\+Connection\+Information (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper}}}]{db\+Connection\+Wrapper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prompts the user to enter database connection information and sets the connection properties for the given \doxylink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Connection\+Wrapper} & the \doxylink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper} object to set the connection properties for \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00136}{136}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}}.connectionProperties(this.\mbox{\hyperlink{class_shopping_data_layer_service_a559f7df69080f2d16bf6352fc7376cf3}{userName}},\ this.\mbox{\hyperlink{class_shopping_data_layer_service_ae2064a54062c9acf494151448cf51445}{password}},\ this.\mbox{\hyperlink{class_shopping_data_layer_service_a8d65ce8aa099b7320505857efc8e0f52}{port}},\ this.\mbox{\hyperlink{class_shopping_data_layer_service_a55a0371b47c44ba63e597fae30f39a0f}{host}},\ this.\mbox{\hyperlink{class_shopping_data_layer_service_a31bfb6a0eff0d1a6546eeaa376e2d32a}{database}},}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_shopping_data_layer_service_a3e64e8c9ab51a77f8fdfaee6745eb89c}{schema}});}
+\DoxyCodeLine{00139\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00094}{execute\+Command()}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00115}{execute\+Query()}}.
+
+\Hypertarget{class_shopping_data_layer_service_a8564e3cead63a33a0d18c33504f3b3dd}\label{class_shopping_data_layer_service_a8564e3cead63a33a0d18c33504f3b3dd} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!loadConfiguration@{loadConfiguration}}
+\index{loadConfiguration@{loadConfiguration}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{loadConfiguration()}{loadConfiguration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Shopping\+Data\+Layer\+Service.\+load\+Configuration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_environment}{IEnvironment}}}]{environment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads the configuration values from the given environment object. 
+
+Sets the driver, username, password, host, database, and port for the database connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em environment} & the environment object containing the configuration values \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00075}{75}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ this.driver\ =\ \mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}}.\mbox{\hyperlink{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}{getValue}}(\textcolor{stringliteral}{"{}db.driver"{}});}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ this.userName\ =\ \mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}}.\mbox{\hyperlink{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}{getValue}}(\textcolor{stringliteral}{"{}db.user"{}});}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ this.password\ =\ \mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}}.\mbox{\hyperlink{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}{getValue}}(\textcolor{stringliteral}{"{}db.password"{}});}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ this.host\ =\ \mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}}.\mbox{\hyperlink{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}{getValue}}(\textcolor{stringliteral}{"{}db.host"{}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ this.database\ =\ \mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}}.\mbox{\hyperlink{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}{getValue}}(\textcolor{stringliteral}{"{}db.database"{}});}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ this.port\ =\ Integer.parseInt(\mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}}.\mbox{\hyperlink{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}{getValue}}(\textcolor{stringliteral}{"{}db.port"{}}));}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ this.schema\ =\ \mbox{\hyperlink{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}{environment}}.\mbox{\hyperlink{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}{getValue}}(\textcolor{stringliteral}{"{}db.schema"{}});}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00025}{environment}}, and \mbox{\hyperlink{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}{IEnvironment.\+get\+Value()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00064}{configure()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_data_layer_service_a8564e3cead63a33a0d18c33504f3b3dd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_shopping_data_layer_service_a9f4bc4d863f57a0eae76b584755a82ae}\label{class_shopping_data_layer_service_a9f4bc4d863f57a0eae76b584755a82ae} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!loadDTOs@{loadDTOs}}
+\index{loadDTOs@{loadDTOs}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{loadDTOs()}{loadDTOs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ Shopping\+Data\+Layer\+Service.\+load\+DTOs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}}]{dto,  }\item[{\mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}}}]{dto\+Home }\end{DoxyParamCaption})}
+
+
+
+Loads the specified DTO using the provided SQL query and processor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dto} & The DTO to be loaded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the DTO was successfully loaded, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00147}{147}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_shopping_data_layer_service_ae9c18a0f36c3cafc7e5d5434545677a0}{executeQuery}}(\mbox{\hyperlink{class_i_factory}{dto}}.getLoadSql(\textcolor{keyword}{this}.schema),\ \mbox{\hyperlink{class_i_factory}{dtoHome}}.getLoadProcessor());}
+\DoxyCodeLine{00149\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00115}{execute\+Query()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00050}{Shopping\+Business\+Layer\+Service.\+get\+User()}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00157}{save\+DTO()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_data_layer_service_a9f4bc4d863f57a0eae76b584755a82ae_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_shopping_data_layer_service_ac76ccab0de4a7685450fa27ddc1a40c4}\label{class_shopping_data_layer_service_ac76ccab0de4a7685450fa27ddc1a40c4} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!saveDTO@{saveDTO}}
+\index{saveDTO@{saveDTO}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{saveDTO()}{saveDTO()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ Shopping\+Data\+Layer\+Service.\+save\+DTO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}}]{dto }\end{DoxyParamCaption})}
+
+
+
+Saves the given DTO object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dto} & The DTO object to be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the DTO object is successfully saved, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00157}{157}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ \mbox{\hyperlink{class_shopping_data_layer_service_a0c5e5fa32b3f272b33f2705a4f793935}{executeCommand}}(\mbox{\hyperlink{class_i_factory}{dto}}.getSaveSql(\textcolor{keyword}{this}.schema),\ \mbox{\hyperlink{class_i_factory}{dto}}.getSaveProcessor());}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{dtoResult}}\ :\ result)\ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_shopping_data_layer_service_a9f4bc4d863f57a0eae76b584755a82ae}{loadDTOs}}(\mbox{\hyperlink{class_i_factory}{dto}},\ \mbox{\hyperlink{class_i_factory}{dto}}.getDtoHome());}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{ArrayList<IDTO>}}();}
+\DoxyCodeLine{00163\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00094}{execute\+Command()}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00147}{load\+DTOs()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00061}{Shopping\+Business\+Layer\+Service.\+add\+Audit\+Trail()}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00171}{save\+DTOs()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_data_layer_service_ac76ccab0de4a7685450fa27ddc1a40c4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_shopping_data_layer_service_a2285698617bbd833bdcf549c24ec2969}\label{class_shopping_data_layer_service_a2285698617bbd833bdcf549c24ec2969} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!saveDTOs@{saveDTOs}}
+\index{saveDTOs@{saveDTOs}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{saveDTOs()}{saveDTOs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ Shopping\+Data\+Layer\+Service.\+save\+DTOs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$}]{dtos }\end{DoxyParamCaption})}
+
+
+
+Saves a list of \doxylink{interface_i_d_t_o}{IDTO} objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dtos} & The list of \doxylink{interface_i_d_t_o}{IDTO} objects to be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same list of \doxylink{interface_i_d_t_o}{IDTO} objects. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00171}{171}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ :\ \mbox{\hyperlink{class_i_factory}{dtos}})\ \{}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_shopping_data_layer_service_ac76ccab0de4a7685450fa27ddc1a40c4}{saveDTO}}(\mbox{\hyperlink{class_i_factory}{dto}}).\mbox{\hyperlink{class_i_factory}{size}}()\ ==\ 0)}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_data_layer_service_a37582bd7043be10c20bf5f34c3e88496}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Error\ saving\ DTO:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{dto}}.getDtoName()\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{dto}}.toString());}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{dtos}};}
+\DoxyCodeLine{00177\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00015}{logging}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00157}{save\+DTO()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_data_layer_service_a2285698617bbd833bdcf549c24ec2969_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_shopping_data_layer_service_a31bfb6a0eff0d1a6546eeaa376e2d32a}\label{class_shopping_data_layer_service_a31bfb6a0eff0d1a6546eeaa376e2d32a} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!database@{database}}
+\index{database@{database}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily String Shopping\+Data\+Layer\+Service.\+database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The name of the database used by the shopping data layer service. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00045}{45}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+\Hypertarget{class_shopping_data_layer_service_a608679b08225f44d5eb2416584f6e368}\label{class_shopping_data_layer_service_a608679b08225f44d5eb2416584f6e368} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!driver@{driver}}
+\index{driver@{driver}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{driver}{driver}}
+{\footnotesize\ttfamily String Shopping\+Data\+Layer\+Service.\+driver\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The driver used for the shopping data layer service. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00029}{29}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+\Hypertarget{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3}\label{class_shopping_data_layer_service_a1398d01f6d3c68d12dcede841bcd66c3} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!environment@{environment}}
+\index{environment@{environment}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{environment}{environment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_environment}{IEnvironment}} Shopping\+Data\+Layer\+Service.\+environment\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Represents an interface for accessing the environment settings. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00025}{25}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00075}{load\+Configuration()}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00056}{Shopping\+Data\+Layer\+Service()}}.
+
+\Hypertarget{class_shopping_data_layer_service_a55a0371b47c44ba63e597fae30f39a0f}\label{class_shopping_data_layer_service_a55a0371b47c44ba63e597fae30f39a0f} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!host@{host}}
+\index{host@{host}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily String Shopping\+Data\+Layer\+Service.\+host\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The host of the shopping data layer service. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00041}{41}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+\Hypertarget{class_shopping_data_layer_service_a37582bd7043be10c20bf5f34c3e88496}\label{class_shopping_data_layer_service_a37582bd7043be10c20bf5f34c3e88496} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!logging@{logging}}
+\index{logging@{logging}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Shopping\+Data\+Layer\+Service.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The logging agent used for logging in the shopping data layer service. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00015}{15}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00094}{execute\+Command()}}, \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00115}{execute\+Query()}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00171}{save\+DTOs()}}.
+
+\Hypertarget{class_shopping_data_layer_service_ae2064a54062c9acf494151448cf51445}\label{class_shopping_data_layer_service_ae2064a54062c9acf494151448cf51445} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!password@{password}}
+\index{password@{password}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily String Shopping\+Data\+Layer\+Service.\+password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The password used for authentication. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00037}{37}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+\Hypertarget{class_shopping_data_layer_service_a8d65ce8aa099b7320505857efc8e0f52}\label{class_shopping_data_layer_service_a8d65ce8aa099b7320505857efc8e0f52} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!port@{port}}
+\index{port@{port}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily int Shopping\+Data\+Layer\+Service.\+port\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The port number used by the \doxylink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00049}{49}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+\Hypertarget{class_shopping_data_layer_service_a3e64e8c9ab51a77f8fdfaee6745eb89c}\label{class_shopping_data_layer_service_a3e64e8c9ab51a77f8fdfaee6745eb89c} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!schema@{schema}}
+\index{schema@{schema}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily String Shopping\+Data\+Layer\+Service.\+schema\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The schema used for the shopping data layer service. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00054}{54}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+\Hypertarget{class_shopping_data_layer_service_a559f7df69080f2d16bf6352fc7376cf3}\label{class_shopping_data_layer_service_a559f7df69080f2d16bf6352fc7376cf3} 
+\index{ShoppingDataLayerService@{ShoppingDataLayerService}!userName@{userName}}
+\index{userName@{userName}!ShoppingDataLayerService@{ShoppingDataLayerService}}
+\doxysubsubsection{\texorpdfstring{userName}{userName}}
+{\footnotesize\ttfamily String Shopping\+Data\+Layer\+Service.\+user\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The username associated with the shopping data layer service. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00033}{33}} of file \mbox{\hyperlink{_shopping_data_layer_service_8java_source}{Shopping\+Data\+Layer\+Service.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_shopping_data_layer_service_8java}{Shopping\+Data\+Layer\+Service.\+java}}\end{DoxyCompactItemize}

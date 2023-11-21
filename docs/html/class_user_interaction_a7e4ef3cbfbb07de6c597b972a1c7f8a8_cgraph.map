@@ -1,0 +1,7 @@
+<map id="UserInteraction.getInput" name="UserInteraction.getInput">
+<area shape="rect" id="Node000001" title="Prompts the user for input and returns the input as a String." alt="" coords="5,42,167,68"/>
+<area shape="rect" id="Node000002" href="$class_user_interaction.html#a7930e328442d2ac9d85b44cfb02c5ab3" title="Reads a line of text from the console input and returns it as a string." alt="" coords="217,5,397,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,42,201,37,202,42,168,47"/>
+<area shape="rect" id="Node000003" href="$class_user_interaction.html#ad9e64b28cd3e2f5b3cb4d7bb06e77451" title="Prints the given prompt to the console and flushes the output stream." alt="" coords="215,70,399,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,63,199,67,199,72,167,68"/>
+</map>

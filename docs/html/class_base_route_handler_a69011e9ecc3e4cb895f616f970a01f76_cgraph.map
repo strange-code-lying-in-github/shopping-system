@@ -1,0 +1,14 @@
+<map id="BaseRouteHandler.handleResponse" name="BaseRouteHandler.handleResponse">
+<area shape="rect" id="Node000001" title="Handles the HTTP response by setting the response content type, sending the response headers,..." alt="" coords="5,82,237,108"/>
+<area shape="rect" id="Node000002" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="318,41,463,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,79,302,64,303,70,210,84"/>
+<area shape="rect" id="Node000006" href="$class_base_route_handler.html#a426d25bf07fc6cd306ec944f774dc663" title="Sets the response content type for the given HttpExchange object." alt="" coords="285,115,496,155"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="213,106,270,114,269,120,212,111"/>
+<area shape="rect" id="Node000003" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="544,5,752,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="463,43,529,36,529,41,463,48"/>
+<area shape="rect" id="Node000005" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="570,70,726,96"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="463,59,555,70,554,75,463,65"/>
+<area shape="rect" id="Node000004" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="800,5,986,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="753,23,784,23,784,28,753,28"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="342,115,340,105,348,96,365,90,390,88,418,90,435,97,433,102,417,96,390,93,366,95,351,100,345,106,347,113"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="AppLoggingStream" name="AppLoggingStream">
+<area shape="rect" id="Node000001" title="The AppLoggingStream class implements the IAppLoggingStream interface and provides methods for loggin..." alt="" coords="83,263,265,458"/>
+<area shape="rect" id="Node000002" href="$interface_i_app_logging_stream.html" title="The IAppLoggingStream interface defines methods for logging messages and objects." alt="" coords="5,5,188,200"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,213,148,262,142,264,127,215"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="212,70,293,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,136,211,247,206,246,240,134"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="EchoHandler.handlePostRequest" name="EchoHandler.handlePostRequest">
+<area shape="rect" id="Node000001" title="Handles a POST request by delegating to the handleGetRequest method." alt="" coords="5,132,219,157"/>
+<area shape="rect" id="Node000002" href="$class_echo_handler.html#abf46631007c0cc0c680fd2803e0a4d2d" title="Handles the GET request and returns a formatted string containing information about the request." alt="" coords="267,132,474,157"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,142,251,142,251,147,219,147"/>
+<area shape="rect" id="Node000003" href="$class_http_helpers.html#a675234b48cbe48a03e2ce0e81b7d16bf" title="Escapes the given response string using the specified text type." alt="" coords="527,29,723,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,129,521,81,543,73,545,78,523,85,404,133"/>
+<area shape="rect" id="Node000004" href="$interface_i_http_request_context_info.html#a8dbc757430fc97b0f8edb9c528f6a598" title="Returns a map of the query parameters." alt="" coords="531,95,720,135"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="474,130,515,125,515,130,475,135"/>
+<area shape="rect" id="Node000005" href="$interface_i_http_request_context_info.html#a8863ec8c07849e679ef7461adfaea46f" title="Returns the URI of the request." alt="" coords="522,160,728,185"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="475,153,507,157,506,162,474,158"/>
+<area shape="rect" id="Node000006" href="$interface_i_http_request_context_info.html#a60f030fe6578ebdfe56e9eb61fa29ccd" title="Returns the path component of the URI." alt="" coords="531,209,720,250"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="409,155,523,195,543,202,541,207,521,200,407,160"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="577,29,575,19,583,10,600,5,625,3,653,5,669,11,667,16,651,10,625,8,601,10,586,15,580,21,583,28"/>
+</map>

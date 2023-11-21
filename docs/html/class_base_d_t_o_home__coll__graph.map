@@ -1,0 +1,5 @@
+<map id="BaseDTOHome" name="BaseDTOHome">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,243,225,808"/>
+<area shape="rect" id="Node000002" href="$interface_i_d_t_o_home.html" title="This interface represents a home for Data Transfer Objects (DTOs)." alt="" coords="19,5,211,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,210,118,243,113,243,113,210"/>
+</map>

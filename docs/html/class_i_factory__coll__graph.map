@@ -1,0 +1,10 @@
+<map id="IFactory&lt; T &gt;" name="IFactory&lt; T &gt;">
+<area shape="rect" id="Node000001" title="The IFactory class is a generic factory class that allows the creation of instances of a specified cl..." alt="" coords="36,625,236,1193"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,372,157,452"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,452,105,607,100,608,83,452"/>
+<area shape="rect" id="Node000003" href="$class_app_logging_agent.html" title="The AppLoggingAgent class implements the IAppLoggingStream interface and provides methods for logging..." alt="" coords="182,263,383,562"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,562,227,609,222,608,236,561"/>
+<area shape="rect" id="Node000004" href="$interface_i_app_logging_stream.html" title="The IAppLoggingStream interface defines methods for logging messages and objects." alt="" coords="190,5,373,200"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="281,215,281,224,281,264,276,263,276,224,276,215"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="284,200,285,246,279,246,279,200"/>
+</map>

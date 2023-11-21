@@ -1,0 +1,157 @@
+\doxysection{User\+Interaction.\+java}
+\hypertarget{_user_interaction_8java_source}{}\label{_user_interaction_8java_source}\mbox{\hyperlink{_user_interaction_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00001}00001\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.Scanner;}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00002}00002\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00003}00003\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00004}00004\ \textcolor{comment}{\ *\ The\ UserInteraction\ class\ provides\ methods\ for\ interacting\ with\ the\ user}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00005}00005\ \textcolor{comment}{\ *\ through\ the\ console.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00006}00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00007}\mbox{\hyperlink{class_user_interaction}{00007}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_user_interaction}{UserInteraction}}\ \{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00008}00008\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00009}00009\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ returns\ an\ instance\ of\ the\ AppLoggingAgent\ class.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00010}00010\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00011}00011\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ method\ is\ returning\ an\ instance\ of\ the\ AppLoggingAgent\ class.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00013}\mbox{\hyperlink{class_user_interaction_ac38cb038d48b3de130e6d791d064da83}{00013}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_user_interaction_ac38cb038d48b3de130e6d791d064da83}{logging}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00014}00014\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00015}00015\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00016}00016\ \textcolor{comment}{\ \ \ \ \ *\ Scanner\ object\ used\ to\ read\ input\ from\ the\ console.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00017}00017\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00018}\mbox{\hyperlink{class_user_interaction_adc0833f4ccf7d392e6d4e29b3531015f}{00018}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Scanner}}\ \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{consoleIn}}\ =\ \textcolor{keyword}{null};\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00019}00019\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ *\ The\ output\ stream\ used\ for\ writing\ to\ the\ console.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00022}00022\ \ \ \ \ \textcolor{comment}{//\ private\ static\ PrintStream\ consoleOut\ =\ null;}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00024}00024\ \ \ \ \ \textcolor{keyword}{static}\ \{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ Initializes\ the\ console\ input\ and\ output\ streams.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{consoleIn}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{Scanner}}(\mbox{\hyperlink{class_i_factory}{System}}.in).useDelimiter(\mbox{\hyperlink{class_i_factory}{System}}.getProperty(\textcolor{stringliteral}{"{}line.separator"{}}));}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ consoleOut\ =\ System.out;}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00030}00030\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00031}00031\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00032}00032\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00033}00033\ \textcolor{comment}{\ \ \ \ \ *\ This\ class\ represents\ the\ user\ interaction\ functionality\ of\ the\ program.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00035}\mbox{\hyperlink{class_user_interaction_ad782cdfb9ead2ecf2b4556844f759b64}{00035}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_user_interaction_ad782cdfb9ead2ecf2b4556844f759b64}{UserInteraction}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00036}00036\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00037}00037\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00038}00038\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00039}00039\ \textcolor{comment}{\ \ \ \ \ *\ Prints\ the\ given\ prompt\ to\ the\ console\ and\ flushes\ the\ output\ stream.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00040}00040\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00041}00041\ \textcolor{comment}{\ \ \ \ \ *\ @param\ prompt\ the\ prompt\ to\ be\ printed\ to\ the\ console}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00042}00042\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00043}\mbox{\hyperlink{class_user_interaction_ad9e64b28cd3e2f5b3cb4d7bb06e77451}{00043}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_interaction_ad9e64b28cd3e2f5b3cb4d7bb06e77451}{sendPrompt}}(String\ \mbox{\hyperlink{class_i_factory}{prompt}})\ \{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ \ \ \ ////\ print\ the\ given\ prompt\ to\ the\ console}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00045}00045\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{comment}{//\ consoleOut.println(prompt);}\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ \ \ \ ////\ flush\ the\ output\ stream}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00047}00047\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{comment}{//\ consoleOut.flush();}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_interaction_ac38cb038d48b3de130e6d791d064da83}{logging}}.log(\mbox{\hyperlink{class_i_factory}{prompt}});}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00049}00049\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00050}00050\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00051}00051\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00052}00052\ \textcolor{comment}{\ \ \ \ \ *\ Prints\ the\ given\ prompt\ to\ the\ console\ and\ flushes\ the\ output\ stream.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00053}00053\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00054}00054\ \textcolor{comment}{\ \ \ \ \ *\ @param\ prompt\ the\ prompt\ to\ be\ printed\ to\ the\ console}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00055}00055\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00056}\mbox{\hyperlink{class_user_interaction_af749aa98cd8bcf4637bfbc109d251804}{00056}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_interaction_af749aa98cd8bcf4637bfbc109d251804}{sendPrompt}}(String[]\ \mbox{\hyperlink{class_i_factory}{prompt}})\ \{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00057}00057\ \textcolor{comment}{\ \ \ \ \ \ \ \ ////\ print\ the\ given\ prompt\ to\ the\ console}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00058}00058\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{comment}{//\ consoleOut.println(prompt);}\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00059}00059\ \textcolor{comment}{\ \ \ \ \ \ \ \ ////\ flush\ the\ output\ stream}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00060}00060\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{comment}{//\ consoleOut.flush();}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00061}00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_interaction_ac38cb038d48b3de130e6d791d064da83}{logging}}.log(\mbox{\hyperlink{class_i_factory}{prompt}});}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00062}00062\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00063}00063\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00064}00064\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00065}00065\ \textcolor{comment}{\ \ \ \ \ *\ Reads\ a\ line\ of\ text\ from\ the\ console\ input\ and\ returns\ it\ as\ a\ string.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00066}00066\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00067}00067\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ line\ of\ text\ entered\ by\ the\ user}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00068}00068\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00069}\mbox{\hyperlink{class_user_interaction_a7930e328442d2ac9d85b44cfb02c5ab3}{00069}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ String\ \mbox{\hyperlink{class_user_interaction_a7930e328442d2ac9d85b44cfb02c5ab3}{getConsoleInputString}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00070}00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{consoleIn}}.nextLine();}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00071}00071\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00072}00072\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00073}00073\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00074}00074\ \textcolor{comment}{\ \ \ \ \ *\ Reads\ a\ boolean\ value\ from\ the\ console\ input.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00075}00075\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00076}00076\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ boolean\ value\ read\ from\ the\ console\ input}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00077}00077\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00078}\mbox{\hyperlink{class_user_interaction_afc8875b1ee699c681f6e0e9bef74956e}{00078}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_user_interaction_afc8875b1ee699c681f6e0e9bef74956e}{getConsoleInputBoolean}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{consoleIn}}.nextBoolean();}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00080}00080\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00081}00081\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00082}00082\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00083}00083\ \textcolor{comment}{\ \ \ \ \ *\ Reads\ an\ integer\ value\ from\ the\ console\ input.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00084}00084\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00085}00085\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ integer\ value\ read\ from\ the\ console\ input}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00086}00086\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00087}\mbox{\hyperlink{class_user_interaction_a76e69f578d3a991e58fb592e9b0aa3fa}{00087}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ Integer\ \mbox{\hyperlink{class_user_interaction_a76e69f578d3a991e58fb592e9b0aa3fa}{getConsoleInputInteger}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00088}00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{consoleIn}}.nextInt();}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00089}00089\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00090}00090\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00091}00091\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00092}00092\ \textcolor{comment}{\ \ \ \ \ *\ Reads\ a\ double\ value\ from\ the\ console\ input.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00093}00093\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00094}00094\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ double\ value\ read\ from\ the\ console\ input.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00095}00095\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00096}\mbox{\hyperlink{class_user_interaction_ac6bdefde89741bca6cfead1a70e13ad0}{00096}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Double}}\ \mbox{\hyperlink{class_user_interaction_ac6bdefde89741bca6cfead1a70e13ad0}{getConsoleInputDouble}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00097}00097\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{consoleIn}}.nextDouble();}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00098}00098\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00099}00099\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00100}00100\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00101}00101\ \textcolor{comment}{\ \ \ \ \ *\ Prompts\ the\ user\ for\ input\ and\ returns\ the\ input\ as\ a\ String.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00102}00102\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00103}00103\ \textcolor{comment}{\ \ \ \ \ *\ @param\ prompt\ the\ message\ to\ display\ to\ the\ user\ as\ a\ prompt}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00104}00104\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ user's\ input\ as\ a\ String}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00105}00105\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00106}\mbox{\hyperlink{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8}{00106}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ String\ \mbox{\hyperlink{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8}{getInput}}(String\ \mbox{\hyperlink{class_i_factory}{prompt}})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00107}00107\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_interaction_ad9e64b28cd3e2f5b3cb4d7bb06e77451}{sendPrompt}}(\mbox{\hyperlink{class_i_factory}{prompt}});}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00108}00108\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{nextString}}\ =\ \mbox{\hyperlink{class_user_interaction_a7930e328442d2ac9d85b44cfb02c5ab3}{getConsoleInputString}}();}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00109}00109\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_interaction_ad9e64b28cd3e2f5b3cb4d7bb06e77451}{sendPrompt}}(\textcolor{stringliteral}{"{}\ >>\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{nextString}});}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00110}00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{nextString}};}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00111}00111\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00112}00112\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00113}00113\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00114}00114\ \textcolor{comment}{\ \ \ \ \ *\ Prompts\ the\ user\ for\ a\ boolean\ input\ using\ the\ given\ prompt\ message.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00115}00115\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00116}00116\ \textcolor{comment}{\ \ \ \ \ *\ @param\ prompt\ the\ message\ to\ display\ to\ the\ user\ as\ a\ prompt}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00117}00117\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ boolean\ value\ entered\ by\ the\ user}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00118}00118\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00119}\mbox{\hyperlink{class_user_interaction_affdc7037b2dc76a4fa3448981eb8a86b}{00119}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_user_interaction_affdc7037b2dc76a4fa3448981eb8a86b}{getInputBoolean}}(String\ \mbox{\hyperlink{class_i_factory}{prompt}})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00120}00120\ \ \ \ \ \ \ \ \ String\ value\ =\ \mbox{\hyperlink{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8}{getInput}}(\mbox{\hyperlink{class_i_factory}{prompt}});}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00121}00121\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value.toLowerCase().startsWith(\textcolor{stringliteral}{"{}y"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00123}00123\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00124}00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value.toLowerCase().startsWith(\textcolor{stringliteral}{"{}n"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00126}00126\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00127}00127\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_i_factory}{nextBoolean}}\ =\ \mbox{\hyperlink{class_i_factory}{Boolean}}.valueOf(value);}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00128}00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{nextBoolean}};}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00129}00129\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00130}00130\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00131}00131\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00132}00132\ \textcolor{comment}{\ \ \ \ \ *\ Prompts\ the\ user\ for\ an\ input\ and\ returns\ the\ input\ as\ an\ Integer.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00133}00133\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00134}00134\ \textcolor{comment}{\ \ \ \ \ *\ @param\ prompt\ the\ message\ to\ display\ to\ the\ user\ as\ a\ prompt}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00135}00135\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ user's\ input\ as\ an\ Integer}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00136}00136\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00137}\mbox{\hyperlink{class_user_interaction_a4f74d6780c139cacb84872affd425155}{00137}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ Integer\ \mbox{\hyperlink{class_user_interaction_a4f74d6780c139cacb84872affd425155}{getInputInteger}}(String\ \mbox{\hyperlink{class_i_factory}{prompt}})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00138}00138\ \ \ \ \ \ \ \ \ Integer\ \mbox{\hyperlink{class_i_factory}{nextInt}}\ =\ Integer.valueOf(\mbox{\hyperlink{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8}{getInput}}(\mbox{\hyperlink{class_i_factory}{prompt}}));}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00139}00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{nextInt}};}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00140}00140\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00141}00141\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00142}00142\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00143}00143\ \textcolor{comment}{\ \ \ \ \ *\ Prompts\ the\ user\ for\ input\ and\ returns\ the\ input\ as\ a\ Double.}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00144}00144\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00145}00145\ \textcolor{comment}{\ \ \ \ \ *\ @param\ prompt\ the\ message\ to\ display\ to\ the\ user\ as\ a\ prompt}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00146}00146\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ user's\ input\ as\ a\ Double}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00147}00147\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00148}\mbox{\hyperlink{class_user_interaction_aca125a15aa48a74e080126791e02fc8e}{00148}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Double}}\ \mbox{\hyperlink{class_user_interaction_aca125a15aa48a74e080126791e02fc8e}{getInputDouble}}(String\ \mbox{\hyperlink{class_i_factory}{prompt}})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00149}00149\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Double}}\ \mbox{\hyperlink{class_i_factory}{nextDouble}}\ =\ \mbox{\hyperlink{class_i_factory}{Double}}.valueOf(\mbox{\hyperlink{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8}{getInput}}(\mbox{\hyperlink{class_i_factory}{prompt}}));}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00150}00150\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{nextDouble}};}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00151}00151\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_interaction_8java_source_l00152}00152\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,100 @@
+\doxysection{Shopping\+Business\+Layer\+Service.\+java}
+\hypertarget{_shopping_business_layer_service_8java_source}{}\label{_shopping_business_layer_service_8java_source}\mbox{\hyperlink{_shopping_business_layer_service_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00001}00001\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.List;}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00002}00002\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00003}00003\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00004}00004\ \textcolor{comment}{\ *\ The\ ShoppingBusinessLayerService\ class\ represents\ the\ business\ layer\ service}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00005}00005\ \textcolor{comment}{\ *\ for\ shopping\ operations.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00006}00006\ \textcolor{comment}{\ *\ It\ provides\ methods\ for\ configuring\ the\ service,\ retrieving\ user\ information,}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00007}00007\ \textcolor{comment}{\ *\ and\ validating\ login\ credentials.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00008}00008\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00009}\mbox{\hyperlink{class_shopping_business_layer_service}{00009}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00010}00010\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00011}00011\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ *\ The\ logging\ agent\ used\ for\ logging\ in\ the\ shopping\ business\ layer\ service.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00013}00013\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00014}\mbox{\hyperlink{class_shopping_business_layer_service_a13ab8c60f7031b7c8039b91e594da6cf}{00014}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_shopping_business_layer_service_a13ab8c60f7031b7c8039b91e594da6cf}{logging}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00015}00015\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00016}00016\ \textcolor{comment}{\ \ \ \ \ *\ The\ environment\ used\ by\ the\ ShoppingBusinessLayerService.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00017}00017\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00018}\mbox{\hyperlink{class_shopping_business_layer_service_a4625e749b53ffdde46cf0b539a42e96e}{00018}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \mbox{\hyperlink{class_shopping_business_layer_service_a4625e749b53ffdde46cf0b539a42e96e}{environment}};\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00019}00019\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ *\ The\ data\ layer\ service\ for\ shopping\ operations.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00022}\mbox{\hyperlink{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc}{00022}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc}{shoppingDataService}};}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00023}00023\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00024}00024\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ *\ Constructs\ a\ ShoppingBusinessLayerService\ object\ with\ the\ specified}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ *\ environment\ and\ data\ layer\ service.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00028}00028\ \textcolor{comment}{\ \ \ \ \ *\ @param\ environment\ \ \ \ \ \ \ \ \ The\ environment\ object\ used\ for\ configuration.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00029}00029\ \textcolor{comment}{\ \ \ \ \ *\ @param\ shoppingDataService\ The\ data\ layer\ service\ used\ for\ accessing\ shopping}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ data.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00032}\mbox{\hyperlink{class_shopping_business_layer_service_a97035702ae1fc0b2cd5d1dadc5a38ea8}{00032}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_shopping_business_layer_service_a97035702ae1fc0b2cd5d1dadc5a38ea8}{ShoppingBusinessLayerService}}(\mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \mbox{\hyperlink{class_shopping_business_layer_service_a4625e749b53ffdde46cf0b539a42e96e}{environment}},\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc}{shoppingDataService}})\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ this.environment\ =\ \mbox{\hyperlink{class_shopping_business_layer_service_a4625e749b53ffdde46cf0b539a42e96e}{environment}};}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ this.shoppingDataService\ =\ \mbox{\hyperlink{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc}{shoppingDataService}};}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00036}00036\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00037}00037\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00038}00038\ \textcolor{comment}{\ \ \ \ \ *\ Configures\ the\ shopping\ business\ layer\ service.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00039}00039\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00040}\mbox{\hyperlink{class_shopping_business_layer_service_af5ee3bb1068d29aba2d5b2fc54d6777e}{00040}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_shopping_business_layer_service_af5ee3bb1068d29aba2d5b2fc54d6777e}{configure}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TODO:\ Implement\ configuration\ logic}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00042}00042\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00043}00043\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00044}00044\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ *\ Retrieves\ the\ user\ information\ for\ the\ specified\ username.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00047}00047\ \textcolor{comment}{\ \ \ \ \ *\ @param\ username\ The\ username\ of\ the\ user.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00048}00048\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ UserDTO\ object\ representing\ the\ user\ information.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00049}00049\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00050}\mbox{\hyperlink{class_shopping_business_layer_service_a3a48d2c04546905127e6c3531f50f050}{00050}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_shopping_business_layer_service_a3a48d2c04546905127e6c3531f50f050}{getUser}}(String\ username)\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00051}00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{user}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{user}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ username);}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{dtos}}\ =\ this.shoppingDataService.\mbox{\hyperlink{class_shopping_data_layer_service_a9f4bc4d863f57a0eae76b584755a82ae}{loadDTOs}}(\mbox{\hyperlink{class_i_factory}{user}},\ \mbox{\hyperlink{class_i_factory}{user}}.getDtoHome());}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{dtos}}.size()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{user}};}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00058}00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{dtos}}.getFirst();}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00059}00059\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00061}\mbox{\hyperlink{class_shopping_business_layer_service_a371a77c8a18227ab2d89cca6c05b0bea}{00061}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_shopping_business_layer_service_a371a77c8a18227ab2d89cca6c05b0bea}{addAuditTrail}}(String\ \mbox{\hyperlink{class_i_factory}{msg}},\ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{userDTO}})\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00062}00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_audit_trail_d_t_o}{AuditTrailDTO}}\ \mbox{\hyperlink{class_i_factory}{auditTrailDTO}}\ =\ (\mbox{\hyperlink{class_audit_trail_d_t_o}{AuditTrailDTO}})\ \mbox{\hyperlink{class_audit_trail_d_t_o_home}{AuditTrailDTOHome}}.\mbox{\hyperlink{class_audit_trail_d_t_o_home_acd77bf6841a2c40bb0d7b73461343a30}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00063}00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{auditTrailDTO}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{userDTO}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00064}00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{auditTrailDTO}}.setValue(\textcolor{stringliteral}{"{}action"{}},\ \mbox{\hyperlink{class_i_factory}{msg}});}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00065}00065\ \ \ \ \ \ \ \ \ this.shoppingDataService.\mbox{\hyperlink{class_shopping_data_layer_service_ac76ccab0de4a7685450fa27ddc1a40c4}{saveDTO}}(\mbox{\hyperlink{class_i_factory}{auditTrailDTO}});}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00066}00066\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00067}00067\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00068}00068\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00069}00069\ \textcolor{comment}{\ \ \ \ \ *\ Validates\ the\ login\ credentials\ for\ the\ specified\ user\ and\ password.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00070}00070\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00071}00071\ \textcolor{comment}{\ \ \ \ \ *\ @param\ user\ The\ username.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00072}00072\ \textcolor{comment}{\ \ \ \ \ *\ @param\ pwd\ \ The\ password.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00073}00073\ \textcolor{comment}{\ \ \ \ \ *\ @return\ true\ if\ the\ login\ credentials\ are\ valid,\ false\ otherwise.}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00074}00074\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00075}\mbox{\hyperlink{class_shopping_business_layer_service_a3cfbc07d6e43baa50e39bfbb116f4c71}{00075}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_shopping_business_layer_service_a3cfbc07d6e43baa50e39bfbb116f4c71}{validateLogin}}(String\ \mbox{\hyperlink{class_i_factory}{user}},\ String\ \mbox{\hyperlink{class_i_factory}{pwd}})\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00076}00076\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{inputPwdHash}}\ =\ \mbox{\hyperlink{class_core_utils}{CoreUtils}}.\mbox{\hyperlink{class_core_utils_a1228e598ba4a7b71f2541e344b0f68fc}{encodeSha256String}}(\mbox{\hyperlink{class_i_factory}{pwd}});}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{userDTO}}\ =\ \mbox{\hyperlink{class_shopping_business_layer_service_a3a48d2c04546905127e6c3531f50f050}{getUser}}(\mbox{\hyperlink{class_i_factory}{user}});}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00079}00079\ \ \ \ \ \ \ \ \ String\ userName\ =\ \mbox{\hyperlink{class_i_factory}{userDTO}}.getValue(\textcolor{stringliteral}{"{}email\_address"{}}).toString();}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00080}00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (userName\ ==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{msg}}\ =\ \textcolor{stringliteral}{"{}Login\ attempt\ for\ user:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{user}}\ +\ \textcolor{stringliteral}{"{}\ with\ password:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{inputPwdHash}}\ +\ \textcolor{stringliteral}{"{}\ -\/\ Unknown\ User"{}};}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_business_layer_service_a371a77c8a18227ab2d89cca6c05b0bea}{addAuditTrail}}(\mbox{\hyperlink{class_i_factory}{msg}},\ \mbox{\hyperlink{class_i_factory}{userDTO}});}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00084}00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00085}00085\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{passwordHash}}\ =\ \mbox{\hyperlink{class_i_factory}{userDTO}}.getValue(\textcolor{stringliteral}{"{}password\_hash"{}}).toString();}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00087}00087\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_i_factory}{isValid}}\ =\ \mbox{\hyperlink{class_i_factory}{user}}.equals(userName)\ \&\&\ \mbox{\hyperlink{class_i_factory}{inputPwdHash}}.equals(\mbox{\hyperlink{class_i_factory}{passwordHash}});}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00088}00088\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{msg}}\ =\ \textcolor{stringliteral}{"{}Login\ attempt\ for\ user:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{user}}\ +\ \textcolor{stringliteral}{"{}\ with\ password:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{inputPwdHash}}\ +\ \textcolor{stringliteral}{"{}\ -\/\ "{}}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ (\mbox{\hyperlink{class_i_factory}{isValid}}\ ?\ \textcolor{stringliteral}{"{}Success"{}}\ :\ \textcolor{stringliteral}{"{}Failure"{}});}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00090}00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_business_layer_service_a371a77c8a18227ab2d89cca6c05b0bea}{addAuditTrail}}(\mbox{\hyperlink{class_i_factory}{msg}},\ \mbox{\hyperlink{class_i_factory}{userDTO}});}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{isValid}};}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00093}00093\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_shopping_business_layer_service_8java_source_l00095}00095\ \}}
+
+\end{DoxyCode}

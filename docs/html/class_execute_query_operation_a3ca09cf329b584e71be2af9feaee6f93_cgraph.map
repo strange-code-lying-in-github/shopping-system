@@ -1,0 +1,5 @@
+<map id="ExecuteQueryOperation.execute" name="ExecuteQueryOperation.execute">
+<area shape="rect" id="Node000001" title="Executes the operation on the specified database connection." alt="" coords="5,5,216,31"/>
+<area shape="rect" id="Node000002" href="$interface_i_db_connection_wrapper.html#affe24a6593d9be4a09dcccc7700369ac" title="Executes a database query and processes the result." alt="" coords="264,5,469,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,16,248,16,248,21,216,21"/>
+</map>

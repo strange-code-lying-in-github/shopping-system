@@ -1,0 +1,9 @@
+<map id="DbBaseFactoryWrapper_postgres.buildJdbcUrl" name="DbBaseFactoryWrapper_postgres.buildJdbcUrl">
+<area shape="rect" id="Node000001" title="The function builds the jdbc url for the database." alt="" coords="5,63,166,103"/>
+<area shape="rect" id="Node000002" href="$class_db_base_factory_wrapper.html#a5272d33a9d9c042ee1b13d8c6c4c8b93" title="The function returns the database name." alt="" coords="228,5,409,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,61,218,48,219,53,167,66"/>
+<area shape="rect" id="Node000003" href="$class_db_base_factory_wrapper.html#a226b68373e763638226c8f3d0bb90d8a" title="The function returns the host for the database." alt="" coords="214,70,423,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,80,198,80,198,86,166,86"/>
+<area shape="rect" id="Node000004" href="$class_db_base_factory_wrapper.html#ae3f86a24ffc8499ad73d7287e0fca4eb" title="The function returns the port for the database." alt="" coords="216,120,421,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="167,97,240,113,239,118,165,103"/>
+</map>

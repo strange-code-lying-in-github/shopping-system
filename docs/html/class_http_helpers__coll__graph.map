@@ -1,0 +1,5 @@
+<map id="HttpHelpers" name="HttpHelpers">
+<area shape="rect" id="Node000001" title="The HttpHelpers class provides utility methods for working with HTTP requests and responses." alt="" coords="5,194,259,610"/>
+<area shape="rect" id="Node000002" href="$interface_i_environment.html" title="This interface represents an environment that provides access to command line arguments and key&#45;value..." alt="" coords="31,5,233,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,130,135,177,129,177,129,130"/>
+</map>

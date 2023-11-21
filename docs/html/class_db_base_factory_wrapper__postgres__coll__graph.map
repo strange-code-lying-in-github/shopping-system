@@ -1,0 +1,20 @@
+<map id="DbBaseFactoryWrapper_postgres" name="DbBaseFactoryWrapper_postgres">
+<area shape="rect" id="Node000001" title="The class is a factory for creating instances of the IDbConnectionWrapper interface." alt="" coords="478,1705,641,1840"/>
+<area shape="rect" id="Node000002" href="$class_db_base_factory_wrapper.html" title="The class is a factory for creating instances of the IDbConnectionWrapper interface." alt="" coords="467,1018,651,1656"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="562,1671,562,1705,557,1705,557,1671"/>
+<area shape="rect" id="Node000003" href="$class_i_factory.html" title=" " alt="" coords="5,263,225,880"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="235,868,240,879,295,972,354,1062,470,1220,465,1223,350,1065,290,974,236,882,230,871"/>
+<area shape="rect" id="Node000004" href="$interface_i_db_connection_wrapper.html" title="The interface is used to create instances of the IDbConnectionWrapper interface." alt="" coords="250,457,434,686"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="381,700,471,1018,466,1019,376,701"/>
+<area shape="rect" id="Node000005" href="$class_closeable.html" title=" " alt="" coords="307,70,377,135"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="345,151,345,457,339,457,339,151"/>
+<area shape="rect" id="Node000006" href="$class_app_logging_agent.html" title="The AppLoggingAgent class implements the IAppLoggingStream interface and provides methods for logging..." alt="" coords="459,422,660,721"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="562,721,562,1001,557,1001,557,721"/>
+<area shape="rect" id="Node000007" href="$interface_i_app_logging_stream.html" title="The IAppLoggingStream interface defines methods for logging messages and objects." alt="" coords="468,5,651,200"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="558,215,558,224,558,422,553,422,553,224,553,215"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="562,199,562,405,557,405,557,199"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="684,539,731,604"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="708,604,697,726,675,881,650,1002,645,1001,670,880,691,725,703,604"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="770,539,797,604"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="786,604,784,675,777,773,762,884,737,995,703,1085,662,1171,657,1168,698,1083,731,994,757,883,772,772,779,675,781,604"/>
+</map>

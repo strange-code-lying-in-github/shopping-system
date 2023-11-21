@@ -1,0 +1,29 @@
+<map id="BaseDTO" name="BaseDTO">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1084,381,1303,1255"/>
+<area shape="rect" id="Node000003" href="$class_audit_trail_d_t_o.html" title="This class represents a Data Transfer Object (DTO) for the Audit Trail entity." alt="" coords="5,1303,181,1437"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1071,875,897,953,676,1056,434,1176,195,1305,183,1312,180,1307,192,1300,432,1171,674,1051,895,948,1069,870"/>
+<area shape="rect" id="Node000004" href="$class_cart_d_t_o.html" title="This class represents a CartDTO object, which is a data transfer object for a shopping cart." alt="" coords="205,1303,381,1437"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1073,893,764,1078,395,1305,382,1313,380,1308,392,1300,761,1073,1070,889"/>
+<area shape="rect" id="Node000005" href="$class_cart_item_d_t_o.html" title="Represents a data transfer object for a cart item." alt="" coords="405,1303,581,1437"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1074,916,579,1305,576,1301,1071,912"/>
+<area shape="rect" id="Node000006" href="$class_order_d_t_o.html" title="Represents a Data Transfer Object (DTO) for an order." alt="" coords="605,1303,781,1437"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1076,952,755,1305,751,1301,1072,949"/>
+<area shape="rect" id="Node000007" href="$class_order_item_d_t_o.html" title="Represents a data transfer object for an order item." alt="" coords="805,1303,981,1437"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1079,1033,932,1304,927,1301,1075,1031"/>
+<area shape="rect" id="Node000008" href="$class_payment_profile_d_t_o.html" title="Represents a payment profile data transfer object." alt="" coords="1005,1303,1181,1437"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1114,1270,1108,1304,1103,1303,1109,1269"/>
+<area shape="rect" id="Node000009" href="$class_product_d_t_o.html" title="This class represents a Data Transfer Object (DTO) for a product." alt="" coords="1205,1303,1381,1437"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1278,1269,1284,1303,1279,1304,1273,1270"/>
+<area shape="rect" id="Node000010" href="$class_purchase_d_t_o.html" title="Represents a PurchaseDTO object that extends the BaseDTO class." alt="" coords="1405,1303,1581,1437"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1312,1031,1460,1301,1455,1304,1307,1033"/>
+<area shape="rect" id="Node000011" href="$class_role_d_t_o.html" title="Represents a Role Data Transfer Object (DTO)." alt="" coords="1605,1303,1781,1437"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1315,949,1635,1301,1631,1305,1311,952"/>
+<area shape="rect" id="Node000012" href="$class_user_d_t_o.html" title="This class represents a Data Transfer Object (DTO) for a user." alt="" coords="1805,1303,1981,1437"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1316,912,1811,1301,1808,1305,1312,916"/>
+<area shape="rect" id="Node000013" href="$class_user_profile_d_t_o.html" title="This class represents a Data Transfer Object (DTO) for a user profile." alt="" coords="2005,1303,2181,1437"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1317,889,1626,1073,1995,1300,2007,1308,2004,1313,1992,1305,1623,1078,1314,893"/>
+<area shape="rect" id="Node000014" href="$class_user_role_d_t_o.html" title="This class represents a Data Transfer Object (DTO) for User Roles." alt="" coords="2205,1303,2381,1437"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="1317,870,1492,948,1713,1051,1955,1171,2195,1300,2207,1307,2204,1312,2192,1305,1953,1176,1710,1056,1490,953,1315,875"/>
+<area shape="rect" id="Node000002" href="$interface_i_d_t_o.html" title="The IDTO interface represents a Data Transfer Object (DTO) in the shopping system." alt="" coords="1105,5,1281,333"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1196,348,1196,382,1191,382,1191,348"/>
+</map>

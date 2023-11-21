@@ -1,0 +1,389 @@
+\doxysection{Shopping\+Web\+Interface\+Controller Class Reference}
+\hypertarget{class_shopping_web_interface_controller}{}\label{class_shopping_web_interface_controller}\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+
+
+The \doxylink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller} class represents a controller for the shopping web interface.  
+
+
+
+
+Collaboration diagram for Shopping\+Web\+Interface\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_shopping_web_interface_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopping_web_interface_controller_a6c1b6ceac36235a57570c7596e9afa93}{Shopping\+Web\+Interface\+Controller}} (\mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952}{environment}}, \mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} \mbox{\hyperlink{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488}{shopping\+Data\+Service}}, \mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} \mbox{\hyperlink{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}{shopping\+Business\+Service}}, \mbox{\hyperlink{class_web_server}{Web\+Server}} \mbox{\hyperlink{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}{server}})
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_shopping_web_interface_controller_a778e4971eff3694151cbe921a1700511}{configure}} ()
+\begin{DoxyCompactList}\small\item\em Configures the shopping web interface controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_shopping_web_interface_controller_ab5855b7b67ba2de8d832a25d6118887f}{get\+Environment}} ()
+\begin{DoxyCompactList}\small\item\em Returns the environment object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} \mbox{\hyperlink{class_shopping_web_interface_controller_a8ac4ac89facd06d734e210868335dc87}{get\+Shopping\+Data\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \doxylink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service} instance used by this controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} \mbox{\hyperlink{class_shopping_web_interface_controller_a057b9f24f31dee8b3cf902a22236b716}{get\+Shopping\+Business\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \doxylink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service} instance used by this controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_web_server}{Web\+Server}} \mbox{\hyperlink{class_shopping_web_interface_controller_a6c67c99d310d39e96767b44742f4ffc1}{get\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \doxylink{class_web_server}{Web\+Server} object associated with this controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_shopping_web_interface_controller_a44de6caebdeb1740c3edd8dd8feb3b84}{validate\+Login}} (String \mbox{\hyperlink{class_i_factory}{user}}, String \mbox{\hyperlink{class_i_factory}{pwd}})
+\begin{DoxyCompactList}\small\item\em Validates the login credentials of a user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_shopping_web_interface_controller_a4c8e364b2e1d41a640c5862061c96e6a}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The logging agent used for logging events in the shopping web interface controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952}{environment}}
+\begin{DoxyCompactList}\small\item\em The environment object used by the \doxylink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} \mbox{\hyperlink{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488}{shopping\+Data\+Service}}
+\begin{DoxyCompactList}\small\item\em The shopping data service used by the shopping web interface controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} \mbox{\hyperlink{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}{shopping\+Business\+Service}}
+\begin{DoxyCompactList}\small\item\em The shopping business layer service used by the web interface controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_web_server}{Web\+Server}} \mbox{\hyperlink{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}{server}}
+\begin{DoxyCompactList}\small\item\em The web server used by the shopping web interface controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopping_web_authenticator}{Shopping\+Web\+Authenticator}} \mbox{\hyperlink{class_shopping_web_interface_controller_a315b89e40398f45073b62e655fc7854f}{authenticator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller} class represents a controller for the shopping web interface. 
+
+It handles the configuration of routes and provides access to the environment, data layer service, business layer service, and web server. 
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00009}{9}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopping_web_interface_controller_a6c1b6ceac36235a57570c7596e9afa93}\label{class_shopping_web_interface_controller_a6c1b6ceac36235a57570c7596e9afa93} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{ShoppingWebInterfaceController()}{ShoppingWebInterfaceController()}}
+{\footnotesize\ttfamily Shopping\+Web\+Interface\+Controller.\+Shopping\+Web\+Interface\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_environment}{IEnvironment}}}]{environment,  }\item[{\mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}}}]{shopping\+Data\+Service,  }\item[{\mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}}}]{shopping\+Business\+Service,  }\item[{\mbox{\hyperlink{class_web_server}{Web\+Server}}}]{server }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00035}{35}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ this.environment\ =\ \mbox{\hyperlink{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952}{environment}};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ this.shoppingDataService\ =\ \mbox{\hyperlink{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488}{shoppingDataService}};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ this.shoppingBusinessService\ =\ \mbox{\hyperlink{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}{shoppingBusinessService}};}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ this.server\ =\ \mbox{\hyperlink{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}{server}};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ this.authenticator\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_web_authenticator}{ShoppingWebAuthenticator}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00019}{environment}}, \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00031}{server}}, \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00027}{shopping\+Business\+Service}}, and \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00023}{shopping\+Data\+Service}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopping_web_interface_controller_a778e4971eff3694151cbe921a1700511}\label{class_shopping_web_interface_controller_a778e4971eff3694151cbe921a1700511} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!configure@{configure}}
+\index{configure@{configure}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Shopping\+Web\+Interface\+Controller.\+configure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Configures the shopping web interface controller. 
+
+Adds a route for "{}/echo/"{} with the \doxylink{class_echo_handler}{Echo\+Handler}. 
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00048}{48}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}{server}}.\mbox{\hyperlink{class_web_server_a93b6dd74881e1f8f8f2271ab2db5dc9c}{addRoute}}(\textcolor{stringliteral}{"{}/echo/"{}},\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_echo_handler}{EchoHandler}}(),\ this.\mbox{\hyperlink{class_shopping_web_interface_controller_a315b89e40398f45073b62e655fc7854f}{authenticator}});}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_web_server_8java_source_l00091}{Web\+Server.\+add\+Route()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source_l00029}{Shopping\+Web\+Interface\+Adapter.\+configure()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_web_interface_controller_a778e4971eff3694151cbe921a1700511_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_shopping_web_interface_controller_ab5855b7b67ba2de8d832a25d6118887f}\label{class_shopping_web_interface_controller_ab5855b7b67ba2de8d832a25d6118887f} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!getEnvironment@{getEnvironment}}
+\index{getEnvironment@{getEnvironment}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{getEnvironment()}{getEnvironment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_environment}{IEnvironment}} Shopping\+Web\+Interface\+Controller.\+get\+Environment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the environment object. 
+
+\begin{DoxyReturn}{Returns}
+the environment object 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00057}{57}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952}{environment}};}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00019}{environment}}.
+
+\Hypertarget{class_shopping_web_interface_controller_a6c67c99d310d39e96767b44742f4ffc1}\label{class_shopping_web_interface_controller_a6c67c99d310d39e96767b44742f4ffc1} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!getServer@{getServer}}
+\index{getServer@{getServer}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{getServer()}{getServer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_web_server}{Web\+Server}} Shopping\+Web\+Interface\+Controller.\+get\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \doxylink{class_web_server}{Web\+Server} object associated with this controller. 
+
+\begin{DoxyReturn}{Returns}
+the \doxylink{class_web_server}{Web\+Server} object 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00084}{84}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}{server}};}
+\DoxyCodeLine{00086\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00031}{server}}.
+
+\Hypertarget{class_shopping_web_interface_controller_a057b9f24f31dee8b3cf902a22236b716}\label{class_shopping_web_interface_controller_a057b9f24f31dee8b3cf902a22236b716} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!getShoppingBusinessService@{getShoppingBusinessService}}
+\index{getShoppingBusinessService@{getShoppingBusinessService}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{getShoppingBusinessService()}{getShoppingBusinessService()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} Shopping\+Web\+Interface\+Controller.\+get\+Shopping\+Business\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \doxylink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service} instance used by this controller. 
+
+\begin{DoxyReturn}{Returns}
+the \doxylink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service} instance 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00075}{75}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}{shoppingBusinessService}};}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00027}{shopping\+Business\+Service}}.
+
+\Hypertarget{class_shopping_web_interface_controller_a8ac4ac89facd06d734e210868335dc87}\label{class_shopping_web_interface_controller_a8ac4ac89facd06d734e210868335dc87} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!getShoppingDataService@{getShoppingDataService}}
+\index{getShoppingDataService@{getShoppingDataService}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{getShoppingDataService()}{getShoppingDataService()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} Shopping\+Web\+Interface\+Controller.\+get\+Shopping\+Data\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \doxylink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service} instance used by this controller. 
+
+\begin{DoxyReturn}{Returns}
+the \doxylink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service} instance 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00066}{66}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488}{shoppingDataService}};}
+\DoxyCodeLine{00068\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00023}{shopping\+Data\+Service}}.
+
+\Hypertarget{class_shopping_web_interface_controller_a44de6caebdeb1740c3edd8dd8feb3b84}\label{class_shopping_web_interface_controller_a44de6caebdeb1740c3edd8dd8feb3b84} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!validateLogin@{validateLogin}}
+\index{validateLogin@{validateLogin}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{validateLogin()}{validateLogin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Shopping\+Web\+Interface\+Controller.\+validate\+Login (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{pwd }\end{DoxyParamCaption})}
+
+
+
+Validates the login credentials of a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The username of the user. \\
+\hline
+{\em pwd} & The password of the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the login credentials are valid, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00095}{95}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}{shoppingBusinessService}}.\mbox{\hyperlink{class_shopping_business_layer_service_a3cfbc07d6e43baa50e39bfbb116f4c71}{validateLogin}}(\mbox{\hyperlink{class_i_factory}{user}},\ \mbox{\hyperlink{class_i_factory}{pwd}});}
+\DoxyCodeLine{00097\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00075}{Shopping\+Business\+Layer\+Service.\+validate\+Login()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_web_authenticator_8java_source_l00029}{Shopping\+Web\+Authenticator.\+check\+Credentials()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_web_interface_controller_a44de6caebdeb1740c3edd8dd8feb3b84_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_shopping_web_interface_controller_a315b89e40398f45073b62e655fc7854f}\label{class_shopping_web_interface_controller_a315b89e40398f45073b62e655fc7854f} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!authenticator@{authenticator}}
+\index{authenticator@{authenticator}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{authenticator}{authenticator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_web_authenticator}{Shopping\+Web\+Authenticator}} Shopping\+Web\+Interface\+Controller.\+authenticator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00033}{33}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+\Hypertarget{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952}\label{class_shopping_web_interface_controller_a5c55d4675f24b8740af4a294fc61b952} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!environment@{environment}}
+\index{environment@{environment}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{environment}{environment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_environment}{IEnvironment}} Shopping\+Web\+Interface\+Controller.\+environment\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The environment object used by the \doxylink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller}. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00019}{19}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00057}{get\+Environment()}}, and \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00035}{Shopping\+Web\+Interface\+Controller()}}.
+
+\Hypertarget{class_shopping_web_interface_controller_a4c8e364b2e1d41a640c5862061c96e6a}\label{class_shopping_web_interface_controller_a4c8e364b2e1d41a640c5862061c96e6a} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!logging@{logging}}
+\index{logging@{logging}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Shopping\+Web\+Interface\+Controller.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The logging agent used for logging events in the shopping web interface controller. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00014}{14}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+\Hypertarget{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960}\label{class_shopping_web_interface_controller_a7ec09c57833299119bade4c7c0aa2960} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!server@{server}}
+\index{server@{server}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{server}{server}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_web_server}{Web\+Server}} Shopping\+Web\+Interface\+Controller.\+server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The web server used by the shopping web interface controller. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00031}{31}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00084}{get\+Server()}}, and \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00035}{Shopping\+Web\+Interface\+Controller()}}.
+
+\Hypertarget{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef}\label{class_shopping_web_interface_controller_a2bc3f5fff7037f66a57ef5682e3e3aef} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!shoppingBusinessService@{shoppingBusinessService}}
+\index{shoppingBusinessService@{shoppingBusinessService}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{shoppingBusinessService}{shoppingBusinessService}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} Shopping\+Web\+Interface\+Controller.\+shopping\+Business\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The shopping business layer service used by the web interface controller. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00027}{27}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00075}{get\+Shopping\+Business\+Service()}}, and \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00035}{Shopping\+Web\+Interface\+Controller()}}.
+
+\Hypertarget{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488}\label{class_shopping_web_interface_controller_ab2e545280e01556e266d94e36966a488} 
+\index{ShoppingWebInterfaceController@{ShoppingWebInterfaceController}!shoppingDataService@{shoppingDataService}}
+\index{shoppingDataService@{shoppingDataService}!ShoppingWebInterfaceController@{ShoppingWebInterfaceController}}
+\doxysubsubsection{\texorpdfstring{shoppingDataService}{shoppingDataService}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} Shopping\+Web\+Interface\+Controller.\+shopping\+Data\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The shopping data service used by the shopping web interface controller. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00023}{23}} of file \mbox{\hyperlink{_shopping_web_interface_controller_8java_source}{Shopping\+Web\+Interface\+Controller.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00066}{get\+Shopping\+Data\+Service()}}, and \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00035}{Shopping\+Web\+Interface\+Controller()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_shopping_web_interface_controller_8java}{Shopping\+Web\+Interface\+Controller.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+<map id="HttpCookie" name="HttpCookie">
+<area shape="rect" id="Node000001" title=" " alt="" coords="143,194,371,354"/>
+<area shape="rect" id="Node000002" href="$interface_i_http_cookie.html" title="The IHttpCookie interface represents an HTTP cookie." alt="" coords="5,5,120,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,80,170,168,191,192,187,196,166,171,94,84"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="145,5,191,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,70,181,117,196,169,199,177,194,179,190,171,176,118,168,71"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="237,5,278,71"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="260,70,260,177,255,177,255,70"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="312,5,365,71"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="337,71,327,118,312,171,309,179,304,177,307,169,322,117,331,70"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="397,5,454,71"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="425,71,414,120,405,147,392,171,383,182,379,179,387,168,400,144,409,119,420,70"/>
+</map>

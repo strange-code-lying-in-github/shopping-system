@@ -1,0 +1,324 @@
+\doxysection{Shopping\+Business\+Layer\+Service Class Reference}
+\hypertarget{class_shopping_business_layer_service}{}\label{class_shopping_business_layer_service}\index{ShoppingBusinessLayerService@{ShoppingBusinessLayerService}}
+
+
+The \doxylink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service} class represents the business layer service for shopping operations.  
+
+
+
+
+Collaboration diagram for Shopping\+Business\+Layer\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_shopping_business_layer_service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopping_business_layer_service_a97035702ae1fc0b2cd5d1dadc5a38ea8}{Shopping\+Business\+Layer\+Service}} (\mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_shopping_business_layer_service_a4625e749b53ffdde46cf0b539a42e96e}{environment}}, \mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} \mbox{\hyperlink{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc}{shopping\+Data\+Service}})
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service} object with the specified environment and data layer service. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_shopping_business_layer_service_af5ee3bb1068d29aba2d5b2fc54d6777e}{configure}} ()
+\begin{DoxyCompactList}\small\item\em Configures the shopping business layer service. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_user_d_t_o}{User\+DTO}} \mbox{\hyperlink{class_shopping_business_layer_service_a3a48d2c04546905127e6c3531f50f050}{get\+User}} (String username)
+\begin{DoxyCompactList}\small\item\em Retrieves the user information for the specified username. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_shopping_business_layer_service_a3cfbc07d6e43baa50e39bfbb116f4c71}{validate\+Login}} (String \mbox{\hyperlink{class_i_factory}{user}}, String \mbox{\hyperlink{class_i_factory}{pwd}})
+\begin{DoxyCompactList}\small\item\em Validates the login credentials for the specified user and password. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_shopping_business_layer_service_a371a77c8a18227ab2d89cca6c05b0bea}{add\+Audit\+Trail}} (String \mbox{\hyperlink{class_i_factory}{msg}}, \mbox{\hyperlink{class_user_d_t_o}{User\+DTO}} \mbox{\hyperlink{class_i_factory}{user\+DTO}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_shopping_business_layer_service_a13ab8c60f7031b7c8039b91e594da6cf}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The logging agent used for logging in the shopping business layer service. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_shopping_business_layer_service_a4625e749b53ffdde46cf0b539a42e96e}{environment}}
+\begin{DoxyCompactList}\small\item\em The environment used by the \doxylink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} \mbox{\hyperlink{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc}{shopping\+Data\+Service}}
+\begin{DoxyCompactList}\small\item\em The data layer service for shopping operations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service} class represents the business layer service for shopping operations. 
+
+It provides methods for configuring the service, retrieving user information, and validating login credentials. 
+
+Definition at line \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00009}{9}} of file \mbox{\hyperlink{_shopping_business_layer_service_8java_source}{Shopping\+Business\+Layer\+Service.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopping_business_layer_service_a97035702ae1fc0b2cd5d1dadc5a38ea8}\label{class_shopping_business_layer_service_a97035702ae1fc0b2cd5d1dadc5a38ea8} 
+\index{ShoppingBusinessLayerService@{ShoppingBusinessLayerService}!ShoppingBusinessLayerService@{ShoppingBusinessLayerService}}
+\index{ShoppingBusinessLayerService@{ShoppingBusinessLayerService}!ShoppingBusinessLayerService@{ShoppingBusinessLayerService}}
+\doxysubsubsection{\texorpdfstring{ShoppingBusinessLayerService()}{ShoppingBusinessLayerService()}}
+{\footnotesize\ttfamily Shopping\+Business\+Layer\+Service.\+Shopping\+Business\+Layer\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_environment}{IEnvironment}}}]{environment,  }\item[{\mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}}}]{shopping\+Data\+Service }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service} object with the specified environment and data layer service. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em environment} & The environment object used for configuration. \\
+\hline
+{\em shopping\+Data\+Service} & The data layer service used for accessing shopping data. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00032}{32}} of file \mbox{\hyperlink{_shopping_business_layer_service_8java_source}{Shopping\+Business\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ this.environment\ =\ \mbox{\hyperlink{class_shopping_business_layer_service_a4625e749b53ffdde46cf0b539a42e96e}{environment}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ this.shoppingDataService\ =\ \mbox{\hyperlink{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc}{shoppingDataService}};}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00018}{environment}}, and \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00022}{shopping\+Data\+Service}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopping_business_layer_service_a371a77c8a18227ab2d89cca6c05b0bea}\label{class_shopping_business_layer_service_a371a77c8a18227ab2d89cca6c05b0bea} 
+\index{ShoppingBusinessLayerService@{ShoppingBusinessLayerService}!addAuditTrail@{addAuditTrail}}
+\index{addAuditTrail@{addAuditTrail}!ShoppingBusinessLayerService@{ShoppingBusinessLayerService}}
+\doxysubsubsection{\texorpdfstring{addAuditTrail()}{addAuditTrail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Shopping\+Business\+Layer\+Service.\+add\+Audit\+Trail (\begin{DoxyParamCaption}\item[{String}]{msg,  }\item[{\mbox{\hyperlink{class_user_d_t_o}{User\+DTO}}}]{user\+DTO }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00061}{61}} of file \mbox{\hyperlink{_shopping_business_layer_service_8java_source}{Shopping\+Business\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_audit_trail_d_t_o}{AuditTrailDTO}}\ \mbox{\hyperlink{class_i_factory}{auditTrailDTO}}\ =\ (\mbox{\hyperlink{class_audit_trail_d_t_o}{AuditTrailDTO}})\ \mbox{\hyperlink{class_audit_trail_d_t_o_home}{AuditTrailDTOHome}}.\mbox{\hyperlink{class_audit_trail_d_t_o_home_acd77bf6841a2c40bb0d7b73461343a30}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{auditTrailDTO}}.setValue(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{class_i_factory}{userDTO}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{auditTrailDTO}}.setValue(\textcolor{stringliteral}{"{}action"{}},\ \mbox{\hyperlink{class_i_factory}{msg}});}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc}{shoppingDataService}}.\mbox{\hyperlink{class_shopping_data_layer_service_ac76ccab0de4a7685450fa27ddc1a40c4}{saveDTO}}(auditTrailDTO);}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_audit_trail_d_t_o_home_8java_source_l00018}{Audit\+Trail\+DTOHome.\+Instance()}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00157}{Shopping\+Data\+Layer\+Service.\+save\+DTO()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00075}{validate\+Login()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_business_layer_service_a371a77c8a18227ab2d89cca6c05b0bea_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_shopping_business_layer_service_af5ee3bb1068d29aba2d5b2fc54d6777e}\label{class_shopping_business_layer_service_af5ee3bb1068d29aba2d5b2fc54d6777e} 
+\index{ShoppingBusinessLayerService@{ShoppingBusinessLayerService}!configure@{configure}}
+\index{configure@{configure}!ShoppingBusinessLayerService@{ShoppingBusinessLayerService}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Shopping\+Business\+Layer\+Service.\+configure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Configures the shopping business layer service. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00040}{40}} of file \mbox{\hyperlink{_shopping_business_layer_service_8java_source}{Shopping\+Business\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TODO:\ Implement\ configuration\ logic}}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_shopping_system_8java_source_l00036}{Shopping\+System.\+start()}}.
+
+\Hypertarget{class_shopping_business_layer_service_a3a48d2c04546905127e6c3531f50f050}\label{class_shopping_business_layer_service_a3a48d2c04546905127e6c3531f50f050} 
+\index{ShoppingBusinessLayerService@{ShoppingBusinessLayerService}!getUser@{getUser}}
+\index{getUser@{getUser}!ShoppingBusinessLayerService@{ShoppingBusinessLayerService}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user_d_t_o}{User\+DTO}} Shopping\+Business\+Layer\+Service.\+get\+User (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+Retrieves the user information for the specified username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_user_d_t_o}{User\+DTO} object representing the user information. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00050}{50}} of file \mbox{\hyperlink{_shopping_business_layer_service_8java_source}{Shopping\+Business\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{user}}\ =\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_user_d_t_o_home}{UserDTOHome}}.\mbox{\hyperlink{class_user_d_t_o_home_a27fd9be7fdf49c5bce57889a40f3bdeb}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{user}}.setValue(\textcolor{stringliteral}{"{}email\_address"{}},\ username);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_i_factory}{dtos}}\ =\ this.\mbox{\hyperlink{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc}{shoppingDataService}}.\mbox{\hyperlink{class_shopping_data_layer_service_a9f4bc4d863f57a0eae76b584755a82ae}{loadDTOs}}(user,\ \mbox{\hyperlink{class_i_factory}{user}}.getDtoHome());}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{dtos}}.size()\ ==\ 0)}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{user}};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_user_d_t_o}{UserDTO}})\ \mbox{\hyperlink{class_i_factory}{dtos}}.getFirst();}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_d_t_o_home_8java_source_l00017}{User\+DTOHome.\+Instance()}}, and \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00147}{Shopping\+Data\+Layer\+Service.\+load\+DTOs()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00075}{validate\+Login()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_business_layer_service_a3a48d2c04546905127e6c3531f50f050_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_shopping_business_layer_service_a3cfbc07d6e43baa50e39bfbb116f4c71}\label{class_shopping_business_layer_service_a3cfbc07d6e43baa50e39bfbb116f4c71} 
+\index{ShoppingBusinessLayerService@{ShoppingBusinessLayerService}!validateLogin@{validateLogin}}
+\index{validateLogin@{validateLogin}!ShoppingBusinessLayerService@{ShoppingBusinessLayerService}}
+\doxysubsubsection{\texorpdfstring{validateLogin()}{validateLogin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Shopping\+Business\+Layer\+Service.\+validate\+Login (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{pwd }\end{DoxyParamCaption})}
+
+
+
+Validates the login credentials for the specified user and password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The username. \\
+\hline
+{\em pwd} & The password. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the login credentials are valid, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00075}{75}} of file \mbox{\hyperlink{_shopping_business_layer_service_8java_source}{Shopping\+Business\+Layer\+Service.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{inputPwdHash}}\ =\ \mbox{\hyperlink{class_core_utils}{CoreUtils}}.\mbox{\hyperlink{class_core_utils_a1228e598ba4a7b71f2541e344b0f68fc}{encodeSha256String}}(\mbox{\hyperlink{class_i_factory}{pwd}});}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{userDTO}}\ =\ \mbox{\hyperlink{class_shopping_business_layer_service_a3a48d2c04546905127e6c3531f50f050}{getUser}}(\mbox{\hyperlink{class_i_factory}{user}});}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ String\ userName\ =\ \mbox{\hyperlink{class_i_factory}{userDTO}}.getValue(\textcolor{stringliteral}{"{}email\_address"{}}).toString();}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (userName\ ==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{msg}}\ =\ \textcolor{stringliteral}{"{}Login\ attempt\ for\ user:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{user}}\ +\ \textcolor{stringliteral}{"{}\ with\ password:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{inputPwdHash}}\ +\ \textcolor{stringliteral}{"{}\ -\/\ Unknown\ User"{}};}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_business_layer_service_a371a77c8a18227ab2d89cca6c05b0bea}{addAuditTrail}}(\mbox{\hyperlink{class_i_factory}{msg}},\ \mbox{\hyperlink{class_i_factory}{userDTO}});}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{passwordHash}}\ =\ \mbox{\hyperlink{class_i_factory}{userDTO}}.getValue(\textcolor{stringliteral}{"{}password\_hash"{}}).toString();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_i_factory}{isValid}}\ =\ \mbox{\hyperlink{class_i_factory}{user}}.equals(userName)\ \&\&\ \mbox{\hyperlink{class_i_factory}{inputPwdHash}}.equals(\mbox{\hyperlink{class_i_factory}{passwordHash}});}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{msg}}\ =\ \textcolor{stringliteral}{"{}Login\ attempt\ for\ user:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{user}}\ +\ \textcolor{stringliteral}{"{}\ with\ password:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{inputPwdHash}}\ +\ \textcolor{stringliteral}{"{}\ -\/\ "{}}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ (\mbox{\hyperlink{class_i_factory}{isValid}}\ ?\ \textcolor{stringliteral}{"{}Success"{}}\ :\ \textcolor{stringliteral}{"{}Failure"{}});}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_business_layer_service_a371a77c8a18227ab2d89cca6c05b0bea}{addAuditTrail}}(\mbox{\hyperlink{class_i_factory}{msg}},\ \mbox{\hyperlink{class_i_factory}{userDTO}});}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{isValid}};}
+\DoxyCodeLine{00093\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00061}{add\+Audit\+Trail()}}, \mbox{\hyperlink{_core_utils_8java_source_l00029}{Core\+Utils.\+encode\+Sha256\+String()}}, and \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00050}{get\+User()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00095}{Shopping\+Web\+Interface\+Controller.\+validate\+Login()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_business_layer_service_a3cfbc07d6e43baa50e39bfbb116f4c71_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_shopping_business_layer_service_a4625e749b53ffdde46cf0b539a42e96e}\label{class_shopping_business_layer_service_a4625e749b53ffdde46cf0b539a42e96e} 
+\index{ShoppingBusinessLayerService@{ShoppingBusinessLayerService}!environment@{environment}}
+\index{environment@{environment}!ShoppingBusinessLayerService@{ShoppingBusinessLayerService}}
+\doxysubsubsection{\texorpdfstring{environment}{environment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_environment}{IEnvironment}} Shopping\+Business\+Layer\+Service.\+environment\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The environment used by the \doxylink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00018}{18}} of file \mbox{\hyperlink{_shopping_business_layer_service_8java_source}{Shopping\+Business\+Layer\+Service.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00032}{Shopping\+Business\+Layer\+Service()}}.
+
+\Hypertarget{class_shopping_business_layer_service_a13ab8c60f7031b7c8039b91e594da6cf}\label{class_shopping_business_layer_service_a13ab8c60f7031b7c8039b91e594da6cf} 
+\index{ShoppingBusinessLayerService@{ShoppingBusinessLayerService}!logging@{logging}}
+\index{logging@{logging}!ShoppingBusinessLayerService@{ShoppingBusinessLayerService}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Shopping\+Business\+Layer\+Service.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The logging agent used for logging in the shopping business layer service. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00014}{14}} of file \mbox{\hyperlink{_shopping_business_layer_service_8java_source}{Shopping\+Business\+Layer\+Service.\+java}}.
+
+\Hypertarget{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc}\label{class_shopping_business_layer_service_aff9f4cbcaca9417713fa7c066ec761cc} 
+\index{ShoppingBusinessLayerService@{ShoppingBusinessLayerService}!shoppingDataService@{shoppingDataService}}
+\index{shoppingDataService@{shoppingDataService}!ShoppingBusinessLayerService@{ShoppingBusinessLayerService}}
+\doxysubsubsection{\texorpdfstring{shoppingDataService}{shoppingDataService}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} Shopping\+Business\+Layer\+Service.\+shopping\+Data\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The data layer service for shopping operations. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00022}{22}} of file \mbox{\hyperlink{_shopping_business_layer_service_8java_source}{Shopping\+Business\+Layer\+Service.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00032}{Shopping\+Business\+Layer\+Service()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_shopping_business_layer_service_8java}{Shopping\+Business\+Layer\+Service.\+java}}\end{DoxyCompactItemize}

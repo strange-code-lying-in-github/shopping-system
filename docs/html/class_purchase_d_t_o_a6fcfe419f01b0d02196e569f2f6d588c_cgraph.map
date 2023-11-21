@@ -1,0 +1,5 @@
+<map id="PurchaseDTO.getDtoHome" name="PurchaseDTO.getDtoHome">
+<area shape="rect" id="Node000001" title="Gets the DTO home for PurchaseDTO." alt="" coords="5,5,188,31"/>
+<area shape="rect" id="Node000002" href="$class_purchase_d_t_o_home.html#a128908f1c26ee85537858ce6b99a7ad6" title="Returns the singleton instance of PurchaseDTOHome." alt="" coords="236,5,429,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,16,220,16,220,21,188,21"/>
+</map>
