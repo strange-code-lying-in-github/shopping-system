@@ -12,5 +12,6 @@ var searchData=
   ['ihttpcookie_9',['IHttpCookie',['../interface_i_http_cookie.html',1,'']]],
   ['ihttprequestcontextinfo_10',['IHttpRequestContextInfo',['../interface_i_http_request_context_info.html',1,'']]],
   ['ihttproutehandler_11',['IHttpRouteHandler',['../interface_i_http_route_handler.html',1,'']]],
-  ['instanceholder_12',['InstanceHolder',['../class_i_factory_1_1_instance_holder.html',1,'IFactory']]]
+  ['instanceholder_12',['InstanceHolder',['../class_i_factory_1_1_instance_holder.html',1,'IFactory']]],
+  ['iproductcatalog_13',['IProductCatalog',['../interface_i_product_catalog.html',1,'']]]
 ];

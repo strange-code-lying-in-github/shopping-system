@@ -10,7 +10,7 @@ var searchData=
   ['userdtohome_2ejava_7',['UserDTOHome.java',['../_user_d_t_o_home_8java.html',1,'']]],
   ['userinteraction_8',['userinteraction',['../class_user_interaction.html#ad782cdfb9ead2ecf2b4556844f759b64',1,'UserInteraction.UserInteraction()'],['../class_user_interaction.html',1,'UserInteraction']]],
   ['userinteraction_2ejava_9',['UserInteraction.java',['../_user_interaction_8java.html',1,'']]],
-  ['username_10',['username',['../class_shopping_data_layer_service.html#a559f7df69080f2d16bf6352fc7376cf3',1,'ShoppingDataLayerService.userName'],['../class_db_base_factory_wrapper.html#a568d49ff91767f78327ab35c6d723cd4',1,'DbBaseFactoryWrapper.username']]],
+  ['username_10',['username',['../class_db_base_factory_wrapper.html#a568d49ff91767f78327ab35c6d723cd4',1,'DbBaseFactoryWrapper.username'],['../class_shopping_data_layer_service.html#a559f7df69080f2d16bf6352fc7376cf3',1,'ShoppingDataLayerService.userName']]],
   ['userprofiledto_11',['userprofiledto',['../class_user_profile_d_t_o.html#a635cd0e857bac98aff18fe6a4cb20b8a',1,'UserProfileDTO.UserProfileDTO()'],['../class_user_profile_d_t_o.html',1,'UserProfileDTO']]],
   ['userprofiledto_2ejava_12',['UserProfileDTO.java',['../_user_profile_d_t_o_8java.html',1,'']]],
   ['userprofiledtohome_13',['userprofiledtohome',['../class_user_profile_d_t_o_home.html#a3a58226dd7087617d671bbd4b464ce54',1,'UserProfileDTOHome.UserProfileDTOHome()'],['../class_user_profile_d_t_o_home.html',1,'UserProfileDTOHome']]],

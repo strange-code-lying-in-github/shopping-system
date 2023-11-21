@@ -83,14 +83,19 @@ var hierarchy =
       [ "HttpRequestContextInfo", "class_http_request_context_info.html", null ]
     ] ],
     [ "IFactory< T >.InstanceHolder< T >", "class_i_factory_1_1_instance_holder.html", null ],
+    [ "IProductCatalog", "interface_i_product_catalog.html", [
+      [ "ProductCatalog", "class_product_catalog.html", null ]
+    ] ],
     [ "MainClass", "class_main_class.html", null ],
     [ "ShoppingBusinessLayerService", "class_shopping_business_layer_service.html", null ],
     [ "ShoppingDataLayerService", "class_shopping_data_layer_service.html", null ],
+    [ "ShoppingPaymentService", "class_shopping_payment_service.html", null ],
     [ "ShoppingSystem", "class_shopping_system.html", null ],
     [ "ShoppingWebInterfaceAdapter", "class_shopping_web_interface_adapter.html", null ],
     [ "ShoppingWebInterfaceController", "class_shopping_web_interface_controller.html", null ],
     [ "TestDTO", "class_test_d_t_o.html", null ],
     [ "TestJunit", "class_test_junit.html", null ],
+    [ "TestZIntegration", "class_test_z_integration.html", null ],
     [ "UserInteraction", "class_user_interaction.html", null ],
     [ "WebServer", "class_web_server.html", null ]
 ];

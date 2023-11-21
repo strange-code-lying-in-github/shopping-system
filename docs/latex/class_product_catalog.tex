@@ -1,0 +1,138 @@
+\doxysection{Product\+Catalog Class Reference}
+\hypertarget{class_product_catalog}{}\label{class_product_catalog}\index{ProductCatalog@{ProductCatalog}}
+
+
+The \doxylink{class_product_catalog}{Product\+Catalog} class represents a catalog of products.  
+
+
+
+
+Inheritance diagram for Product\+Catalog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_product_catalog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Product\+Catalog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_product_catalog__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_product_catalog_a325665a78221e428822b1728cfc2e7f2}{Product\+Catalog}} (\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_product_catalog_a9672af75a330835a1cc0a28ffda134d4}{products}})
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_product_catalog}{Product\+Catalog} object with the specified list of products. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_product_catalog_af2eb015a4194e1c534e16a700df1aec2}{get\+Products}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of products in the catalog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_product_catalog_a9672af75a330835a1cc0a28ffda134d4}{products}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Array\+List}}$<$\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_product_catalog}{Product\+Catalog} class represents a catalog of products. 
+
+It implements the \doxylink{interface_i_product_catalog}{IProduct\+Catalog} interface. 
+
+Definition at line \mbox{\hyperlink{_product_catalog_8java_source_l00008}{8}} of file \mbox{\hyperlink{_product_catalog_8java_source}{Product\+Catalog.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_product_catalog_a325665a78221e428822b1728cfc2e7f2}\label{class_product_catalog_a325665a78221e428822b1728cfc2e7f2} 
+\index{ProductCatalog@{ProductCatalog}!ProductCatalog@{ProductCatalog}}
+\index{ProductCatalog@{ProductCatalog}!ProductCatalog@{ProductCatalog}}
+\doxysubsubsection{\texorpdfstring{ProductCatalog()}{ProductCatalog()}}
+{\footnotesize\ttfamily Product\+Catalog.\+Product\+Catalog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$}]{products }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_product_catalog}{Product\+Catalog} object with the specified list of products. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em products} & the list of products to be added to the catalog \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_product_catalog_8java_source_l00016}{16}} of file \mbox{\hyperlink{_product_catalog_8java_source}{Product\+Catalog.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ this.products\ =\ \mbox{\hyperlink{class_product_catalog_a9672af75a330835a1cc0a28ffda134d4}{products}};}
+\DoxyCodeLine{00018\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_product_catalog_8java_source_l00009}{products}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_product_catalog_af2eb015a4194e1c534e16a700df1aec2}\label{class_product_catalog_af2eb015a4194e1c534e16a700df1aec2} 
+\index{ProductCatalog@{ProductCatalog}!getProducts@{getProducts}}
+\index{getProducts@{getProducts}!ProductCatalog@{ProductCatalog}}
+\doxysubsubsection{\texorpdfstring{getProducts()}{getProducts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ Product\+Catalog.\+get\+Products (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of products in the catalog. 
+
+\begin{DoxyReturn}{Returns}
+the list of products 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_product_catalog_a49607fb1c9888bb00bbdd87c63ae2549}{IProduct\+Catalog}}.
+
+
+
+Definition at line \mbox{\hyperlink{_product_catalog_8java_source_l00025}{25}} of file \mbox{\hyperlink{_product_catalog_8java_source}{Product\+Catalog.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_product_catalog_a9672af75a330835a1cc0a28ffda134d4}{products}};}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_product_catalog_8java_source_l00009}{products}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_product_catalog_a9672af75a330835a1cc0a28ffda134d4}\label{class_product_catalog_a9672af75a330835a1cc0a28ffda134d4} 
+\index{ProductCatalog@{ProductCatalog}!products@{products}}
+\index{products@{products}!ProductCatalog@{ProductCatalog}}
+\doxysubsubsection{\texorpdfstring{products}{products}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}$>$ Product\+Catalog.\+products = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_i_factory}{Array\+List}}$<$\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_product_catalog_8java_source_l00009}{9}} of file \mbox{\hyperlink{_product_catalog_8java_source}{Product\+Catalog.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_product_catalog_8java_source_l00025}{get\+Products()}}, and \mbox{\hyperlink{_product_catalog_8java_source_l00016}{Product\+Catalog()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_product_catalog_8java}{Product\+Catalog.\+java}}\end{DoxyCompactItemize}

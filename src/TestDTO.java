@@ -400,7 +400,7 @@ public class TestDTO {
 
         CartDTO dto = (CartDTO) CartDTOHome.Instance().newDTOInstance();
         dto.setValue("user_id", udto.getValue("id"));
-        dto.setValue("status", "pending");
+        dto.setValue("status", "active");
 
         List<IDTO> result = dataLayerService.saveDTO(dto);
         dto = (CartDTO) result.getFirst();
@@ -453,7 +453,7 @@ public class TestDTO {
 
         CartDTO cdto = (CartDTO) CartDTOHome.Instance().newDTOInstance();
         cdto.setValue("user_id", udto.getValue("id"));
-        cdto.setValue("status", "pending");
+        cdto.setValue("status", "active");
         List<IDTO> carts = dataLayerService.loadDTOs(cdto, cdto.getDtoHome());
         cdto = (CartDTO) carts.getFirst();
 
@@ -487,7 +487,7 @@ public class TestDTO {
 
         CartDTO cdto = (CartDTO) CartDTOHome.Instance().newDTOInstance();
         cdto.setValue("user_id", udto.getValue("id"));
-        cdto.setValue("status", "pending");
+        cdto.setValue("status", "active");
         List<IDTO> carts = dataLayerService.loadDTOs(cdto, cdto.getDtoHome());
         cdto = (CartDTO) carts.getFirst();
 
@@ -591,7 +591,7 @@ public class TestDTO {
 
         CartDTO cdto = (CartDTO) CartDTOHome.Instance().newDTOInstance();
         cdto.setValue("user_id", udto.getValue("id"));
-        cdto.setValue("status", "pending");
+        cdto.setValue("status", "active");
         List<IDTO> carts = dataLayerService.loadDTOs(cdto, cdto.getDtoHome());
         cdto = (CartDTO) carts.getFirst();
 
@@ -610,7 +610,7 @@ public class TestDTO {
         dto.setValue("user_id", udto.getValue("id"));
         dto.setValue("cart_id", cdto.getValue("id"));
         dto.setValue("purchase_id", pudto.getValue("id"));
-        dto.setValue("status", "pending");
+        dto.setValue("status", "active");
         List<IDTO> orders = dataLayerService.saveDTO(dto);
         dto = (OrderDTO) orders.getFirst();
         logging.log(dto);
@@ -631,7 +631,7 @@ public class TestDTO {
 
         CartDTO cdto = (CartDTO) CartDTOHome.Instance().newDTOInstance();
         cdto.setValue("user_id", udto.getValue("id"));
-        cdto.setValue("status", "pending");
+        cdto.setValue("status", "active");
         List<IDTO> carts = dataLayerService.loadDTOs(cdto, cdto.getDtoHome());
         cdto = (CartDTO) carts.getFirst();
 
@@ -650,7 +650,7 @@ public class TestDTO {
         dto.setValue("user_id", udto.getValue("id"));
         dto.setValue("cart_id", cdto.getValue("id"));
         dto.setValue("purchase_id", pudto.getValue("id"));
-        dto.setValue("status", "pending");
+        dto.setValue("status", "active");
         List<IDTO> orders = dataLayerService.saveDTO(dto);
         dto = (OrderDTO) orders.getFirst();
         logging.log(dto);
@@ -679,7 +679,7 @@ public class TestDTO {
 
         CartDTO cdto = (CartDTO) CartDTOHome.Instance().newDTOInstance();
         cdto.setValue("user_id", udto.getValue("id"));
-        cdto.setValue("status", "pending");
+        cdto.setValue("status", "active");
         List<IDTO> carts = dataLayerService.loadDTOs(cdto, cdto.getDtoHome());
         cdto = (CartDTO) carts.getFirst();
 
@@ -710,7 +710,7 @@ public class TestDTO {
         odto.setValue("user_id", udto.getValue("id"));
         odto.setValue("cart_id", cdto.getValue("id"));
         odto.setValue("purchase_id", pudto.getValue("id"));
-        odto.setValue("status", "pending");
+        odto.setValue("status", "active");
         List<IDTO> orders = dataLayerService.loadDTOs(odto, odto.getDtoHome());
         odto = (OrderDTO) orders.getFirst();
 

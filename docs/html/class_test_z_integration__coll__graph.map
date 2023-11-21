@@ -1,0 +1,8 @@
+<map id="TestZIntegration" name="TestZIntegration">
+<area shape="rect" id="Node000001" title=" " alt="" coords="31,625,181,774"/>
+<area shape="rect" id="Node000002" href="$class_app_logging_agent.html" title="The AppLoggingAgent class implements the IAppLoggingStream interface and provides methods for logging..." alt="" coords="5,263,207,562"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,562,109,608,103,608,103,562"/>
+<area shape="rect" id="Node000003" href="$interface_i_app_logging_stream.html" title="The IAppLoggingStream interface defines methods for logging messages and objects." alt="" coords="15,5,197,200"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,215,106,224,106,264,101,263,101,224,101,215"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="109,200,109,246,103,246,103,200"/>
+</map>

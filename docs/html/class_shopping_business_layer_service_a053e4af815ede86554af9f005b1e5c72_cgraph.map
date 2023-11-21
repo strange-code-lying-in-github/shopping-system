@@ -1,0 +1,20 @@
+<map id="ShoppingBusinessLayerService.loadDTOs" name="ShoppingBusinessLayerService.loadDTOs">
+<area shape="rect" id="Node000001" title="Loads a list of DTOs based on the given DTO object." alt="" coords="5,68,274,93"/>
+<area shape="rect" id="Node000002" href="$class_shopping_data_layer_service.html#a9f4bc4d863f57a0eae76b584755a82ae" title="Loads the specified DTO using the provided SQL query and processor." alt="" coords="322,68,564,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,78,306,78,306,83,274,83"/>
+<area shape="rect" id="Node000003" href="$class_shopping_data_layer_service.html#ae9c18a0f36c3cafc7e5d5434545677a0" title="Executes a SQL query and processes the result using the specified IDbResultProcessor." alt="" coords="612,60,841,101"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="565,78,596,78,596,83,565,83"/>
+<area shape="rect" id="Node000004" href="$class_i_factory.html#a2da9967650e85dc8de3c05e6a137c4b1" title="The function returns an instance of the IFactory class." alt="" coords="940,17,1047,43"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="837,57,924,40,925,45,838,62"/>
+<area shape="rect" id="Node000005" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="1146,42,1290,68"/>
+<area shape="poly" id="edge9_Node000003_Node000005" title=" " alt="" coords="842,72,1130,57,1130,62,842,77"/>
+<area shape="rect" id="Node000009" href="$class_shopping_data_layer_service.html#a3ef55e17b54ae2f79c4a2efe03fe142c" title="Prompts the user to enter database connection information and sets the connection properties for the ..." alt="" coords="889,117,1098,158"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="825,99,881,111,880,116,824,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1048,33,1130,42,1130,48,1047,38"/>
+<area shape="rect" id="Node000006" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="1338,5,1546,46"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1290,43,1322,39,1323,44,1291,48"/>
+<area shape="rect" id="Node000008" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="1364,70,1520,96"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="1291,61,1349,69,1348,74,1290,67"/>
+<area shape="rect" id="Node000007" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="1594,5,1780,46"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1547,23,1578,23,1578,28,1547,28"/>
+</map>

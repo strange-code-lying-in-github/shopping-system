@@ -1,0 +1,34 @@
+<map id="TestZIntegration.testIntegration_GetBasket" name="TestZIntegration.testIntegration_GetBasket">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,208,129"/>
+<area shape="rect" id="Node000002" href="$class_shopping_business_layer_service.html#a0dbab76dbacbabfe8a7a80a9d8c31c29" title="Retrieves the active cart for a given user." alt="" coords="270,5,497,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,85,297,48,299,54,178,90"/>
+<area shape="rect" id="Node000008" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="1658,185,1803,211"/>
+<area shape="poly" id="edge17_Node000001_Node000008" title=" " alt="" coords="208,98,421,87,671,80,1241,80,1346,76,1429,71,1469,72,1511,78,1558,88,1611,106,1640,119,1666,136,1708,172,1705,176,1663,141,1637,124,1609,111,1556,93,1510,83,1469,78,1429,77,1346,82,1241,86,671,86,421,92,208,104"/>
+<area shape="rect" id="Node000013" href="$class_shopping_business_layer_service.html#a3a48d2c04546905127e6c3531f50f050" title="Retrieves the user information for the specified username." alt="" coords="256,121,511,147"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="208,115,240,118,240,123,208,120"/>
+<area shape="rect" id="Node000015" href="$class_environment.html#ae31191f88d1cd997ba32eb753a5fa4cc" title="Represents an interface for the environment." alt="" coords="309,170,458,196"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="164,127,256,156,294,165,293,171,255,162,162,132"/>
+<area shape="rect" id="Node000003" href="$class_shopping_business_layer_service.html#a589c91be40a18a9079e34111100706d0" title="Retrieves a list of cart items based on the user ID and status." alt="" coords="559,5,786,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="498,23,543,23,543,28,498,28"/>
+<area shape="rect" id="Node000004" href="$class_cart_d_t_o_home.html#a9eb51d0e62df1ca30e1a3ce5ec913e5a" title="Returns the singleton instance of CartDTOHome." alt="" coords="874,13,1037,39"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="787,23,859,23,859,28,787,28"/>
+<area shape="rect" id="Node000005" href="$class_shopping_data_layer_service.html#a9f4bc4d863f57a0eae76b584755a82ae" title="Loads the specified DTO using the provided SQL query and processor." alt="" coords="834,121,1077,147"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="729,44,907,112,905,117,727,49"/>
+<area shape="rect" id="Node000006" href="$class_shopping_data_layer_service.html#ae9c18a0f36c3cafc7e5d5434545677a0" title="Executes a SQL query and processes the result using the specified IDbResultProcessor." alt="" coords="1125,148,1354,189"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1066,144,1110,150,1109,155,1066,150"/>
+<area shape="rect" id="Node000007" href="$class_i_factory.html#a2da9967650e85dc8de3c05e6a137c4b1" title="The function returns an instance of the IFactory class." alt="" coords="1453,236,1560,261"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1311,187,1447,228,1446,233,1309,192"/>
+<area shape="poly" id="edge12_Node000006_Node000008" title=" " alt="" coords="1355,173,1643,190,1643,195,1354,178"/>
+<area shape="rect" id="Node000012" href="$class_shopping_data_layer_service.html#a3ef55e17b54ae2f79c4a2efe03fe142c" title="Prompts the user to enter database connection information and sets the connection properties for the ..." alt="" coords="1402,120,1610,161"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="1354,154,1386,150,1387,156,1355,159"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1559,234,1655,212,1656,217,1561,239"/>
+<area shape="rect" id="Node000009" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="1851,148,2059,189"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1803,186,1835,181,1836,187,1804,191"/>
+<area shape="rect" id="Node000011" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="1877,213,2033,239"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="1804,204,1862,211,1861,217,1803,209"/>
+<area shape="rect" id="Node000010" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="2107,148,2292,189"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="2060,166,2091,166,2091,171,2060,171"/>
+<area shape="poly" id="edge15_Node000013_Node000005" title=" " alt="" coords="511,131,819,131,819,136,511,136"/>
+<area shape="rect" id="Node000014" href="$class_user_d_t_o_home.html#a27fd9be7fdf49c5bce57889a40f3bdeb" title="Returns the singleton instance of UserDTOHome." alt="" coords="590,172,756,197"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="461,144,581,166,580,171,460,150"/>
+</map>

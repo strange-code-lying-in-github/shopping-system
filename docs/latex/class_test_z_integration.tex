@@ -1,0 +1,192 @@
+\doxysection{Test\+ZIntegration Class Reference}
+\hypertarget{class_test_z_integration}{}\label{class_test_z_integration}\index{TestZIntegration@{TestZIntegration}}
+
+
+Collaboration diagram for Test\+ZIntegration\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_test_z_integration__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_test_z_integration_a181ba638c27b31d7c9a958b9353ba56c}{test\+Integration\+\_\+\+Get\+Product\+Catalog}} ()
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_test_z_integration_a250a56f0b1bc1fdcba963c403a30b4ad}{test\+Integration\+\_\+\+Get\+Basket}} ()
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_test_z_integration_a006832bea75dfa4091e88b8690482ae4}{test\+Integration\+\_\+\+Add\+To\+Basket}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_test_z_integration_ab1fcbe0ae8513749cf5ba4eeeb381c6a}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_test_z_integration_8java_source_l00014}{14}} of file \mbox{\hyperlink{_test_z_integration_8java_source}{Test\+ZIntegration.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_test_z_integration_a006832bea75dfa4091e88b8690482ae4}\label{class_test_z_integration_a006832bea75dfa4091e88b8690482ae4} 
+\index{TestZIntegration@{TestZIntegration}!testIntegration\_AddToBasket@{testIntegration\_AddToBasket}}
+\index{testIntegration\_AddToBasket@{testIntegration\_AddToBasket}!TestZIntegration@{TestZIntegration}}
+\doxysubsubsection{\texorpdfstring{testIntegration\_AddToBasket()}{testIntegration\_AddToBasket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Test\+ZIntegration.\+test\+Integration\+\_\+\+Add\+To\+Basket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definition at line \mbox{\hyperlink{_test_z_integration_8java_source_l00062}{62}} of file \mbox{\hyperlink{_test_z_integration_8java_source}{Test\+ZIntegration.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ get\ catalog}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_system}{ShoppingSystem}}\ \mbox{\hyperlink{class_i_factory}{system}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_system}{ShoppingSystem}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{system}}.configure();}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ shoppingBusinessService\ =\ \mbox{\hyperlink{class_i_factory}{system}}.getShoppingBusinessService();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{user}}\ =\ shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_a3a48d2c04546905127e6c3531f50f050}{getUser}}(\textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_test_z_integration_ab1fcbe0ae8513749cf5ba4eeeb381c6a}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{user}}.toString());}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{user}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{basket}}\ =\ shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_a0dbab76dbacbabfe8a7a80a9d8c31c29}{getActiveCart}}((Integer)\ \mbox{\hyperlink{class_i_factory}{user}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_test_z_integration_ab1fcbe0ae8513749cf5ba4eeeb381c6a}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{basket}}.toString());}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{basket}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{interface_i_product_catalog}{IProductCatalog}}\ \mbox{\hyperlink{class_i_factory}{catalog}}\ =\ shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_ae030dca4623e3641b2e3b4e693ab9b3b}{getProductCatalog}}();}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{product}}\ :\ \mbox{\hyperlink{class_i_factory}{catalog}}.getProducts())\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_test_z_integration_ab1fcbe0ae8513749cf5ba4eeeb381c6a}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{product}}.toString());}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ String\ name\ =\ (String)\ \mbox{\hyperlink{class_i_factory}{product}}.getValue(\textcolor{stringliteral}{"{}name"{}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (name.equals(\textcolor{stringliteral}{"{}tires"{}}))\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}}\ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}})\ \mbox{\hyperlink{class_cart_item_d_t_o_home}{CartItemDTOHome}}.\mbox{\hyperlink{class_cart_item_d_t_o_home_a14d79807211164813891abfd8d9b1c43}{Instance}}().newDTOInstance();}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}cart\_id"{}},\ \mbox{\hyperlink{class_i_factory}{basket}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}product\_id"{}},\ \mbox{\hyperlink{class_i_factory}{product}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}.setValue(\textcolor{stringliteral}{"{}quantity"{}},\ 4);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ result\ =\ shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_ab23c8839a99e042615cb7f30389eb066}{saveDTO}}(\mbox{\hyperlink{class_i_factory}{dto}});}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{dto}}\ =\ (\mbox{\hyperlink{class_cart_item_d_t_o}{CartItemDTO}})\ result.getFirst();}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{dto}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{userProfile}}\ =\ shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_a777bb1997e657f7f50b71909af730138}{getUserProfiles}}((Integer)\ \mbox{\hyperlink{class_i_factory}{user}}.getValue(\textcolor{stringliteral}{"{}id"{}})).getFirst();}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_payment_service}{ShoppingPaymentService}}\ \mbox{\hyperlink{class_i_factory}{paymentService}}\ =\ shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_ad9f7364dab145cb536299eb9e4412c27}{getShoppingPaymentService}}();}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertTrue}}(\mbox{\hyperlink{class_i_factory}{paymentService}}.processPayment((Integer)\ \mbox{\hyperlink{class_i_factory}{basket}}.getValue(\textcolor{stringliteral}{"{}id"{}}),}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (Integer)\ \mbox{\hyperlink{class_i_factory}{userProfile}}.getValue(\textcolor{stringliteral}{"{}id"{}})));}
+\DoxyCodeLine{00095\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00164}{Shopping\+Business\+Layer\+Service.\+get\+Active\+Cart()}}, \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00101}{Shopping\+Business\+Layer\+Service.\+get\+Product\+Catalog()}}, \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00039}{Shopping\+Business\+Layer\+Service.\+get\+Shopping\+Payment\+Service()}}, \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00071}{Shopping\+Business\+Layer\+Service.\+get\+User()}}, \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00200}{Shopping\+Business\+Layer\+Service.\+get\+User\+Profiles()}}, \mbox{\hyperlink{_cart_item_d_t_o_home_8java_source_l00018}{Cart\+Item\+DTOHome.\+Instance()}}, \mbox{\hyperlink{_environment_8java_source_l00025}{Environment.\+Instance()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00305}{Shopping\+Business\+Layer\+Service.\+save\+DTO()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_test_z_integration_a006832bea75dfa4091e88b8690482ae4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_test_z_integration_a250a56f0b1bc1fdcba963c403a30b4ad}\label{class_test_z_integration_a250a56f0b1bc1fdcba963c403a30b4ad} 
+\index{TestZIntegration@{TestZIntegration}!testIntegration\_GetBasket@{testIntegration\_GetBasket}}
+\index{testIntegration\_GetBasket@{testIntegration\_GetBasket}!TestZIntegration@{TestZIntegration}}
+\doxysubsubsection{\texorpdfstring{testIntegration\_GetBasket()}{testIntegration\_GetBasket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Test\+ZIntegration.\+test\+Integration\+\_\+\+Get\+Basket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definition at line \mbox{\hyperlink{_test_z_integration_8java_source_l00045}{45}} of file \mbox{\hyperlink{_test_z_integration_8java_source}{Test\+ZIntegration.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ get\ catalog}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_system}{ShoppingSystem}}\ \mbox{\hyperlink{class_i_factory}{system}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_system}{ShoppingSystem}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{system}}.configure();}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ shoppingBusinessService\ =\ \mbox{\hyperlink{class_i_factory}{system}}.getShoppingBusinessService();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_t_o}{UserDTO}}\ \mbox{\hyperlink{class_i_factory}{user}}\ =\ shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_a3a48d2c04546905127e6c3531f50f050}{getUser}}(\textcolor{stringliteral}{"{}joesample"{}});}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_test_z_integration_ab1fcbe0ae8513749cf5ba4eeeb381c6a}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{user}}.toString());}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{user}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{basket}}\ =\ shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_a0dbab76dbacbabfe8a7a80a9d8c31c29}{getActiveCart}}((Integer)\ \mbox{\hyperlink{class_i_factory}{user}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_test_z_integration_ab1fcbe0ae8513749cf5ba4eeeb381c6a}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{basket}}.toString());}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotNull}}(\mbox{\hyperlink{class_i_factory}{basket}}.getValue(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00164}{Shopping\+Business\+Layer\+Service.\+get\+Active\+Cart()}}, \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00071}{Shopping\+Business\+Layer\+Service.\+get\+User()}}, \mbox{\hyperlink{_environment_8java_source_l00025}{Environment.\+Instance()}}, and \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_test_z_integration_a250a56f0b1bc1fdcba963c403a30b4ad_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_test_z_integration_a181ba638c27b31d7c9a958b9353ba56c}\label{class_test_z_integration_a181ba638c27b31d7c9a958b9353ba56c} 
+\index{TestZIntegration@{TestZIntegration}!testIntegration\_GetProductCatalog@{testIntegration\_GetProductCatalog}}
+\index{testIntegration\_GetProductCatalog@{testIntegration\_GetProductCatalog}!TestZIntegration@{TestZIntegration}}
+\doxysubsubsection{\texorpdfstring{testIntegration\_GetProductCatalog()}{testIntegration\_GetProductCatalog()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Test\+ZIntegration.\+test\+Integration\+\_\+\+Get\+Product\+Catalog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definition at line \mbox{\hyperlink{_test_z_integration_8java_source_l00030}{30}} of file \mbox{\hyperlink{_test_z_integration_8java_source}{Test\+ZIntegration.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ get\ catalog}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_system}{ShoppingSystem}}\ \mbox{\hyperlink{class_i_factory}{system}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_system}{ShoppingSystem}}(\mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}());}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{system}}.configure();}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ shoppingBusinessService\ =\ \mbox{\hyperlink{class_i_factory}{system}}.getShoppingBusinessService();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{interface_i_product_catalog}{IProductCatalog}}\ \mbox{\hyperlink{class_i_factory}{catalog}}\ =\ shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_ae030dca4623e3641b2e3b4e693ab9b3b}{getProductCatalog}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}}\ \mbox{\hyperlink{class_i_factory}{product}}\ :\ \mbox{\hyperlink{class_i_factory}{catalog}}.getProducts())\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_test_z_integration_ab1fcbe0ae8513749cf5ba4eeeb381c6a}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{product}}.toString());}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{assertNotEquals}}(0\mbox{\hyperlink{class_i_factory}{l}},\ (\textcolor{keywordtype}{long})\ \mbox{\hyperlink{class_i_factory}{catalog}}.getProducts().size());}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00101}{Shopping\+Business\+Layer\+Service.\+get\+Product\+Catalog()}}, \mbox{\hyperlink{_environment_8java_source_l00025}{Environment.\+Instance()}}, and \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_test_z_integration_a181ba638c27b31d7c9a958b9353ba56c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_test_z_integration_ab1fcbe0ae8513749cf5ba4eeeb381c6a}\label{class_test_z_integration_ab1fcbe0ae8513749cf5ba4eeeb381c6a} 
+\index{TestZIntegration@{TestZIntegration}!logging@{logging}}
+\index{logging@{logging}!TestZIntegration@{TestZIntegration}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Test\+ZIntegration.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_test_z_integration_8java_source_l00016}{16}} of file \mbox{\hyperlink{_test_z_integration_8java_source}{Test\+ZIntegration.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_test_z_integration_8java}{Test\+ZIntegration.\+java}}\end{DoxyCompactItemize}
