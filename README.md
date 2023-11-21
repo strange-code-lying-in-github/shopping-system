@@ -51,3 +51,5 @@ The complete picture of the web integrations looks like this:
 ![WebServer Inheritance Tree](./docs/html/class_shopping_web_interface_controller__coll__graph.png)
 
 ## Output
+
+[output.txt](./output.txt)
