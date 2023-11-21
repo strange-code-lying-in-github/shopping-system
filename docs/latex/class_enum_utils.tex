@@ -1,0 +1,75 @@
+\doxysection{Enum\+Utils Class Reference}
+\hypertarget{class_enum_utils}{}\label{class_enum_utils}\index{EnumUtils@{EnumUtils}}
+
+
+A utility class for parsing string values to enum constants.  
+
+
+
+
+Collaboration diagram for Enum\+Utils\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_enum_utils__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} \mbox{\hyperlink{class_i_factory}{extends}} \mbox{\hyperlink{class_i_factory}{Enum}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{T}} \mbox{\hyperlink{class_enum_utils_a854d6e7f51ffc49c20ce075dbeb04ce4}{parse}} (\mbox{\hyperlink{class_i_factory}{Class}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{enum\+Class}}, String value)
+\begin{DoxyCompactList}\small\item\em Parses the given string value to the corresponding enum constant of the specified enum type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class for parsing string values to enum constants. 
+
+Definition at line \mbox{\hyperlink{_enum_utils_8java_source_l00005}{5}} of file \mbox{\hyperlink{_enum_utils_8java_source}{Enum\+Utils.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_enum_utils_a854d6e7f51ffc49c20ce075dbeb04ce4}\label{class_enum_utils_a854d6e7f51ffc49c20ce075dbeb04ce4} 
+\index{EnumUtils@{EnumUtils}!parse@{parse}}
+\index{parse@{parse}!EnumUtils@{EnumUtils}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} \mbox{\hyperlink{class_i_factory}{extends}} \mbox{\hyperlink{class_i_factory}{Enum}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{T}} Enum\+Utils.\+parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Class}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$}]{enum\+Class,  }\item[{String}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parses the given string value to the corresponding enum constant of the specified enum type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & the type of the enum \\
+\hline
+{\em enum\+Class} & the class object of the enum type \\
+\hline
+{\em value} & the string value to be parsed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the enum constant of the specified enum type with the specified name 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if the specified enum type has no constant with the specified name, or the specified class object does not represent an enum type \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_enum_utils_8java_source_l00018}{18}} of file \mbox{\hyperlink{_enum_utils_8java_source}{Enum\+Utils.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{Enum}}.valueOf(\mbox{\hyperlink{class_i_factory}{enumClass}},\ value);}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_enum_utils_8java}{Enum\+Utils.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+\doxysection{Enum\+Utils.\+java}
+\hypertarget{_enum_utils_8java_source}{}\label{_enum_utils_8java_source}\mbox{\hyperlink{_enum_utils_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00001}00001\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00002}00002\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00003}00003\ \textcolor{comment}{\ *\ A\ utility\ class\ for\ parsing\ string\ values\ to\ enum\ constants.}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00004}00004\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00005}\mbox{\hyperlink{class_enum_utils}{00005}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_enum_utils}{EnumUtils}}\ \{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00006}00006\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00007}00007\ \textcolor{comment}{\ \ \ \ \ *\ Parses\ the\ given\ string\ value\ to\ the\ corresponding\ enum\ constant\ of\ the}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00008}00008\ \textcolor{comment}{\ \ \ \ \ *\ specified\ enum\ type.}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00009}00009\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00010}00010\ \textcolor{comment}{\ \ \ \ \ *\ @param\ <T>\ \ \ \ \ \ \ the\ type\ of\ the\ enum}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00011}00011\ \textcolor{comment}{\ \ \ \ \ *\ @param\ enumClass\ the\ class\ object\ of\ the\ enum\ type}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ *\ @param\ value\ \ \ \ \ the\ string\ value\ to\ be\ parsed}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00013}00013\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ enum\ constant\ of\ the\ specified\ enum\ type\ with\ the\ specified\ name}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00014}00014\ \textcolor{comment}{\ \ \ \ \ *\ @throws\ IllegalArgumentException\ if\ the\ specified\ enum\ type\ has\ no\ constant}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00015}00015\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ with\ the\ specified\ name,\ or\ the\ specified}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00016}00016\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ class\ object\ does\ not\ represent\ an\ enum\ type}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00017}00017\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00018}\mbox{\hyperlink{class_enum_utils_a854d6e7f51ffc49c20ce075dbeb04ce4}{00018}}\ \ \ \ \ \textcolor{keyword}{public}\ static\ <T\ extends\ Enum<T>>\ T\ \mbox{\hyperlink{class_enum_utils_a854d6e7f51ffc49c20ce075dbeb04ce4}{parse}}(Class<T>\ enumClass,\ String\ value)\ \{}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Enum.valueOf(enumClass,\ value);}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_enum_utils_8java_source_l00021}00021\ \}}
+
+\end{DoxyCode}

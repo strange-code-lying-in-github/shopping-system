@@ -1,0 +1,195 @@
+\doxysection{User\+Role\+DTOHome Class Reference}
+\hypertarget{class_user_role_d_t_o_home}{}\label{class_user_role_d_t_o_home}\index{UserRoleDTOHome@{UserRoleDTOHome}}
+
+
+This class represents a home for \doxylink{class_user_role_d_t_o}{User\+Role\+DTO} objects.  
+
+
+
+
+Inheritance diagram for User\+Role\+DTOHome\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_user_role_d_t_o_home__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for User\+Role\+DTOHome\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_user_role_d_t_o_home__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_user_role_d_t_o_home_a5d5910e02c034999413311c110340c71}{new\+DTOInstance}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new instance of \doxylink{class_user_role_d_t_o}{User\+Role\+DTO}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base_d_t_o_home}{Base\+DTOHome}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_base_d_t_o_home_afd42de12b88d4ddb7d5c2a3344f43462}{query\+DTOs}} (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto\+Query}})
+\begin{DoxyCompactList}\small\item\em Queries the database for a list of DTOs based on the provided query DTO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_base_d_t_o_home_a92aa0e3eaca4185e33cec3554f69f8e6}{save\+DTO}} (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}})
+\begin{DoxyCompactList}\small\item\em Saves a single DTO object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_base_d_t_o_home_aac9def567b8e91c556c9c24d22bebabd}{save\+DTOs}} (\mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_i_factory}{dtos}})
+\begin{DoxyCompactList}\small\item\em Saves a list of DTOs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_base_d_t_o_home_a8289bf6abc4bc4ae0e6436a7624183fe}{get\+Load\+Processor}} ()
+\begin{DoxyCompactList}\small\item\em Gets the result processor for loading data from the database. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_base_d_t_o_home_a34de9bc67c3680a7534ad13e9e576ded}{get\+Load\+Sql}} (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}})
+\begin{DoxyCompactList}\small\item\em Returns the SQL query for loading data from the database based on the provided DTO object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_base_d_t_o_home_aad6c47bf74a929d6cf8c1243b96a65ce}{get\+Save\+Processor}} (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}})
+\begin{DoxyCompactList}\small\item\em The function returns an instance of a class that implements the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} interface, which processes the result set from a database save operation and returns a list of DTO objects. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_base_d_t_o_home_a9566b6b131e87836c2ffee95ec2a9f07}{get\+Save\+Sql}} (\mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}})
+\begin{DoxyCompactList}\small\item\em Returns the SQL statement for saving the given DTO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}} \mbox{\hyperlink{class_user_role_d_t_o_home_a3d5ca375b0de262c1a081055be3223d7}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Returns the singleton instance of \doxylink{class_user_role_d_t_o_home}{User\+Role\+DTOHome}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_role_d_t_o_home_a14a5f1f6a254258192bd431dba214755}{User\+Role\+DTOHome}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_user_role_d_t_o_home}{User\+Role\+DTOHome}} \mbox{\hyperlink{class_user_role_d_t_o_home_ad50c7beeed23174f27f55cdf76262d68}{instance}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_user_role_d_t_o_home}{User\+Role\+DTOHome}}()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_base_d_t_o_home}{Base\+DTOHome}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_base_d_t_o_home_af2c96ac239579b4f487e81465a5e5083}{process\+Load\+Result}} (\mbox{\hyperlink{class_i_factory}{Result\+Set}} \mbox{\hyperlink{class_i_factory}{rs}}, \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_i_factory}{results}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}} 
+\begin{DoxyCompactList}\small\item\em Processes the load result from a Result\+Set and populates a list of DTO objects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_base_d_t_o_home_a8a3fc2d026a37e7a981023499108481c}{process\+Load\+Result}} (\mbox{\hyperlink{class_i_factory}{Result\+Set}} \mbox{\hyperlink{class_i_factory}{rs}}, \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}} 
+\begin{DoxyCompactList}\small\item\em Processes the load result from a Result\+Set and sets the values in the given DTO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Object}} \mbox{\hyperlink{class_base_d_t_o_home_a8058ce7f63b989c873af2ffce36fc14a}{get\+Value\+From\+Result\+Set}} (\mbox{\hyperlink{class_i_factory}{Result\+Set}} \mbox{\hyperlink{class_i_factory}{rs}}, String \mbox{\hyperlink{class_i_factory}{field\+Name}}, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} \mbox{\hyperlink{class_i_factory}{dto\+Types}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}} 
+\begin{DoxyCompactList}\small\item\em Retrieves the value from the Result\+Set based on the field name and data type. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_base_d_t_o_home_a21acf202defee2daf4cd35a14fcf7d88}{format\+Value\+For\+Query}} (\mbox{\hyperlink{class_i_factory}{Object}} value, \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}} \mbox{\hyperlink{class_i_factory}{dto\+Types}})
+\begin{DoxyCompactList}\small\item\em Formats the given value for query based on the specified DTO type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_base_d_t_o_home_ab866c0041dc78cdae68b25e3327b6060}{process\+Save\+Result}} (\mbox{\hyperlink{class_i_factory}{Result\+Set}} \mbox{\hyperlink{class_i_factory}{rs}}, \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}}, \mbox{\hyperlink{class_i_factory}{List}}$<$ \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} $>$ \mbox{\hyperlink{class_i_factory}{save\+Results}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{SQLException}} 
+\begin{DoxyCompactList}\small\item\em Processes the save result from the database and updates the DTO object accordingly. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_d_t_o_home_ab0610c3a8842503f03de75278f9e6bd6}{build\+Insert\+Sql}} (\mbox{\hyperlink{class_i_factory}{String\+Builder}} \mbox{\hyperlink{class_i_factory}{sb}}, \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}})
+\begin{DoxyCompactList}\small\item\em Builds the SQL query for inserting data into the database table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_d_t_o_home_a6c4ac7a7019def24a233008dca358250}{build\+Update\+Sql}} (\mbox{\hyperlink{class_i_factory}{String\+Builder}} \mbox{\hyperlink{class_i_factory}{sb}}, \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} \mbox{\hyperlink{class_i_factory}{dto}})
+\begin{DoxyCompactList}\small\item\em Builds an SQL update statement for the given DTO object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a home for \doxylink{class_user_role_d_t_o}{User\+Role\+DTO} objects. 
+
+It extends the \doxylink{class_base_d_t_o_home}{Base\+DTOHome} class and provides methods for creating new instances of \doxylink{class_user_role_d_t_o}{User\+Role\+DTO}. 
+
+Definition at line \mbox{\hyperlink{_user_role_d_t_o_home_8java_source_l00006}{6}} of file \mbox{\hyperlink{_user_role_d_t_o_home_8java_source}{User\+Role\+DTOHome.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_user_role_d_t_o_home_a14a5f1f6a254258192bd431dba214755}\label{class_user_role_d_t_o_home_a14a5f1f6a254258192bd431dba214755} 
+\index{UserRoleDTOHome@{UserRoleDTOHome}!UserRoleDTOHome@{UserRoleDTOHome}}
+\index{UserRoleDTOHome@{UserRoleDTOHome}!UserRoleDTOHome@{UserRoleDTOHome}}
+\doxysubsubsection{\texorpdfstring{UserRoleDTOHome()}{UserRoleDTOHome()}}
+{\footnotesize\ttfamily User\+Role\+DTOHome.\+User\+Role\+DTOHome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_user_role_d_t_o_home_8java_source_l00010}{10}} of file \mbox{\hyperlink{_user_role_d_t_o_home_8java_source}{User\+Role\+DTOHome.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_user_role_d_t_o_home_a3d5ca375b0de262c1a081055be3223d7}\label{class_user_role_d_t_o_home_a3d5ca375b0de262c1a081055be3223d7} 
+\index{UserRoleDTOHome@{UserRoleDTOHome}!Instance@{Instance}}
+\index{Instance@{Instance}!UserRoleDTOHome@{UserRoleDTOHome}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}} User\+Role\+DTOHome.\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the singleton instance of \doxylink{class_user_role_d_t_o_home}{User\+Role\+DTOHome}. 
+
+\begin{DoxyReturn}{Returns}
+The singleton instance of \doxylink{class_user_role_d_t_o_home}{User\+Role\+DTOHome}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_role_d_t_o_home_8java_source_l00018}{18}} of file \mbox{\hyperlink{_user_role_d_t_o_home_8java_source}{User\+Role\+DTOHome.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_user_role_d_t_o_home_ad50c7beeed23174f27f55cdf76262d68}{instance}};}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_role_d_t_o_home_8java_source_l00008}{instance}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_role_d_t_o_8java_source_l00045}{User\+Role\+DTO.\+get\+Dto\+Home()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00520}{Test\+DTO.\+test\+User\+Role\+DTO\+\_\+1()}}, and \mbox{\hyperlink{_test_d_t_o_8java_source_l00547}{Test\+DTO.\+test\+User\+Role\+DTO\+\_\+2()}}.
+
+\Hypertarget{class_user_role_d_t_o_home_a5d5910e02c034999413311c110340c71}\label{class_user_role_d_t_o_home_a5d5910e02c034999413311c110340c71} 
+\index{UserRoleDTOHome@{UserRoleDTOHome}!newDTOInstance@{newDTOInstance}}
+\index{newDTOInstance@{newDTOInstance}!UserRoleDTOHome@{UserRoleDTOHome}}
+\doxysubsubsection{\texorpdfstring{newDTOInstance()}{newDTOInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_d_t_o}{IDTO}} User\+Role\+DTOHome.\+new\+DTOInstance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new instance of \doxylink{class_user_role_d_t_o}{User\+Role\+DTO}. 
+
+\begin{DoxyReturn}{Returns}
+A new instance of \doxylink{class_user_role_d_t_o}{User\+Role\+DTO}. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_base_d_t_o_home_ab00036133ffbc9bba46c9786295b3fb8}{Base\+DTOHome}}.
+
+
+
+Definition at line \mbox{\hyperlink{_user_role_d_t_o_home_8java_source_l00027}{27}} of file \mbox{\hyperlink{_user_role_d_t_o_home_8java_source}{User\+Role\+DTOHome.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_user_role_d_t_o}{UserRoleDTO}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_user_role_d_t_o_home_ad50c7beeed23174f27f55cdf76262d68}\label{class_user_role_d_t_o_home_ad50c7beeed23174f27f55cdf76262d68} 
+\index{UserRoleDTOHome@{UserRoleDTOHome}!instance@{instance}}
+\index{instance@{instance}!UserRoleDTOHome@{UserRoleDTOHome}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user_role_d_t_o_home}{User\+Role\+DTOHome}} User\+Role\+DTOHome.\+instance = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_user_role_d_t_o_home}{User\+Role\+DTOHome}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_user_role_d_t_o_home_8java_source_l00008}{8}} of file \mbox{\hyperlink{_user_role_d_t_o_home_8java_source}{User\+Role\+DTOHome.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_role_d_t_o_home_8java_source_l00018}{Instance()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_user_role_d_t_o_home_8java}{User\+Role\+DTOHome.\+java}}\end{DoxyCompactItemize}

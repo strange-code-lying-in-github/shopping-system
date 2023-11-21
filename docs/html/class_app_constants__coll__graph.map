@@ -1,0 +1,7 @@
+<map id="AppConstants" name="AppConstants">
+<area shape="rect" id="Node000001" title="This class contains constants used throughout the application." alt="" coords="117,149,213,214"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,116,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,71,56,98,65,123,81,142,103,157,100,161,78,146,60,126,51,99,51,71"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="223,5,314,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,71,256,99,242,126,228,142,224,138,237,123,251,97,260,69"/>
+</map>

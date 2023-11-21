@@ -1,0 +1,400 @@
+\doxysection{Environment Class Reference}
+\hypertarget{class_environment}{}\label{class_environment}\index{Environment@{Environment}}
+
+
+The \doxylink{class_environment}{Environment} class represents the environment in which the application is running.  
+
+
+
+
+Inheritance diagram for Environment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_environment__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Environment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_environment__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_environment_a395eb7f345e4c2146ff698ae75f42124}{get\+Comnand\+Line\+Args}} ()
+\begin{DoxyCompactList}\small\item\em Returns the command line arguments passed to the application. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_environment_a343e9ee063043034d7d99b6aa02aef93}{get\+Value}} (String \mbox{\hyperlink{class_i_factory}{key}})
+\begin{DoxyCompactList}\small\item\em Retrieves the value associated with the specified key from the properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{List}}$<$ String $>$ \mbox{\hyperlink{class_environment_aa53b3f0ee353c45adcb129e3ba446ddb}{get\+Keys}} ()
+\begin{DoxyCompactList}\small\item\em Returns a list of keys in the environment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_environment_a241d85d54357b361f03889f1e420629e}{Has\+Key}} (String \mbox{\hyperlink{class_i_factory}{key}})
+\begin{DoxyCompactList}\small\item\em Checks if the specified key exists in the environment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Represents an interface for the environment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_environment_aad43e7196b530e06f8b88ba181226bdf}{Environment}} (String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1}{args}})
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_environment}{Environment} class represents the environment settings for the shopping system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_environment_a133c13aea6743baf35be8263279d9862}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Represents an environment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_environment_a7595b526e73e5b5b3e5461d66bf36ef3}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The logging agent used for logging application events. \end{DoxyCompactList}\item 
+Properties \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\+\_\+properties}} = \mbox{\hyperlink{class_i_factory}{new}} Properties(\mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+get\+Properties}}())
+\begin{DoxyCompactList}\small\item\em The properties for the environment. \end{DoxyCompactList}\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1}{args}}
+\begin{DoxyCompactList}\small\item\em The command line arguments passed to the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_environment_aaa5f8b09050bb1b68699acbfd3904f44}{\+\_\+instance}} = \mbox{\hyperlink{class_environment_a133c13aea6743baf35be8263279d9862}{get\+Instance}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_environment}{Environment} class represents the environment in which the application is running. 
+
+It provides access to command line arguments, properties, and other environment-\/related information. 
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00011}{11}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_environment_aad43e7196b530e06f8b88ba181226bdf}\label{class_environment_aad43e7196b530e06f8b88ba181226bdf} 
+\index{Environment@{Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{Environment()}{Environment()}}
+{\footnotesize\ttfamily Environment.\+Environment (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The \doxylink{class_environment}{Environment} class represents the environment settings for the shopping system. 
+
+It loads the properties from a file and provides access to them through the \+\_\+properties map. 
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00047}{47}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ this.args\ =\ \mbox{\hyperlink{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1}{args}};}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{filename}}\ =\ \mbox{\hyperlink{class_i_factory}{System}}.getProperty(\textcolor{stringliteral}{"{}PROPERTY\_FILE\_NAME"{}},\ \textcolor{stringliteral}{"{}app.properties"{}});}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (\mbox{\hyperlink{class_i_factory}{InputStream}}\ \mbox{\hyperlink{class_i_factory}{input}}\ =\ \mbox{\hyperlink{class_i_factory}{getClass}}().\mbox{\hyperlink{class_i_factory}{getClassLoader}}().\mbox{\hyperlink{class_i_factory}{getResourceAsStream}}(\mbox{\hyperlink{class_i_factory}{filename}}))\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ Properties\ \mbox{\hyperlink{class_i_factory}{prop}}\ =\ \textcolor{keyword}{new}\ Properties();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ is\ stream\ valid?}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{input}}\ ==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_environment_a7595b526e73e5b5b3e5461d66bf36ef3}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Error\ finding\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{filename}});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ load\ a\ properties\ file\ from\ class\ path}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{prop}}.load(\mbox{\hyperlink{class_i_factory}{input}});}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ overlay\ properties\ from\ file}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{prop}}.forEach((\mbox{\hyperlink{class_i_factory}{key}},\ value)\ -\/>\ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}.put(\mbox{\hyperlink{class_i_factory}{key}},\ value));}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}.put(\textcolor{stringliteral}{"{}PROPERTY\_FILE\_NAME"{}},\ \mbox{\hyperlink{class_i_factory}{filename}});}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{IOException}}\ \mbox{\hyperlink{class_i_factory}{ex}})\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_environment_a7595b526e73e5b5b3e5461d66bf36ef3}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\mbox{\hyperlink{class_i_factory}{ex}}.getMessage(),\ \mbox{\hyperlink{class_i_factory}{ex}});}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_environment_8java_source_l00036}{\+\_\+properties}}, \mbox{\hyperlink{_environment_8java_source_l00041}{args}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_environment_8java_source_l00032}{logging}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_environment_aad43e7196b530e06f8b88ba181226bdf_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_environment_a395eb7f345e4c2146ff698ae75f42124}\label{class_environment_a395eb7f345e4c2146ff698ae75f42124} 
+\index{Environment@{Environment}!getComnandLineArgs@{getComnandLineArgs}}
+\index{getComnandLineArgs@{getComnandLineArgs}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{getComnandLineArgs()}{getComnandLineArgs()}}
+{\footnotesize\ttfamily String\mbox{[}$\,$\mbox{]} Environment.\+get\+Comnand\+Line\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the command line arguments passed to the application. 
+
+\begin{DoxyReturn}{Returns}
+an array of strings representing the command line arguments 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_environment_a2e9d2ec207af9080929487dd684e6733}{IEnvironment}}.
+
+
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00076}{76}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1}{args}};}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_environment_8java_source_l00041}{args}}.
+
+\Hypertarget{class_environment_a133c13aea6743baf35be8263279d9862}\label{class_environment_a133c13aea6743baf35be8263279d9862} 
+\index{Environment@{Environment}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{interface_i_environment}{IEnvironment}} Environment.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Represents an environment. 
+
+
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00018}{18}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_environment}{Environment}}(\mbox{\hyperlink{class_i_factory}{ProcessHandle}}.current().info().arguments().orElse(\textcolor{keyword}{new}\ String[0]));}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_environment_aa53b3f0ee353c45adcb129e3ba446ddb}\label{class_environment_aa53b3f0ee353c45adcb129e3ba446ddb} 
+\index{Environment@{Environment}!getKeys@{getKeys}}
+\index{getKeys@{getKeys}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{getKeys()}{getKeys()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{List}}$<$ String $>$ Environment.\+get\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a list of keys in the environment. 
+
+\begin{DoxyReturn}{Returns}
+a list of keys 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_environment_a427aada8d3082c054b53332d6f8d430c}{IEnvironment}}.
+
+
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00097}{97}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<String>}}\ \mbox{\hyperlink{class_i_factory}{keys}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{ArrayList<String>}}();}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}.forEach((\mbox{\hyperlink{class_i_factory}{key}},\ value)\ -\/>\ \mbox{\hyperlink{class_i_factory}{keys}}.add((String)\ \mbox{\hyperlink{class_i_factory}{key}}));}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{keys}};}
+\DoxyCodeLine{00101\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_environment_8java_source_l00036}{\+\_\+properties}}.
+
+\Hypertarget{class_environment_a343e9ee063043034d7d99b6aa02aef93}\label{class_environment_a343e9ee063043034d7d99b6aa02aef93} 
+\index{Environment@{Environment}!getValue@{getValue}}
+\index{getValue@{getValue}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily String Environment.\+get\+Value (\begin{DoxyParamCaption}\item[{String}]{key }\end{DoxyParamCaption})}
+
+
+
+Retrieves the value associated with the specified key from the properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key whose associated value is to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value to which the specified key is mapped, or null if the key is not found 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_environment_a9d2f700317385e87efdb77a94df1966f}{IEnvironment}}.
+
+
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00087}{87}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}.getProperty(\mbox{\hyperlink{class_i_factory}{key}},\ \textcolor{keyword}{null});}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_environment_8java_source_l00036}{\+\_\+properties}}.
+
+\Hypertarget{class_environment_a241d85d54357b361f03889f1e420629e}\label{class_environment_a241d85d54357b361f03889f1e420629e} 
+\index{Environment@{Environment}!HasKey@{HasKey}}
+\index{HasKey@{HasKey}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{HasKey()}{HasKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Environment.\+Has\+Key (\begin{DoxyParamCaption}\item[{String}]{key }\end{DoxyParamCaption})}
+
+
+
+Checks if the specified key exists in the environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key exists, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_environment_a7449b7feb0308ebb17bb4554506ef1b5}{IEnvironment}}.
+
+
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00110}{110}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}.containsKey(\mbox{\hyperlink{class_i_factory}{key}});}
+\DoxyCodeLine{00112\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_environment_8java_source_l00036}{\+\_\+properties}}.
+
+\Hypertarget{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}\label{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc} 
+\index{Environment@{Environment}!Instance@{Instance}}
+\index{Instance@{Instance}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{interface_i_environment}{IEnvironment}} Environment.\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Represents an interface for the environment. 
+
+
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00025}{25}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_environment_aaa5f8b09050bb1b68699acbfd3904f44}{\_instance}};}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_environment_8java_source_l00013}{\+\_\+instance}}.
+
+
+
+Referenced by \mbox{\hyperlink{_main_class_8java_source_l00041}{Main\+Class.\+start()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00392}{Test\+DTO.\+test\+Cart\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00414}{Test\+DTO.\+test\+Cart\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00445}{Test\+DTO.\+test\+Cart\+Item\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00479}{Test\+DTO.\+test\+Cart\+Item\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00583}{Test\+DTO.\+test\+Order\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00623}{Test\+DTO.\+test\+Order\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00671}{Test\+DTO.\+test\+Order\+Item\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00225}{Test\+DTO.\+test\+Payment\+Profile\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00244}{Test\+DTO.\+test\+Payment\+Profile\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00141}{Test\+DTO.\+test\+Product\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00160}{Test\+DTO.\+test\+Product\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00179}{Test\+DTO.\+test\+Product\+DTO\+\_\+3()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00198}{Test\+DTO.\+test\+Product\+DTO\+\_\+4()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00331}{Test\+DTO.\+test\+Purchase\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00358}{Test\+DTO.\+test\+Purchase\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00097}{Test\+DTO.\+test\+Role\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00115}{Test\+DTO.\+test\+Role\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00028}{Test\+DTO.\+test\+User\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00048}{Test\+DTO.\+test\+User\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00068}{Test\+DTO.\+test\+User\+DTO\+\_\+3()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00270}{Test\+DTO.\+test\+User\+Profile\+DTO\+\_\+1()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00297}{Test\+DTO.\+test\+User\+Profile\+DTO\+\_\+2()}}, \mbox{\hyperlink{_test_d_t_o_8java_source_l00520}{Test\+DTO.\+test\+User\+Role\+DTO\+\_\+1()}}, and \mbox{\hyperlink{_test_d_t_o_8java_source_l00547}{Test\+DTO.\+test\+User\+Role\+DTO\+\_\+2()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_environment_aaa5f8b09050bb1b68699acbfd3904f44}\label{class_environment_aaa5f8b09050bb1b68699acbfd3904f44} 
+\index{Environment@{Environment}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_environment}{IEnvironment}} Environment.\+\_\+instance = \mbox{\hyperlink{class_environment_a133c13aea6743baf35be8263279d9862}{get\+Instance}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00013}{13}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_environment_8java_source_l00025}{Instance()}}.
+
+\Hypertarget{class_environment_a064a75ea8c135e0924cfd19b5241bec2}\label{class_environment_a064a75ea8c135e0924cfd19b5241bec2} 
+\index{Environment@{Environment}!\_properties@{\_properties}}
+\index{\_properties@{\_properties}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{\_properties}{\_properties}}
+{\footnotesize\ttfamily Properties Environment.\+\_\+properties = \mbox{\hyperlink{class_i_factory}{new}} Properties(\mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+get\+Properties}}())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The properties for the environment. 
+
+
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00036}{36}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_environment_8java_source_l00047}{Environment()}}, \mbox{\hyperlink{_environment_8java_source_l00097}{get\+Keys()}}, \mbox{\hyperlink{_environment_8java_source_l00087}{get\+Value()}}, and \mbox{\hyperlink{_environment_8java_source_l00110}{Has\+Key()}}.
+
+\Hypertarget{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1}\label{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1} 
+\index{Environment@{Environment}!args@{args}}
+\index{args@{args}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} Environment.\+args\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The command line arguments passed to the program. 
+
+
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00041}{41}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_environment_8java_source_l00047}{Environment()}}, and \mbox{\hyperlink{_environment_8java_source_l00076}{get\+Comnand\+Line\+Args()}}.
+
+\Hypertarget{class_environment_a7595b526e73e5b5b3e5461d66bf36ef3}\label{class_environment_a7595b526e73e5b5b3e5461d66bf36ef3} 
+\index{Environment@{Environment}!logging@{logging}}
+\index{logging@{logging}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Environment.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The logging agent used for logging application events. 
+
+
+
+Definition at line \mbox{\hyperlink{_environment_8java_source_l00032}{32}} of file \mbox{\hyperlink{_environment_8java_source}{Environment.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_environment_8java_source_l00047}{Environment()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_environment_8java}{Environment.\+java}}\end{DoxyCompactItemize}

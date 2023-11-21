@@ -1,0 +1,28 @@
+\doxysection{String\+Db\+Result\+Processor.\+java}
+\hypertarget{_string_db_result_processor_8java_source}{}\label{_string_db_result_processor_8java_source}\mbox{\hyperlink{_string_db_result_processor_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00001}00001\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.sql.ResultSet;}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00002}00002\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.sql.SQLException;}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.List;}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00005}\mbox{\hyperlink{class_string_db_result_processor}{00005}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_string_db_result_processor}{StringDbResultProcessor}}\ \textcolor{keyword}{implements}\ \mbox{\hyperlink{interface_i_db_result_processor}{IDbResultProcessor}}\ \{}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00006}\mbox{\hyperlink{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697}{00006}}\ \ \ \ \ \textcolor{keyword}{private}\ String\ \mbox{\hyperlink{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697}{result}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00008}\mbox{\hyperlink{class_string_db_result_processor_a449d40ce4b643ea2996a7f6457620a10}{00008}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{class_string_db_result_processor_a449d40ce4b643ea2996a7f6457620a10}{getResult}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00009}00009\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697}{result}};}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00010}00010\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00012}00012\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Override}}}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00013}\mbox{\hyperlink{class_string_db_result_processor_a316a559dab60f83204685d13a28d02dd}{00013}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_string_db_result_processor_a316a559dab60f83204685d13a28d02dd}{process}}(\mbox{\hyperlink{class_i_factory}{ResultSet}}\ \mbox{\hyperlink{class_i_factory}{rs}})\ \textcolor{keywordflow}{throws}\ \mbox{\hyperlink{class_i_factory}{SQLException}}\ \{}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00014}00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697}{result}}\ =\ \mbox{\hyperlink{class_db_utils}{DbUtils}}.\mbox{\hyperlink{class_db_utils_a40f468fe0132be10a6553ed72024bc20}{resultSetToString}}(\mbox{\hyperlink{class_i_factory}{rs}});}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_string_db_result_processor_aaf7665932a0ebab4b9b53af2573a4697}{result}}\ !=\ \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00016}00016\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00018}00018\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Override}}}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00019}\mbox{\hyperlink{class_string_db_result_processor_a64df9c81d5ed59fc2bbbbf6be4343252}{00019}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{List<IDTO>}}\ \mbox{\hyperlink{class_string_db_result_processor_a64df9c81d5ed59fc2bbbbf6be4343252}{getResults}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TODO\ Auto-\/generated\ method\ stub}}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{UnsupportedOperationException}}(\textcolor{stringliteral}{"{}Unimplemented\ method\ 'getResults'"{}});}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00022}00022\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_string_db_result_processor_8java_source_l00023}00023\ \}}
+
+\end{DoxyCode}

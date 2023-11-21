@@ -1,0 +1,29 @@
+<map id="ShoppingBusinessLayerService.addAuditTrail" name="ShoppingBusinessLayerService.addAuditTrail">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,41,236,81"/>
+<area shape="rect" id="Node000002" href="$class_audit_trail_d_t_o_home.html#acd77bf6841a2c40bb0d7b73461343a30" title="Returns the singleton instance of AuditTrailDTOHome." alt="" coords="307,23,500,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,48,291,43,292,48,236,53"/>
+<area shape="rect" id="Node000003" href="$class_shopping_data_layer_service.html#ac76ccab0de4a7685450fa27ddc1a40c4" title="Saves the given DTO object." alt="" coords="284,72,523,98"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,68,268,71,268,76,236,73"/>
+<area shape="rect" id="Node000004" href="$class_shopping_data_layer_service.html#a0c5e5fa32b3f272b33f2705a4f793935" title="Executes a database command and returns a Boolean indicating the success or failure of the operation." alt="" coords="861,31,1091,72"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="523,75,846,56,846,62,524,81"/>
+<area shape="rect" id="Node000011" href="$class_shopping_data_layer_service.html#a9f4bc4d863f57a0eae76b584755a82ae" title="Loads the specified DTO using the provided SQL query and processor." alt="" coords="571,97,813,123"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="524,93,556,96,555,101,523,98"/>
+<area shape="rect" id="Node000005" href="$class_i_factory.html#a2da9967650e85dc8de3c05e6a137c4b1" title="The function returns an instance of the IFactory class." alt="" coords="1189,100,1297,126"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1068,70,1174,95,1173,100,1067,75"/>
+<area shape="rect" id="Node000006" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="1395,100,1539,126"/>
+<area shape="poly" id="edge10_Node000004_Node000006" title=" " alt="" coords="1046,28,1111,14,1187,5,1268,5,1309,11,1348,21,1377,34,1403,51,1445,87,1442,91,1400,55,1374,39,1346,26,1308,16,1268,10,1188,10,1112,19,1047,33"/>
+<area shape="rect" id="Node000010" href="$class_shopping_data_layer_service.html#a3ef55e17b54ae2f79c4a2efe03fe142c" title="Prompts the user to enter database connection information and sets the connection properties for the ..." alt="" coords="1139,35,1347,76"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="1091,51,1123,51,1123,56,1091,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1297,110,1379,110,1379,116,1297,116"/>
+<area shape="rect" id="Node000007" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="1587,63,1796,104"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1540,101,1572,97,1572,102,1540,106"/>
+<area shape="rect" id="Node000009" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="1613,128,1770,154"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="1540,119,1598,127,1598,132,1540,125"/>
+<area shape="rect" id="Node000008" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="1844,63,2029,104"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1796,81,1828,81,1828,86,1796,86"/>
+<area shape="rect" id="Node000012" href="$class_shopping_data_layer_service.html#ae9c18a0f36c3cafc7e5d5434545677a0" title="Executes a SQL query and processes the result using the specified IDbResultProcessor." alt="" coords="861,97,1091,137"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="814,110,845,111,845,116,814,116"/>
+<area shape="poly" id="edge13_Node000012_Node000005" title=" " alt="" coords="1091,112,1174,111,1174,117,1091,118"/>
+<area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="1092,131,1139,136,1243,141,1347,136,1399,127,1400,132,1347,141,1243,147,1138,141,1091,137"/>
+<area shape="poly" id="edge14_Node000012_Node000010" title=" " alt="" coords="1067,93,1136,77,1137,83,1068,99"/>
+</map>

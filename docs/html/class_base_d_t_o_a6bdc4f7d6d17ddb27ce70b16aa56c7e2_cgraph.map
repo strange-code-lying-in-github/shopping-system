@@ -1,0 +1,7 @@
+<map id="BaseDTO.processSaveResult" name="BaseDTO.processSaveResult">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,203,56"/>
+<area shape="rect" id="Node000002" href="$class_base_d_t_o.html#ac022ce37eaae9b3a65c121f3219ce7a4" title=" " alt="" coords="251,5,472,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,31,235,28,235,33,203,36"/>
+<area shape="rect" id="Node000003" href="$class_base_d_t_o.html#a456710ad08c5b0b16b0074cb80c0863b" title="Sets the value of a field in the DTO." alt="" coords="295,55,428,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,50,279,57,279,63,203,55"/>
+</map>

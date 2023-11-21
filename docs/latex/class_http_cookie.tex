@@ -1,0 +1,291 @@
+\doxysection{Http\+Cookie Class Reference}
+\hypertarget{class_http_cookie}{}\label{class_http_cookie}\index{HttpCookie@{HttpCookie}}
+
+
+Inheritance diagram for Http\+Cookie\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{class_http_cookie__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Http\+Cookie\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http_cookie__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_http_cookie_ade8cf708d419e42f598506faca799d46}{Http\+Cookie}} (String \mbox{\hyperlink{class_http_cookie_ab2708aa614438bab8f1304c996c4eaa7}{name}}, String \mbox{\hyperlink{class_http_cookie_afddb6bd3b3cc2af2238fdb9b76460a1c}{value}}, Date \mbox{\hyperlink{class_http_cookie_a6eb1bb967b3f95cb401b900976c71957}{expires}}, Integer \mbox{\hyperlink{class_http_cookie_a7ac9dd6f01d2a9e6e717c6c3497bfbf1}{max\+Age}}, String \mbox{\hyperlink{class_http_cookie_ac108bbc7421cdeb438b43fa6e00c5be6}{domain}}, String \mbox{\hyperlink{class_http_cookie_a42ad09f03a53286c3f07b58cb1397ab1}{path}}, boolean \mbox{\hyperlink{class_http_cookie_a9f57d997092ef373301d0df94565cdfd}{secure}}, boolean \mbox{\hyperlink{class_http_cookie_afc7c8b873e37f4061376c010e00603aa}{http\+Only}}, String \mbox{\hyperlink{class_http_cookie_ad064670597a5e9d1a86cad136a35618f}{same\+Site}})
+\item 
+String \mbox{\hyperlink{class_http_cookie_a74cc63380bd006d30b2b84d1baaa0c75}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the cookie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_http_cookie_ab2708aa614438bab8f1304c996c4eaa7}{name}}
+\item 
+String \mbox{\hyperlink{class_http_cookie_afddb6bd3b3cc2af2238fdb9b76460a1c}{value}}
+\item 
+Date \mbox{\hyperlink{class_http_cookie_a6eb1bb967b3f95cb401b900976c71957}{expires}}
+\item 
+Integer \mbox{\hyperlink{class_http_cookie_a7ac9dd6f01d2a9e6e717c6c3497bfbf1}{max\+Age}}
+\item 
+String \mbox{\hyperlink{class_http_cookie_ac108bbc7421cdeb438b43fa6e00c5be6}{domain}}
+\item 
+String \mbox{\hyperlink{class_http_cookie_a42ad09f03a53286c3f07b58cb1397ab1}{path}}
+\item 
+boolean \mbox{\hyperlink{class_http_cookie_a9f57d997092ef373301d0df94565cdfd}{secure}}
+\item 
+boolean \mbox{\hyperlink{class_http_cookie_afc7c8b873e37f4061376c010e00603aa}{http\+Only}}
+\item 
+String \mbox{\hyperlink{class_http_cookie_ad064670597a5e9d1a86cad136a35618f}{same\+Site}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00006}{6}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_http_cookie_ade8cf708d419e42f598506faca799d46}\label{class_http_cookie_ade8cf708d419e42f598506faca799d46} 
+\index{HttpCookie@{HttpCookie}!HttpCookie@{HttpCookie}}
+\index{HttpCookie@{HttpCookie}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{HttpCookie()}{HttpCookie()}}
+{\footnotesize\ttfamily Http\+Cookie.\+Http\+Cookie (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{String}]{value,  }\item[{Date}]{expires,  }\item[{Integer}]{max\+Age,  }\item[{String}]{domain,  }\item[{String}]{path,  }\item[{boolean}]{secure,  }\item[{boolean}]{http\+Only,  }\item[{String}]{same\+Site }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00017}{17}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ this.name\ =\ \mbox{\hyperlink{class_http_cookie_ab2708aa614438bab8f1304c996c4eaa7}{name}};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ this.value\ =\ \mbox{\hyperlink{class_http_cookie_afddb6bd3b3cc2af2238fdb9b76460a1c}{value}};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ this.expires\ =\ \mbox{\hyperlink{class_http_cookie_a6eb1bb967b3f95cb401b900976c71957}{expires}};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ this.maxAge\ =\ \mbox{\hyperlink{class_http_cookie_a7ac9dd6f01d2a9e6e717c6c3497bfbf1}{maxAge}};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ this.domain\ =\ \mbox{\hyperlink{class_http_cookie_ac108bbc7421cdeb438b43fa6e00c5be6}{domain}};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ this.path\ =\ \mbox{\hyperlink{class_http_cookie_a42ad09f03a53286c3f07b58cb1397ab1}{path}};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ this.secure\ =\ \mbox{\hyperlink{class_http_cookie_a9f57d997092ef373301d0df94565cdfd}{secure}};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ this.httpOnly\ =\ \mbox{\hyperlink{class_http_cookie_afc7c8b873e37f4061376c010e00603aa}{httpOnly}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ this.sameSite\ =\ \mbox{\hyperlink{class_http_cookie_ad064670597a5e9d1a86cad136a35618f}{sameSite}};}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_http_cookie_8java_source_l00011}{domain}}, \mbox{\hyperlink{_http_cookie_8java_source_l00009}{expires}}, \mbox{\hyperlink{_http_cookie_8java_source_l00014}{http\+Only}}, \mbox{\hyperlink{_http_cookie_8java_source_l00010}{max\+Age}}, \mbox{\hyperlink{_http_cookie_8java_source_l00007}{name}}, \mbox{\hyperlink{_http_cookie_8java_source_l00012}{path}}, \mbox{\hyperlink{_http_cookie_8java_source_l00015}{same\+Site}}, \mbox{\hyperlink{_http_cookie_8java_source_l00013}{secure}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00008}{value}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_http_cookie_a74cc63380bd006d30b2b84d1baaa0c75}\label{class_http_cookie_a74cc63380bd006d30b2b84d1baaa0c75} 
+\index{HttpCookie@{HttpCookie}!toString@{toString}}
+\index{toString@{toString}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Http\+Cookie.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the cookie. 
+
+\begin{DoxyReturn}{Returns}
+the string representation of the cookie 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_http_cookie_a1ec263269ce81f8b921de750ea78289f}{IHttp\+Cookie}}.
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00038}{38}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{StringBuffer}}\ \mbox{\hyperlink{class_i_factory}{s}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{StringBuffer}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{s}}.append(\mbox{\hyperlink{class_http_cookie_ab2708aa614438bab8f1304c996c4eaa7}{name}}\ +\ \textcolor{stringliteral}{"{}="{}}\ +\ \mbox{\hyperlink{class_http_cookie_afddb6bd3b3cc2af2238fdb9b76460a1c}{value}});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_http_cookie_a6eb1bb967b3f95cb401b900976c71957}{expires}}\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{SimpleDateFormat}}\ \mbox{\hyperlink{class_i_factory}{fmt}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{SimpleDateFormat}}(\textcolor{stringliteral}{"{}EEE,\ dd\ MMM\ yyyy\ HH:mm:ss"{}});}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{s}}.append(\textcolor{stringliteral}{"{};\ Expires="{}}\ +\ \mbox{\hyperlink{class_i_factory}{fmt}}.format(\mbox{\hyperlink{class_http_cookie_a6eb1bb967b3f95cb401b900976c71957}{expires}})\ +\ \textcolor{stringliteral}{"{}\ GMT"{}});}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_http_cookie_a7ac9dd6f01d2a9e6e717c6c3497bfbf1}{maxAge}}\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{s}}.append(\textcolor{stringliteral}{"{};\ Max-\/Age="{}}\ +\ \mbox{\hyperlink{class_http_cookie_a7ac9dd6f01d2a9e6e717c6c3497bfbf1}{maxAge}});}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_http_cookie_ac108bbc7421cdeb438b43fa6e00c5be6}{domain}}\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{s}}.append(\textcolor{stringliteral}{"{};\ Domain="{}}\ +\ \mbox{\hyperlink{class_http_cookie_ac108bbc7421cdeb438b43fa6e00c5be6}{domain}});}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_http_cookie_a42ad09f03a53286c3f07b58cb1397ab1}{path}}\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{s}}.append(\textcolor{stringliteral}{"{};\ Path="{}}\ +\ \mbox{\hyperlink{class_http_cookie_a42ad09f03a53286c3f07b58cb1397ab1}{path}});}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_http_cookie_a9f57d997092ef373301d0df94565cdfd}{secure}})\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{s}}.append(\textcolor{stringliteral}{"{};\ Secure"{}});}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_http_cookie_afc7c8b873e37f4061376c010e00603aa}{httpOnly}})\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{s}}.append(\textcolor{stringliteral}{"{};\ HttpOnly"{}});}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_http_cookie_ad064670597a5e9d1a86cad136a35618f}{sameSite}}\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{s}}.append(\textcolor{stringliteral}{"{};\ SameSite="{}}\ +\ \mbox{\hyperlink{class_http_cookie_ad064670597a5e9d1a86cad136a35618f}{sameSite}});}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{s}}.toString();}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_http_cookie_8java_source_l00011}{domain}}, \mbox{\hyperlink{_http_cookie_8java_source_l00009}{expires}}, \mbox{\hyperlink{_http_cookie_8java_source_l00014}{http\+Only}}, \mbox{\hyperlink{_http_cookie_8java_source_l00010}{max\+Age}}, \mbox{\hyperlink{_http_cookie_8java_source_l00007}{name}}, \mbox{\hyperlink{_http_cookie_8java_source_l00012}{path}}, \mbox{\hyperlink{_http_cookie_8java_source_l00015}{same\+Site}}, \mbox{\hyperlink{_http_cookie_8java_source_l00013}{secure}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00008}{value}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_http_cookie_ac108bbc7421cdeb438b43fa6e00c5be6}\label{class_http_cookie_ac108bbc7421cdeb438b43fa6e00c5be6} 
+\index{HttpCookie@{HttpCookie}!domain@{domain}}
+\index{domain@{domain}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{domain}{domain}}
+{\footnotesize\ttfamily String Http\+Cookie.\+domain\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00011}{11}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_cookie_8java_source_l00017}{Http\+Cookie()}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00038}{to\+String()}}.
+
+\Hypertarget{class_http_cookie_a6eb1bb967b3f95cb401b900976c71957}\label{class_http_cookie_a6eb1bb967b3f95cb401b900976c71957} 
+\index{HttpCookie@{HttpCookie}!expires@{expires}}
+\index{expires@{expires}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{expires}{expires}}
+{\footnotesize\ttfamily Date Http\+Cookie.\+expires\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00009}{9}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_cookie_8java_source_l00017}{Http\+Cookie()}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00038}{to\+String()}}.
+
+\Hypertarget{class_http_cookie_afc7c8b873e37f4061376c010e00603aa}\label{class_http_cookie_afc7c8b873e37f4061376c010e00603aa} 
+\index{HttpCookie@{HttpCookie}!httpOnly@{httpOnly}}
+\index{httpOnly@{httpOnly}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{httpOnly}{httpOnly}}
+{\footnotesize\ttfamily boolean Http\+Cookie.\+http\+Only\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00014}{14}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_cookie_8java_source_l00017}{Http\+Cookie()}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00038}{to\+String()}}.
+
+\Hypertarget{class_http_cookie_a7ac9dd6f01d2a9e6e717c6c3497bfbf1}\label{class_http_cookie_a7ac9dd6f01d2a9e6e717c6c3497bfbf1} 
+\index{HttpCookie@{HttpCookie}!maxAge@{maxAge}}
+\index{maxAge@{maxAge}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{maxAge}{maxAge}}
+{\footnotesize\ttfamily Integer Http\+Cookie.\+max\+Age\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00010}{10}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_cookie_8java_source_l00017}{Http\+Cookie()}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00038}{to\+String()}}.
+
+\Hypertarget{class_http_cookie_ab2708aa614438bab8f1304c996c4eaa7}\label{class_http_cookie_ab2708aa614438bab8f1304c996c4eaa7} 
+\index{HttpCookie@{HttpCookie}!name@{name}}
+\index{name@{name}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String Http\+Cookie.\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00007}{7}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_cookie_8java_source_l00017}{Http\+Cookie()}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00038}{to\+String()}}.
+
+\Hypertarget{class_http_cookie_a42ad09f03a53286c3f07b58cb1397ab1}\label{class_http_cookie_a42ad09f03a53286c3f07b58cb1397ab1} 
+\index{HttpCookie@{HttpCookie}!path@{path}}
+\index{path@{path}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily String Http\+Cookie.\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00012}{12}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_cookie_8java_source_l00017}{Http\+Cookie()}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00038}{to\+String()}}.
+
+\Hypertarget{class_http_cookie_ad064670597a5e9d1a86cad136a35618f}\label{class_http_cookie_ad064670597a5e9d1a86cad136a35618f} 
+\index{HttpCookie@{HttpCookie}!sameSite@{sameSite}}
+\index{sameSite@{sameSite}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{sameSite}{sameSite}}
+{\footnotesize\ttfamily String Http\+Cookie.\+same\+Site\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00015}{15}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_cookie_8java_source_l00017}{Http\+Cookie()}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00038}{to\+String()}}.
+
+\Hypertarget{class_http_cookie_a9f57d997092ef373301d0df94565cdfd}\label{class_http_cookie_a9f57d997092ef373301d0df94565cdfd} 
+\index{HttpCookie@{HttpCookie}!secure@{secure}}
+\index{secure@{secure}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{secure}{secure}}
+{\footnotesize\ttfamily boolean Http\+Cookie.\+secure\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00013}{13}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_cookie_8java_source_l00017}{Http\+Cookie()}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00038}{to\+String()}}.
+
+\Hypertarget{class_http_cookie_afddb6bd3b3cc2af2238fdb9b76460a1c}\label{class_http_cookie_afddb6bd3b3cc2af2238fdb9b76460a1c} 
+\index{HttpCookie@{HttpCookie}!value@{value}}
+\index{value@{value}!HttpCookie@{HttpCookie}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily String Http\+Cookie.\+value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_http_cookie_8java_source_l00008}{8}} of file \mbox{\hyperlink{_http_cookie_8java_source}{Http\+Cookie.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_cookie_8java_source_l00017}{Http\+Cookie()}}, and \mbox{\hyperlink{_http_cookie_8java_source_l00038}{to\+String()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_http_cookie_8java}{Http\+Cookie.\+java}}\end{DoxyCompactItemize}

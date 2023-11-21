@@ -1,0 +1,5 @@
+<map id="AppLoggingAgent.getLogHeaderString" name="AppLoggingAgent.getLogHeaderString">
+<area shape="rect" id="Node000001" title="Returns a string representation of the log header." alt="" coords="5,5,214,46"/>
+<area shape="rect" id="Node000002" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="262,5,447,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,23,246,23,246,28,214,28"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="UserInteraction.getInputDouble" name="UserInteraction.getInputDouble">
+<area shape="rect" id="Node000001" title="Prompts the user for input and returns the input as a Double." alt="" coords="5,35,167,75"/>
+<area shape="rect" id="Node000002" href="$class_user_interaction.html#a7e4ef3cbfbb07de6c597b972a1c7f8a8" title="Prompts the user for input and returns the input as a String." alt="" coords="215,42,376,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,52,199,52,199,58,167,58"/>
+<area shape="rect" id="Node000003" href="$class_user_interaction.html#a7930e328442d2ac9d85b44cfb02c5ab3" title="Reads a line of text from the console input and returns it as a string." alt="" coords="426,5,606,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="376,42,410,37,411,42,377,47"/>
+<area shape="rect" id="Node000004" href="$class_user_interaction.html#ad9e64b28cd3e2f5b3cb4d7bb06e77451" title="Prints the given prompt to the console and flushes the output stream." alt="" coords="424,70,608,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="377,63,409,67,408,72,376,68"/>
+</map>

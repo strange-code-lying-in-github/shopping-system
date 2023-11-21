@@ -1,0 +1,56 @@
+\doxysection{Db\+Utils.\+java}
+\hypertarget{_db_utils_8java_source}{}\label{_db_utils_8java_source}\mbox{\hyperlink{_db_utils_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00001}00001\ \textcolor{keyword}{import}\ java.sql.ResultSet;}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00002}00002\ \textcolor{keyword}{import}\ java.sql.ResultSetMetaData;}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00003}00003\ \textcolor{keyword}{import}\ java.sql.SQLException;}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00004}00004\ \textcolor{keyword}{import}\ java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00005}00005\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00007}\mbox{\hyperlink{class_db_utils}{00007}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_db_utils}{DbUtils}}\ \{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00008}00008\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00009}00009\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ returns\ an\ instance\ of\ the\ AppLoggingAgent\ class.}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00010}00010\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00011}00011\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ method\ is\ returning\ an\ instance\ of\ the\ AppLoggingAgent\ class.}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00013}\mbox{\hyperlink{class_db_utils_aad8475678239b526de984017429b2310}{00013}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_db_utils_aad8475678239b526de984017429b2310}{logging}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00015}\mbox{\hyperlink{class_db_utils_a8b3697d6149ae9e0fdcc15a6d7d0f036}{00015}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_db_utils_a8b3697d6149ae9e0fdcc15a6d7d0f036}{DbUtils}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00016}00016\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00017}00017\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00018}00018\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00019}00019\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ converts\ a\ ResultSet\ to\ a\ String.}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ *\ @param\ rs\ The\ ResultSet\ to\ be\ converted.}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00022}00022\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ method\ is\ returning\ the\ ResultSet\ as\ a\ String.}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00023}00023\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00024}\mbox{\hyperlink{class_db_utils_a40f468fe0132be10a6553ed72024bc20}{00024}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ String\ \mbox{\hyperlink{class_db_utils_a40f468fe0132be10a6553ed72024bc20}{resultSetToString}}(ResultSet\ rs)\ \{}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00025}00025\ \ \ \ \ \ \ \ \ StringBuilder\ sb\ =\ \textcolor{keyword}{new}\ StringBuilder(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00026}00026\ \ \ \ \ \ \ \ \ List<String[]>\ rows\ =\ \textcolor{keyword}{new}\ ArrayList<String[]>();}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ ResultSetMetaData\ rsmd\ =\ rs.getMetaData();}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ columns\ =\ rsmd.getColumnCount();}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (rs.next())\ \{}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ String[]\ row\ =\ \textcolor{keyword}{new}\ String[columns];}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <=\ columns;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ row[i\ -\/\ 1]\ =\ rs.getString(i);}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rows.add(row);}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (SQLException\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_utils_aad8475678239b526de984017429b2310}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(e);}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00041}00041\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String[]\ row\ :\ rows)\ \{}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ sb}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(String.join(\textcolor{stringliteral}{"{},\ "{}},\ row))}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(System.lineSeparator());}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00047}00047\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ sb.toString();}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_db_utils_8java_source_l00051}00051\ \}}
+
+\end{DoxyCode}

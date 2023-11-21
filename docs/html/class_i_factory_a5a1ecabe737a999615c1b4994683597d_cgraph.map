@@ -1,0 +1,8 @@
+<map id="IFactory.getClassList" name="IFactory.getClassList">
+<area shape="rect" id="Node000001" title="The function takes a ClassLoader and a package path, retrieves the list of classes in that package,..." alt="" coords="5,37,150,63"/>
+<area shape="rect" id="Node000002" href="$class_i_factory.html#a48d714a3008100beb7aca8a9f3228023" title="The function converts the content of an InputStream into a String using the specified character encod..." alt="" coords="198,37,377,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,47,182,47,182,52,150,52"/>
+<area shape="rect" id="Node000003" href="$class_i_factory.html#aeba2e37bd4787a74f6b23f4205804e22" title="The function transfers data from an InputStreamReader to a StringWriter using a buffer." alt="" coords="425,29,596,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,47,409,47,409,52,377,52"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="468,29,466,19,473,10,488,5,511,3,535,5,549,11,547,16,533,10,511,8,489,10,476,15,472,21,474,28"/>
+</map>

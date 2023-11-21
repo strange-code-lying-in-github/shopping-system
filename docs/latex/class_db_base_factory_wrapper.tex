@@ -1,0 +1,937 @@
+\doxysection{Db\+Base\+Factory\+Wrapper Class Reference}
+\hypertarget{class_db_base_factory_wrapper}{}\label{class_db_base_factory_wrapper}\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+
+
+The class is a factory for creating instances of the \doxylink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper} interface.  
+
+
+
+
+Inheritance diagram for Db\+Base\+Factory\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_db_base_factory_wrapper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Db\+Base\+Factory\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_db_base_factory_wrapper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_af4a5cb5dfa85f1c67d92c3c610147dad}{get\+Username}} ()
+\begin{DoxyCompactList}\small\item\em The function returns the username for the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_db_base_factory_wrapper_a39b4eb73c89754f82c79ecdd5d301ddc}{set\+Username}} (String \mbox{\hyperlink{class_db_base_factory_wrapper_a568d49ff91767f78327ab35c6d723cd4}{username}})
+\begin{DoxyCompactList}\small\item\em The function sets the username for the database. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_a4a3a4f38f854e8862db75b1991a93b78}{get\+Password}} ()
+\begin{DoxyCompactList}\small\item\em The function returns the password for the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_db_base_factory_wrapper_af606b97f1a96fdbfa404fe9cc57a98cf}{set\+Password}} (String \mbox{\hyperlink{class_db_base_factory_wrapper_aad1f1bbe4e33b349931ca5ca6da8fa71}{password}})
+\begin{DoxyCompactList}\small\item\em The function sets the password for the database. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_a226b68373e763638226c8f3d0bb90d8a}{get\+Host}} ()
+\begin{DoxyCompactList}\small\item\em The function returns the host for the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_db_base_factory_wrapper_a239824cd5d37634f3ca911ad5be17f5a}{set\+Host}} (String \mbox{\hyperlink{class_db_base_factory_wrapper_a5ee4f754f96fa23d78b65b37fc8a3469}{host}})
+\begin{DoxyCompactList}\small\item\em The function sets the host for the database. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_a5272d33a9d9c042ee1b13d8c6c4c8b93}{get\+Database}} ()
+\begin{DoxyCompactList}\small\item\em The function returns the database name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_db_base_factory_wrapper_ae9404ccdeb80b3f07fbb098caf359e37}{set\+Database}} (String \mbox{\hyperlink{class_db_base_factory_wrapper_a19b93c72ca3890f7be560d9a6337a1ac}{database}})
+\begin{DoxyCompactList}\small\item\em The function sets the database name. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_db_base_factory_wrapper_ae3f86a24ffc8499ad73d7287e0fca4eb}{get\+Port}} ()
+\begin{DoxyCompactList}\small\item\em The function returns the port for the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_db_base_factory_wrapper_a7aee4d6c8c7e7d225032c80f7d91df2c}{set\+Port}} (int \mbox{\hyperlink{class_db_base_factory_wrapper_a268f4727d76f333f4b1686947ea4ddc4}{port}})
+\begin{DoxyCompactList}\small\item\em The function sets the port for the database. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_a9ba868ecfcd7c0b689d4a041d5510400}{get\+Url}} ()
+\begin{DoxyCompactList}\small\item\em The function returns the url for the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_db_base_factory_wrapper_a7434fd578c89131baad866fb763e1505}{set\+Url}} (String \mbox{\hyperlink{class_db_base_factory_wrapper_af4cd665047a4e697a2d62cd412ab4985}{url}})
+\begin{DoxyCompactList}\small\item\em The function sets the url for the database. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_a43605d69c647dfbae7c35326340c2706}{get\+Schema}} ()
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_db_base_factory_wrapper_a3a9201a999921f43faaf94ad375abd19}{set\+Schema}} (String \mbox{\hyperlink{class_db_base_factory_wrapper_ac4d11dbd20c1c314125dc86a4f11a028}{schema}})
+\item 
+\mbox{\hyperlink{class_db_base_factory_wrapper_a4b57b69df1f1619c055a02da2296e053}{Db\+Base\+Factory\+Wrapper}} ()
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_db_base_factory_wrapper_a77a725ebae8ac44873dcda9e9ea44f5f}{connection\+Properties}} (String \mbox{\hyperlink{class_i_factory}{user}}, String \mbox{\hyperlink{class_i_factory}{pass}}, int \mbox{\hyperlink{class_db_base_factory_wrapper_a268f4727d76f333f4b1686947ea4ddc4}{port}}, String \mbox{\hyperlink{class_db_base_factory_wrapper_a5ee4f754f96fa23d78b65b37fc8a3469}{host}}, String \mbox{\hyperlink{class_db_base_factory_wrapper_a19b93c72ca3890f7be560d9a6337a1ac}{database}}, String \mbox{\hyperlink{class_db_base_factory_wrapper_ac4d11dbd20c1c314125dc86a4f11a028}{schema}})
+\begin{DoxyCompactList}\small\item\em The function sets the connection properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{abstract}} String \mbox{\hyperlink{class_db_base_factory_wrapper_ac11d3d7897f00695e00209ae67311d2f}{build\+Jdbc\+Url}} ()
+\begin{DoxyCompactList}\small\item\em The function builds the jdbc url for the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_db_base_factory_wrapper_aaeb6fa71a0b1ed3693ef771ec8d7ae1f}{close}} ()  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em The function closes the connection to the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_db_base_factory_wrapper_af9f1b98732f15c34f507919a7827b7af}{query}} (String query, \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_i_factory}{result\+Processor}})
+\begin{DoxyCompactList}\small\item\em Executes the given query on the database and processes the result using the provided \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_db_base_factory_wrapper_acb488e699dc93ea6b5175a3c104d218d}{execute}} (String \mbox{\hyperlink{class_db_base_factory_wrapper_af9f1b98732f15c34f507919a7827b7af}{query}}, \mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}} \mbox{\hyperlink{class_i_factory}{result\+Processor}})
+\begin{DoxyCompactList}\small\item\em Executes the given query and processes the result using the provided \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_a568d49ff91767f78327ab35c6d723cd4}{username}}
+\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_aad1f1bbe4e33b349931ca5ca6da8fa71}{password}}
+\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_a5ee4f754f96fa23d78b65b37fc8a3469}{host}}
+\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_a19b93c72ca3890f7be560d9a6337a1ac}{database}}
+\item 
+int \mbox{\hyperlink{class_db_base_factory_wrapper_a268f4727d76f333f4b1686947ea4ddc4}{port}}
+\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_af4cd665047a4e697a2d62cd412ab4985}{url}}
+\item 
+String \mbox{\hyperlink{class_db_base_factory_wrapper_ac4d11dbd20c1c314125dc86a4f11a028}{schema}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_i_factory}{IFactory$<$ IDb\+Connection\+Wrapper $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_i_factory_a5355830e31244a3c7063b8fa85172b20}{register}} (String \mbox{\hyperlink{class_i_factory}{registration\+Name}}, \mbox{\hyperlink{class_i_factory}{Class}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ instance)
+\begin{DoxyCompactList}\small\item\em The function registers a class with the factory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{T}} \mbox{\hyperlink{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1}{create}} (String \mbox{\hyperlink{class_i_factory}{factory\+String}})
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ String \mbox{\hyperlink{class_i_factory_a48d714a3008100beb7aca8a9f3228023}{convert\+Url\+To\+String}} (\mbox{\hyperlink{class_i_factory}{final}} \mbox{\hyperlink{class_i_factory}{Input\+Stream}} \mbox{\hyperlink{class_i_factory}{input}}, \mbox{\hyperlink{class_i_factory}{final}} String \mbox{\hyperlink{class_i_factory}{string}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em The function converts the content of an Input\+Stream into a String using the specified character encoding. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory_ad86bd52dafe672241749c67cc6e393ce}{get\+Registered}} ()
+\begin{DoxyCompactList}\small\item\em The function returns an array of strings representing the names of the registered classes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory}{IFactory}}$<$ \mbox{\hyperlink{class_i_factory}{T}} $>$ \mbox{\hyperlink{class_i_factory_aaaf8786a2c4ca69722db2dc171ac264c}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_i_factory}{IFactory$<$ IDb\+Connection\+Wrapper $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{IFactory}} ()
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_i_factory}{IFactory} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Package Functions inherited from \mbox{\hyperlink{class_i_factory}{IFactory$<$ IDb\+Connection\+Wrapper $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory_a987a37e38b2edbc0c0d7ba986f7273c5}{\mbox{[}static initializer\mbox{]}}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class is a factory for creating instances of the \doxylink{interface_i_db_connection_wrapper}{IDb\+Connection\+Wrapper} interface. 
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00012}{12}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_db_base_factory_wrapper_a4b57b69df1f1619c055a02da2296e053}\label{class_db_base_factory_wrapper_a4b57b69df1f1619c055a02da2296e053} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{DbBaseFactoryWrapper()}{DbBaseFactoryWrapper()}}
+{\footnotesize\ttfamily Db\+Base\+Factory\+Wrapper.\+Db\+Base\+Factory\+Wrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00156}{156}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00157\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_db_base_factory_wrapper_ac11d3d7897f00695e00209ae67311d2f}\label{class_db_base_factory_wrapper_ac11d3d7897f00695e00209ae67311d2f} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!buildJdbcUrl@{buildJdbcUrl}}
+\index{buildJdbcUrl@{buildJdbcUrl}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{buildJdbcUrl()}{buildJdbcUrl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{abstract}} String Db\+Base\+Factory\+Wrapper.\+build\+Jdbc\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+The function builds the jdbc url for the database. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning the jdbc url for the database. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_db_base_factory_wrapper__postgres_a49426b3a05d54d27b0aebd4decbf7114}{Db\+Base\+Factory\+Wrapper\+\_\+postgres}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00169}{connection\+Properties()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_aaeb6fa71a0b1ed3693ef771ec8d7ae1f}\label{class_db_base_factory_wrapper_aaeb6fa71a0b1ed3693ef771ec8d7ae1f} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!close@{close}}
+\index{close@{close}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Db\+Base\+Factory\+Wrapper.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}}}
+
+
+
+The function closes the connection to the database. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_i_db_connection_wrapper_a64824f4265bd344e7674529bac9d34d0}{IDb\+Connection\+Wrapper}}.
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00194}{194}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(this.\mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{getClass}}().\mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{getName}}()\ +\ \textcolor{stringliteral}{"{}\ closed"{}});}
+\DoxyCodeLine{00196\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00018}{logging}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_db_base_factory_wrapper_aaeb6fa71a0b1ed3693ef771ec8d7ae1f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_db_base_factory_wrapper_a77a725ebae8ac44873dcda9e9ea44f5f}\label{class_db_base_factory_wrapper_a77a725ebae8ac44873dcda9e9ea44f5f} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!connectionProperties@{connectionProperties}}
+\index{connectionProperties@{connectionProperties}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{connectionProperties()}{connectionProperties()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Db\+Base\+Factory\+Wrapper.\+connection\+Properties (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{pass,  }\item[{int}]{port,  }\item[{String}]{host,  }\item[{String}]{database,  }\item[{String}]{schema }\end{DoxyParamCaption})}
+
+
+
+The function sets the connection properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The username for the database. \\
+\hline
+{\em pass} & The password for the database. \\
+\hline
+{\em port} & The port for the database. \\
+\hline
+{\em host} & The host for the database. \\
+\hline
+{\em database} & The database name. \\
+\hline
+{\em schema} & The schema name. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_db_connection_wrapper_a7dc882fb4b56079d66577bcfc2cd6759}{IDb\+Connection\+Wrapper}}.
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00169}{169}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.username}}\ =\ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{user}};}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.password}}\ =\ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{pass}};}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.port}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_a268f4727d76f333f4b1686947ea4ddc4}{port}};}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.host}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_a5ee4f754f96fa23d78b65b37fc8a3469}{host}};}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.database}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_a19b93c72ca3890f7be560d9a6337a1ac}{database}};}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.schema}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_ac4d11dbd20c1c314125dc86a4f11a028}{schema}};}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.url}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_ac11d3d7897f00695e00209ae67311d2f}{buildJdbcUrl}}();}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(\textcolor{stringliteral}{"{}URL:\ "{}}\ +\ this.\mbox{\hyperlink{class_db_base_factory_wrapper_af4cd665047a4e697a2d62cd412ab4985}{url}});}
+\DoxyCodeLine{00179\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_db_base_factory_wrapper_ac11d3d7897f00695e00209ae67311d2f}{build\+Jdbc\+Url()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00080}{database}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00060}{host}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00018}{logging}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00100}{port}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00140}{schema}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_db_base_factory_wrapper_a77a725ebae8ac44873dcda9e9ea44f5f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_db_base_factory_wrapper_acb488e699dc93ea6b5175a3c104d218d}\label{class_db_base_factory_wrapper_acb488e699dc93ea6b5175a3c104d218d} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!execute@{execute}}
+\index{execute@{execute}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Db\+Base\+Factory\+Wrapper.\+execute (\begin{DoxyParamCaption}\item[{String}]{query,  }\item[{\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}}}]{result\+Processor }\end{DoxyParamCaption})}
+
+
+
+Executes the given query and processes the result using the provided \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & the SQL query to execute \\
+\hline
+{\em result\+Processor} & the \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} to process the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the execution status of the query as a Boolean 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_db_connection_wrapper_affe24a6593d9be4a09dcccc7700369ac}{IDb\+Connection\+Wrapper}}.
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00234}{234}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(\textcolor{stringliteral}{"{}username:\ "{}}\ +\ \mbox{\hyperlink{class_db_base_factory_wrapper_a568d49ff91767f78327ab35c6d723cd4}{username}});}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(\textcolor{stringliteral}{"{}password:\ "{}}\ +\ \mbox{\hyperlink{class_db_base_factory_wrapper_aad1f1bbe4e33b349931ca5ca6da8fa71}{password}}.length());}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(\textcolor{stringliteral}{"{}query:\ "{}}\ +\ \mbox{\hyperlink{class_db_base_factory_wrapper_af9f1b98732f15c34f507919a7827b7af}{query}});}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (\mbox{\hyperlink{class_i_factory}{Connection}}\ \mbox{\hyperlink{class_i_factory}{con}}\ =\ \mbox{\hyperlink{class_i_factory}{DriverManager}}.getConnection(}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_af4cd665047a4e697a2d62cd412ab4985}{url}},\ \textcolor{keyword}{this}.username,\ \textcolor{keyword}{this}.password))\ \{}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Statement}}\ \mbox{\hyperlink{class_i_factory}{stmt}}\ =\ \mbox{\hyperlink{class_i_factory}{con}}.createStatement();}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_i_factory}{status}}\ =\ \mbox{\hyperlink{class_i_factory}{stmt}}.execute(\mbox{\hyperlink{class_db_base_factory_wrapper_af9f1b98732f15c34f507919a7827b7af}{query}});}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(\textcolor{stringliteral}{"{}query\ execute\ status:\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{status}});}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{status}})\ \{}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{ResultSet}}\ \mbox{\hyperlink{class_i_factory}{rs}}\ =\ \mbox{\hyperlink{class_i_factory}{stmt}}.getResultSet();}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{resultProcessor}}.process(\mbox{\hyperlink{class_i_factory}{rs}});}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{SQLException}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(\mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ logging.log(response);}}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00255\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00018}{logging}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00040}{password}}, \mbox{\hyperlink{interface_i_db_result_processor_a2e5b07828a17cf0a74eb4d4db12f5080}{IDb\+Result\+Processor.\+process()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00207}{query()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00120}{url}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00020}{username}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_db_base_factory_wrapper_acb488e699dc93ea6b5175a3c104d218d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_db_base_factory_wrapper_a5272d33a9d9c042ee1b13d8c6c4c8b93}\label{class_db_base_factory_wrapper_a5272d33a9d9c042ee1b13d8c6c4c8b93} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!getDatabase@{getDatabase}}
+\index{getDatabase@{getDatabase}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{getDatabase()}{getDatabase()}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+get\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function returns the database name. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning the database name. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00087}{87}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_db_base_factory_wrapper_a19b93c72ca3890f7be560d9a6337a1ac}{database}};}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00080}{database}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper__postgres_8java_source_l00025}{Db\+Base\+Factory\+Wrapper\+\_\+postgres.\+build\+Jdbc\+Url()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a226b68373e763638226c8f3d0bb90d8a}\label{class_db_base_factory_wrapper_a226b68373e763638226c8f3d0bb90d8a} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!getHost@{getHost}}
+\index{getHost@{getHost}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{getHost()}{getHost()}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+get\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function returns the host for the database. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning the host for the database. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00067}{67}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_db_base_factory_wrapper_a5ee4f754f96fa23d78b65b37fc8a3469}{host}};}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00060}{host}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper__postgres_8java_source_l00025}{Db\+Base\+Factory\+Wrapper\+\_\+postgres.\+build\+Jdbc\+Url()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a4a3a4f38f854e8862db75b1991a93b78}\label{class_db_base_factory_wrapper_a4a3a4f38f854e8862db75b1991a93b78} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function returns the password for the database. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning the password for the database. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00047}{47}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_db_base_factory_wrapper_aad1f1bbe4e33b349931ca5ca6da8fa71}{password}};}
+\DoxyCodeLine{00049\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00040}{password}}.
+
+\Hypertarget{class_db_base_factory_wrapper_ae3f86a24ffc8499ad73d7287e0fca4eb}\label{class_db_base_factory_wrapper_ae3f86a24ffc8499ad73d7287e0fca4eb} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!getPort@{getPort}}
+\index{getPort@{getPort}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily int Db\+Base\+Factory\+Wrapper.\+get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function returns the port for the database. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning the port for the database. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00107}{107}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_db_base_factory_wrapper_a268f4727d76f333f4b1686947ea4ddc4}{port}};}
+\DoxyCodeLine{00109\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00100}{port}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper__postgres_8java_source_l00025}{Db\+Base\+Factory\+Wrapper\+\_\+postgres.\+build\+Jdbc\+Url()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a43605d69c647dfbae7c35326340c2706}\label{class_db_base_factory_wrapper_a43605d69c647dfbae7c35326340c2706} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!getSchema@{getSchema}}
+\index{getSchema@{getSchema}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{getSchema()}{getSchema()}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+get\+Schema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the schema 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00145}{145}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_db_base_factory_wrapper_ac4d11dbd20c1c314125dc86a4f11a028}{schema}};}
+\DoxyCodeLine{00147\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00140}{schema}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a9ba868ecfcd7c0b689d4a041d5510400}\label{class_db_base_factory_wrapper_a9ba868ecfcd7c0b689d4a041d5510400} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!getUrl@{getUrl}}
+\index{getUrl@{getUrl}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{getUrl()}{getUrl()}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+get\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function returns the url for the database. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning the url for the database. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00127}{127}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_db_base_factory_wrapper_af4cd665047a4e697a2d62cd412ab4985}{url}};}
+\DoxyCodeLine{00129\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00120}{url}}.
+
+\Hypertarget{class_db_base_factory_wrapper_af4a5cb5dfa85f1c67d92c3c610147dad}\label{class_db_base_factory_wrapper_af4a5cb5dfa85f1c67d92c3c610147dad} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!getUsername@{getUsername}}
+\index{getUsername@{getUsername}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{getUsername()}{getUsername()}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+get\+Username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function returns the username for the database. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning the username for the database. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00027}{27}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_db_base_factory_wrapper_a568d49ff91767f78327ab35c6d723cd4}{username}};}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00020}{username}}.
+
+\Hypertarget{class_db_base_factory_wrapper_af9f1b98732f15c34f507919a7827b7af}\label{class_db_base_factory_wrapper_af9f1b98732f15c34f507919a7827b7af} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!query@{query}}
+\index{query@{query}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Boolean}} Db\+Base\+Factory\+Wrapper.\+query (\begin{DoxyParamCaption}\item[{String}]{query,  }\item[{\mbox{\hyperlink{interface_i_db_result_processor}{IDb\+Result\+Processor}}}]{result\+Processor }\end{DoxyParamCaption})}
+
+
+
+Executes the given query on the database and processes the result using the provided \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The SQL query to be executed. \\
+\hline
+{\em result\+Processor} & The \doxylink{interface_i_db_result_processor}{IDb\+Result\+Processor} implementation to process the query result. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the query was executed successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_db_connection_wrapper_a9e4dad92cdfb8b858de7ca6b2321ef6f}{IDb\+Connection\+Wrapper}}.
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00207}{207}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(\textcolor{stringliteral}{"{}username:\ "{}}\ +\ \mbox{\hyperlink{class_db_base_factory_wrapper_a568d49ff91767f78327ab35c6d723cd4}{username}});}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(\textcolor{stringliteral}{"{}password:\ "{}}\ +\ \mbox{\hyperlink{class_db_base_factory_wrapper_aad1f1bbe4e33b349931ca5ca6da8fa71}{password}}.length());}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(\textcolor{stringliteral}{"{}query:\ "{}}\ +\ \mbox{\hyperlink{class_db_base_factory_wrapper_af9f1b98732f15c34f507919a7827b7af}{query}});}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (\mbox{\hyperlink{class_i_factory}{Connection}}\ \mbox{\hyperlink{class_i_factory}{con}}\ =\ \mbox{\hyperlink{class_i_factory}{DriverManager}}.getConnection(}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_af4cd665047a4e697a2d62cd412ab4985}{url}},\ \textcolor{keyword}{this}.username,\ \textcolor{keyword}{this}.password))\ \{}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Statement}}\ \mbox{\hyperlink{class_i_factory}{stmt}}\ =\ \mbox{\hyperlink{class_i_factory}{con}}.createStatement();}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{ResultSet}}\ \mbox{\hyperlink{class_i_factory}{rs}}\ =\ \mbox{\hyperlink{class_i_factory}{stmt}}.executeQuery(\mbox{\hyperlink{class_db_base_factory_wrapper_af9f1b98732f15c34f507919a7827b7af}{query}});}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{resultProcessor}}.process(\mbox{\hyperlink{class_i_factory}{rs}});}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{SQLException}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}{logging}}.log(\mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ logging.log(response);}}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00224\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00018}{logging}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00040}{password}}, \mbox{\hyperlink{interface_i_db_result_processor_a2e5b07828a17cf0a74eb4d4db12f5080}{IDb\+Result\+Processor.\+process()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00207}{query()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00120}{url}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00020}{username}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00234}{execute()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00207}{query()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_db_base_factory_wrapper_af9f1b98732f15c34f507919a7827b7af_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_db_base_factory_wrapper_ae9404ccdeb80b3f07fbb098caf359e37}\label{class_db_base_factory_wrapper_ae9404ccdeb80b3f07fbb098caf359e37} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!setDatabase@{setDatabase}}
+\index{setDatabase@{setDatabase}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{setDatabase()}{setDatabase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Db\+Base\+Factory\+Wrapper.\+set\+Database (\begin{DoxyParamCaption}\item[{String}]{database }\end{DoxyParamCaption})}
+
+
+
+The function sets the database name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em database} & The database name. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00096}{96}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.database}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_a19b93c72ca3890f7be560d9a6337a1ac}{database}};}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00080}{database}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a239824cd5d37634f3ca911ad5be17f5a}\label{class_db_base_factory_wrapper_a239824cd5d37634f3ca911ad5be17f5a} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!setHost@{setHost}}
+\index{setHost@{setHost}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{setHost()}{setHost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Db\+Base\+Factory\+Wrapper.\+set\+Host (\begin{DoxyParamCaption}\item[{String}]{host }\end{DoxyParamCaption})}
+
+
+
+The function sets the host for the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & The host for the database. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00076}{76}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.host}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_a5ee4f754f96fa23d78b65b37fc8a3469}{host}};}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00060}{host}}.
+
+\Hypertarget{class_db_base_factory_wrapper_af606b97f1a96fdbfa404fe9cc57a98cf}\label{class_db_base_factory_wrapper_af606b97f1a96fdbfa404fe9cc57a98cf} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!setPassword@{setPassword}}
+\index{setPassword@{setPassword}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{setPassword()}{setPassword()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Db\+Base\+Factory\+Wrapper.\+set\+Password (\begin{DoxyParamCaption}\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+
+The function sets the password for the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & The password for the database. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00056}{56}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.password}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_aad1f1bbe4e33b349931ca5ca6da8fa71}{password}};}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00040}{password}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a7aee4d6c8c7e7d225032c80f7d91df2c}\label{class_db_base_factory_wrapper_a7aee4d6c8c7e7d225032c80f7d91df2c} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!setPort@{setPort}}
+\index{setPort@{setPort}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{setPort()}{setPort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Db\+Base\+Factory\+Wrapper.\+set\+Port (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+The function sets the port for the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port for the database. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00116}{116}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.port}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_a268f4727d76f333f4b1686947ea4ddc4}{port}};}
+\DoxyCodeLine{00118\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00100}{port}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a3a9201a999921f43faaf94ad375abd19}\label{class_db_base_factory_wrapper_a3a9201a999921f43faaf94ad375abd19} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!setSchema@{setSchema}}
+\index{setSchema@{setSchema}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{setSchema()}{setSchema()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Db\+Base\+Factory\+Wrapper.\+set\+Schema (\begin{DoxyParamCaption}\item[{String}]{schema }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema} & the schema to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00152}{152}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.schema}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_ac4d11dbd20c1c314125dc86a4f11a028}{schema}};}
+\DoxyCodeLine{00154\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00140}{schema}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a7434fd578c89131baad866fb763e1505}\label{class_db_base_factory_wrapper_a7434fd578c89131baad866fb763e1505} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!setUrl@{setUrl}}
+\index{setUrl@{setUrl}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{setUrl()}{setUrl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Db\+Base\+Factory\+Wrapper.\+set\+Url (\begin{DoxyParamCaption}\item[{String}]{url }\end{DoxyParamCaption})}
+
+
+
+The function sets the url for the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The url for the database. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00136}{136}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.url}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_af4cd665047a4e697a2d62cd412ab4985}{url}};}
+\DoxyCodeLine{00138\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00120}{url}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a39b4eb73c89754f82c79ecdd5d301ddc}\label{class_db_base_factory_wrapper_a39b4eb73c89754f82c79ecdd5d301ddc} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!setUsername@{setUsername}}
+\index{setUsername@{setUsername}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{setUsername()}{setUsername()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Db\+Base\+Factory\+Wrapper.\+set\+Username (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+The function sets the username for the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username for the database. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00036}{36}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{this.username}}\ =\ \mbox{\hyperlink{class_db_base_factory_wrapper_a568d49ff91767f78327ab35c6d723cd4}{username}};}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00020}{username}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_db_base_factory_wrapper_a19b93c72ca3890f7be560d9a6337a1ac}\label{class_db_base_factory_wrapper_a19b93c72ca3890f7be560d9a6337a1ac} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!database@{database}}
+\index{database@{database}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00080}{80}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00169}{connection\+Properties()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00087}{get\+Database()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00096}{set\+Database()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a5ee4f754f96fa23d78b65b37fc8a3469}\label{class_db_base_factory_wrapper_a5ee4f754f96fa23d78b65b37fc8a3469} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!host@{host}}
+\index{host@{host}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+host\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00060}{60}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00169}{connection\+Properties()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00067}{get\+Host()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00076}{set\+Host()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8}\label{class_db_base_factory_wrapper_a7e779fbdad357d01e553f467715349e8} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!logging@{logging}}
+\index{logging@{logging}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Db\+Base\+Factory\+Wrapper.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The function returns an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00018}{18}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00194}{close()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00169}{connection\+Properties()}}, \mbox{\hyperlink{_db_base_factory_wrapper__postgres_8java_source_l00011}{Db\+Base\+Factory\+Wrapper\+\_\+postgres.\+Db\+Base\+Factory\+Wrapper\+\_\+postgres()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00234}{execute()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00207}{query()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_aad1f1bbe4e33b349931ca5ca6da8fa71}\label{class_db_base_factory_wrapper_aad1f1bbe4e33b349931ca5ca6da8fa71} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!password@{password}}
+\index{password@{password}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00040}{40}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00234}{execute()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00047}{get\+Password()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00207}{query()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00056}{set\+Password()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a268f4727d76f333f4b1686947ea4ddc4}\label{class_db_base_factory_wrapper_a268f4727d76f333f4b1686947ea4ddc4} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!port@{port}}
+\index{port@{port}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily int Db\+Base\+Factory\+Wrapper.\+port\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00100}{100}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00169}{connection\+Properties()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00107}{get\+Port()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00116}{set\+Port()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_ac4d11dbd20c1c314125dc86a4f11a028}\label{class_db_base_factory_wrapper_ac4d11dbd20c1c314125dc86a4f11a028} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!schema@{schema}}
+\index{schema@{schema}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+schema\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00140}{140}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00169}{connection\+Properties()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00145}{get\+Schema()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00152}{set\+Schema()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_af4cd665047a4e697a2d62cd412ab4985}\label{class_db_base_factory_wrapper_af4cd665047a4e697a2d62cd412ab4985} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!url@{url}}
+\index{url@{url}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+url\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00120}{120}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00234}{execute()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00127}{get\+Url()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00207}{query()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00136}{set\+Url()}}.
+
+\Hypertarget{class_db_base_factory_wrapper_a568d49ff91767f78327ab35c6d723cd4}\label{class_db_base_factory_wrapper_a568d49ff91767f78327ab35c6d723cd4} 
+\index{DbBaseFactoryWrapper@{DbBaseFactoryWrapper}!username@{username}}
+\index{username@{username}!DbBaseFactoryWrapper@{DbBaseFactoryWrapper}}
+\doxysubsubsection{\texorpdfstring{username}{username}}
+{\footnotesize\ttfamily String Db\+Base\+Factory\+Wrapper.\+username\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00020}{20}} of file \mbox{\hyperlink{_db_base_factory_wrapper_8java_source}{Db\+Base\+Factory\+Wrapper.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00234}{execute()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00027}{get\+Username()}}, \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00207}{query()}}, and \mbox{\hyperlink{_db_base_factory_wrapper_8java_source_l00036}{set\+Username()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_db_base_factory_wrapper_8java}{Db\+Base\+Factory\+Wrapper.\+java}}\end{DoxyCompactItemize}

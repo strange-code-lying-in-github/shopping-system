@@ -1,0 +1,20 @@
+<map id="ShoppingSystem.start" name="ShoppingSystem.start">
+<area shape="rect" id="Node000001" title="Starts the shopping system by configuring the data service, business service, web interface adapter,..." alt="" coords="5,80,156,106"/>
+<area shape="rect" id="Node000002" href="$class_shopping_business_layer_service.html#af5ee3bb1068d29aba2d5b2fc54d6777e" title="Configures the shopping business layer service." alt="" coords="204,5,466,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,77,152,58,203,40,231,32,232,37,204,45,154,63,110,82"/>
+<area shape="rect" id="Node000003" href="$class_shopping_data_layer_service.html#a7741dea82cfac6ba06bbe75032bc7f15" title="Configures the shopping data layer service." alt="" coords="217,55,453,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,83,201,78,202,83,157,88"/>
+<area shape="rect" id="Node000006" href="$class_shopping_web_interface_adapter.html#a2738d99c717b1ab0824e4886eaf9a59a" title="Configures the web interface by calling the configure method of the web interface controller." alt="" coords="208,104,462,130"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="157,97,193,101,192,106,156,103"/>
+<area shape="rect" id="Node000009" href="$class_web_server.html#a95cc2c7822d190092b3e57a9f2738048" title="Starts the web server." alt="" coords="278,153,392,179"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="111,104,155,122,204,140,263,153,262,158,203,145,153,127,109,109"/>
+<area shape="rect" id="Node000004" href="$class_shopping_data_layer_service.html#a8564e3cead63a33a0d18c33504f3b3dd" title="Loads the configuration values from the given environment object." alt="" coords="543,41,750,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="453,62,527,61,527,66,453,68"/>
+<area shape="rect" id="Node000005" href="$interface_i_environment.html#a9d2f700317385e87efdb77a94df1966f" title="Returns the value associated with the specified key." alt="" coords="826,44,979,70"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="750,57,810,56,811,61,750,62"/>
+<area shape="rect" id="Node000007" href="$class_shopping_web_interface_controller.html#a778e4971eff3694151cbe921a1700511" title="Configures the shopping web interface controller." alt="" coords="514,109,778,135"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="462,116,498,117,498,122,462,122"/>
+<area shape="rect" id="Node000008" href="$class_web_server.html#a93b6dd74881e1f8f8f2271ab2db5dc9c" title="Adds a route to the web server." alt="" coords="830,117,975,143"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="779,124,815,125,815,130,779,129"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="860,119,852,109,857,99,874,93,903,91,934,93,950,101,948,105,933,99,902,96,875,98,860,103,857,108,864,115"/>
+</map>

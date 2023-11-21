@@ -1,0 +1,15 @@
+<map id="TestDTO.testProductDTO_1" name="TestDTO.testProductDTO_1">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,193,80"/>
+<area shape="rect" id="Node000002" href="$class_environment.html#ae31191f88d1cd997ba32eb753a5fa4cc" title="Represents an interface for the environment." alt="" coords="258,5,407,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,51,253,32,254,37,164,57"/>
+<area shape="rect" id="Node000003" href="$class_product_d_t_o_home.html#aae59eb3e738a5eb187202e156e7f8cf7" title="Returns the singleton instance of ProductDTOHome." alt="" coords="241,55,424,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,65,225,65,225,70,193,70"/>
+<area shape="rect" id="Node000004" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="260,104,405,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,78,254,98,253,103,163,84"/>
+<area shape="rect" id="Node000005" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="472,67,680,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="404,106,456,99,457,105,405,111"/>
+<area shape="rect" id="Node000007" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="498,132,654,158"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="405,122,483,131,482,137,404,128"/>
+<area shape="rect" id="Node000006" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="728,67,914,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="681,85,712,85,712,90,681,90"/>
+</map>

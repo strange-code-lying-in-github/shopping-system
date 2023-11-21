@@ -1,0 +1,5 @@
+<map id="DbFactory" name="DbFactory">
+<area shape="rect" id="Node000001" title="The class is a factory for creating instances of the IDbConnectionWrapper interface." alt="" coords="37,671,193,751"/>
+<area shape="rect" id="Node000002" href="$class_i_factory.html" title=" " alt="" coords="5,5,225,623"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,637,118,671,113,671,113,637"/>
+</map>

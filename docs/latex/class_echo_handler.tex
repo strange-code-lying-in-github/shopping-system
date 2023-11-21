@@ -1,0 +1,244 @@
+\doxysection{Echo\+Handler Class Reference}
+\hypertarget{class_echo_handler}{}\label{class_echo_handler}\index{EchoHandler@{EchoHandler}}
+
+
+Inheritance diagram for Echo\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_echo_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Echo\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_echo_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_echo_handler_a8597accd525f876e625bb54b5427d3ef}{handle}} (Http\+Exchange http\+Exchange)  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em Handles the incoming HTTP request and generates an appropriate response. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base_route_handler}{Base\+Route\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{build\+Response}} (String \mbox{\hyperlink{class_i_factory}{response\+String}}, \mbox{\hyperlink{enum_http_response_text_type}{Http\+Response\+Text\+Type}} \mbox{\hyperlink{class_i_factory}{response\+Type}})
+\begin{DoxyCompactList}\small\item\em Builds a response string based on the given response string and response type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_echo_handler_abf46631007c0cc0c680fd2803e0a4d2d}{handle\+Get\+Request}} (Http\+Exchange http\+Exchange)
+\begin{DoxyCompactList}\small\item\em Handles the GET request and returns a formatted string containing information about the request. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_echo_handler_ad20e8fe830988391d0c0f8a8356726f7}{handle\+Post\+Request}} (Http\+Exchange http\+Exchange)
+\begin{DoxyCompactList}\small\item\em Handles a POST request by delegating to the handle\+Get\+Request method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_base_route_handler}{Base\+Route\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_base_route_handler_aff734730e7e7b3aceca4922d1ae995a3}{build\+Response}} (String \mbox{\hyperlink{class_i_factory}{response\+String}})
+\begin{DoxyCompactList}\small\item\em Builds a response string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_route_handler_a33479321f0597168c7f5e31073237283}{handle\+Response}} (Http\+Exchange http\+Exchange, String \mbox{\hyperlink{class_i_factory}{response\+String}}, Integer \mbox{\hyperlink{class_i_factory}{response\+Code}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em Handles the HTTP response by sending the specified response string and response code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_route_handler_a69011e9ecc3e4cb895f616f970a01f76}{handle\+Response}} (Http\+Exchange http\+Exchange, \mbox{\hyperlink{enum_http_response_text_type}{Http\+Response\+Text\+Type}} \mbox{\hyperlink{class_i_factory}{response\+Type}}, String \mbox{\hyperlink{class_i_factory}{response\+String}}, Integer \mbox{\hyperlink{class_i_factory}{response\+Code}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}} 
+\begin{DoxyCompactList}\small\item\em Handles the HTTP response by setting the response content type, sending the response headers, and writing the response string to the output stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_route_handler_a426d25bf07fc6cd306ec944f774dc663}{set\+Response\+Content\+Type}} (Http\+Exchange http\+Exchange)
+\begin{DoxyCompactList}\small\item\em Sets the response content type for the given Http\+Exchange object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_route_handler_a6dd9d325ffc8a8dcea2c95a996815a27}{set\+Response\+Content\+Type}} (Http\+Exchange http\+Exchange, \mbox{\hyperlink{enum_http_response_text_type}{Http\+Response\+Text\+Type}} \mbox{\hyperlink{class_i_factory}{response\+Type}})
+\begin{DoxyCompactList}\small\item\em Sets the response content type based on the specified \doxylink{enum_http_response_text_type}{Http\+Response\+Text\+Type}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_i_http_request_context_info}{IHttp\+Request\+Context\+Info}} \mbox{\hyperlink{class_base_route_handler_a031d87cc184e5c217c64f40e70fe4f4d}{process\+Uri}} (Http\+Exchange http\+Exchange)
+\begin{DoxyCompactList}\small\item\em Processes the URI of the HTTP request and returns an instance of \doxylink{interface_i_http_request_context_info}{IHttp\+Request\+Context\+Info}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_base_route_handler_a506d52b2bf42554720a3eacd5dfba5d6}{add\+Cookie}} (Http\+Exchange http\+Exchange, \mbox{\hyperlink{interface_i_http_cookie}{IHttp\+Cookie}} \mbox{\hyperlink{class_i_factory}{cookie}})
+\begin{DoxyCompactList}\small\item\em Adds a cookie to the response headers of the given Http\+Exchange. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_base_route_handler}{Base\+Route\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ \mbox{\hyperlink{class_base_route_handler_acadf372f62b7d6551ea9586da133fd89}{parse\+Form\+Data}} (String \mbox{\hyperlink{class_i_factory}{form\+Data}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{Unsupported\+Encoding\+Exception}} 
+\begin{DoxyCompactList}\small\item\em Parses the given form data and returns a map of key-\/value pairs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_base_route_handler}{Base\+Route\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_echo_handler_8java_source_l00006}{6}} of file \mbox{\hyperlink{_echo_handler_8java_source}{Echo\+Handler.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_echo_handler_a8597accd525f876e625bb54b5427d3ef}\label{class_echo_handler_a8597accd525f876e625bb54b5427d3ef} 
+\index{EchoHandler@{EchoHandler}!handle@{handle}}
+\index{handle@{handle}!EchoHandler@{EchoHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Echo\+Handler.\+handle (\begin{DoxyParamCaption}\item[{Http\+Exchange}]{http\+Exchange }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{IOException}}}
+
+
+
+Handles the incoming HTTP request and generates an appropriate response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Exchange} & The HTTP exchange object representing the request and response. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an I/O error occurs while handling the request. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_echo_handler_8java_source_l00014}{14}} of file \mbox{\hyperlink{_echo_handler_8java_source}{Echo\+Handler.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_i_factory}{responseCode}}\ =\ 500;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{requestParamValue}}\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}httpExchange:\ "{}}\ +\ httpExchange.getRequestMethod()\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ httpExchange.getRequestURI());}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{stringliteral}{"{}GET"{}}.\mbox{\hyperlink{class_i_factory}{equals}}(httpExchange.getRequestMethod()))\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{requestParamValue}}\ =\ \mbox{\hyperlink{class_echo_handler_abf46631007c0cc0c680fd2803e0a4d2d}{handleGetRequest}}(httpExchange);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\textcolor{stringliteral}{"{}POST"{}}.\mbox{\hyperlink{class_i_factory}{equals}}(httpExchange.getRequestMethod()))\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{requestParamValue}}\ =\ \mbox{\hyperlink{class_echo_handler_ad20e8fe830988391d0c0f8a8356726f7}{handlePostRequest}}(httpExchange);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}\ =\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}(\mbox{\hyperlink{class_i_factory}{requestParamValue}});}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Response:\ "{}}\ +\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}});}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Error\ handling\ request"{}},\ \mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}\ =\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}(\mbox{\hyperlink{class_i_factory}{e}}.getMessage());}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{responseCode}}\ =\ 500;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_base_route_handler_a33479321f0597168c7f5e31073237283}{handleResponse}}(httpExchange,\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}},\ \mbox{\hyperlink{class_i_factory}{responseCode}});}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_base_route_handler_8java_source_l00023}{Base\+Route\+Handler.\+build\+Response()}}, \mbox{\hyperlink{_echo_handler_8java_source_l00043}{handle\+Get\+Request()}}, \mbox{\hyperlink{_echo_handler_8java_source_l00063}{handle\+Post\+Request()}}, \mbox{\hyperlink{_base_route_handler_8java_source_l00062}{Base\+Route\+Handler.\+handle\+Response()}}, \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_base_route_handler_8java_source_l00011}{Base\+Route\+Handler.\+logger}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_echo_handler_a8597accd525f876e625bb54b5427d3ef_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_echo_handler_abf46631007c0cc0c680fd2803e0a4d2d}\label{class_echo_handler_abf46631007c0cc0c680fd2803e0a4d2d} 
+\index{EchoHandler@{EchoHandler}!handleGetRequest@{handleGetRequest}}
+\index{handleGetRequest@{handleGetRequest}!EchoHandler@{EchoHandler}}
+\doxysubsubsection{\texorpdfstring{handleGetRequest()}{handleGetRequest()}}
+{\footnotesize\ttfamily String Echo\+Handler.\+handle\+Get\+Request (\begin{DoxyParamCaption}\item[{Http\+Exchange}]{http\+Exchange }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the GET request and returns a formatted string containing information about the request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Exchange} & The Http\+Exchange object representing the HTTP request and response. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formatted string containing information about the request. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_echo_handler_8java_source_l00043}{43}} of file \mbox{\hyperlink{_echo_handler_8java_source}{Echo\+Handler.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{interface_i_http_request_context_info}{IHttpRequestContextInfo}}\ \mbox{\hyperlink{class_i_factory}{contextInfo}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_http_request_context_info}{HttpRequestContextInfo}}(httpExchange);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Map<String,\ String>}}\ queryMap\ =\ \mbox{\hyperlink{class_i_factory}{contextInfo}}.getQueryMap();}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ String\ uri\ =\ \mbox{\hyperlink{class_i_factory}{contextInfo}}.getUri();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ String\ path\ =\ \mbox{\hyperlink{class_i_factory}{contextInfo}}.getUriPath();}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{queryMapString}}\ =\ queryMap.toString();}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{body}}\ =\ httpExchange.getRequestBody().toString();}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}<br>\ 'URI'\ :\ '"{}}\ +\ \mbox{\hyperlink{class_http_helpers}{HttpHelpers}}.\mbox{\hyperlink{class_http_helpers_a675234b48cbe48a03e2ce0e81b7d16bf}{escapeResponseString}}(uri)}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}'\ <br>\ 'path'\ :\ '"{}}\ +\ \mbox{\hyperlink{class_http_helpers}{HttpHelpers}}.\mbox{\hyperlink{class_http_helpers_a675234b48cbe48a03e2ce0e81b7d16bf}{escapeResponseString}}(path)}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}'\ <br>\ 'body'\ :\ '"{}}\ +\ \mbox{\hyperlink{class_http_helpers}{HttpHelpers}}.\mbox{\hyperlink{class_http_helpers_a675234b48cbe48a03e2ce0e81b7d16bf}{escapeResponseString}}(\mbox{\hyperlink{class_i_factory}{body}})}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}'\ <br>\ 'queryParams'\ :\ '"{}}\ +\ \mbox{\hyperlink{class_http_helpers}{HttpHelpers}}.\mbox{\hyperlink{class_http_helpers_a675234b48cbe48a03e2ce0e81b7d16bf}{escapeResponseString}}(\mbox{\hyperlink{class_i_factory}{queryMapString}})}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}'\ <br>"{}};}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_http_helpers_8java_source_l00074}{Http\+Helpers.\+escape\+Response\+String()}}, \mbox{\hyperlink{interface_i_http_request_context_info_a8dbc757430fc97b0f8edb9c528f6a598}{IHttp\+Request\+Context\+Info.\+get\+Query\+Map()}}, \mbox{\hyperlink{interface_i_http_request_context_info_a8863ec8c07849e679ef7461adfaea46f}{IHttp\+Request\+Context\+Info.\+get\+Uri()}}, and \mbox{\hyperlink{interface_i_http_request_context_info_a60f030fe6578ebdfe56e9eb61fa29ccd}{IHttp\+Request\+Context\+Info.\+get\+Uri\+Path()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_echo_handler_8java_source_l00014}{handle()}}, and \mbox{\hyperlink{_echo_handler_8java_source_l00063}{handle\+Post\+Request()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_echo_handler_abf46631007c0cc0c680fd2803e0a4d2d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_echo_handler_ad20e8fe830988391d0c0f8a8356726f7}\label{class_echo_handler_ad20e8fe830988391d0c0f8a8356726f7} 
+\index{EchoHandler@{EchoHandler}!handlePostRequest@{handlePostRequest}}
+\index{handlePostRequest@{handlePostRequest}!EchoHandler@{EchoHandler}}
+\doxysubsubsection{\texorpdfstring{handlePostRequest()}{handlePostRequest()}}
+{\footnotesize\ttfamily String Echo\+Handler.\+handle\+Post\+Request (\begin{DoxyParamCaption}\item[{Http\+Exchange}]{http\+Exchange }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles a POST request by delegating to the handle\+Get\+Request method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Exchange} & The Http\+Exchange object representing the HTTP request and response. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response string generated by the handle\+Get\+Request method. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_echo_handler_8java_source_l00063}{63}} of file \mbox{\hyperlink{_echo_handler_8java_source}{Echo\+Handler.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_echo_handler_abf46631007c0cc0c680fd2803e0a4d2d}{handleGetRequest}}(httpExchange);}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_echo_handler_8java_source_l00043}{handle\+Get\+Request()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_echo_handler_8java_source_l00014}{handle()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_echo_handler_ad20e8fe830988391d0c0f8a8356726f7_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_echo_handler_8java}{Echo\+Handler.\+java}}\end{DoxyCompactItemize}

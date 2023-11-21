@@ -1,0 +1,109 @@
+\doxysection{App\+Constants Class Reference}
+\hypertarget{class_app_constants}{}\label{class_app_constants}\index{AppConstants@{AppConstants}}
+
+
+This class contains constants used throughout the application.  
+
+
+
+
+Collaboration diagram for App\+Constants\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_app_constants__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{final}} String \mbox{\hyperlink{class_app_constants_aabfaac4e9467ad1a85bed57876cfd769}{HOST\+\_\+\+NAME}}
+\begin{DoxyCompactList}\small\item\em The default host name to use if the HOST\+\_\+\+NAME environment variable is not set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{final}} String \mbox{\hyperlink{class_app_constants_a3b34e3cdc980a2cacc57e54dfa6bfc49}{DB\+\_\+\+CLASSNAME\+\_\+\+PREFIX}} = "{}Db\+Base\+Factory\+Wrapper\+\_\+"{}
+\begin{DoxyCompactList}\small\item\em {\itshape NOTE} the db classname prefix for the factory \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{final}} int \mbox{\hyperlink{class_app_constants_aa335dfc59a594b312f9072f09813570b}{EOF}} = -\/1
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{final}} int \mbox{\hyperlink{class_app_constants_a9451852beadf062cbd32233da41f662c}{READ\+\_\+\+BUFFER\+\_\+\+SIZE}} = (1024 \texorpdfstring{$\ast$}{*} 4)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains constants used throughout the application. 
+
+Definition at line \mbox{\hyperlink{_app_constants_8java_source_l00005}{5}} of file \mbox{\hyperlink{_app_constants_8java_source}{App\+Constants.\+java}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_app_constants_a3b34e3cdc980a2cacc57e54dfa6bfc49}\label{class_app_constants_a3b34e3cdc980a2cacc57e54dfa6bfc49} 
+\index{AppConstants@{AppConstants}!DB\_CLASSNAME\_PREFIX@{DB\_CLASSNAME\_PREFIX}}
+\index{DB\_CLASSNAME\_PREFIX@{DB\_CLASSNAME\_PREFIX}!AppConstants@{AppConstants}}
+\doxysubsubsection{\texorpdfstring{DB\_CLASSNAME\_PREFIX}{DB\_CLASSNAME\_PREFIX}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{final}} String App\+Constants.\+DB\+\_\+\+CLASSNAME\+\_\+\+PREFIX = "{}Db\+Base\+Factory\+Wrapper\+\_\+"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+{\itshape NOTE} the db classname prefix for the factory 
+
+
+
+Definition at line \mbox{\hyperlink{_app_constants_8java_source_l00016}{16}} of file \mbox{\hyperlink{_app_constants_8java_source}{App\+Constants.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_i_factory_8java_source_l00251}{IFactory$<$ T $>$.\+process\+Path()}}.
+
+\Hypertarget{class_app_constants_aa335dfc59a594b312f9072f09813570b}\label{class_app_constants_aa335dfc59a594b312f9072f09813570b} 
+\index{AppConstants@{AppConstants}!EOF@{EOF}}
+\index{EOF@{EOF}!AppConstants@{AppConstants}}
+\doxysubsubsection{\texorpdfstring{EOF}{EOF}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{final}} int App\+Constants.\+EOF = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line \mbox{\hyperlink{_app_constants_8java_source_l00018}{18}} of file \mbox{\hyperlink{_app_constants_8java_source}{App\+Constants.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_i_factory_8java_source_l00176}{IFactory$<$ T $>$.\+transfer\+Reader\+To\+Writer()}}.
+
+\Hypertarget{class_app_constants_aabfaac4e9467ad1a85bed57876cfd769}\label{class_app_constants_aabfaac4e9467ad1a85bed57876cfd769} 
+\index{AppConstants@{AppConstants}!HOST\_NAME@{HOST\_NAME}}
+\index{HOST\_NAME@{HOST\_NAME}!AppConstants@{AppConstants}}
+\doxysubsubsection{\texorpdfstring{HOST\_NAME}{HOST\_NAME}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{final}} String App\+Constants.\+HOST\+\_\+\+NAME\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{class_i_factory}{System}}.getenv().containsKey(\textcolor{stringliteral}{"{}HOST\_NAME"{}})\ ?\ \mbox{\hyperlink{class_i_factory}{System}}.getenv(\textcolor{stringliteral}{"{}HOST\_NAME"{}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ :\ \textcolor{stringliteral}{"{}localhost"{}}}
+
+\end{DoxyCode}
+
+
+The default host name to use if the HOST\+\_\+\+NAME environment variable is not set. 
+
+
+
+Definition at line \mbox{\hyperlink{_app_constants_8java_source_l00010}{10}} of file \mbox{\hyperlink{_app_constants_8java_source}{App\+Constants.\+java}}.
+
+\Hypertarget{class_app_constants_a9451852beadf062cbd32233da41f662c}\label{class_app_constants_a9451852beadf062cbd32233da41f662c} 
+\index{AppConstants@{AppConstants}!READ\_BUFFER\_SIZE@{READ\_BUFFER\_SIZE}}
+\index{READ\_BUFFER\_SIZE@{READ\_BUFFER\_SIZE}!AppConstants@{AppConstants}}
+\doxysubsubsection{\texorpdfstring{READ\_BUFFER\_SIZE}{READ\_BUFFER\_SIZE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{final}} int App\+Constants.\+READ\+\_\+\+BUFFER\+\_\+\+SIZE = (1024 \texorpdfstring{$\ast$}{*} 4)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definition at line \mbox{\hyperlink{_app_constants_8java_source_l00019}{19}} of file \mbox{\hyperlink{_app_constants_8java_source}{App\+Constants.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_i_factory_8java_source_l00106}{IFactory$<$ T $>$.\+convert\+Url\+To\+String()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_app_constants_8java}{App\+Constants.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="PaymentProfileDTO.getDtoHome" name="PaymentProfileDTO.getDtoHome">
+<area shape="rect" id="Node000001" title="Gets the DTO home for the payment profile." alt="" coords="5,5,222,31"/>
+<area shape="rect" id="Node000002" href="$class_payment_profile_d_t_o_home.html#a8c14b76e58dd0306666c9aaa4b8bff93" title="Returns the singleton instance of PaymentProfileDTOHome." alt="" coords="270,5,497,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,16,254,16,254,21,222,21"/>
+</map>

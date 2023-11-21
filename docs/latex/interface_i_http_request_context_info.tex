@@ -1,0 +1,209 @@
+\doxysection{IHttp\+Request\+Context\+Info Interface Reference}
+\hypertarget{interface_i_http_request_context_info}{}\label{interface_i_http_request_context_info}\index{IHttpRequestContextInfo@{IHttpRequestContextInfo}}
+
+
+This interface represents the information about an HTTP request context.  
+
+
+
+
+Inheritance diagram for IHttp\+Request\+Context\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{interface_i_http_request_context_info__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IHttp\+Request\+Context\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{interface_i_http_request_context_info__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Http\+Exchange \mbox{\hyperlink{interface_i_http_request_context_info_a3a8ae198864ddd790b4add92a041b172}{get\+Http\+Exchange}} ()
+\begin{DoxyCompactList}\small\item\em Returns the Http\+Exchange object associated with the request. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{interface_i_http_request_context_info_a8863ec8c07849e679ef7461adfaea46f}{get\+Uri}} ()
+\begin{DoxyCompactList}\small\item\em Returns the URI of the request. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{interface_i_http_request_context_info_a60f030fe6578ebdfe56e9eb61fa29ccd}{get\+Uri\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Returns the path component of the URI. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{interface_i_http_request_context_info_a2704fa073cfd23609b9622a9499f86c2}{get\+Query\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns the query string of the URI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ \mbox{\hyperlink{interface_i_http_request_context_info_a8dbc757430fc97b0f8edb9c528f6a598}{get\+Query\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Returns a map of the query parameters. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{interface_i_http_request_context_info_a8bac7adb05415dd83a905dd1f8ab488e}{get\+Request\+Method}} ()
+\begin{DoxyCompactList}\small\item\em Returns the request method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{class_i_factory}{List}}$<$ String $>$ $>$ \mbox{\hyperlink{interface_i_http_request_context_info_a798f810a39562ab02379ec932a4fafc3}{get\+Headers}} ()
+\begin{DoxyCompactList}\small\item\em Returns a map of the request headers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ \mbox{\hyperlink{interface_i_http_request_context_info_abde277a6dd8bbf9f1dd829a741e52932}{get\+Cookies}} ()
+\begin{DoxyCompactList}\small\item\em Returns a map of the request cookies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface represents the information about an HTTP request context. 
+
+Definition at line \mbox{\hyperlink{_i_http_request_context_info_8java_source_l00009}{9}} of file \mbox{\hyperlink{_i_http_request_context_info_8java_source}{IHttp\+Request\+Context\+Info.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_i_http_request_context_info_abde277a6dd8bbf9f1dd829a741e52932}\label{interface_i_http_request_context_info_abde277a6dd8bbf9f1dd829a741e52932} 
+\index{IHttpRequestContextInfo@{IHttpRequestContextInfo}!getCookies@{getCookies}}
+\index{getCookies@{getCookies}!IHttpRequestContextInfo@{IHttpRequestContextInfo}}
+\doxysubsubsection{\texorpdfstring{getCookies()}{getCookies()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ IHttp\+Request\+Context\+Info.\+get\+Cookies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a map of the request cookies. 
+
+\begin{DoxyReturn}{Returns}
+A map of the request cookies. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_http_request_context_info_a561b4c81bb9f06da2a22b0d0d0c8ed4e}{Http\+Request\+Context\+Info}}.
+
+\Hypertarget{interface_i_http_request_context_info_a798f810a39562ab02379ec932a4fafc3}\label{interface_i_http_request_context_info_a798f810a39562ab02379ec932a4fafc3} 
+\index{IHttpRequestContextInfo@{IHttpRequestContextInfo}!getHeaders@{getHeaders}}
+\index{getHeaders@{getHeaders}!IHttpRequestContextInfo@{IHttpRequestContextInfo}}
+\doxysubsubsection{\texorpdfstring{getHeaders()}{getHeaders()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, \mbox{\hyperlink{class_i_factory}{List}}$<$ String $>$ $>$ IHttp\+Request\+Context\+Info.\+get\+Headers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a map of the request headers. 
+
+\begin{DoxyReturn}{Returns}
+A map of the request headers. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_http_request_context_info_a82a5cf25a7369a2fec2d293495dcea15}{Http\+Request\+Context\+Info}}.
+
+\Hypertarget{interface_i_http_request_context_info_a3a8ae198864ddd790b4add92a041b172}\label{interface_i_http_request_context_info_a3a8ae198864ddd790b4add92a041b172} 
+\index{IHttpRequestContextInfo@{IHttpRequestContextInfo}!getHttpExchange@{getHttpExchange}}
+\index{getHttpExchange@{getHttpExchange}!IHttpRequestContextInfo@{IHttpRequestContextInfo}}
+\doxysubsubsection{\texorpdfstring{getHttpExchange()}{getHttpExchange()}}
+{\footnotesize\ttfamily Http\+Exchange IHttp\+Request\+Context\+Info.\+get\+Http\+Exchange (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the Http\+Exchange object associated with the request. 
+
+\begin{DoxyReturn}{Returns}
+The Http\+Exchange object. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_http_request_context_info_ac873a8e5a36232ac60da0943d08d0e86}{Http\+Request\+Context\+Info}}.
+
+\Hypertarget{interface_i_http_request_context_info_a8dbc757430fc97b0f8edb9c528f6a598}\label{interface_i_http_request_context_info_a8dbc757430fc97b0f8edb9c528f6a598} 
+\index{IHttpRequestContextInfo@{IHttpRequestContextInfo}!getQueryMap@{getQueryMap}}
+\index{getQueryMap@{getQueryMap}!IHttpRequestContextInfo@{IHttpRequestContextInfo}}
+\doxysubsubsection{\texorpdfstring{getQueryMap()}{getQueryMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ IHttp\+Request\+Context\+Info.\+get\+Query\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a map of the query parameters. 
+
+\begin{DoxyReturn}{Returns}
+A map of the query parameters. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_http_request_context_info_a52a179587fc0cf1011f5dc08f5f4c24c}{Http\+Request\+Context\+Info}}.
+
+
+
+Referenced by \mbox{\hyperlink{_echo_handler_8java_source_l00043}{Echo\+Handler.\+handle\+Get\+Request()}}.
+
+\Hypertarget{interface_i_http_request_context_info_a2704fa073cfd23609b9622a9499f86c2}\label{interface_i_http_request_context_info_a2704fa073cfd23609b9622a9499f86c2} 
+\index{IHttpRequestContextInfo@{IHttpRequestContextInfo}!getQueryString@{getQueryString}}
+\index{getQueryString@{getQueryString}!IHttpRequestContextInfo@{IHttpRequestContextInfo}}
+\doxysubsubsection{\texorpdfstring{getQueryString()}{getQueryString()}}
+{\footnotesize\ttfamily String IHttp\+Request\+Context\+Info.\+get\+Query\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the query string of the URI. 
+
+\begin{DoxyReturn}{Returns}
+The query string of the URI. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_http_request_context_info_ad474eec9e0dee16094d3c4c679322b79}{Http\+Request\+Context\+Info}}.
+
+\Hypertarget{interface_i_http_request_context_info_a8bac7adb05415dd83a905dd1f8ab488e}\label{interface_i_http_request_context_info_a8bac7adb05415dd83a905dd1f8ab488e} 
+\index{IHttpRequestContextInfo@{IHttpRequestContextInfo}!getRequestMethod@{getRequestMethod}}
+\index{getRequestMethod@{getRequestMethod}!IHttpRequestContextInfo@{IHttpRequestContextInfo}}
+\doxysubsubsection{\texorpdfstring{getRequestMethod()}{getRequestMethod()}}
+{\footnotesize\ttfamily String IHttp\+Request\+Context\+Info.\+get\+Request\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the request method. 
+
+\begin{DoxyReturn}{Returns}
+The request method. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_http_request_context_info_a65eb33353e922cecdb9c1a152312c5a0}{Http\+Request\+Context\+Info}}.
+
+\Hypertarget{interface_i_http_request_context_info_a8863ec8c07849e679ef7461adfaea46f}\label{interface_i_http_request_context_info_a8863ec8c07849e679ef7461adfaea46f} 
+\index{IHttpRequestContextInfo@{IHttpRequestContextInfo}!getUri@{getUri}}
+\index{getUri@{getUri}!IHttpRequestContextInfo@{IHttpRequestContextInfo}}
+\doxysubsubsection{\texorpdfstring{getUri()}{getUri()}}
+{\footnotesize\ttfamily String IHttp\+Request\+Context\+Info.\+get\+Uri (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the URI of the request. 
+
+\begin{DoxyReturn}{Returns}
+The URI of the request. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_http_request_context_info_a6e6b545e3a679dd7ccb6e4a227550f5a}{Http\+Request\+Context\+Info}}.
+
+
+
+Referenced by \mbox{\hyperlink{_echo_handler_8java_source_l00043}{Echo\+Handler.\+handle\+Get\+Request()}}.
+
+\Hypertarget{interface_i_http_request_context_info_a60f030fe6578ebdfe56e9eb61fa29ccd}\label{interface_i_http_request_context_info_a60f030fe6578ebdfe56e9eb61fa29ccd} 
+\index{IHttpRequestContextInfo@{IHttpRequestContextInfo}!getUriPath@{getUriPath}}
+\index{getUriPath@{getUriPath}!IHttpRequestContextInfo@{IHttpRequestContextInfo}}
+\doxysubsubsection{\texorpdfstring{getUriPath()}{getUriPath()}}
+{\footnotesize\ttfamily String IHttp\+Request\+Context\+Info.\+get\+Uri\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the path component of the URI. 
+
+\begin{DoxyReturn}{Returns}
+The path component of the URI. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_http_request_context_info_a4d2914b53559fff9e2c8e75fa28b5c00}{Http\+Request\+Context\+Info}}.
+
+
+
+Referenced by \mbox{\hyperlink{_echo_handler_8java_source_l00043}{Echo\+Handler.\+handle\+Get\+Request()}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_http_request_context_info_8java}{IHttp\+Request\+Context\+Info.\+java}}\end{DoxyCompactItemize}

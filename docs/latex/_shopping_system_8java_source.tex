@@ -1,0 +1,47 @@
+\doxysection{Shopping\+System.\+java}
+\hypertarget{_shopping_system_8java_source}{}\label{_shopping_system_8java_source}\mbox{\hyperlink{_shopping_system_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00001}00001\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.io.IOException;}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00002}00002\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.security.MessageDigestSpi;}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00003}00003\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00004}00004\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00005}00005\ \textcolor{comment}{\ *\ The\ main\ class\ representing\ the\ shopping\ system.}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00006}00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00007}\mbox{\hyperlink{class_shopping_system}{00007}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shopping_system}{ShoppingSystem}}\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00009}\mbox{\hyperlink{class_shopping_system_a94671ad328b3e419b719823161451f76}{00009}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_shopping_system_a94671ad328b3e419b719823161451f76}{logging}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00011}\mbox{\hyperlink{class_shopping_system_a5ba488f4afe28c464ebe03c94d50c650}{00011}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_web_server}{WebServer}}\ \mbox{\hyperlink{class_shopping_system_a5ba488f4afe28c464ebe03c94d50c650}{server}};}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00012}\mbox{\hyperlink{class_shopping_system_ac634babe1445e54917c2c340c7866ec5}{00012}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \mbox{\hyperlink{class_shopping_system_ac634babe1445e54917c2c340c7866ec5}{environment}};}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00013}\mbox{\hyperlink{class_shopping_system_a15dfd650df7d00a21103dc4b1c499e10}{00013}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}\ \mbox{\hyperlink{class_shopping_system_a15dfd650df7d00a21103dc4b1c499e10}{shoppingDataService}};}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00014}\mbox{\hyperlink{class_shopping_system_a825785b9883041fb5b633ebc68ac3109}{00014}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ \mbox{\hyperlink{class_shopping_system_a825785b9883041fb5b633ebc68ac3109}{shoppingBusinessService}};}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00015}\mbox{\hyperlink{class_shopping_system_a2b4f62a8fa00360e87fb35de96196003}{00015}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_shopping_web_interface_adapter}{ShoppingWebInterfaceAdapter}}\ \mbox{\hyperlink{class_shopping_system_a2b4f62a8fa00360e87fb35de96196003}{shoppingWebInterfaceAdapter}};}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00017}00017\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00018}00018\ \textcolor{comment}{\ \ \ \ \ *\ Constructs\ a\ new\ ShoppingSystem\ object\ with\ the\ specified\ environment.}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00019}00019\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ *\ @param\ environment\ the\ environment\ in\ which\ the\ shopping\ system\ operates}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00022}\mbox{\hyperlink{class_shopping_system_ace0261e4072bd47a50015a79c3ba167a}{00022}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_shopping_system_ace0261e4072bd47a50015a79c3ba167a}{ShoppingSystem}}(\mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \mbox{\hyperlink{class_shopping_system_ac634babe1445e54917c2c340c7866ec5}{environment}})\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00023}00023\ \ \ \ \ \ \ \ \ this.environment\ =\ \mbox{\hyperlink{class_shopping_system_ac634babe1445e54917c2c340c7866ec5}{environment}};}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00025}00025\ \ \ \ \ \ \ \ \ this.shoppingDataService\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(this.environment);}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00026}00026\ \ \ \ \ \ \ \ \ this.shoppingBusinessService\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}(this.environment,\ this.shoppingDataService);}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00027}00027\ \ \ \ \ \ \ \ \ this.server\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_web_server}{WebServer}}();}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ this.shoppingWebInterfaceAdapter\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_web_interface_adapter}{ShoppingWebInterfaceAdapter}}(this.environment,\ this.shoppingDataService,}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.shoppingBusinessService,\ this.server);}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00030}00030\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00031}00031\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00032}00032\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00033}00033\ \textcolor{comment}{\ \ \ \ \ *\ Starts\ the\ shopping\ system\ by\ configuring\ the\ data\ service,\ business\ service,}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ *\ web\ interface\ adapter,\ and\ starting\ the\ server.}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00035}00035\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00036}\mbox{\hyperlink{class_shopping_system_a11e0c3f52363fcd354652581a5cb435f}{00036}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_shopping_system_a11e0c3f52363fcd354652581a5cb435f}{start}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00037}00037\ \ \ \ \ \ \ \ \ this.shoppingDataService.\mbox{\hyperlink{class_shopping_data_layer_service_a7741dea82cfac6ba06bbe75032bc7f15}{configure}}();}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00038}00038\ \ \ \ \ \ \ \ \ this.shoppingBusinessService.\mbox{\hyperlink{class_shopping_business_layer_service_af5ee3bb1068d29aba2d5b2fc54d6777e}{configure}}();}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ this.shoppingWebInterfaceAdapter.\mbox{\hyperlink{class_shopping_web_interface_adapter_a2738d99c717b1ab0824e4886eaf9a59a}{configure}}();}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ this.server.\mbox{\hyperlink{class_web_server_a95cc2c7822d190092b3e57a9f2738048}{start}}();}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_system_8java_source_l00042}00042\ \}}
+
+\end{DoxyCode}

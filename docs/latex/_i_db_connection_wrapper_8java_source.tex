@@ -1,0 +1,52 @@
+\doxysection{IDb\+Connection\+Wrapper.\+java}
+\hypertarget{_i_db_connection_wrapper_8java_source}{}\label{_i_db_connection_wrapper_8java_source}\mbox{\hyperlink{_i_db_connection_wrapper_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00001}00001\ \textcolor{keyword}{import}\ java.io.Closeable;}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00002}00002\ \textcolor{keyword}{import}\ java.io.IOException;}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00003}00003\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00004}00004\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00005}00005\ \textcolor{comment}{\ *\ The\ interface\ is\ used\ to\ create\ instances\ of\ the\ IDbConnectionWrapper}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00006}00006\ \textcolor{comment}{\ *\ interface.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00007}00007\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00008}\mbox{\hyperlink{interface_i_db_connection_wrapper}{00008}}\ \textcolor{keyword}{interface\ }\mbox{\hyperlink{interface_i_db_connection_wrapper}{IDbConnectionWrapper}}\ \textcolor{keyword}{extends}\ \mbox{\hyperlink{class_closeable}{Closeable}}\ \{}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00010}00010\ \ \ \ \ @Override\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00011}00011\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ closes\ the\ connection\ to\ the\ database.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00013}00013\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00014}00014\ \textcolor{comment}{\ \ \ \ \ *\ @throws\ IOException}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00015}00015\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00016}\mbox{\hyperlink{interface_i_db_connection_wrapper_a64824f4265bd344e7674529bac9d34d0}{00016}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{interface_i_db_connection_wrapper_a64824f4265bd344e7674529bac9d34d0}{close}}()\ throws\ IOException;}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00017}00017\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00018}00018\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00019}00019\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ sets\ the\ connection\ properties.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ *\ @param\ user\ \ \ \ \ The\ username\ for\ the\ database.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00022}00022\ \textcolor{comment}{\ \ \ \ \ *\ @param\ pass\ \ \ \ \ The\ password\ for\ the\ database.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00023}00023\ \textcolor{comment}{\ \ \ \ \ *\ @param\ port\ \ \ \ \ The\ port\ for\ the\ database.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00024}00024\ \textcolor{comment}{\ \ \ \ \ *\ @param\ host\ \ \ \ \ The\ host\ for\ the\ database.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ *\ @param\ database\ The\ database\ name.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ *\ @param\ schema\ \ \ The\ schema\ name.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00028}\mbox{\hyperlink{interface_i_db_connection_wrapper_a7dc882fb4b56079d66577bcfc2cd6759}{00028}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{interface_i_db_connection_wrapper_a7dc882fb4b56079d66577bcfc2cd6759}{connectionProperties}}(String\ user,\ String\ pass,\ \textcolor{keywordtype}{int}\ port,\ String\ host,\ String\ database,\ String\ schema);}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00029}00029\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00030}00030\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ *\ Executes\ a\ database\ query\ and\ processes\ the\ result.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00032}00032\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00033}00033\ \textcolor{comment}{\ \ \ \ \ *\ @param\ query\ \ \ \ \ \ \ \ \ \ \ The\ SQL\ query\ to\ be\ executed.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ *\ @param\ resultProcessor\ The\ processor\ to\ handle\ the\ query\ result.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00035}00035\ \textcolor{comment}{\ \ \ \ \ *\ @return\ True\ if\ the\ query\ was\ successful,\ false\ otherwise.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00037}\mbox{\hyperlink{interface_i_db_connection_wrapper_a9e4dad92cdfb8b858de7ca6b2321ef6f}{00037}}\ \ \ \ \ Boolean\ \mbox{\hyperlink{interface_i_db_connection_wrapper_a9e4dad92cdfb8b858de7ca6b2321ef6f}{query}}(String\ \mbox{\hyperlink{interface_i_db_connection_wrapper_a9e4dad92cdfb8b858de7ca6b2321ef6f}{query}},\ \mbox{\hyperlink{interface_i_db_result_processor}{IDbResultProcessor}}\ resultProcessor);}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00038}00038\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00039}00039\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00040}00040\ \textcolor{comment}{\ \ \ \ \ *\ Executes\ a\ database\ query\ and\ processes\ the\ result.}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00041}00041\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00042}00042\ \textcolor{comment}{\ \ \ \ \ *\ @param\ query\ \ \ \ \ \ \ \ \ \ \ the\ SQL\ query\ to\ execute}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00043}00043\ \textcolor{comment}{\ \ \ \ \ *\ @param\ resultProcessor\ the\ processor\ to\ handle\ the\ result\ of\ the\ query}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ *\ @return\ true\ if\ the\ query\ was\ successfully\ executed,\ false\ otherwise}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00046}\mbox{\hyperlink{interface_i_db_connection_wrapper_affe24a6593d9be4a09dcccc7700369ac}{00046}}\ \ \ \ \ Boolean\ \mbox{\hyperlink{interface_i_db_connection_wrapper_affe24a6593d9be4a09dcccc7700369ac}{execute}}(String\ \mbox{\hyperlink{interface_i_db_connection_wrapper_a9e4dad92cdfb8b858de7ca6b2321ef6f}{query}},\ \mbox{\hyperlink{interface_i_db_result_processor}{IDbResultProcessor}}\ resultProcessor);}
+\DoxyCodeLine{\Hypertarget{_i_db_connection_wrapper_8java_source_l00047}00047\ \}}
+
+\end{DoxyCode}

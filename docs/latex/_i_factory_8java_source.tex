@@ -1,0 +1,284 @@
+\doxysection{IFactory.\+java}
+\hypertarget{_i_factory_8java_source}{}\label{_i_factory_8java_source}\mbox{\hyperlink{_i_factory_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00001}00001\ \textcolor{keyword}{import}\ java.io.IOException;}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00002}00002\ \textcolor{keyword}{import}\ java.io.InputStream;}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00003}00003\ \textcolor{keyword}{import}\ java.io.InputStreamReader;}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00004}00004\ \textcolor{keyword}{import}\ java.io.StringWriter;}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00005}00005\ \textcolor{keyword}{import}\ java.net.URL;}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00006}00006\ \textcolor{keyword}{import}\ java.net.URLConnection;}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00007}00007\ \textcolor{keyword}{import}\ java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00008}00008\ \textcolor{keyword}{import}\ java.util.HashMap;}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00009}00009\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00010}00010\ \textcolor{keyword}{import}\ java.util.Map;}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00011}00011\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00012}00012\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00013}00013\ \textcolor{comment}{\ *\ The\ \`{}IFactory`\ class\ is\ a\ generic\ factory\ class\ that\ allows\ the\ creation\ of}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00014}00014\ \textcolor{comment}{\ *\ instances\ of\ a\ specified}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00015}00015\ \textcolor{comment}{\ *\ class\ type.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00016}00016\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00017}\mbox{\hyperlink{class_i_factory}{00017}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_factory}{IFactory}}<T>\ \{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00018}00018\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00019}00019\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00021}\mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{00021}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{final}\ Map<String,\ Class<?>>\ \mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{factoryTable}}\ =\ \textcolor{keyword}{new}\ HashMap<>();}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00022}00022\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00023}00023\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00024}00024\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ returns\ an\ instance\ of\ the\ AppLoggingAgent\ class.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ method\ is\ returning\ an\ instance\ of\ the\ AppLoggingAgent\ class.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00028}\mbox{\hyperlink{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}{00028}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}{logging}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00029}00029\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00030}00030\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ returns\ an\ instance\ of\ the\ IFactory\ class.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00032}00032\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00033}\mbox{\hyperlink{class_i_factory_a987a37e38b2edbc0c0d7ba986f7273c5}{00033}}\ \ \ \ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{IFactory}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00036}00036\ \ \ \ \ \textcolor{keyword}{static}\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ force\ loading\ of\ all\ classes\ in\ the\ path\ directory}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_ad89a790adf80c397c71bac9f19a348f2}{loadViaClassloader}}(\mbox{\hyperlink{class_i_factory}{IFactory}}.class.getClassLoader(),\ \textcolor{stringliteral}{"{}."{}});}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Exception\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ log\ or\ throw\ exception.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(e);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00043}00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00045}00045\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00047}00047\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ registers\ a\ class\ with\ the\ factory.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00048}00048\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00049}00049\ \textcolor{comment}{\ \ \ \ \ *\ @param\ registrationName\ The\ parameter\ "{}registrationName"{}\ is\ a\ string\ that}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00050}00050\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ represents\ the\ name\ of\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00051}00051\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ class\ to\ be\ registered.\ It\ is\ used\ to\ register\ a}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00052}00052\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ class\ with\ the\ factory.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00053}00053\ \textcolor{comment}{\ \ \ \ \ *\ @param\ instance\ \ \ \ \ \ \ \ \ The\ parameter\ "{}instance"{}\ is\ a\ Class\ object\ that}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00054}00054\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ represents\ the\ class\ to\ be}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00055}00055\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ registered.\ It\ is\ used\ to\ register\ a\ class\ with\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00056}00056\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ factory.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00057}00057\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00058}\mbox{\hyperlink{class_i_factory_a5355830e31244a3c7063b8fa85172b20}{00058}}\ \ \ \ \ \textcolor{keyword}{public}\ static\ <T>\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_factory_a5355830e31244a3c7063b8fa85172b20}{register}}(String\ registrationName,\ Class<T>\ instance)\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (registrationName\ !=\ \textcolor{keyword}{null}\ \&\&\ instance\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{factoryTable}}.put(registrationName,\ instance);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00061}00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00062}00062\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00063}00063\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00064}00064\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00065}00065\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ returns\ an\ instance\ of\ the\ IFactory\ class.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00066}00066\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00067}00067\ \textcolor{comment}{\ \ \ \ \ *\ @param\ factoryString\ The\ parameter\ "{}factoryString"{}\ is\ a\ string\ that}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00068}00068\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ represents\ the\ name\ of\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00069}00069\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ class\ to\ be\ created.\ It\ is\ used\ to\ create\ an\ instance\ of}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00070}00070\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ IFactory\ class\ with\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00071}00071\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ specified\ class\ type.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00072}00072\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00073}\mbox{\hyperlink{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1}{00073}}\ \ \ \ \ \textcolor{keyword}{public}\ static\ <T>\ T\ \mbox{\hyperlink{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1}{create}}(String\ factoryString)\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00074}00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}factoryString:\ "{}}\ +\ factoryString);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{factoryTable}}.containsKey(factoryString))\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ have\ to\ force\ load\ so\ the\ static\ instance\ registration\ is\ called}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class<?>\ clazz\ =\ \mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{factoryTable}}.get(factoryString);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (T)\ clazz.getDeclaredConstructor().newInstance();}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Exception\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(e);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00084}00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00085}00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00086}00086\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00087}00087\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00088}00088\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00089}00089\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ converts\ the\ content\ of\ an\ InputStream\ into\ a\ String\ using\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00090}00090\ \textcolor{comment}{\ \ \ \ \ *\ specified\ character}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00091}00091\ \textcolor{comment}{\ \ \ \ \ *\ encoding.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00092}00092\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00093}00093\ \textcolor{comment}{\ \ \ \ \ *\ @param\ input\ \ The\ input\ parameter\ is\ an\ InputStream,\ which\ represents\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00094}00094\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ input\ stream\ from\ which}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00095}00095\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ data\ will\ be\ read.\ This\ can\ be\ any\ type\ of\ input\ stream,}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00096}00096\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ such\ as\ a\ FileInputStream\ or\ a}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00097}00097\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ URLConnection.getInputStream().}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00098}00098\ \textcolor{comment}{\ \ \ \ \ *\ @param\ string\ The\ "{}string"{}\ parameter\ in\ the\ method\ represents\ the\ character}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00099}00099\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ encoding\ to\ be\ used}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00100}00100\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ when\ converting\ the\ input\ stream\ to\ a\ string.\ It\ specifies\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00101}00101\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ character\ set\ that\ should\ be\ used}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00102}00102\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ to\ interpret\ the\ bytes\ from\ the\ input\ stream\ and\ convert\ them}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00103}00103\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ into\ characters.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00104}00104\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ method\ is\ returning\ a\ String.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00105}00105\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00106}\mbox{\hyperlink{class_i_factory_a48d714a3008100beb7aca8a9f3228023}{00106}}\ \ \ \ \ \textcolor{keyword}{public}\ static\ <T>\ String\ \mbox{\hyperlink{class_i_factory_a48d714a3008100beb7aca8a9f3228023}{convertUrlToString}}(\textcolor{keyword}{final}\ InputStream\ input,\ \textcolor{keyword}{final}\ String\ \textcolor{keywordtype}{string})\ \textcolor{keywordflow}{throws}\ IOException\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00108}00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (InputStreamReader\ inputStreamReader\ =\ \textcolor{keyword}{new}\ InputStreamReader(input,\ \textcolor{keywordtype}{string}))\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (StringWriter\ stringWriter\ =\ \textcolor{keyword}{new}\ StringWriter())\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}[]\ buffer\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[\mbox{\hyperlink{class_app_constants}{AppConstants}}.\mbox{\hyperlink{class_app_constants_a9451852beadf062cbd32233da41f662c}{READ\_BUFFER\_SIZE}}];}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory_aeba2e37bd4787a74f6b23f4205804e22}{transferReaderToWriter}}(inputStreamReader,\ stringWriter,\ buffer);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00113}00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00114}00114\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00115}00115\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00116}00116\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00117}00117\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ transfers\ data\ from\ an\ InputStreamReader\ to\ a\ StringWriter\ using}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00118}00118\ \textcolor{comment}{\ \ \ \ \ *\ a\ buffer.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00119}00119\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00120}00120\ \textcolor{comment}{\ \ \ \ \ *\ @param\ inputReader\ The\ "{}inputReader"{}\ parameter\ is\ an\ InputStreamReader}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00121}00121\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ object,\ which\ is}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00122}00122\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ used\ to\ read\ characters}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00123}00123\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ from\ an\ input\ stream.\ It\ is\ the\ source\ from\ which}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00124}00124\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ characters}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00125}00125\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ will\ be\ read.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00126}00126\ \textcolor{comment}{\ \ \ \ \ *\ @param\ strWriter\ \ \ The\ parameter\ "{}strWriter"{}\ is\ a\ StringWriter\ object\ that\ is}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00127}00127\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ used\ to}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00128}00128\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ write\ the\ data\ read\ from}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00129}00129\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ InputStreamReader.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00130}00130\ \textcolor{comment}{\ \ \ \ \ *\ @param\ buffer\ \ \ \ \ \ The\ \`{}buffer`\ parameter\ is\ an\ array\ of\ characters\ that\ is}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00131}00131\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ used}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00132}00132\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ to\ store\ the\ data}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00133}00133\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ read\ from\ the\ \`{}InputStreamReader`\ and\ write\ it\ to\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00134}00134\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \`{}StringWriter`.\ It\ is\ used\ as\ a\ temporary}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00135}00135\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ storage\ for\ the\ data\ during\ the\ transfer\ process.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00136}00136\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ method\ is\ returning\ a\ String.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00137}00137\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00138}\mbox{\hyperlink{class_i_factory_aeba2e37bd4787a74f6b23f4205804e22}{00138}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ String\ \mbox{\hyperlink{class_i_factory_aeba2e37bd4787a74f6b23f4205804e22}{transferReaderToWriter}}(InputStreamReader\ inputReader,\ StringWriter\ strWriter,\ \textcolor{keywordtype}{char}[]\ buffer)}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throws}\ IOException\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00140}00140\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory_aeba2e37bd4787a74f6b23f4205804e22}{transferReaderToWriter}}(inputReader,\ strWriter,\ buffer,\ 0);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00141}00141\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00142}00142\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00143}00143\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00144}00144\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ transfers\ data\ from\ an\ InputStreamReader\ to\ a\ StringWriter\ and}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00145}00145\ \textcolor{comment}{\ \ \ \ \ *\ returns\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00146}00146\ \textcolor{comment}{\ \ \ \ \ *\ resulting\ string.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00147}00147\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00148}00148\ \textcolor{comment}{\ \ \ \ \ *\ @param\ inputReader\ The\ "{}inputReader"{}\ parameter\ is\ an\ InputStreamReader,\ which}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00149}00149\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ is\ used\ to}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00150}00150\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ read\ characters\ from\ an}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00151}00151\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ InputStream.\ It\ is\ the\ input\ source\ from\ which\ characters}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00152}00152\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ will}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00153}00153\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ be\ read.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00154}00154\ \textcolor{comment}{\ \ \ \ \ *\ @param\ strWriter\ \ \ The\ parameter\ "{}strWriter"{}\ is\ a\ StringWriter\ object.\ It\ is}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00155}00155\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ used\ to}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00156}00156\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ write\ the\ contents\ read}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00157}00157\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ from\ the\ InputStreamReader.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00158}00158\ \textcolor{comment}{\ \ \ \ \ *\ @param\ buffer\ \ \ \ \ \ The\ \`{}buffer`\ parameter\ is\ a\ character\ array\ used\ to\ store}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00159}00159\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00160}00160\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ data\ read\ from\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00161}00161\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \`{}InputStreamReader`\ and\ write\ to\ the\ \`{}StringWriter`.\ It\ is}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00162}00162\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ used}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00163}00163\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ to\ read\ and\ write\ data\ in}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00164}00164\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ chunks,\ rather\ than\ one\ character\ at\ a\ time,\ which\ can}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00165}00165\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ improve}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00166}00166\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ performance.\ The\ size\ of\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00167}00167\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ buffer\ determines\ how}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00168}00168\ \textcolor{comment}{\ \ \ \ \ *\ @param\ numBytes\ \ \ \ The\ parameter\ "{}numBytes"{}\ is\ an\ integer\ that\ represents\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00169}00169\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ number\ of}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00170}00170\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ characters\ read\ from\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00171}00171\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ input\ stream.\ It\ is\ used\ to\ keep\ track\ of\ the\ number\ of}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00172}00172\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ characters\ read\ in\ each\ iteration\ of\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00173}00173\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ while\ loop.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00174}00174\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ method\ is\ returning\ a\ String.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00175}00175\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00176}\mbox{\hyperlink{class_i_factory_af4cae9f823503d9bad4a02bfd0ac41d9}{00176}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ String\ \mbox{\hyperlink{class_i_factory_af4cae9f823503d9bad4a02bfd0ac41d9}{transferReaderToWriter}}(InputStreamReader\ inputReader,\ StringWriter\ strWriter,\ \textcolor{keywordtype}{char}[]\ buffer,}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00177}00177\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ numBytes)}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00178}00178\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throws}\ IOException\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00179}00179\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{class_app_constants}{AppConstants}}.\mbox{\hyperlink{class_app_constants_aa335dfc59a594b312f9072f09813570b}{EOF}}\ !=\ (numBytes\ =\ inputReader.read(buffer)))\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00180}00180\ \ \ \ \ \ \ \ \ \ \ \ \ strWriter.write(buffer,\ 0,\ numBytes);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00181}00181\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00182}00182\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ strWriter.toString();}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00183}00183\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00184}00184\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00185}00185\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00186}00186\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ loads\ classes\ from\ a\ specified\ package\ path\ using\ a\ class}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00187}00187\ \textcolor{comment}{\ \ \ \ \ *\ loader.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00188}00188\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00189}00189\ \textcolor{comment}{\ \ \ \ \ *\ @param\ classLoader\ The\ "{}classLoader"{}\ parameter\ is\ a\ ClassLoader\ object\ that}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00190}00190\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ is\ used\ to}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00191}00191\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ load\ classes\ and\ resources.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00192}00192\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ It\ is\ responsible\ for\ finding\ and\ loading\ classes\ at}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00193}00193\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ runtime.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00194}00194\ \textcolor{comment}{\ \ \ \ \ *\ @param\ packagePath\ The\ packagePath\ parameter\ is\ a\ string\ representing\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00195}00195\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ path\ to\ a\ package\ in}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00196}00196\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ file\ system.\ It\ should\ be\ in\ the\ format\ of\ a\ file}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00197}00197\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ system\ path,\ using\ forward\ slashes\ ("{}/"{})}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00198}00198\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ to\ separate\ directories.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00199}00199\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00200}\mbox{\hyperlink{class_i_factory_ad89a790adf80c397c71bac9f19a348f2}{00200}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_factory_ad89a790adf80c397c71bac9f19a348f2}{loadViaClassloader}}(ClassLoader\ classLoader,\ String\ packagePath)\ \textcolor{keywordflow}{throws}\ Exception\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00201}00201\ \ \ \ \ \ \ \ \ String[]\ classList\ =\ \mbox{\hyperlink{class_i_factory_a5a1ecabe737a999615c1b4994683597d}{getClassList}}(classLoader,\ packagePath);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00202}00202\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ p\ :\ classList)\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00203}00203\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a5b0695c23e6c10f1894537b101bcd695}{processPath}}(p);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00204}00204\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00205}00205\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00206}00206\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00207}00207\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00208}00208\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ takes\ a\ ClassLoader\ and\ a\ package\ path,\ retrieves\ the\ list\ of}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00209}00209\ \textcolor{comment}{\ \ \ \ \ *\ classes\ in\ that}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00210}00210\ \textcolor{comment}{\ \ \ \ \ *\ package,\ and\ returns\ an\ array\ of\ class\ names.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00211}00211\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00212}00212\ \textcolor{comment}{\ \ \ \ \ *\ @param\ classLoader\ The\ "{}classLoader"{}\ parameter\ is\ the\ ClassLoader\ object\ that}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00213}00213\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ is\ used}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00214}00214\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ to\ load\ classes\ and}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00215}00215\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ resources.\ It\ is\ responsible\ for\ finding\ and\ loading}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00216}00216\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ classes\ at\ runtime.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00217}00217\ \textcolor{comment}{\ \ \ \ \ *\ @param\ packagePath\ The\ packagePath\ parameter\ is\ a\ string\ representing\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00218}00218\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ path\ of\ the\ package}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00219}00219\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ containing\ the\ classes\ you\ want\ to\ retrieve.\ It\ should\ be}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00220}00220\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ in\ the\ format\ of\ a\ file\ system\ path,}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00221}00221\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ using\ forward\ slashes\ ("{}/"{})\ to\ separate\ directories.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00222}00222\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ method\ is\ returning\ an\ array\ of\ strings.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00223}00223\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00224}\mbox{\hyperlink{class_i_factory_a5a1ecabe737a999615c1b4994683597d}{00224}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ String[]\ \mbox{\hyperlink{class_i_factory_a5a1ecabe737a999615c1b4994683597d}{getClassList}}(ClassLoader\ classLoader,\ String\ packagePath)\ \textcolor{keywordflow}{throws}\ IOException\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00225}00225\ \ \ \ \ \ \ \ \ String\ cleanPackagePath\ =\ packagePath.replaceAll(\textcolor{stringliteral}{"{}[/]"{}},\ \textcolor{stringliteral}{"{}."{}});}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00226}00226\ \ \ \ \ \ \ \ \ URL\ classPackageUrl\ =\ classLoader.getResource(cleanPackagePath);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00227}00227\ \ \ \ \ \ \ \ \ URLConnection\ connection\ =\ classPackageUrl.openConnection();}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00228}00228\ }
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00229}00229\ \ \ \ \ \ \ \ \ String\ classList\ =\ \mbox{\hyperlink{class_i_factory_a48d714a3008100beb7aca8a9f3228023}{convertUrlToString}}(connection.getInputStream(),\ \textcolor{stringliteral}{"{}UTF-\/8"{}});}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00230}00230\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (classList\ !=\ \textcolor{keyword}{null})\ ?\ classList.split(\textcolor{stringliteral}{"{}\(\backslash\)n"{}})\ :\ \textcolor{keyword}{new}\ String[0];}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00231}00231\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00232}00232\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00233}00233\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00234}00234\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ returns\ an\ array\ of\ strings\ representing\ the\ names\ of\ the}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00235}00235\ \textcolor{comment}{\ \ \ \ \ *\ registered\ classes.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00236}00236\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00237}00237\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ method\ is\ returning\ an\ array\ of\ strings.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00238}00238\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00239}\mbox{\hyperlink{class_i_factory_ad86bd52dafe672241749c67cc6e393ce}{00239}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ String[]\ \mbox{\hyperlink{class_i_factory_ad86bd52dafe672241749c67cc6e393ce}{getRegistered}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00240}00240\ \ \ \ \ \ \ \ \ List<String>\ registered\ =\ \textcolor{keyword}{new}\ ArrayList<String>(\mbox{\hyperlink{class_i_factory_ab13ecc4812b6a48f3e12dbd6da862392}{factoryTable}}.keySet());}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00241}00241\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ registered.toArray(\textcolor{keyword}{new}\ String[registered.size()]);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00242}00242\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00243}00243\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00244}00244\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00245}00245\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ processes\ a\ given\ path\ and\ loads\ a\ class\ if\ the\ path\ ends\ with}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00246}00246\ \textcolor{comment}{\ \ \ \ \ *\ "{}.class"{}\ and\ starts}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00247}00247\ \textcolor{comment}{\ \ \ \ \ *\ with\ "{}DbFactoryW\_"{}.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00248}00248\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00249}00249\ \textcolor{comment}{\ \ \ \ \ *\ @param\ strPath\ The\ parameter\ "{}strPath"{}\ is\ a\ string\ representing\ a\ file\ path.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00250}00250\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00251}\mbox{\hyperlink{class_i_factory_a5b0695c23e6c10f1894537b101bcd695}{00251}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_factory_a5b0695c23e6c10f1894537b101bcd695}{processPath}}(String\ strPath)\ \textcolor{keywordflow}{throws}\ ClassNotFoundException\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00252}00252\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (strPath.endsWith(\textcolor{stringliteral}{"{}.class"{}})\ \&\&\ strPath.startsWith(\mbox{\hyperlink{class_app_constants}{AppConstants}}.\mbox{\hyperlink{class_app_constants_a3b34e3cdc980a2cacc57e54dfa6bfc49}{DB\_CLASSNAME\_PREFIX}}))\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00253}00253\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory_a69907f6fede7b560b8a8b0a25d871551}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}loading\ class:\ "{}}\ +\ strPath);}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00254}00254\ \ \ \ \ \ \ \ \ \ \ \ \ Class.forName(strPath.substring(0,\ strPath.lastIndexOf(\textcolor{charliteral}{'.'})));}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00255}00255\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00256}00256\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00257}00257\ }
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00258}00258\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00259}00259\ \textcolor{comment}{\ \ \ \ \ *\ The\ class\ returns\ a\ static\ instance\ of\ the\ IFactory\ class.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00260}00260\ \textcolor{comment}{\ \ \ \ \ *\ Uses\ an\ old\ technique\ to\ delay\ allocation\ until\ the\ static\ instance\ is\ called}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00261}00261\ \textcolor{comment}{\ \ \ \ \ *\ but\ is\ thread\ safe\ given\ the\ static\ nature\ of\ the\ class.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00262}00262\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ I\ learned\ it\ was\ known\ as\ the\ Bill\ Pugh\ Singleton\ Implementation\ after\ all}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00263}00263\ \textcolor{comment}{\ \ \ \ \ *\ these\ years.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00264}00264\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00265}\mbox{\hyperlink{class_i_factory_1_1_instance_holder}{00265}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{final}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_factory_1_1_instance_holder}{InstanceHolder}}<T>\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00266}\mbox{\hyperlink{class_i_factory_1_1_instance_holder_a62a1ab22fa68ef2f3f533c502ffc1d3f}{00266}}\ \ \ \ \ \ \ \ \ static\ <T>\ \mbox{\hyperlink{class_i_factory}{IFactory<T>}}\ \mbox{\hyperlink{class_i_factory_1_1_instance_holder_a62a1ab22fa68ef2f3f533c502ffc1d3f}{INSTANCE}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00267}00267\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{IFactory<>}}();}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00268}00268\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00269}00269\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00270}00270\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00271}00271\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00272}00272\ \textcolor{comment}{\ \ \ \ \ *\ The\ function\ returns\ an\ instance\ of\ the\ IFactory\ class.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00273}00273\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00274}00274\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ method\ is\ returning\ an\ instance\ of\ the\ IFactory\ class.}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00275}00275\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00276}\mbox{\hyperlink{class_i_factory_aaaf8786a2c4ca69722db2dc171ac264c}{00276}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{static\ <T>}}\ \mbox{\hyperlink{class_i_factory}{IFactory<T>}}\ \mbox{\hyperlink{class_i_factory_aaaf8786a2c4ca69722db2dc171ac264c}{Instance}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00277}00277\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory_1_1_instance_holder}{InstanceHolder}}.\mbox{\hyperlink{class_i_factory_1_1_instance_holder_a62a1ab22fa68ef2f3f533c502ffc1d3f}{INSTANCE}}();}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00278}00278\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_factory_8java_source_l00279}00279\ \}}
+
+\end{DoxyCode}

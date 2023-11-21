@@ -1,0 +1,12 @@
+<map id="HttpRequestContextInfo.HttpRequestContextInfo" name="HttpRequestContextInfo.HttpRequestContextInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,198,113"/>
+<area shape="rect" id="Node000002" href="$class_http_helpers.html#a4a17fc89b582e1ad200310b993acb787" title="Returns the path component of a given request URI." alt="" coords="267,5,407,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,69,245,40,267,33,269,38,246,45,159,74"/>
+<area shape="rect" id="Node000003" href="$class_http_helpers.html#a248b80a053fbee13680b06655ef8045e" title="Parses a query string and returns a map of key&#45;value pairs." alt="" coords="250,55,424,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,80,234,76,235,81,198,85"/>
+<area shape="rect" id="Node000004" href="$class_http_helpers.html#a63f65f8f210281cbfdac723a8e8cfaa3" title="Returns the query string from the given request URI." alt="" coords="246,104,428,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,100,230,103,230,109,198,105"/>
+<area shape="rect" id="Node000005" href="$class_http_helpers.html#a473ffd81b8b174b2e9153bfa14398e62" title="Parses a list of cookies and returns a map of cookie names to their corresponding values." alt="" coords="249,177,425,203"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="154,111,291,169,289,174,152,116"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="298,179,290,169,295,159,311,153,337,151,366,153,380,160,378,165,364,159,337,156,312,158,298,163,295,168,302,175"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ProductDTO.getDtoHome" name="ProductDTO.getDtoHome">
+<area shape="rect" id="Node000001" title="Gets the DTO home for the product entity." alt="" coords="5,5,178,31"/>
+<area shape="rect" id="Node000002" href="$class_product_d_t_o_home.html#aae59eb3e738a5eb187202e156e7f8cf7" title="Returns the singleton instance of ProductDTOHome." alt="" coords="226,5,409,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,16,210,16,210,21,178,21"/>
+</map>

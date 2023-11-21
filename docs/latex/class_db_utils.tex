@@ -1,0 +1,154 @@
+\doxysection{Db\+Utils Class Reference}
+\hypertarget{class_db_utils}{}\label{class_db_utils}\index{DbUtils@{DbUtils}}
+
+
+Collaboration diagram for Db\+Utils\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_db_utils__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_db_utils_a40f468fe0132be10a6553ed72024bc20}{result\+Set\+To\+String}} (\mbox{\hyperlink{class_i_factory}{Result\+Set}} \mbox{\hyperlink{class_i_factory}{rs}})
+\begin{DoxyCompactList}\small\item\em The function converts a Result\+Set to a String. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_db_utils_a8b3697d6149ae9e0fdcc15a6d7d0f036}{Db\+Utils}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_db_utils_aad8475678239b526de984017429b2310}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_db_utils_8java_source_l00007}{7}} of file \mbox{\hyperlink{_db_utils_8java_source}{Db\+Utils.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_db_utils_a8b3697d6149ae9e0fdcc15a6d7d0f036}\label{class_db_utils_a8b3697d6149ae9e0fdcc15a6d7d0f036} 
+\index{DbUtils@{DbUtils}!DbUtils@{DbUtils}}
+\index{DbUtils@{DbUtils}!DbUtils@{DbUtils}}
+\doxysubsubsection{\texorpdfstring{DbUtils()}{DbUtils()}}
+{\footnotesize\ttfamily Db\+Utils.\+Db\+Utils (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_db_utils_8java_source_l00015}{15}} of file \mbox{\hyperlink{_db_utils_8java_source}{Db\+Utils.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_db_utils_a40f468fe0132be10a6553ed72024bc20}\label{class_db_utils_a40f468fe0132be10a6553ed72024bc20} 
+\index{DbUtils@{DbUtils}!resultSetToString@{resultSetToString}}
+\index{resultSetToString@{resultSetToString}!DbUtils@{DbUtils}}
+\doxysubsubsection{\texorpdfstring{resultSetToString()}{resultSetToString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String Db\+Utils.\+result\+Set\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Result\+Set}}}]{rs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The function converts a Result\+Set to a String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rs} & The Result\+Set to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The method is returning the Result\+Set as a String. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_utils_8java_source_l00024}{24}} of file \mbox{\hyperlink{_db_utils_8java_source}{Db\+Utils.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{StringBuilder}}\ \mbox{\hyperlink{class_i_factory}{sb}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{StringBuilder}}(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{List<String[]>}}\ \mbox{\hyperlink{class_i_factory}{rows}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{ArrayList<String[]>}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{ResultSetMetaData}}\ \mbox{\hyperlink{class_i_factory}{rsmd}}\ =\ \mbox{\hyperlink{class_i_factory}{rs}}.getMetaData();}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_i_factory}{columns}}\ =\ \mbox{\hyperlink{class_i_factory}{rsmd}}.getColumnCount();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{class_i_factory}{rs}}.next())\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ String[]\ \mbox{\hyperlink{class_i_factory}{row}}\ =\ \textcolor{keyword}{new}\ String[\mbox{\hyperlink{class_i_factory}{columns}}];}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_i_factory}{i}}\ =\ 1;\ \mbox{\hyperlink{class_i_factory}{i}}\ <=\ \mbox{\hyperlink{class_i_factory}{columns}};\ \mbox{\hyperlink{class_i_factory}{i}}++)\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{row}}[\mbox{\hyperlink{class_i_factory}{i}}\ -\/\ 1]\ =\ \mbox{\hyperlink{class_i_factory}{rs}}.getString(\mbox{\hyperlink{class_i_factory}{i}});}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{rows}}.add(\mbox{\hyperlink{class_i_factory}{row}});}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{SQLException}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_db_utils_aad8475678239b526de984017429b2310}{logging}}.log(\mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String[]\ \mbox{\hyperlink{class_i_factory}{row}}\ :\ \mbox{\hyperlink{class_i_factory}{rows}})\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{sb}}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(String.join(\textcolor{stringliteral}{"{},\ "{}},\ \mbox{\hyperlink{class_i_factory}{row}}))}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .append(\mbox{\hyperlink{class_i_factory}{System}}.lineSeparator());}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{sb}}.toString();}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_agent_8java_source_l00070}{App\+Logging\+Agent.\+log()}}, and \mbox{\hyperlink{_db_utils_8java_source_l00013}{logging}}.
+
+
+
+Referenced by \mbox{\hyperlink{_string_db_result_processor_8java_source_l00013}{String\+Db\+Result\+Processor.\+process()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_db_utils_a40f468fe0132be10a6553ed72024bc20_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_db_utils_aad8475678239b526de984017429b2310}\label{class_db_utils_aad8475678239b526de984017429b2310} 
+\index{DbUtils@{DbUtils}!logging@{logging}}
+\index{logging@{logging}!DbUtils@{DbUtils}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Db\+Utils.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The function returns an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_db_utils_8java_source_l00013}{13}} of file \mbox{\hyperlink{_db_utils_8java_source}{Db\+Utils.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_db_utils_8java_source_l00024}{result\+Set\+To\+String()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_db_utils_8java}{Db\+Utils.\+java}}\end{DoxyCompactItemize}

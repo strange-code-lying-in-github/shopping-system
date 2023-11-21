@@ -1,0 +1,20 @@
+<map id="IFactory.loadViaClassloader" name="IFactory.loadViaClassloader">
+<area shape="rect" id="Node000001" title="The function loads classes from a specified package path using a class loader." alt="" coords="5,78,189,104"/>
+<area shape="rect" id="Node000002" href="$class_i_factory.html#a5a1ecabe737a999615c1b4994683597d" title="The function takes a ClassLoader and a package path, retrieves the list of classes in that package,..." alt="" coords="237,53,381,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,77,221,73,222,79,189,83"/>
+<area shape="rect" id="Node000005" href="$class_i_factory.html#a5b0695c23e6c10f1894537b101bcd695" title="The function processes a given path and loads a class if the path ends with &quot;.class&quot; and starts with ..." alt="" coords="237,102,381,128"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="189,99,222,102,221,108,189,104"/>
+<area shape="rect" id="Node000003" href="$class_i_factory.html#a48d714a3008100beb7aca8a9f3228023" title="The function converts the content of an InputStream into a String using the specified character encod..." alt="" coords="429,45,608,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="381,60,413,59,413,64,382,66"/>
+<area shape="rect" id="Node000004" href="$class_i_factory.html#aeba2e37bd4787a74f6b23f4205804e22" title="The function transfers data from an InputStreamReader to a StringWriter using a buffer." alt="" coords="675,29,846,70"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="609,52,659,50,659,56,609,57"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="715,29,713,19,720,10,736,5,761,3,787,5,802,11,800,16,785,10,760,8,737,10,723,15,718,21,720,28"/>
+<area shape="rect" id="Node000006" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="447,102,591,128"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="381,112,431,112,431,118,381,118"/>
+<area shape="rect" id="Node000007" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="656,95,865,135"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="591,112,641,112,641,118,591,118"/>
+<area shape="rect" id="Node000009" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="682,160,839,185"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="577,126,689,153,688,158,575,131"/>
+<area shape="rect" id="Node000008" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="913,95,1098,135"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="865,112,897,112,897,118,865,118"/>
+</map>

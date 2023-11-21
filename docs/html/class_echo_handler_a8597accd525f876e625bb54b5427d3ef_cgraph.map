@@ -1,0 +1,31 @@
+<map id="EchoHandler.handle" name="EchoHandler.handle">
+<area shape="rect" id="Node000001" title="Handles the incoming HTTP request and generates an appropriate response." alt="" coords="5,170,143,196"/>
+<area shape="rect" id="Node000002" href="$class_base_route_handler.html#acb240fd4ec31d77dcf3163da84958aeb" title="Builds a response string based on the given response string and response type." alt="" coords="196,69,417,95"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,167,136,139,190,111,230,97,232,102,192,116,139,144,96,172"/>
+<area shape="rect" id="Node000003" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="502,70,646,96"/>
+<area shape="poly" id="edge16_Node000001_Node000003" title=" " alt="" coords="142,167,491,97,492,102,143,172"/>
+<area shape="rect" id="Node000007" href="$class_echo_handler.html#abf46631007c0cc0c680fd2803e0a4d2d" title="Handles the GET request and returns a formatted string containing information about the request." alt="" coords="470,218,677,244"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="143,184,273,192,422,206,476,213,475,218,422,211,272,197,143,189"/>
+<area shape="rect" id="Node000012" href="$class_echo_handler.html#ad20e8fe830988391d0c0f8a8356726f7" title="Handles a POST request by delegating to the handleGetRequest method." alt="" coords="200,221,413,247"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="137,194,230,214,229,220,136,199"/>
+<area shape="rect" id="Node000013" href="$class_base_route_handler.html#a33479321f0597168c7f5e31073237283" title="Handles the HTTP response by sending the specified response string and response code." alt="" coords="191,294,422,320"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="95,194,138,224,192,257,255,286,253,290,189,261,135,229,92,199"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,80,486,80,486,85,417,85"/>
+<area shape="rect" id="Node000004" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="725,5,934,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="634,67,720,47,721,53,635,72"/>
+<area shape="rect" id="Node000006" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="751,70,908,96"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="646,80,736,80,736,86,646,86"/>
+<area shape="rect" id="Node000005" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="982,5,1167,46"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="934,23,966,23,966,28,934,28"/>
+<area shape="rect" id="Node000008" href="$class_http_helpers.html#a675234b48cbe48a03e2ce0e81b7d16bf" title="Escapes the given response string using the specified text type." alt="" coords="731,144,928,185"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="626,215,733,187,734,192,627,220"/>
+<area shape="rect" id="Node000009" href="$interface_i_http_request_context_info.html#a8dbc757430fc97b0f8edb9c528f6a598" title="Returns a map of the query parameters." alt="" coords="735,209,924,250"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="678,228,719,228,719,233,678,233"/>
+<area shape="rect" id="Node000010" href="$interface_i_http_request_context_info.html#a8863ec8c07849e679ef7461adfaea46f" title="Returns the URI of the request." alt="" coords="726,274,933,300"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="636,242,753,268,752,273,635,247"/>
+<area shape="rect" id="Node000011" href="$interface_i_http_request_context_info.html#a60f030fe6578ebdfe56e9eb61fa29ccd" title="Returns the path component of the URI." alt="" coords="735,324,924,365"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="598,242,655,275,726,310,742,316,740,321,724,315,652,280,595,247"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="784,144,781,134,789,125,805,119,830,117,856,120,872,126,870,131,855,125,829,123,806,125,792,129,786,135,789,143"/>
+<area shape="poly" id="edge13_Node000012_Node000007" title=" " alt="" coords="413,230,454,230,454,235,413,235"/>
+<area shape="poly" id="edge15_Node000013_Node000013" title=" " alt="" coords="268,295,260,286,265,276,281,270,306,268,335,270,349,277,347,282,333,275,306,273,282,275,268,280,266,285,272,292"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="DbBaseFactoryWrapper.connectionProperties" name="DbBaseFactoryWrapper.connectionProperties">
+<area shape="rect" id="Node000001" title="The function sets the connection properties." alt="" coords="5,35,232,75"/>
+<area shape="rect" id="Node000002" href="$class_db_base_factory_wrapper.html#ac11d3d7897f00695e00209ae67311d2f" title="The function builds the jdbc url for the database." alt="" coords="280,5,470,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,39,264,36,264,41,233,45"/>
+<area shape="rect" id="Node000003" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="303,70,447,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,65,287,71,287,76,232,70"/>
+<area shape="rect" id="Node000004" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="518,33,726,74"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="447,72,502,65,503,71,448,77"/>
+<area shape="rect" id="Node000006" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="544,98,700,124"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="448,89,529,98,528,103,447,94"/>
+<area shape="rect" id="Node000005" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="774,33,960,74"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="727,51,758,51,758,56,727,56"/>
+</map>

@@ -1,0 +1,46 @@
+<map id="ShoppingWebInterfaceController.validateLogin" name="ShoppingWebInterfaceController.validateLogin">
+<area shape="rect" id="Node000001" title="Validates the login credentials of a user." alt="" coords="5,158,262,199"/>
+<area shape="rect" id="Node000002" href="$class_shopping_business_layer_service.html#a3cfbc07d6e43baa50e39bfbb116f4c71" title="Validates the login credentials for the specified user and password." alt="" coords="310,158,564,199"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,176,294,176,294,181,262,181"/>
+<area shape="rect" id="Node000003" href="$class_shopping_business_layer_service.html#a371a77c8a18227ab2d89cca6c05b0bea" title=" " alt="" coords="625,237,855,277"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="519,197,645,230,643,235,518,202"/>
+<area shape="rect" id="Node000015" href="$class_core_utils.html#a1228e598ba4a7b71f2541e344b0f68fc" title="Encodes a string using SHA&#45;256 algorithm and returns the encoded string." alt="" coords="1508,60,1708,86"/>
+<area shape="poly" id="edge18_Node000002_Node000015" title=" " alt="" coords="564,156,612,150,857,125,1101,104,1492,77,1492,82,1102,110,858,131,612,155,565,161"/>
+<area shape="rect" id="Node000018" href="$class_shopping_business_layer_service.html#a3a48d2c04546905127e6c3531f50f050" title="Retrieves the user information for the specified username." alt="" coords="612,165,867,191"/>
+<area shape="poly" id="edge23_Node000002_Node000018" title=" " alt="" coords="565,176,597,176,597,181,565,181"/>
+<area shape="rect" id="Node000004" href="$class_audit_trail_d_t_o_home.html#acd77bf6841a2c40bb0d7b73461343a30" title="Returns the singleton instance of AuditTrailDTOHome." alt="" coords="938,293,1132,319"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="856,273,939,288,938,293,855,279"/>
+<area shape="rect" id="Node000005" href="$class_shopping_data_layer_service.html#ac76ccab0de4a7685450fa27ddc1a40c4" title="Saves the given DTO object." alt="" coords="915,244,1155,270"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="855,254,900,254,900,260,855,260"/>
+<area shape="rect" id="Node000006" href="$class_shopping_data_layer_service.html#a0c5e5fa32b3f272b33f2705a4f793935" title="Executes a database command and returns a Boolean indicating the success or failure of the operation." alt="" coords="1493,257,1722,297"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1155,258,1477,270,1477,275,1155,264"/>
+<area shape="rect" id="Node000013" href="$class_shopping_data_layer_service.html#a9f4bc4d863f57a0eae76b584755a82ae" title="Loads the specified DTO using the provided SQL query and processor." alt="" coords="1203,199,1445,224"/>
+<area shape="poly" id="edge13_Node000005_Node000013" title=" " alt="" coords="1121,241,1222,225,1223,230,1122,246"/>
+<area shape="rect" id="Node000007" href="$class_i_factory.html#a2da9967650e85dc8de3c05e6a137c4b1" title="The function returns an instance of the IFactory class." alt="" coords="1821,207,1928,232"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1705,253,1805,232,1806,237,1706,258"/>
+<area shape="rect" id="Node000008" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="2027,156,2171,182"/>
+<area shape="poly" id="edge12_Node000006_Node000008" title=" " alt="" coords="1664,295,1730,314,1811,328,1853,330,1896,328,1938,321,1977,306,2012,284,2041,254,2065,223,2082,194,2087,197,2069,226,2046,258,2016,288,1980,311,1939,326,1897,334,1853,336,1810,333,1729,320,1663,300"/>
+<area shape="rect" id="Node000012" href="$class_shopping_data_layer_service.html#a3ef55e17b54ae2f79c4a2efe03fe142c" title="Prompts the user to enter database connection information and sets the connection properties for the ..." alt="" coords="1770,257,1979,297"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="1723,274,1755,274,1755,280,1723,280"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1928,205,2023,183,2024,188,1929,210"/>
+<area shape="rect" id="Node000009" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="2219,119,2427,160"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="2171,157,2203,152,2204,158,2172,162"/>
+<area shape="rect" id="Node000011" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="2245,184,2401,210"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="2172,175,2230,183,2229,188,2171,180"/>
+<area shape="rect" id="Node000010" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="2475,119,2661,160"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="2428,137,2459,137,2459,142,2428,142"/>
+<area shape="rect" id="Node000014" href="$class_shopping_data_layer_service.html#ae9c18a0f36c3cafc7e5d5434545677a0" title="Executes a SQL query and processes the result using the specified IDbResultProcessor." alt="" coords="1493,191,1722,232"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="1446,209,1477,209,1477,214,1446,214"/>
+<area shape="poly" id="edge15_Node000014_Node000007" title=" " alt="" coords="1723,212,1805,215,1805,220,1723,218"/>
+<area shape="poly" id="edge17_Node000014_Node000008" title=" " alt="" coords="1722,196,1770,192,2011,172,2012,177,1771,197,1723,202"/>
+<area shape="poly" id="edge16_Node000014_Node000012" title=" " alt="" coords="1694,230,1774,250,1773,255,1693,235"/>
+<area shape="poly" id="edge22_Node000015_Node000008" title=" " alt="" coords="1678,84,2015,150,2014,155,1677,89"/>
+<area shape="rect" id="Node000016" href="$class_core_utils.html#ad30abf52cddd27e7c863aa52ceabf4f4" title="Converts a byte array to a hexadecimal string representation." alt="" coords="1799,5,1950,31"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="1673,57,1793,32,1794,37,1675,62"/>
+<area shape="rect" id="Node000017" href="$class_core_utils.html#a2ce7beedff007a45f465de0b41f5c206" title="Encodes a string using SHA&#45;256 algorithm and returns the encoded bytes." alt="" coords="1774,55,1975,80"/>
+<area shape="poly" id="edge20_Node000015_Node000017" title=" " alt="" coords="1708,68,1759,67,1759,72,1709,73"/>
+<area shape="poly" id="edge21_Node000017_Node000008" title=" " alt="" coords="1928,78,1980,97,2026,120,2066,145,2064,149,2023,125,1978,102,1926,83"/>
+<area shape="poly" id="edge25_Node000018_Node000013" title=" " alt="" coords="868,183,1187,201,1187,206,868,188"/>
+<area shape="rect" id="Node000019" href="$class_user_d_t_o_home.html#a27fd9be7fdf49c5bce57889a40f3bdeb" title="Returns the singleton instance of UserDTOHome." alt="" coords="952,143,1118,168"/>
+<area shape="poly" id="edge24_Node000018_Node000019" title=" " alt="" coords="867,166,936,160,937,166,868,171"/>
+</map>

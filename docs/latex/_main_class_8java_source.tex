@@ -1,0 +1,62 @@
+\doxysection{Main\+Class.\+java}
+\hypertarget{_main_class_8java_source}{}\label{_main_class_8java_source}\mbox{\hyperlink{_main_class_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00002}00002\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.HashMap;}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00003}00003\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00004}00004\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00005}00005\ \textcolor{comment}{\ *\ The\ MainClass\ class\ represents\ the\ entry\ point\ of\ the\ program.}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00006}00006\ \textcolor{comment}{\ *\ It\ contains\ a\ constructor\ that\ initializes\ the\ args\ field.}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00007}00007\ \textcolor{comment}{\ *\ It\ also\ contains\ methods\ for\ validating\ user\ input\ and\ executing\ database}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00008}00008\ \textcolor{comment}{\ *\ operations.}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00009}00009\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00010}\mbox{\hyperlink{class_main_class}{00010}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_class}{MainClass}}\ \{}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00012}00012\ \ \ \ \ \textcolor{comment}{//\ The\ line\ \`{}protected\ AppLoggingAgent\ logging\ =\ new\ AppLoggingAgent(new}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00013}00013\ \ \ \ \ \textcolor{comment}{//\ AppLoggingStream());`\ is}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00014}00014\ \ \ \ \ \textcolor{comment}{//\ creating\ an\ instance\ of\ the\ \`{}AppLoggingAgent`\ class\ and\ assigning\ it\ to\ the}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00015}00015\ \ \ \ \ \textcolor{comment}{//\ \`{}logging`\ variable.}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00016}00016\ \ \ \ \ \textcolor{comment}{//\ The\ \`{}AppLoggingAgent`\ class\ is\ responsible\ for\ handling\ logging\ in\ the}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00017}00017\ \ \ \ \ \textcolor{comment}{//\ program.\ The\ \`{}new}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00018}00018\ \ \ \ \ \textcolor{comment}{//\ AppLoggingAgent(new\ AppLoggingStream())`\ part\ is\ creating\ a\ new\ instance\ of}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00019}00019\ \ \ \ \ \textcolor{comment}{//\ \`{}AppLoggingAgent`}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00020}00020\ \ \ \ \ \textcolor{comment}{//\ and\ passing\ an\ instance\ of\ \`{}AppLoggingStream`\ as\ a\ parameter\ to\ its}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00021}00021\ \ \ \ \ \textcolor{comment}{//\ constructor.\ This\ suggests}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00022}00022\ \ \ \ \ \textcolor{comment}{//\ that\ the\ \`{}AppLoggingAgent`\ class\ requires\ an\ \`{}AppLoggingStream`\ object\ to}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00023}00023\ \ \ \ \ \textcolor{comment}{//\ function\ properly.}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00024}\mbox{\hyperlink{class_main_class_a7f979721eda6e00b25da90b3aec1eccf}{00024}}\ \ \ \ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_main_class_a7f979721eda6e00b25da90b3aec1eccf}{logging}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00025}00025\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ *\ The\ command\ line\ arguments\ passed\ to\ the\ program.}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00028}00028\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00029}\mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{00029}}\ \ \ \ \ \textcolor{keyword}{private}\ String[]\ \mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{args}}\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00031}\mbox{\hyperlink{class_main_class_acdc044ec79b6e9c22d655dd3bb81c8a9}{00031}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_shopping_system}{ShoppingSystem}}\ \mbox{\hyperlink{class_main_class_acdc044ec79b6e9c22d655dd3bb81c8a9}{shoppingSystem}};}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00032}00032\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00033}00033\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ *\ The\ MainClass\ class\ represents\ the\ entry\ point\ of\ the\ program.}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00035}00035\ \textcolor{comment}{\ \ \ \ \ *\ It\ contains\ a\ constructor\ that\ initializes\ the\ args\ field.}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00037}\mbox{\hyperlink{class_main_class_a7659aa00183605795bd8a3fbb4a9d907}{00037}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_main_class_a7659aa00183605795bd8a3fbb4a9d907}{MainClass}}(String[]\ \mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{args}})\ \{}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00038}00038\ \ \ \ \ \ \ \ \ this.args\ =\ \mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{args}};}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00039}00039\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00041}\mbox{\hyperlink{class_main_class_ab7f3903f43cbce281397fe9b4b4bb779}{00041}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_class_ab7f3903f43cbce281397fe9b4b4bb779}{start}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ environment\ =\ \mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}();}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00043}00043\ \ \ \ \ \ \ \ \ this.shoppingSystem\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_system}{ShoppingSystem}}(environment);}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00044}00044\ \ \ \ \ \ \ \ \ this.shoppingSystem.\mbox{\hyperlink{class_shopping_system_a11e0c3f52363fcd354652581a5cb435f}{start}}();}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00045}00045\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00046}00046\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00047}00047\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00048}00048\ \textcolor{comment}{\ \ \ \ \ *\ The\ main\ method\ is\ the\ entry\ point\ of\ the\ program.\ It\ creates\ an\ instance\ of}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00049}00049\ \textcolor{comment}{\ \ \ \ \ *\ MainClass\ and\ calls\ the\ runHospital\ method.}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00050}00050\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00051}00051\ \textcolor{comment}{\ \ \ \ \ *\ @param\ args\ an\ array\ of\ command-\/line\ arguments\ for\ the\ program}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00052}00052\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00053}\mbox{\hyperlink{class_main_class_af6b73c414bdc9720685db8b0011ae3a3}{00053}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_class_af6b73c414bdc9720685db8b0011ae3a3}{main}}(String[]\ \mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{args}})\ \{}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_class}{MainClass}}\ \mbox{\hyperlink{class_i_factory}{myMainClass}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_main_class}{MainClass}}(\mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{args}});}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00055}00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{myMainClass}}.start();}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00056}00056\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_main_class_8java_source_l00057}00057\ \}}
+
+\end{DoxyCode}

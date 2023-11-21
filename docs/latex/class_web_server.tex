@@ -1,0 +1,405 @@
+\doxysection{Web\+Server Class Reference}
+\hypertarget{class_web_server}{}\label{class_web_server}\index{WebServer@{WebServer}}
+
+
+The \doxylink{class_web_server}{Web\+Server} class represents a web server that listens for HTTP requests and handles them accordingly.  
+
+
+
+
+Collaboration diagram for Web\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_web_server__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_web_server_a7ee296476dbbc49bee90522899166110}{Web\+Server}} ()
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_web_server_a95cc2c7822d190092b3e57a9f2738048}{start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the web server. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Http\+Context}} \mbox{\hyperlink{class_web_server_a93b6dd74881e1f8f8f2271ab2db5dc9c}{add\+Route}} (String \mbox{\hyperlink{class_i_factory}{route}}, \mbox{\hyperlink{class_http_handler}{Http\+Handler}} \mbox{\hyperlink{class_i_factory}{handler}})
+\begin{DoxyCompactList}\small\item\em Adds a route to the web server. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{Http\+Context}} \mbox{\hyperlink{class_web_server_a83af6d8ed2948089b91369c5f6e12f15}{add\+Route}} (String \mbox{\hyperlink{class_i_factory}{route}}, \mbox{\hyperlink{class_http_handler}{Http\+Handler}} \mbox{\hyperlink{class_i_factory}{handler}}, com.\+sun.\+net.\+httpserver.\+Authenticator authenticator)
+\begin{DoxyCompactList}\small\item\em Adds a route to the web server with the specified route path, handler, and authenticator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_web_server_aef5e4fe37da907d510b05d8d7fa52eac}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{logger}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class represents an agent responsible for logging application events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Http\+Server \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}
+\begin{DoxyCompactList}\small\item\em Represents the HTTP server for the shopping system. \end{DoxyCompactList}\item 
+Executor\+Service \mbox{\hyperlink{class_web_server_af4163602b0bbfd76ca4a20edbdc66191}{thread\+Pool\+Executor}}
+\begin{DoxyCompactList}\small\item\em The executor service used for managing threads in the web server. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{class_web_server_aaa2da54e0d4832cf859ba085d33bb60d}{queue\+Depth}}
+\begin{DoxyCompactList}\small\item\em The maximum depth of the queue for incoming requests. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{class_web_server_a888b5845afc66e66b68bd2e2eb448053}{port}} = Integer.\+parse\+Int(\mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+getenv}}().\mbox{\hyperlink{class_i_factory}{contains\+Key}}("{}PORT"{}) ? \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+getenv}}("{}PORT"{}) \+: "{}8001"{})
+\begin{DoxyCompactList}\small\item\em The port number for the web server. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{class_web_server_a654123232d560a8267e33293f79fc414}{max\+Threads}}
+\begin{DoxyCompactList}\small\item\em The maximum number of threads that the web server can handle. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_web_server_a5d4d86d589750b20f4dfd7aef395de4f}{hostname}} = \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+getenv}}().\mbox{\hyperlink{class_i_factory}{contains\+Key}}("{}HOST\+\_\+\+NAME"{}) ? \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+getenv}}("{}HOST\+\_\+\+NAME"{}) \+: "{}0.\+0.\+0.\+0"{}
+\begin{DoxyCompactList}\small\item\em The hostname of the web server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_web_server}{Web\+Server} class represents a web server that listens for HTTP requests and handles them accordingly. 
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00018}{18}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_web_server_a7ee296476dbbc49bee90522899166110}\label{class_web_server_a7ee296476dbbc49bee90522899166110} 
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{WebServer()}{WebServer()}}
+{\footnotesize\ttfamily Web\+Server.\+Web\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00061}{61}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ this.threadPoolExecutor\ =\ \mbox{\hyperlink{class_i_factory}{Executors}}.newFixedThreadPool(\mbox{\hyperlink{class_web_server_a654123232d560a8267e33293f79fc414}{maxThreads}});}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ this.server\ =\ HttpServer.\mbox{\hyperlink{class_i_factory_a2da9967650e85dc8de3c05e6a137c4b1}{create}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{InetSocketAddress}}(this.\mbox{\hyperlink{class_web_server_a5d4d86d589750b20f4dfd7aef395de4f}{hostname}},\ this.\mbox{\hyperlink{class_web_server_a888b5845afc66e66b68bd2e2eb448053}{port}}),\ \mbox{\hyperlink{class_web_server_aaa2da54e0d4832cf859ba085d33bb60d}{queueDepth}});}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}.setExecutor(\mbox{\hyperlink{class_web_server_af4163602b0bbfd76ca4a20edbdc66191}{threadPoolExecutor}});}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{IOException}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{System}}.out.println(\textcolor{stringliteral}{"{}Error\ creating\ server"{}});}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_i_factory_8java_source_l00073}{IFactory$<$ T $>$.\+create()}}, \mbox{\hyperlink{_web_server_8java_source_l00052}{max\+Threads}}, \mbox{\hyperlink{_web_server_8java_source_l00039}{queue\+Depth}}, and \mbox{\hyperlink{_web_server_8java_source_l00032}{thread\+Pool\+Executor}}.
+
+
+
+Referenced by \mbox{\hyperlink{_web_server_8java_source_l00116}{main()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_web_server_a7ee296476dbbc49bee90522899166110_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_web_server_a93b6dd74881e1f8f8f2271ab2db5dc9c}\label{class_web_server_a93b6dd74881e1f8f8f2271ab2db5dc9c} 
+\index{WebServer@{WebServer}!addRoute@{addRoute}}
+\index{addRoute@{addRoute}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{addRoute()}{addRoute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Http\+Context}} Web\+Server.\+add\+Route (\begin{DoxyParamCaption}\item[{String}]{route,  }\item[{\mbox{\hyperlink{class_http_handler}{Http\+Handler}}}]{handler }\end{DoxyParamCaption})}
+
+
+
+Adds a route to the web server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em route} & the route to be added \\
+\hline
+{\em handler} & the handler for the route \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Http\+Context object representing the added route 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00091}{91}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_web_server_a93b6dd74881e1f8f8f2271ab2db5dc9c}{addRoute}}(\mbox{\hyperlink{class_i_factory}{route}},\ \mbox{\hyperlink{class_i_factory}{handler}},\ \textcolor{keyword}{null});}
+\DoxyCodeLine{00093\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_web_server_8java_source_l00091}{add\+Route()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_web_server_8java_source_l00091}{add\+Route()}}, and \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00048}{Shopping\+Web\+Interface\+Controller.\+configure()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_web_server_a93b6dd74881e1f8f8f2271ab2db5dc9c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_web_server_a83af6d8ed2948089b91369c5f6e12f15}\label{class_web_server_a83af6d8ed2948089b91369c5f6e12f15} 
+\index{WebServer@{WebServer}!addRoute@{addRoute}}
+\index{addRoute@{addRoute}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{addRoute()}{addRoute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Http\+Context}} Web\+Server.\+add\+Route (\begin{DoxyParamCaption}\item[{String}]{route,  }\item[{\mbox{\hyperlink{class_http_handler}{Http\+Handler}}}]{handler,  }\item[{com.\+sun.\+net.\+httpserver.\+Authenticator}]{authenticator }\end{DoxyParamCaption})}
+
+
+
+Adds a route to the web server with the specified route path, handler, and authenticator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em route} & The route path for the request. \\
+\hline
+{\em handler} & The handler to be executed for the route. \\
+\hline
+{\em authenticator} & The authenticator to be used for the route. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Http\+Context object representing the added route, or null if an error occurred. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00103}{103}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{HttpContext}}\ \mbox{\hyperlink{class_i_factory}{context}}\ =\ this.\mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}.createContext(\mbox{\hyperlink{class_i_factory}{route}},\ \mbox{\hyperlink{class_i_factory}{handler}});}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (authenticator\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{context}}.setAuthenticator(authenticator);}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{context}};}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{logger}}.log(\textcolor{stringliteral}{"{}Error\ adding\ route"{}},\ \mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_web_server_8java_source_l00024}{logger}}.
+
+\Hypertarget{class_web_server_aef5e4fe37da907d510b05d8d7fa52eac}\label{class_web_server_aef5e4fe37da907d510b05d8d7fa52eac} 
+\index{WebServer@{WebServer}!main@{main}}
+\index{main@{main}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} Web\+Server.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00116}{116}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server}{WebServer}}\ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_web_server_a7ee296476dbbc49bee90522899166110}{WebServer}}();}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}.addRoute(\textcolor{stringliteral}{"{}/"{}},\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_echo_handler}{EchoHandler}}());}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}.addRoute(\textcolor{stringliteral}{"{}/echo/"{}},\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_echo_handler}{EchoHandler}}());}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}.start();}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_web_server_8java_source_l00028}{server}}, and \mbox{\hyperlink{_web_server_8java_source_l00061}{Web\+Server()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_web_server_aef5e4fe37da907d510b05d8d7fa52eac_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_web_server_a95cc2c7822d190092b3e57a9f2738048}\label{class_web_server_a95cc2c7822d190092b3e57a9f2738048} 
+\index{WebServer@{WebServer}!start@{start}}
+\index{start@{start}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Web\+Server.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the web server. 
+
+
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00074}{74}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{logger}}.log(\textcolor{stringliteral}{"{}Server\ started"{}});}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a25c0a03100070d35adcd547ad5794386}{server}}.start();}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{logger}}.log(\textcolor{stringliteral}{"{}\ Starting\ server\ at\ =>\ "{}}\ +\ this.\mbox{\hyperlink{class_web_server_a5d4d86d589750b20f4dfd7aef395de4f}{hostname}}\ +\ \textcolor{stringliteral}{"{}:"{}}\ +\ this.\mbox{\hyperlink{class_web_server_a888b5845afc66e66b68bd2e2eb448053}{port}});}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_i_factory}{Exception}}\ \mbox{\hyperlink{class_i_factory}{e}})\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}{logger}}.log(\textcolor{stringliteral}{"{}Error\ running\ server"{}},\ \mbox{\hyperlink{class_i_factory}{e}});}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_web_server_8java_source_l00024}{logger}}, and \mbox{\hyperlink{_web_server_8java_source_l00028}{server}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_system_8java_source_l00036}{Shopping\+System.\+start()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_web_server_a5d4d86d589750b20f4dfd7aef395de4f}\label{class_web_server_a5d4d86d589750b20f4dfd7aef395de4f} 
+\index{WebServer@{WebServer}!hostname@{hostname}}
+\index{hostname@{hostname}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{hostname}{hostname}}
+{\footnotesize\ttfamily String Web\+Server.\+hostname = \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+getenv}}().\mbox{\hyperlink{class_i_factory}{contains\+Key}}("{}HOST\+\_\+\+NAME"{}) ? \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+getenv}}("{}HOST\+\_\+\+NAME"{}) \+: "{}0.\+0.\+0.\+0"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The hostname of the web server. 
+
+It is determined by the value of the "{}\+HOST\+\_\+\+NAME"{} environment variable, or defaults to "{}0.\+0.\+0.\+0"{} if the environment variable is not set. 
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00059}{59}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+\Hypertarget{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e}\label{class_web_server_a8e0ae226c7c1bc02537b98077ae0f02e} 
+\index{WebServer@{WebServer}!logger@{logger}}
+\index{logger@{logger}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Web\+Server.\+logger = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class represents an agent responsible for logging application events. 
+
+It provides methods to log messages, errors, and other events. 
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00024}{24}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_web_server_8java_source_l00103}{add\+Route()}}, and \mbox{\hyperlink{_web_server_8java_source_l00074}{start()}}.
+
+\Hypertarget{class_web_server_a654123232d560a8267e33293f79fc414}\label{class_web_server_a654123232d560a8267e33293f79fc414} 
+\index{WebServer@{WebServer}!maxThreads@{maxThreads}}
+\index{maxThreads@{maxThreads}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{maxThreads}{maxThreads}}
+{\footnotesize\ttfamily Integer Web\+Server.\+max\+Threads\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ Integer}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ .parseInt(\mbox{\hyperlink{class_i_factory}{System}}.getenv().containsKey(\textcolor{stringliteral}{"{}MAX\_THREADS"{}})\ ?\ \mbox{\hyperlink{class_i_factory}{System}}.getenv(\textcolor{stringliteral}{"{}MAX\_THREADS"{}})\ :\ \textcolor{stringliteral}{"{}25"{}})}
+
+\end{DoxyCode}
+
+
+The maximum number of threads that the web server can handle. 
+
+The value is obtained from the environment variable "{}\+MAX\+\_\+\+THREADS"{}. If the environment variable is not set, the default value is 25. 
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00052}{52}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_web_server_8java_source_l00061}{Web\+Server()}}.
+
+\Hypertarget{class_web_server_a888b5845afc66e66b68bd2e2eb448053}\label{class_web_server_a888b5845afc66e66b68bd2e2eb448053} 
+\index{WebServer@{WebServer}!port@{port}}
+\index{port@{port}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily Integer Web\+Server.\+port = Integer.\+parse\+Int(\mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+getenv}}().\mbox{\hyperlink{class_i_factory}{contains\+Key}}("{}PORT"{}) ? \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+getenv}}("{}PORT"{}) \+: "{}8001"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The port number for the web server. 
+
+If the environment variable "{}\+PORT"{} is set, the port number will be parsed from it. Otherwise, the default port number is 8001. 
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00046}{46}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+\Hypertarget{class_web_server_aaa2da54e0d4832cf859ba085d33bb60d}\label{class_web_server_aaa2da54e0d4832cf859ba085d33bb60d} 
+\index{WebServer@{WebServer}!queueDepth@{queueDepth}}
+\index{queueDepth@{queueDepth}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{queueDepth}{queueDepth}}
+{\footnotesize\ttfamily Integer Web\+Server.\+queue\+Depth\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ Integer}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ .parseInt(\mbox{\hyperlink{class_i_factory}{System}}.getenv().containsKey(\textcolor{stringliteral}{"{}QUEUE\_DEPTH"{}})\ ?\ \mbox{\hyperlink{class_i_factory}{System}}.getenv(\textcolor{stringliteral}{"{}QUEUE\_DEPTH"{}})\ :\ \textcolor{stringliteral}{"{}100"{}})}
+
+\end{DoxyCode}
+
+
+The maximum depth of the queue for incoming requests. 
+
+The value is obtained from the environment variable "{}\+QUEUE\+\_\+\+DEPTH"{}. If the environment variable is not set, the default value is 100. 
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00039}{39}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_web_server_8java_source_l00061}{Web\+Server()}}.
+
+\Hypertarget{class_web_server_a25c0a03100070d35adcd547ad5794386}\label{class_web_server_a25c0a03100070d35adcd547ad5794386} 
+\index{WebServer@{WebServer}!server@{server}}
+\index{server@{server}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{server}{server}}
+{\footnotesize\ttfamily Http\+Server Web\+Server.\+server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Represents the HTTP server for the shopping system. 
+
+
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00028}{28}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_web_server_8java_source_l00116}{main()}}, and \mbox{\hyperlink{_web_server_8java_source_l00074}{start()}}.
+
+\Hypertarget{class_web_server_af4163602b0bbfd76ca4a20edbdc66191}\label{class_web_server_af4163602b0bbfd76ca4a20edbdc66191} 
+\index{WebServer@{WebServer}!threadPoolExecutor@{threadPoolExecutor}}
+\index{threadPoolExecutor@{threadPoolExecutor}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{threadPoolExecutor}{threadPoolExecutor}}
+{\footnotesize\ttfamily Executor\+Service Web\+Server.\+thread\+Pool\+Executor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The executor service used for managing threads in the web server. 
+
+
+
+Definition at line \mbox{\hyperlink{_web_server_8java_source_l00032}{32}} of file \mbox{\hyperlink{_web_server_8java_source}{Web\+Server.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_web_server_8java_source_l00061}{Web\+Server()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_web_server_8java}{Web\+Server.\+java}}\end{DoxyCompactItemize}

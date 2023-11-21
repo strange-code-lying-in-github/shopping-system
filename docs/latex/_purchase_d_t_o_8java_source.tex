@@ -1,0 +1,55 @@
+\doxysection{Purchase\+DTO.\+java}
+\hypertarget{_purchase_d_t_o_8java_source}{}\label{_purchase_d_t_o_8java_source}\mbox{\hyperlink{_purchase_d_t_o_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00002}00002\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.Date;}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.HashMap;}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00004}00004\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.Map;}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00005}00005\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.TreeMap;}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00006}00006\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00007}00007\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00008}00008\ \textcolor{comment}{\ *\ Represents\ a\ PurchaseDTO\ object\ that\ extends\ the\ BaseDTO\ class.}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00009}00009\ \textcolor{comment}{\ *\ It\ contains\ fields\ and\ methods\ related\ to\ a\ purchase\ in\ the\ shopping\ system.}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00010}00010\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00011}\mbox{\hyperlink{class_purchase_d_t_o}{00011}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_purchase_d_t_o}{PurchaseDTO}}\ \textcolor{keyword}{extends}\ \mbox{\hyperlink{class_base_d_t_o}{BaseDTO}}\ \{}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00013}00013\ \ \ \ \ \textcolor{comment}{//\ Fields\ and\ their\ corresponding\ data\ types}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00014}\mbox{\hyperlink{class_purchase_d_t_o_aab4368a8fb32173008cd378cf9db1b1b}{00014}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Map<String,\ DTOTypes>}}\ \mbox{\hyperlink{class_purchase_d_t_o_aab4368a8fb32173008cd378cf9db1b1b}{\_fields}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{TreeMap<String,\ DTOTypes>}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00015}00015\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}id"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}paymentprofile\_id"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}date\_created"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a3013a07b90adab5266ab5d66eb124c9b}{DATE}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}date\_modified"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a3013a07b90adab5266ab5d66eb124c9b}{DATE}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00021}00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00022}00022\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00024}00024\ \ \ \ \ \textcolor{comment}{//\ Fields\ order\ map}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00025}\mbox{\hyperlink{class_purchase_d_t_o_a236132f8dc41bcebbdce4b0c9ded287d}{00025}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Map<Integer,\ String>}}\ \mbox{\hyperlink{class_purchase_d_t_o_a236132f8dc41bcebbdce4b0c9ded287d}{\_fieldsOrderMap}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{HashMap<Integer,\ String>}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00026}00026\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(0,\ \textcolor{stringliteral}{"{}id"{}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(1,\ \textcolor{stringliteral}{"{}user\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(2,\ \textcolor{stringliteral}{"{}paymentprofile\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(4,\ \textcolor{stringliteral}{"{}date\_created"{}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(5,\ \textcolor{stringliteral}{"{}date\_modified"{}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00033}00033\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00034}00034\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00035}00035\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ *\ Constructs\ a\ new\ PurchaseDTO\ object\ with\ the\ specified\ fields\ and\ fields\ order\ map.}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00037}00037\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00038}\mbox{\hyperlink{class_purchase_d_t_o_a0329cff48da5164270bb3555031ff0eb}{00038}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_purchase_d_t_o_a0329cff48da5164270bb3555031ff0eb}{PurchaseDTO}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{super}}(\textcolor{stringliteral}{"{}purchase"{}},\ \mbox{\hyperlink{class_purchase_d_t_o_aab4368a8fb32173008cd378cf9db1b1b}{\_fields}},\ \mbox{\hyperlink{class_purchase_d_t_o_a236132f8dc41bcebbdce4b0c9ded287d}{\_fieldsOrderMap}});}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00041}00041\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00042}00042\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00043}00043\ \textcolor{comment}{\ \ \ \ \ *\ Gets\ the\ DTO\ home\ for\ PurchaseDTO.}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ IDTOHome\ instance\ for\ PurchaseDTO.}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00047}\mbox{\hyperlink{class_purchase_d_t_o_a6fcfe419f01b0d02196e569f2f6d588c}{00047}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}}\ \mbox{\hyperlink{class_purchase_d_t_o_a6fcfe419f01b0d02196e569f2f6d588c}{getDtoHome}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_purchase_d_t_o_home}{PurchaseDTOHome}}.\mbox{\hyperlink{class_purchase_d_t_o_home_a128908f1c26ee85537858ce6b99a7ad6}{Instance}}();}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00049}00049\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_purchase_d_t_o_8java_source_l00050}00050\ \}}
+
+\end{DoxyCode}

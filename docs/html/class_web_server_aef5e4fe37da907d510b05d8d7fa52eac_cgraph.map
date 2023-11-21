@@ -1,0 +1,15 @@
+<map id="WebServer.main" name="WebServer.main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,122,68"/>
+<area shape="rect" id="Node000002" href="$class_web_server.html#a7ee296476dbbc49bee90522899166110" title=" " alt="" coords="170,42,322,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,52,154,52,154,58,122,58"/>
+<area shape="rect" id="Node000003" href="$class_i_factory.html#a2da9967650e85dc8de3c05e6a137c4b1" title="The function returns an instance of the IFactory class." alt="" coords="370,42,477,68"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="322,52,355,52,355,58,322,58"/>
+<area shape="rect" id="Node000004" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="525,42,670,68"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="478,52,510,52,510,58,478,58"/>
+<area shape="rect" id="Node000005" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="718,5,926,46"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="670,43,702,39,703,44,671,48"/>
+<area shape="rect" id="Node000007" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="744,70,900,96"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="671,61,729,69,728,74,670,67"/>
+<area shape="rect" id="Node000006" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="974,5,1159,46"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="927,23,958,23,958,28,927,28"/>
+</map>

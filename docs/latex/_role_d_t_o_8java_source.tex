@@ -1,0 +1,57 @@
+\doxysection{Role\+DTO.\+java}
+\hypertarget{_role_d_t_o_8java_source}{}\label{_role_d_t_o_8java_source}\mbox{\hyperlink{_role_d_t_o_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00001}00001\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.HashMap;}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00002}00002\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.Map;}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.TreeMap;}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00004}00004\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00005}00005\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00006}00006\ \textcolor{comment}{\ *\ Represents\ a\ Role\ Data\ Transfer\ Object\ (DTO).}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00007}00007\ \textcolor{comment}{\ *\ This\ class\ extends\ the\ BaseDTO\ class\ and\ provides\ additional\ functionality\ for\ role-\/related\ data.}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00008}00008\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00009}\mbox{\hyperlink{class_role_d_t_o}{00009}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_role_d_t_o}{RoleDTO}}\ \textcolor{keyword}{extends}\ \mbox{\hyperlink{class_base_d_t_o}{BaseDTO}}\ \{}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00010}00010\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00011}00011\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ *\ A\ map\ that\ defines\ the\ fields\ of\ the\ RoleDTO\ and\ their\ corresponding\ data\ types.}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00013}00013\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00014}\mbox{\hyperlink{class_role_d_t_o_a40422e3f89244e5ac0fb6018e4600930}{00014}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Map<String,\ DTOTypes>}}\ \mbox{\hyperlink{class_role_d_t_o_a40422e3f89244e5ac0fb6018e4600930}{\_fields}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{TreeMap<String,\ DTOTypes>}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00015}00015\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}id"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}name"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a7ad1519b212993a169dde17696d0b601}{STRING}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}description"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a7ad1519b212993a169dde17696d0b601}{STRING}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}date\_created"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a3013a07b90adab5266ab5d66eb124c9b}{DATE}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}date\_modified"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a3013a07b90adab5266ab5d66eb124c9b}{DATE}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00021}00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00022}00022\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00023}00023\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00024}00024\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ *\ A\ map\ that\ defines\ the\ order\ of\ the\ fields\ in\ the\ RoleDTO.}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00027}\mbox{\hyperlink{class_role_d_t_o_a62c9a83026d122b9e871d564e6945e48}{00027}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Map<Integer,\ String>}}\ \mbox{\hyperlink{class_role_d_t_o_a62c9a83026d122b9e871d564e6945e48}{\_fieldsOrderMap}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{HashMap<Integer,\ String>}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(0,\ \textcolor{stringliteral}{"{}id"{}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(1,\ \textcolor{stringliteral}{"{}name"{}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(2,\ \textcolor{stringliteral}{"{}description"{}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(3,\ \textcolor{stringliteral}{"{}date\_created"{}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(4,\ \textcolor{stringliteral}{"{}date\_modified"{}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00035}00035\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00036}00036\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00037}00037\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00038}00038\ \textcolor{comment}{\ \ \ \ \ *\ Constructs\ a\ new\ RoleDTO\ object.}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00039}00039\ \textcolor{comment}{\ \ \ \ \ *\ Initializes\ the\ fields\ and\ fields\ order\ map\ using\ the\ super\ constructor\ from\ the\ BaseDTO\ class.}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00040}00040\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00041}\mbox{\hyperlink{class_role_d_t_o_a79d9d2698d0012539c50392490dee681}{00041}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_role_d_t_o_a79d9d2698d0012539c50392490dee681}{RoleDTO}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{super}}(\textcolor{stringliteral}{"{}role"{}},\ \mbox{\hyperlink{class_role_d_t_o_a40422e3f89244e5ac0fb6018e4600930}{\_fields}},\ \mbox{\hyperlink{class_role_d_t_o_a62c9a83026d122b9e871d564e6945e48}{\_fieldsOrderMap}});}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00043}00043\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00044}00044\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ *\ Gets\ the\ DTO\ home\ for\ RoleDTO.}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00047}00047\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ instance\ of\ the\ RoleDTOHome\ class.}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00048}00048\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00049}\mbox{\hyperlink{class_role_d_t_o_a4961afb422e722a4525099e2bc46ec22}{00049}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}}\ \mbox{\hyperlink{class_role_d_t_o_a4961afb422e722a4525099e2bc46ec22}{getDtoHome}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_role_d_t_o_home}{RoleDTOHome}}.\mbox{\hyperlink{class_role_d_t_o_home_a4530eb00e87bd465d5065821122aa3f3}{Instance}}();}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00051}00051\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_role_d_t_o_8java_source_l00052}00052\ \}}
+
+\end{DoxyCode}

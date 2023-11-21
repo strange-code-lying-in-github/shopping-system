@@ -1,0 +1,15 @@
+<map id="Environment" name="Environment">
+<area shape="rect" id="Node000001" title="The Environment class represents the environment in which the application is running." alt="" coords="232,625,435,854"/>
+<area shape="rect" id="Node000002" href="$interface_i_environment.html" title="This interface represents an environment that provides access to command line arguments and key&#45;value..." alt="" coords="5,350,208,475"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,488,158,544,190,599,234,651,230,655,186,602,154,547,129,490"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="151,473,247,609,242,613,147,476"/>
+<area shape="rect" id="Node000003" href="$class_app_logging_agent.html" title="The AppLoggingAgent class implements the IAppLoggingStream interface and provides methods for logging..." alt="" coords="233,263,434,562"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="336,562,336,608,331,608,331,562"/>
+<area shape="rect" id="Node000004" href="$interface_i_app_logging_stream.html" title="The IAppLoggingStream interface defines methods for logging messages and objects." alt="" coords="241,5,423,200"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="332,215,332,224,332,264,327,263,327,224,327,215"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="335,200,335,246,330,246,330,200"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="459,380,531,445"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="490,445,473,501,449,563,423,611,418,609,444,561,468,499,485,444"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="565,380,611,445"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="585,445,570,501,545,563,526,593,503,621,450,669,446,665,499,617,521,590,540,560,565,500,580,444"/>
+</map>

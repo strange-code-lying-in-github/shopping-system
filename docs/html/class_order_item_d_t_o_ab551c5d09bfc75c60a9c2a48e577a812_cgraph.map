@@ -1,0 +1,5 @@
+<map id="OrderItemDTO.getDtoHome" name="OrderItemDTO.getDtoHome">
+<area shape="rect" id="Node000001" title="Gets the DTO home for OrderItemDTO." alt="" coords="5,5,191,31"/>
+<area shape="rect" id="Node000002" href="$class_order_item_d_t_o_home.html#a0639b402c911edfc1626baa82eaae8c2" title="Returns the singleton instance of OrderItemDTOHome." alt="" coords="239,5,435,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,16,223,16,223,21,191,21"/>
+</map>

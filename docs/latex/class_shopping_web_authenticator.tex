@@ -1,0 +1,161 @@
+\doxysection{Shopping\+Web\+Authenticator Class Reference}
+\hypertarget{class_shopping_web_authenticator}{}\label{class_shopping_web_authenticator}\index{ShoppingWebAuthenticator@{ShoppingWebAuthenticator}}
+
+
+The \doxylink{class_shopping_web_authenticator}{Shopping\+Web\+Authenticator} class is responsible for authenticating user credentials for the shopping web interface.  
+
+
+
+
+Inheritance diagram for Shopping\+Web\+Authenticator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_shopping_web_authenticator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Shopping\+Web\+Authenticator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_web_authenticator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopping_web_authenticator_a0b882199a2b27e1801bb9b0c072213db}{Shopping\+Web\+Authenticator}} (\mbox{\hyperlink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller}} \mbox{\hyperlink{class_shopping_web_authenticator_a835ddb095a972685955f914e252d953e}{shopping\+Web\+Interface\+Controller}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_shopping_web_authenticator}{Shopping\+Web\+Authenticator} with the specified \doxylink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_shopping_web_authenticator_a358318c030aaf71ee0257790b707acc1}{check\+Credentials}} (String \mbox{\hyperlink{class_i_factory}{user}}, String \mbox{\hyperlink{class_i_factory}{pwd}})
+\begin{DoxyCompactList}\small\item\em Checks the provided user credentials for authentication. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_shopping_web_authenticator_a06f357bf4cbf8beba0e3ec05492466cb}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\item 
+\mbox{\hyperlink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller}} \mbox{\hyperlink{class_shopping_web_authenticator_a835ddb095a972685955f914e252d953e}{shopping\+Web\+Interface\+Controller}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_shopping_web_authenticator}{Shopping\+Web\+Authenticator} class is responsible for authenticating user credentials for the shopping web interface. 
+
+Definition at line \mbox{\hyperlink{_shopping_web_authenticator_8java_source_l00006}{6}} of file \mbox{\hyperlink{_shopping_web_authenticator_8java_source}{Shopping\+Web\+Authenticator.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopping_web_authenticator_a0b882199a2b27e1801bb9b0c072213db}\label{class_shopping_web_authenticator_a0b882199a2b27e1801bb9b0c072213db} 
+\index{ShoppingWebAuthenticator@{ShoppingWebAuthenticator}!ShoppingWebAuthenticator@{ShoppingWebAuthenticator}}
+\index{ShoppingWebAuthenticator@{ShoppingWebAuthenticator}!ShoppingWebAuthenticator@{ShoppingWebAuthenticator}}
+\doxysubsubsection{\texorpdfstring{ShoppingWebAuthenticator()}{ShoppingWebAuthenticator()}}
+{\footnotesize\ttfamily Shopping\+Web\+Authenticator.\+Shopping\+Web\+Authenticator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller}}}]{shopping\+Web\+Interface\+Controller }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_shopping_web_authenticator}{Shopping\+Web\+Authenticator} with the specified \doxylink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shopping\+Web\+Interface\+Controller} & The \doxylink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_authenticator_8java_source_l00016}{16}} of file \mbox{\hyperlink{_shopping_web_authenticator_8java_source}{Shopping\+Web\+Authenticator.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{super}}(\textcolor{stringliteral}{"{}ShoppingWebAuthenticator"{}});}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ this.shoppingWebInterfaceController\ =\ \mbox{\hyperlink{class_shopping_web_authenticator_a835ddb095a972685955f914e252d953e}{shoppingWebInterfaceController}};}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_web_authenticator_8java_source_l00009}{shopping\+Web\+Interface\+Controller}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopping_web_authenticator_a358318c030aaf71ee0257790b707acc1}\label{class_shopping_web_authenticator_a358318c030aaf71ee0257790b707acc1} 
+\index{ShoppingWebAuthenticator@{ShoppingWebAuthenticator}!checkCredentials@{checkCredentials}}
+\index{checkCredentials@{checkCredentials}!ShoppingWebAuthenticator@{ShoppingWebAuthenticator}}
+\doxysubsubsection{\texorpdfstring{checkCredentials()}{checkCredentials()}}
+{\footnotesize\ttfamily boolean Shopping\+Web\+Authenticator.\+check\+Credentials (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{pwd }\end{DoxyParamCaption})}
+
+
+
+Checks the provided user credentials for authentication. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The username. \\
+\hline
+{\em pwd} & The password. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the credentials are valid, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_authenticator_8java_source_l00029}{29}} of file \mbox{\hyperlink{_shopping_web_authenticator_8java_source}{Shopping\+Web\+Authenticator.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @todo\ -\/\ add\ lookup\ code\ to\ pull\ user/pwdhash\ from\ database}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_shopping_web_authenticator_a835ddb095a972685955f914e252d953e}{shoppingWebInterfaceController}}.\mbox{\hyperlink{class_shopping_web_interface_controller_a44de6caebdeb1740c3edd8dd8feb3b84}{validateLogin}}(\mbox{\hyperlink{class_i_factory}{user}},\ \mbox{\hyperlink{class_i_factory}{pwd}});}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_web_interface_controller_8java_source_l00095}{Shopping\+Web\+Interface\+Controller.\+validate\+Login()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_web_authenticator_a358318c030aaf71ee0257790b707acc1_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_shopping_web_authenticator_a06f357bf4cbf8beba0e3ec05492466cb}\label{class_shopping_web_authenticator_a06f357bf4cbf8beba0e3ec05492466cb} 
+\index{ShoppingWebAuthenticator@{ShoppingWebAuthenticator}!logging@{logging}}
+\index{logging@{logging}!ShoppingWebAuthenticator@{ShoppingWebAuthenticator}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Shopping\+Web\+Authenticator.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_authenticator_8java_source_l00007}{7}} of file \mbox{\hyperlink{_shopping_web_authenticator_8java_source}{Shopping\+Web\+Authenticator.\+java}}.
+
+\Hypertarget{class_shopping_web_authenticator_a835ddb095a972685955f914e252d953e}\label{class_shopping_web_authenticator_a835ddb095a972685955f914e252d953e} 
+\index{ShoppingWebAuthenticator@{ShoppingWebAuthenticator}!shoppingWebInterfaceController@{shoppingWebInterfaceController}}
+\index{shoppingWebInterfaceController@{shoppingWebInterfaceController}!ShoppingWebAuthenticator@{ShoppingWebAuthenticator}}
+\doxysubsubsection{\texorpdfstring{shoppingWebInterfaceController}{shoppingWebInterfaceController}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_web_interface_controller}{Shopping\+Web\+Interface\+Controller}} Shopping\+Web\+Authenticator.\+shopping\+Web\+Interface\+Controller\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_web_authenticator_8java_source_l00009}{9}} of file \mbox{\hyperlink{_shopping_web_authenticator_8java_source}{Shopping\+Web\+Authenticator.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_web_authenticator_8java_source_l00016}{Shopping\+Web\+Authenticator()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_shopping_web_authenticator_8java}{Shopping\+Web\+Authenticator.\+java}}\end{DoxyCompactItemize}

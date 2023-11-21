@@ -1,0 +1,25 @@
+\doxysection{Simple\+Query\+Operation.\+java}
+\hypertarget{_simple_query_operation_8java_source}{}\label{_simple_query_operation_8java_source}\mbox{\hyperlink{_simple_query_operation_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00001}00001\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00002}00002\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00003}00003\ \textcolor{comment}{\ *\ The\ SimpleQuery\ class\ is\ a\ subclass\ of\ the\ IDbConnectionOperation\ interface.}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00004}00004\ \textcolor{comment}{\ *\ It\ implements\ the}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00005}00005\ \textcolor{comment}{\ *\ execute\ method\ of\ the\ IDbConnectionOperation\ interface.}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00006}00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00007}\mbox{\hyperlink{class_simple_query_operation}{00007}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_simple_query_operation}{SimpleQueryOperation}}\ \textcolor{keyword}{implements}\ \mbox{\hyperlink{interface_i_db_connection_operation}{IDbConnectionOperation}}\ \{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00008}00008\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00009}00009\ \textcolor{comment}{\ \ \ \ \ *\ Executes\ a\ query\ operation\ on\ the\ database.}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00010}00010\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00011}00011\ \textcolor{comment}{\ \ \ \ \ *\ @param\ dbConnectionWrapper\ The\ database\ connection\ wrapper.}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ *\ @param\ sql\ The\ SQL\ query\ to\ execute.}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00013}00013\ \textcolor{comment}{\ \ \ \ \ *\ @param\ resultProcessor\ The\ result\ processor\ for\ handling\ the\ query\ result.}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00014}00014\ \textcolor{comment}{\ \ \ \ \ *\ @return\ True\ if\ the\ query\ was\ executed\ successfully,\ false\ otherwise.}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00015}00015\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00016}\mbox{\hyperlink{class_simple_query_operation_aeb861a0f5aa5fb9532f05c4557c9ecd8}{00016}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_simple_query_operation_aeb861a0f5aa5fb9532f05c4557c9ecd8}{execute}}(\mbox{\hyperlink{interface_i_db_connection_wrapper}{IDbConnectionWrapper}}\ \mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}},\ String\ \mbox{\hyperlink{class_i_factory}{sql}},}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{interface_i_db_result_processor}{IDbResultProcessor}}\ \mbox{\hyperlink{class_i_factory}{resultProcessor}})\ \{}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{dbConnectionWrapper}}.query(\mbox{\hyperlink{class_i_factory}{sql}},\ \mbox{\hyperlink{class_i_factory}{resultProcessor}});}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00019}00019\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_simple_query_operation_8java_source_l00020}00020\ \}}
+
+\end{DoxyCode}

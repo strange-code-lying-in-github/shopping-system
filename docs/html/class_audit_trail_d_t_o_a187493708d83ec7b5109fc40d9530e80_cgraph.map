@@ -1,0 +1,5 @@
+<map id="AuditTrailDTO.getDtoHome" name="AuditTrailDTO.getDtoHome">
+<area shape="rect" id="Node000001" title="Returns the DTO home instance for the AuditTrailDTO class." alt="" coords="5,5,188,31"/>
+<area shape="rect" id="Node000002" href="$class_audit_trail_d_t_o_home.html#acd77bf6841a2c40bb0d7b73461343a30" title="Returns the singleton instance of AuditTrailDTOHome." alt="" coords="236,5,429,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,16,220,16,220,21,188,21"/>
+</map>

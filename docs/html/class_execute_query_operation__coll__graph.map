@@ -1,0 +1,5 @@
+<map id="ExecuteQueryOperation" name="ExecuteQueryOperation">
+<area shape="rect" id="Node000001" title="The ExecuteQuery class is a subclass of the IDbConnectionOperation interface." alt="" coords="5,164,217,275"/>
+<area shape="rect" id="Node000002" href="$interface_i_db_connection_operation.html" title="Represents an operation to be executed on a database connection." alt="" coords="5,5,217,116"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,131,114,164,109,164,109,131"/>
+</map>

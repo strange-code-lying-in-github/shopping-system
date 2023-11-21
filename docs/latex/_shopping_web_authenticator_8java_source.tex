@@ -1,0 +1,38 @@
+\doxysection{Shopping\+Web\+Authenticator.\+java}
+\hypertarget{_shopping_web_authenticator_8java_source}{}\label{_shopping_web_authenticator_8java_source}\mbox{\hyperlink{_shopping_web_authenticator_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00001}00001\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00002}00002\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00003}00003\ \textcolor{comment}{\ *\ The\ ShoppingWebAuthenticator\ class\ is\ responsible\ for\ authenticating\ user\ credentials}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00004}00004\ \textcolor{comment}{\ *\ for\ the\ shopping\ web\ interface.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00005}00005\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00006}\mbox{\hyperlink{class_shopping_web_authenticator}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shopping_web_authenticator}{ShoppingWebAuthenticator}}\ \textcolor{keyword}{extends}\ com.sun.net.httpserver.BasicAuthenticator\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00007}\mbox{\hyperlink{class_shopping_web_authenticator_a06f357bf4cbf8beba0e3ec05492466cb}{00007}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_shopping_web_authenticator_a06f357bf4cbf8beba0e3ec05492466cb}{logging}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00009}\mbox{\hyperlink{class_shopping_web_authenticator_a835ddb095a972685955f914e252d953e}{00009}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_shopping_web_interface_controller}{ShoppingWebInterfaceController}}\ \mbox{\hyperlink{class_shopping_web_authenticator_a835ddb095a972685955f914e252d953e}{shoppingWebInterfaceController}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00010}00010\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00011}00011\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ *\ Constructs\ a\ new\ ShoppingWebAuthenticator\ with\ the\ specified\ ShoppingWebInterfaceController.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00013}00013\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00014}00014\ \textcolor{comment}{\ \ \ \ \ *\ @param\ shoppingWebInterfaceController\ The\ ShoppingWebInterfaceController\ instance.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00015}00015\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00016}\mbox{\hyperlink{class_shopping_web_authenticator_a0b882199a2b27e1801bb9b0c072213db}{00016}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_shopping_web_authenticator_a0b882199a2b27e1801bb9b0c072213db}{ShoppingWebAuthenticator}}(\mbox{\hyperlink{class_shopping_web_interface_controller}{ShoppingWebInterfaceController}}\ \mbox{\hyperlink{class_shopping_web_authenticator_a835ddb095a972685955f914e252d953e}{shoppingWebInterfaceController}})\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00017}00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{super}}(\textcolor{stringliteral}{"{}ShoppingWebAuthenticator"{}});}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00018}00018\ \ \ \ \ \ \ \ \ this.shoppingWebInterfaceController\ =\ \mbox{\hyperlink{class_shopping_web_authenticator_a835ddb095a972685955f914e252d953e}{shoppingWebInterfaceController}};}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00019}00019\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00020}00020\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00022}00022\ \textcolor{comment}{\ \ \ \ \ *\ Checks\ the\ provided\ user\ credentials\ for\ authentication.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00023}00023\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00024}00024\ \textcolor{comment}{\ \ \ \ \ *\ @param\ user\ The\ username.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ *\ @param\ pwd\ The\ password.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ *\ @return\ true\ if\ the\ credentials\ are\ valid,\ false\ otherwise.}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00028}00028\ \ \ \ \ @\mbox{\hyperlink{class_i_factory}{Override}}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00029}\mbox{\hyperlink{class_shopping_web_authenticator_a358318c030aaf71ee0257790b707acc1}{00029}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{class_shopping_web_authenticator_a358318c030aaf71ee0257790b707acc1}{checkCredentials}}(String\ \mbox{\hyperlink{class_i_factory}{user}},\ String\ \mbox{\hyperlink{class_i_factory}{pwd}})\ \{}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @todo\ -\/\ add\ lookup\ code\ to\ pull\ user/pwdhash\ from\ database}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.shoppingWebInterfaceController.\mbox{\hyperlink{class_shopping_web_interface_controller_a44de6caebdeb1740c3edd8dd8feb3b84}{validateLogin}}(\mbox{\hyperlink{class_i_factory}{user}},\ \mbox{\hyperlink{class_i_factory}{pwd}});}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_shopping_web_authenticator_8java_source_l00033}00033\ \}}
+
+\end{DoxyCode}

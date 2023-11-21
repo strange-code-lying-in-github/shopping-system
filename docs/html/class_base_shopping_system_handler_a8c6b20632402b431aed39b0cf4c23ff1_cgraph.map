@@ -1,0 +1,23 @@
+<map id="BaseShoppingSystemHandler.handle" name="BaseShoppingSystemHandler.handle">
+<area shape="rect" id="Node000001" title="Handles the HTTP request by processing the given HttpExchange object." alt="" coords="5,108,242,133"/>
+<area shape="rect" id="Node000002" href="$class_base_route_handler.html#acb240fd4ec31d77dcf3163da84958aeb" title="Builds a response string based on the given response string and response type." alt="" coords="298,28,518,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,104,289,70,342,55,343,60,290,75,171,109"/>
+<area shape="rect" id="Node000003" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="620,41,764,67"/>
+<area shape="poly" id="edge11_Node000001_Node000003" title=" " alt="" coords="239,104,604,61,605,67,240,109"/>
+<area shape="rect" id="Node000007" href="$class_base_shopping_system_handler.html#a794005bacbd1af24f1312045df789672" title="Handles the method request based on the HTTP method." alt="" coords="290,128,526,169"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="243,129,275,133,274,138,242,135"/>
+<area shape="rect" id="Node000010" href="$class_base_route_handler.html#a33479321f0597168c7f5e31073237283" title="Handles the HTTP response by sending the specified response string and response code." alt="" coords="292,217,524,243"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="160,131,359,208,357,213,158,136"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="519,43,604,47,604,52,518,48"/>
+<area shape="rect" id="Node000004" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="858,5,1067,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="765,44,842,35,843,41,765,49"/>
+<area shape="rect" id="Node000006" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="884,70,1041,96"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="765,59,869,70,869,76,765,64"/>
+<area shape="rect" id="Node000005" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="1115,5,1300,46"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1067,23,1099,23,1099,28,1067,28"/>
+<area shape="rect" id="Node000008" href="$class_base_shopping_system_handler.html#a52959a96185a173360caf33e873d050c" title="Handles the GET request and returns a response as a String." alt="" coords="574,116,810,157"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="526,141,558,139,559,145,527,146"/>
+<area shape="rect" id="Node000009" href="$class_base_shopping_system_handler.html#aa5b9dff4d4b7242d801f3ea0c271442e" title="Handles the POST request and returns a string response." alt="" coords="574,181,810,222"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="520,167,566,175,565,180,519,172"/>
+<area shape="poly" id="edge10_Node000010_Node000010" title=" " alt="" coords="361,218,352,208,358,198,376,192,408,190,444,193,461,201,459,205,442,198,408,195,377,198,361,202,357,208,365,215"/>
+</map>

@@ -1,0 +1,55 @@
+\doxysection{User\+Profile\+DTO.\+java}
+\hypertarget{_user_profile_d_t_o_8java_source}{}\label{_user_profile_d_t_o_8java_source}\mbox{\hyperlink{_user_profile_d_t_o_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00002}00002\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.Date;}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.HashMap;}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00004}00004\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.Map;}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00005}00005\ \textcolor{keyword}{import}\ \mbox{\hyperlink{class_i_factory}{java}}.util.TreeMap;}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00006}00006\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00007}00007\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00008}00008\ \textcolor{comment}{\ *\ This\ class\ represents\ a\ Data\ Transfer\ Object\ (DTO)\ for\ a\ user\ profile.}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00009}00009\ \textcolor{comment}{\ *\ It\ extends\ the\ BaseDTO\ class\ and\ provides\ mappings\ for\ the\ fields\ and\ their\ types.}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00010}00010\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00011}\mbox{\hyperlink{class_user_profile_d_t_o}{00011}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_user_profile_d_t_o}{UserProfileDTO}}\ \textcolor{keyword}{extends}\ \mbox{\hyperlink{class_base_d_t_o}{BaseDTO}}\ \{}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00013}00013\ \ \ \ \ \textcolor{comment}{//\ Mapping\ of\ field\ names\ to\ their\ corresponding\ types}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00014}\mbox{\hyperlink{class_user_profile_d_t_o_a98b76bc04ab11dbac00e87ed599afb80}{00014}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Map<String,\ DTOTypes>}}\ \mbox{\hyperlink{class_user_profile_d_t_o_a98b76bc04ab11dbac00e87ed599afb80}{\_fields}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{TreeMap<String,\ DTOTypes>}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00015}00015\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}id"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}user\_id"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}paymentprofile\_id"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a79222f52ba1ebc36b8f2d1ae90efa9a4}{INTEGER}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}date\_created"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a3013a07b90adab5266ab5d66eb124c9b}{DATE}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(\textcolor{stringliteral}{"{}date\_modified"{}},\ \mbox{\hyperlink{enum_d_t_o_types}{DTOTypes}}.\mbox{\hyperlink{enum_d_t_o_types_a3013a07b90adab5266ab5d66eb124c9b}{DATE}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00021}00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00022}00022\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00024}00024\ \ \ \ \ \textcolor{comment}{//\ Mapping\ of\ field\ order\ to\ their\ corresponding\ names}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00025}\mbox{\hyperlink{class_user_profile_d_t_o_a0e071be8e70f0253effdb597b4572b99}{00025}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_i_factory}{Map<Integer,\ String>}}\ \mbox{\hyperlink{class_user_profile_d_t_o_a0e071be8e70f0253effdb597b4572b99}{\_fieldsOrderMap}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{HashMap<Integer,\ String>}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00026}00026\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(0,\ \textcolor{stringliteral}{"{}id"{}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(1,\ \textcolor{stringliteral}{"{}user\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(2,\ \textcolor{stringliteral}{"{}paymentprofile\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(3,\ \textcolor{stringliteral}{"{}date\_created"{}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{put}}(4,\ \textcolor{stringliteral}{"{}date\_modified"{}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00033}00033\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00034}00034\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00035}00035\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ *\ Constructs\ a\ new\ UserProfileDTO\ object.}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00037}00037\ \textcolor{comment}{\ \ \ \ \ *\ Initializes\ the\ superclass\ with\ the\ entity\ name,\ field\ mappings,\ and\ field\ order\ mappings.}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00038}00038\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00039}\mbox{\hyperlink{class_user_profile_d_t_o_a635cd0e857bac98aff18fe6a4cb20b8a}{00039}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_user_profile_d_t_o_a635cd0e857bac98aff18fe6a4cb20b8a}{UserProfileDTO}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{super}}(\textcolor{stringliteral}{"{}userprofile"{}},\ \mbox{\hyperlink{class_user_profile_d_t_o_a98b76bc04ab11dbac00e87ed599afb80}{\_fields}},\ \mbox{\hyperlink{class_user_profile_d_t_o_a0e071be8e70f0253effdb597b4572b99}{\_fieldsOrderMap}});}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00042}00042\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00043}00043\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ *\ Gets\ the\ home\ interface\ for\ the\ UserProfileDTO.}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ home\ interface\ for\ the\ UserProfileDTO.}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00047}\mbox{\hyperlink{class_user_profile_d_t_o_a9259450ff4834aa0d98d4a8e1fcac195}{00047}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{interface_i_d_t_o_home}{IDTOHome}}\ \mbox{\hyperlink{class_user_profile_d_t_o_a9259450ff4834aa0d98d4a8e1fcac195}{getDtoHome}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_user_profile_d_t_o_home}{UserProfileDTOHome}}.\mbox{\hyperlink{class_user_profile_d_t_o_home_adf0d19fd5357f95557743b75c46e1a10}{Instance}}();}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00049}00049\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_profile_d_t_o_8java_source_l00050}00050\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,100 @@
+\doxysection{Base\+Shopping\+System\+Handler.\+java}
+\hypertarget{_base_shopping_system_handler_8java_source}{}\label{_base_shopping_system_handler_8java_source}\mbox{\hyperlink{_base_shopping_system_handler_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00001}00001\ \textcolor{keyword}{import}\ java.io.IOException;}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00002}00002\ \textcolor{keyword}{import}\ java.util.Map;}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00004}00004\ \textcolor{keyword}{import}\ com.sun.net.httpserver.HttpExchange;}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00006}\mbox{\hyperlink{class_base_shopping_system_handler}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{abstract}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_base_shopping_system_handler}{BaseShoppingSystemHandler}}\ \textcolor{keyword}{extends}\ \mbox{\hyperlink{class_base_route_handler}{BaseRouteHandler}}\ \{}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00007}00007\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00008}00008\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00009}00009\ \textcolor{comment}{\ \ \ \ \ *\ The\ service\ responsible\ for\ handling\ the\ business\ logic\ of\ the\ shopping\ system.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00010}00010\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00011}\mbox{\hyperlink{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b}{00011}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ \mbox{\hyperlink{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b}{shoppingBusinessService}};}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00012}00012\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00013}00013\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00014}00014\ \textcolor{comment}{\ \ \ \ \ *\ Constructs\ a\ BaseShoppingSystemHandler\ object\ with\ the\ specified\ shopping}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00015}00015\ \textcolor{comment}{\ \ \ \ \ *\ business\ layer\ service.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00016}00016\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00017}00017\ \textcolor{comment}{\ \ \ \ \ *\ @param\ shoppingBusinessService\ The\ shopping\ business\ layer\ service.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00018}00018\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00019}\mbox{\hyperlink{class_base_shopping_system_handler_ab66f5de8f3cdab96038b3d4ef889014e}{00019}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_base_shopping_system_handler_ab66f5de8f3cdab96038b3d4ef889014e}{BaseShoppingSystemHandler}}(\mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ \mbox{\hyperlink{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b}{shoppingBusinessService}})\ \{}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00020}00020\ \ \ \ \ \ \ \ \ this.shoppingBusinessService\ =\ \mbox{\hyperlink{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b}{shoppingBusinessService}};}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00021}00021\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00022}00022\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00023}00023\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00024}00024\ \textcolor{comment}{\ \ \ \ \ *\ Handles\ the\ HTTP\ request\ by\ processing\ the\ given\ HttpExchange\ object.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ \ *\ This\ method\ is\ responsible\ for\ logging\ the\ request\ details,\ handling\ the\ request\ method,}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ *\ building\ the\ response,\ and\ handling\ any\ exceptions\ that\ may\ occur.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00028}00028\ \textcolor{comment}{\ \ \ \ \ *\ @param\ httpExchange\ The\ HttpExchange\ object\ representing\ the\ HTTP\ request.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00029}00029\ \textcolor{comment}{\ \ \ \ \ *\ @throws\ IOException\ If\ an\ I/O\ error\ occurs\ while\ handling\ the\ request.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00031}00031\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00032}\mbox{\hyperlink{class_base_shopping_system_handler_a8c6b20632402b431aed39b0cf4c23ff1}{00032}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_shopping_system_handler_a8c6b20632402b431aed39b0cf4c23ff1}{handle}}(HttpExchange\ httpExchange)\ \textcolor{keywordflow}{throws}\ IOException\ \{}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ responseCode\ =\ 500;}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}httpExchange:\ "{}}\ +\ httpExchange.getRequestMethod()\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ httpExchange.getRequestURI());}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ String\ method\ =\ httpExchange.getRequestMethod().toString().toUpperCase();}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ String\ requestParamValue\ =\ \mbox{\hyperlink{class_base_shopping_system_handler_a794005bacbd1af24f1312045df789672}{handleMethodRequest}}(httpExchange,\ method);}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}\ =\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}(requestParamValue);}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Response:\ "{}}\ +\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}});}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00044}00044\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Exception\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_aa4f9662d0297e6ba214e7e3f78179f4c}{logger}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Error\ handling\ request"{}},\ e);}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}\ =\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}}(e.getMessage());}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ responseCode\ =\ 500;}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_base_route_handler_a33479321f0597168c7f5e31073237283}{handleResponse}}(httpExchange,\ \mbox{\hyperlink{class_base_route_handler_acb240fd4ec31d77dcf3163da84958aeb}{buildResponse}},\ responseCode);}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00051}00051\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00052}00052\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00053}00053\ \textcolor{comment}{\ \ \ \ \ *\ Handles\ the\ method\ request\ based\ on\ the\ HTTP\ method.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00054}00054\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00055}00055\ \textcolor{comment}{\ \ \ \ \ *\ @param\ httpExchange\ The\ HTTP\ exchange\ object.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00056}00056\ \textcolor{comment}{\ \ \ \ \ *\ @param\ method\ The\ HTTP\ method.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00057}00057\ \textcolor{comment}{\ \ \ \ \ *\ @return\ The\ response\ string.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00058}00058\ \textcolor{comment}{\ \ \ \ \ *\ @throws\ Exception\ If\ an\ unsupported\ HTTP\ method\ is\ provided.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00059}00059\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00060}\mbox{\hyperlink{class_base_shopping_system_handler_a794005bacbd1af24f1312045df789672}{00060}}\ \ \ \ \ \textcolor{keyword}{private}\ String\ \mbox{\hyperlink{class_base_shopping_system_handler_a794005bacbd1af24f1312045df789672}{handleMethodRequest}}(HttpExchange\ httpExchange,\ \textcolor{keyword}{final}\ String\ method)\ \textcolor{keywordflow}{throws}\ Exception\ \{}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (method)\ \{}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}GET"{}}:}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_shopping_system_handler_a52959a96185a173360caf33e873d050c}{handleGetRequest}}(httpExchange);}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}POST"{}}:}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_shopping_system_handler_aa5b9dff4d4b7242d801f3ea0c271442e}{handlePostRequest}}(httpExchange);}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Exception(\textcolor{stringliteral}{"{}Unsupported\ HTTP\ method:\ "{}}\ +\ method);}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00068}00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00070}00070\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00071}00071\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00072}00072\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ shoppingBusinessService}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00073}00073\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00074}\mbox{\hyperlink{class_base_shopping_system_handler_a6f3b4faedffce7df6a670baa588ee5e2}{00074}}\ \ \ \ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}\ \mbox{\hyperlink{class_base_shopping_system_handler_a6f3b4faedffce7df6a670baa588ee5e2}{getShoppingBusinessService}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_shopping_system_handler_a6d7eb34055b54d7029547008d1f0de7b}{shoppingBusinessService}};}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00076}00076\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00077}00077\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00078}00078\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00079}00079\ \textcolor{comment}{\ \ \ \ \ *\ Handles\ the\ GET\ request\ and\ returns\ a\ response\ as\ a\ String.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00080}00080\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00081}00081\ \textcolor{comment}{\ \ \ \ \ *\ @param\ httpExchange\ the\ HTTP\ exchange\ object\ representing\ the\ request\ and}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00082}00082\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ response}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00083}00083\ \textcolor{comment}{\ \ \ \ \ *\ @return\ a\ String\ representing\ the\ response\ to\ the\ GET\ request}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00084}00084\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00085}\mbox{\hyperlink{class_base_shopping_system_handler_a52959a96185a173360caf33e873d050c}{00085}}\ \ \ \ \ \textcolor{keyword}{abstract}\ \textcolor{keyword}{protected}\ String\ \mbox{\hyperlink{class_base_shopping_system_handler_a52959a96185a173360caf33e873d050c}{handleGetRequest}}(HttpExchange\ httpExchange);}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00086}00086\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00087}00087\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00088}00088\ \textcolor{comment}{\ \ \ \ \ *\ Handles\ the\ POST\ request\ and\ returns\ a\ string\ response.}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00089}00089\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00090}00090\ \textcolor{comment}{\ \ \ \ \ *\ @param\ httpExchange\ the\ HTTP\ exchange\ object}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00091}00091\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ string\ response}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00092}00092\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00093}\mbox{\hyperlink{class_base_shopping_system_handler_aa5b9dff4d4b7242d801f3ea0c271442e}{00093}}\ \ \ \ \ \textcolor{keyword}{abstract}\ \textcolor{keyword}{protected}\ String\ \mbox{\hyperlink{class_base_shopping_system_handler_aa5b9dff4d4b7242d801f3ea0c271442e}{handlePostRequest}}(HttpExchange\ httpExchange);}
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_base_shopping_system_handler_8java_source_l00095}00095\ \}}
+
+\end{DoxyCode}

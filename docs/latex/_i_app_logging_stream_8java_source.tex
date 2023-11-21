@@ -1,0 +1,70 @@
+\doxysection{IApp\+Logging\+Stream.\+java}
+\hypertarget{_i_app_logging_stream_8java_source}{}\label{_i_app_logging_stream_8java_source}\mbox{\hyperlink{_i_app_logging_stream_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00001}00001\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00002}00002\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00003}00003\ \textcolor{comment}{\ *\ The\ IAppLoggingStream\ interface\ defines\ methods\ for\ logging\ messages\ and}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00004}00004\ \textcolor{comment}{\ *\ objects.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00005}00005\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00006}\mbox{\hyperlink{interface_i_app_logging_stream}{00006}}\ \textcolor{keyword}{interface\ }\mbox{\hyperlink{interface_i_app_logging_stream}{IAppLoggingStream}}\ \{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00007}00007\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00008}00008\ \textcolor{comment}{\ \ \ \ \ *\ The\ log\ function\ is\ used\ to\ print\ a\ message\ to\ the\ console.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00009}00009\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00010}00010\ \textcolor{comment}{\ \ \ \ \ *\ @param\ message\ The\ parameter\ "{}message"{}\ is\ of\ type\ String,\ which\ means\ it\ can}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00011}00011\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ hold\ a\ sequence\ of}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ characters.\ It\ is\ used\ to\ pass\ a\ message\ that\ you\ want\ to\ log}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00013}00013\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ or\ display.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00014}00014\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00015}\mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{00015}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{log}}(String\ message);}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00017}00017\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00018}00018\ \textcolor{comment}{\ \ \ \ \ *\ The\ log\ function\ is\ used\ to\ print\ an\ object\ to\ the\ console.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00019}00019\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ *\ @param\ object\ The\ parameter\ "{}object"{}\ is\ of\ type\ Object,\ which\ means\ it\ can}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ hold\ any\ type\ of}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00022}00022\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ object.\ It\ is\ used\ to\ pass\ an\ object\ that\ you\ want\ to\ log\ or}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00023}00023\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ display.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00024}00024\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00025}\mbox{\hyperlink{interface_i_app_logging_stream_afd9935ad95e271fe768061f09383d920}{00025}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{interface_i_app_logging_stream_afd9935ad95e271fe768061f09383d920}{log}}(Object\ \textcolor{keywordtype}{object});}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00026}00026\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00027}00027\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00028}00028\ \textcolor{comment}{\ \ \ \ \ *\ The\ log\ function\ takes\ an\ array\ of\ strings\ as\ input\ and\ logs\ each\ string.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00029}00029\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ *\ @param\ messages\ An\ array\ of\ strings\ that\ represents\ the\ messages\ to\ be}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ logged.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00032}00032\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00033}\mbox{\hyperlink{interface_i_app_logging_stream_a21d58084a30ed9137b00d5921cd9f26b}{00033}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{interface_i_app_logging_stream_a21d58084a30ed9137b00d5921cd9f26b}{log}}(String[]\ messages);}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00034}00034\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00035}00035\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ *\ The\ log\ function\ logs\ a\ message\ and\ an\ associated\ throwable\ object.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00037}00037\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00038}00038\ \textcolor{comment}{\ \ \ \ \ *\ @param\ message\ \ \ A\ string\ that\ represents\ the\ log\ message\ to\ be\ logged.\ This}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00039}00039\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ can\ be\ any}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00040}00040\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ information\ or\ description\ that\ you\ want\ to\ include\ in\ the}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00041}00041\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ log.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00042}00042\ \textcolor{comment}{\ \ \ \ \ *\ @param\ throwable\ The\ "{}throwable"{}\ parameter\ is\ used\ to\ pass\ an\ exception\ or}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00043}00043\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ error\ object.\ It}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ allows\ you\ to\ log\ an\ error\ message\ along\ with\ the\ stack}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ trace\ of\ the\ exception.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00047}\mbox{\hyperlink{interface_i_app_logging_stream_a64840174268902c21881ebc8cac8651d}{00047}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{interface_i_app_logging_stream_a64840174268902c21881ebc8cac8651d}{log}}(String\ message,\ Throwable\ throwable);}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00048}00048\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00049}00049\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00050}00050\ \textcolor{comment}{\ \ \ \ \ *\ The\ log\ function\ is\ used\ to\ log\ an\ exception\ or\ error.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00051}00051\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00052}00052\ \textcolor{comment}{\ \ \ \ \ *\ @param\ throwable\ The\ "{}throwable"{}\ parameter\ is\ of\ type\ Throwable,\ which\ is\ the}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00053}00053\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ base\ class\ for\ all}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00054}00054\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ exceptions\ and\ errors\ in\ Java.\ It\ represents\ an\ object\ that}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00055}00055\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ can\ be\ thrown\ and\ caught\ to\ handle}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00056}00056\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ exceptional\ conditions\ in\ a\ program.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00057}00057\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00058}\mbox{\hyperlink{interface_i_app_logging_stream_a2ae8561471fb4276f8095365094d3e8c}{00058}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{interface_i_app_logging_stream_a2ae8561471fb4276f8095365094d3e8c}{log}}(Throwable\ throwable);}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00059}00059\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00060}00060\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00061}00061\ \textcolor{comment}{\ \ \ \ \ *\ The\ flush()\ function\ is\ used\ to\ clear\ any\ buffered\ output\ and\ write\ it\ to\ the}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00062}00062\ \textcolor{comment}{\ \ \ \ \ *\ output\ stream.}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00063}00063\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00064}\mbox{\hyperlink{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7}{00064}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7}{flush}}();}
+\DoxyCodeLine{\Hypertarget{_i_app_logging_stream_8java_source_l00065}00065\ \}}
+
+\end{DoxyCode}

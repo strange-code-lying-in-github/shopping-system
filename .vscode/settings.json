@@ -1,0 +1,38 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "src/lib/postgresql-42.6.0.jar",
+    "src/lib/commons-text-1.11.0.jar",
+    "src/lib/commons-lang3-3.13.0.jar",
+    "src/lib/junit-platform-console-standalone-1.10.1.jar"
+  ],
+  "java.project.sourcePaths": ["src"],
+  "sqltools.connections": [
+    {
+      "mssqlOptions": {
+        "appName": "SQLTools",
+        "useUTC": true,
+        "encrypt": true
+      },
+      "previewLimit": 50,
+      "server": "xeon",
+      "port": 1433,
+      "driver": "MSSQL",
+      "name": "xeon",
+      "group": "main",
+      "database": "master",
+      "username": "allegro",
+      "password": "allegro"
+    },
+    {
+      "previewLimit": 50,
+      "server": "0.0.0.0",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "example_postgres_db",
+      "username": "example_postgres_user",
+      "password": "__example_postgres_password!1234",
+      "database": "example_postgres_db"
+    }
+  ]
+}

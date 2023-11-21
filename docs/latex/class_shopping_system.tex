@@ -1,0 +1,200 @@
+\doxysection{Shopping\+System Class Reference}
+\hypertarget{class_shopping_system}{}\label{class_shopping_system}\index{ShoppingSystem@{ShoppingSystem}}
+
+
+The main class representing the shopping system.  
+
+
+
+
+Collaboration diagram for Shopping\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_system__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopping_system_ace0261e4072bd47a50015a79c3ba167a}{Shopping\+System}} (\mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_shopping_system_ac634babe1445e54917c2c340c7866ec5}{environment}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_shopping_system}{Shopping\+System} object with the specified environment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_shopping_system_a11e0c3f52363fcd354652581a5cb435f}{start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the shopping system by configuring the data service, business service, web interface adapter, and starting the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_shopping_system_a94671ad328b3e419b719823161451f76}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\item 
+\mbox{\hyperlink{class_web_server}{Web\+Server}} \mbox{\hyperlink{class_shopping_system_a5ba488f4afe28c464ebe03c94d50c650}{server}}
+\item 
+\mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_shopping_system_ac634babe1445e54917c2c340c7866ec5}{environment}}
+\item 
+\mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} \mbox{\hyperlink{class_shopping_system_a15dfd650df7d00a21103dc4b1c499e10}{shopping\+Data\+Service}}
+\item 
+\mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} \mbox{\hyperlink{class_shopping_system_a825785b9883041fb5b633ebc68ac3109}{shopping\+Business\+Service}}
+\item 
+\mbox{\hyperlink{class_shopping_web_interface_adapter}{Shopping\+Web\+Interface\+Adapter}} \mbox{\hyperlink{class_shopping_system_a2b4f62a8fa00360e87fb35de96196003}{shopping\+Web\+Interface\+Adapter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main class representing the shopping system. 
+
+Definition at line \mbox{\hyperlink{_shopping_system_8java_source_l00007}{7}} of file \mbox{\hyperlink{_shopping_system_8java_source}{Shopping\+System.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shopping_system_ace0261e4072bd47a50015a79c3ba167a}\label{class_shopping_system_ace0261e4072bd47a50015a79c3ba167a} 
+\index{ShoppingSystem@{ShoppingSystem}!ShoppingSystem@{ShoppingSystem}}
+\index{ShoppingSystem@{ShoppingSystem}!ShoppingSystem@{ShoppingSystem}}
+\doxysubsubsection{\texorpdfstring{ShoppingSystem()}{ShoppingSystem()}}
+{\footnotesize\ttfamily Shopping\+System.\+Shopping\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_environment}{IEnvironment}}}]{environment }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_shopping_system}{Shopping\+System} object with the specified environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em environment} & the environment in which the shopping system operates \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_shopping_system_8java_source_l00022}{22}} of file \mbox{\hyperlink{_shopping_system_8java_source}{Shopping\+System.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ this.environment\ =\ \mbox{\hyperlink{class_shopping_system_ac634babe1445e54917c2c340c7866ec5}{environment}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ this.shoppingDataService\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_data_layer_service}{ShoppingDataLayerService}}(this.environment);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ this.shoppingBusinessService\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_business_layer_service}{ShoppingBusinessLayerService}}(this.environment,\ this.\mbox{\hyperlink{class_shopping_system_a15dfd650df7d00a21103dc4b1c499e10}{shoppingDataService}});}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ this.server\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_web_server}{WebServer}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ this.shoppingWebInterfaceAdapter\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_web_interface_adapter}{ShoppingWebInterfaceAdapter}}(this.environment,\ this.\mbox{\hyperlink{class_shopping_system_a15dfd650df7d00a21103dc4b1c499e10}{shoppingDataService}},}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_shopping_system_a825785b9883041fb5b633ebc68ac3109}{shoppingBusinessService}},\ this.\mbox{\hyperlink{class_shopping_system_a5ba488f4afe28c464ebe03c94d50c650}{server}});}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_system_8java_source_l00012}{environment}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_shopping_system_a11e0c3f52363fcd354652581a5cb435f}\label{class_shopping_system_a11e0c3f52363fcd354652581a5cb435f} 
+\index{ShoppingSystem@{ShoppingSystem}!start@{start}}
+\index{start@{start}!ShoppingSystem@{ShoppingSystem}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Shopping\+System.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the shopping system by configuring the data service, business service, web interface adapter, and starting the server. 
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_system_8java_source_l00036}{36}} of file \mbox{\hyperlink{_shopping_system_8java_source}{Shopping\+System.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_shopping_system_a15dfd650df7d00a21103dc4b1c499e10}{shoppingDataService}}.\mbox{\hyperlink{class_shopping_data_layer_service_a7741dea82cfac6ba06bbe75032bc7f15}{configure}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_shopping_system_a825785b9883041fb5b633ebc68ac3109}{shoppingBusinessService}}.\mbox{\hyperlink{class_shopping_business_layer_service_af5ee3bb1068d29aba2d5b2fc54d6777e}{configure}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_shopping_system_a2b4f62a8fa00360e87fb35de96196003}{shoppingWebInterfaceAdapter}}.\mbox{\hyperlink{class_shopping_web_interface_adapter_a2738d99c717b1ab0824e4886eaf9a59a}{configure}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_shopping_system_a5ba488f4afe28c464ebe03c94d50c650}{server}}.\mbox{\hyperlink{class_web_server_a95cc2c7822d190092b3e57a9f2738048}{start}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_shopping_business_layer_service_8java_source_l00040}{Shopping\+Business\+Layer\+Service.\+configure()}}, \mbox{\hyperlink{_shopping_data_layer_service_8java_source_l00064}{Shopping\+Data\+Layer\+Service.\+configure()}}, \mbox{\hyperlink{_shopping_web_interface_adapter_8java_source_l00029}{Shopping\+Web\+Interface\+Adapter.\+configure()}}, and \mbox{\hyperlink{_web_server_8java_source_l00074}{Web\+Server.\+start()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_main_class_8java_source_l00041}{Main\+Class.\+start()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shopping_system_a11e0c3f52363fcd354652581a5cb435f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_shopping_system_ac634babe1445e54917c2c340c7866ec5}\label{class_shopping_system_ac634babe1445e54917c2c340c7866ec5} 
+\index{ShoppingSystem@{ShoppingSystem}!environment@{environment}}
+\index{environment@{environment}!ShoppingSystem@{ShoppingSystem}}
+\doxysubsubsection{\texorpdfstring{environment}{environment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_environment}{IEnvironment}} Shopping\+System.\+environment\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_system_8java_source_l00012}{12}} of file \mbox{\hyperlink{_shopping_system_8java_source}{Shopping\+System.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_shopping_system_8java_source_l00022}{Shopping\+System()}}.
+
+\Hypertarget{class_shopping_system_a94671ad328b3e419b719823161451f76}\label{class_shopping_system_a94671ad328b3e419b719823161451f76} 
+\index{ShoppingSystem@{ShoppingSystem}!logging@{logging}}
+\index{logging@{logging}!ShoppingSystem@{ShoppingSystem}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Shopping\+System.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_system_8java_source_l00009}{9}} of file \mbox{\hyperlink{_shopping_system_8java_source}{Shopping\+System.\+java}}.
+
+\Hypertarget{class_shopping_system_a5ba488f4afe28c464ebe03c94d50c650}\label{class_shopping_system_a5ba488f4afe28c464ebe03c94d50c650} 
+\index{ShoppingSystem@{ShoppingSystem}!server@{server}}
+\index{server@{server}!ShoppingSystem@{ShoppingSystem}}
+\doxysubsubsection{\texorpdfstring{server}{server}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_web_server}{Web\+Server}} Shopping\+System.\+server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_system_8java_source_l00011}{11}} of file \mbox{\hyperlink{_shopping_system_8java_source}{Shopping\+System.\+java}}.
+
+\Hypertarget{class_shopping_system_a825785b9883041fb5b633ebc68ac3109}\label{class_shopping_system_a825785b9883041fb5b633ebc68ac3109} 
+\index{ShoppingSystem@{ShoppingSystem}!shoppingBusinessService@{shoppingBusinessService}}
+\index{shoppingBusinessService@{shoppingBusinessService}!ShoppingSystem@{ShoppingSystem}}
+\doxysubsubsection{\texorpdfstring{shoppingBusinessService}{shoppingBusinessService}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_business_layer_service}{Shopping\+Business\+Layer\+Service}} Shopping\+System.\+shopping\+Business\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_system_8java_source_l00014}{14}} of file \mbox{\hyperlink{_shopping_system_8java_source}{Shopping\+System.\+java}}.
+
+\Hypertarget{class_shopping_system_a15dfd650df7d00a21103dc4b1c499e10}\label{class_shopping_system_a15dfd650df7d00a21103dc4b1c499e10} 
+\index{ShoppingSystem@{ShoppingSystem}!shoppingDataService@{shoppingDataService}}
+\index{shoppingDataService@{shoppingDataService}!ShoppingSystem@{ShoppingSystem}}
+\doxysubsubsection{\texorpdfstring{shoppingDataService}{shoppingDataService}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_data_layer_service}{Shopping\+Data\+Layer\+Service}} Shopping\+System.\+shopping\+Data\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_system_8java_source_l00013}{13}} of file \mbox{\hyperlink{_shopping_system_8java_source}{Shopping\+System.\+java}}.
+
+\Hypertarget{class_shopping_system_a2b4f62a8fa00360e87fb35de96196003}\label{class_shopping_system_a2b4f62a8fa00360e87fb35de96196003} 
+\index{ShoppingSystem@{ShoppingSystem}!shoppingWebInterfaceAdapter@{shoppingWebInterfaceAdapter}}
+\index{shoppingWebInterfaceAdapter@{shoppingWebInterfaceAdapter}!ShoppingSystem@{ShoppingSystem}}
+\doxysubsubsection{\texorpdfstring{shoppingWebInterfaceAdapter}{shoppingWebInterfaceAdapter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_web_interface_adapter}{Shopping\+Web\+Interface\+Adapter}} Shopping\+System.\+shopping\+Web\+Interface\+Adapter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_shopping_system_8java_source_l00015}{15}} of file \mbox{\hyperlink{_shopping_system_8java_source}{Shopping\+System.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_shopping_system_8java}{Shopping\+System.\+java}}\end{DoxyCompactItemize}

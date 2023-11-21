@@ -1,0 +1,7 @@
+<map id="BaseShoppingSystemHandler.handleMethodRequest" name="BaseShoppingSystemHandler.handleMethodRequest">
+<area shape="rect" id="Node000001" title="Handles the method request based on the HTTP method." alt="" coords="5,39,242,79"/>
+<area shape="rect" id="Node000002" href="$class_base_shopping_system_handler.html#a52959a96185a173360caf33e873d050c" title="Handles the GET request and returns a response as a String." alt="" coords="290,5,526,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,42,274,39,275,44,243,48"/>
+<area shape="rect" id="Node000003" href="$class_base_shopping_system_handler.html#aa5b9dff4d4b7242d801f3ea0c271442e" title="Handles the POST request and returns a string response." alt="" coords="290,71,526,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,70,275,73,274,79,242,75"/>
+</map>

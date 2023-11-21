@@ -1,0 +1,431 @@
+\doxysection{Http\+Helpers Class Reference}
+\hypertarget{class_http_helpers}{}\label{class_http_helpers}\index{HttpHelpers@{HttpHelpers}}
+
+
+The \doxylink{class_http_helpers}{Http\+Helpers} class provides utility methods for working with HTTP requests and responses.  
+
+
+
+
+Collaboration diagram for Http\+Helpers\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_http_helpers__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_http_helpers_a4a17fc89b582e1ad200310b993acb787}{get\+Path}} (String \mbox{\hyperlink{class_i_factory}{request\+Uri}})
+\begin{DoxyCompactList}\small\item\em Returns the path component of a given request URI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_http_helpers_a63f65f8f210281cbfdac723a8e8cfaa3}{get\+Query\+String}} (String \mbox{\hyperlink{class_i_factory}{request\+Uri}})
+\begin{DoxyCompactList}\small\item\em Returns the query string from the given request URI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ \mbox{\hyperlink{class_http_helpers_a248b80a053fbee13680b06655ef8045e}{get\+Query\+Map}} (String query)
+\begin{DoxyCompactList}\small\item\em Parses a query string and returns a map of key-\/value pairs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_http_helpers_a675234b48cbe48a03e2ce0e81b7d16bf}{escape\+Response\+String}} (String \mbox{\hyperlink{class_i_factory}{response\+String}})
+\begin{DoxyCompactList}\small\item\em Escapes the given response string using the specified text type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_http_helpers_a5d8b1881406da10c27cfb3d1c859d523}{escape\+Response\+String}} (String \mbox{\hyperlink{class_i_factory}{response\+String}}, \mbox{\hyperlink{enum_http_response_text_type}{Http\+Response\+Text\+Type}} \mbox{\hyperlink{class_i_factory}{response\+Type}})
+\begin{DoxyCompactList}\small\item\em Escapes the given response string based on the specified response type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ \mbox{\hyperlink{class_http_helpers_a473ffd81b8b174b2e9153bfa14398e62}{parse\+Cookies}} (\mbox{\hyperlink{class_i_factory}{List}}$<$ String $>$ \mbox{\hyperlink{class_i_factory}{list}})
+\begin{DoxyCompactList}\small\item\em Parses a list of cookies and returns a map of cookie names to their corresponding values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ \mbox{\hyperlink{class_http_helpers_a8ef8502a796a27eb6ef0dc06c8891baf}{parse\+Form\+Data}} (String \mbox{\hyperlink{class_i_factory}{form\+Data}})  \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{Unsupported\+Encoding\+Exception}} 
+\begin{DoxyCompactList}\small\item\em Parses the given form data and returns a map of key-\/value pairs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_http_helpers_a6495ade27785f7aa992f883d19b9f3e0}{Http\+Helpers}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_http_helpers_ac91c6d43023ec04403cd1e5676d037aa}{parse\+Cookies}} (String \mbox{\hyperlink{class_i_factory}{cookie\+String}}, \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ cookies)
+\begin{DoxyCompactList}\small\item\em Parses the cookie string and populates the provided map with the extracted cookies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{interface_i_environment}{IEnvironment}} \mbox{\hyperlink{class_http_helpers_a18efe57c647b64e93906038abe4aeffd}{env}} = \mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Environment.\+Instance}}()
+\begin{DoxyCompactList}\small\item\em The environment instance used by the \doxylink{class_http_helpers}{Http\+Helpers} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_http_helpers}{Http\+Helpers} class provides utility methods for working with HTTP requests and responses. 
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00014}{14}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_http_helpers_a6495ade27785f7aa992f883d19b9f3e0}\label{class_http_helpers_a6495ade27785f7aa992f883d19b9f3e0} 
+\index{HttpHelpers@{HttpHelpers}!HttpHelpers@{HttpHelpers}}
+\index{HttpHelpers@{HttpHelpers}!HttpHelpers@{HttpHelpers}}
+\doxysubsubsection{\texorpdfstring{HttpHelpers()}{HttpHelpers()}}
+{\footnotesize\ttfamily Http\+Helpers.\+Http\+Helpers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00020}{20}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_http_helpers_a675234b48cbe48a03e2ce0e81b7d16bf}\label{class_http_helpers_a675234b48cbe48a03e2ce0e81b7d16bf} 
+\index{HttpHelpers@{HttpHelpers}!escapeResponseString@{escapeResponseString}}
+\index{escapeResponseString@{escapeResponseString}!HttpHelpers@{HttpHelpers}}
+\doxysubsubsection{\texorpdfstring{escapeResponseString()}{escapeResponseString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String Http\+Helpers.\+escape\+Response\+String (\begin{DoxyParamCaption}\item[{String}]{response\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Escapes the given response string using the specified text type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em response\+String} & The response string to escape. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The escaped response string. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00074}{74}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_http_helpers_a675234b48cbe48a03e2ce0e81b7d16bf}{escapeResponseString}}(\mbox{\hyperlink{class_i_factory}{responseString}},\ \mbox{\hyperlink{enum_http_response_text_type}{HttpResponseTextType}}.\mbox{\hyperlink{enum_http_response_text_type_a0651ce948063d1fc1bf2b6d5344efd4b}{HTML}});}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_http_helpers_8java_source_l00074}{escape\+Response\+String()}}, and \mbox{\hyperlink{_http_response_text_type_8java_source_l00006}{Http\+Response\+Text\+Type.\+HTML}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_helpers_8java_source_l00074}{escape\+Response\+String()}}, and \mbox{\hyperlink{_echo_handler_8java_source_l00043}{Echo\+Handler.\+handle\+Get\+Request()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_http_helpers_a675234b48cbe48a03e2ce0e81b7d16bf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http_helpers_a5d8b1881406da10c27cfb3d1c859d523}\label{class_http_helpers_a5d8b1881406da10c27cfb3d1c859d523} 
+\index{HttpHelpers@{HttpHelpers}!escapeResponseString@{escapeResponseString}}
+\index{escapeResponseString@{escapeResponseString}!HttpHelpers@{HttpHelpers}}
+\doxysubsubsection{\texorpdfstring{escapeResponseString()}{escapeResponseString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String Http\+Helpers.\+escape\+Response\+String (\begin{DoxyParamCaption}\item[{String}]{response\+String,  }\item[{\mbox{\hyperlink{enum_http_response_text_type}{Http\+Response\+Text\+Type}}}]{response\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Escapes the given response string based on the specified response type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em response\+String} & The response string to be escaped. \\
+\hline
+{\em response\+Type} & The type of the response (HTML, JSON, XML, TXT). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The escaped response string. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00085}{85}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_i_factory}{responseType}})\ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ HTML:}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{StringEscapeUtils}}.escapeHtml4(\mbox{\hyperlink{class_i_factory}{responseString}});}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ JSON:}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{StringEscapeUtils}}.escapeJson(\mbox{\hyperlink{class_i_factory}{responseString}});}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ XML:}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{StringEscapeUtils}}.escapeXml11(\mbox{\hyperlink{class_i_factory}{responseString}});}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ TXT:}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{responseString}};}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{StringEscapeUtils}}.escapeHtml4(\mbox{\hyperlink{class_i_factory}{responseString}});}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_http_helpers_a4a17fc89b582e1ad200310b993acb787}\label{class_http_helpers_a4a17fc89b582e1ad200310b993acb787} 
+\index{HttpHelpers@{HttpHelpers}!getPath@{getPath}}
+\index{getPath@{getPath}!HttpHelpers@{HttpHelpers}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String Http\+Helpers.\+get\+Path (\begin{DoxyParamCaption}\item[{String}]{request\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the path component of a given request URI. 
+
+The path component is the part of the URI before the query string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Uri} & the request URI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the path component of the request URI 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00030}{30}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ String[]\ \mbox{\hyperlink{class_i_factory}{parts}}\ =\ \mbox{\hyperlink{class_i_factory}{requestUri}}.split(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)?"{}});}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{parts}}[0];}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_http_request_context_info_8java_source_l00022}{Http\+Request\+Context\+Info.\+Http\+Request\+Context\+Info()}}.
+
+\Hypertarget{class_http_helpers_a248b80a053fbee13680b06655ef8045e}\label{class_http_helpers_a248b80a053fbee13680b06655ef8045e} 
+\index{HttpHelpers@{HttpHelpers}!getQueryMap@{getQueryMap}}
+\index{getQueryMap@{getQueryMap}!HttpHelpers@{HttpHelpers}}
+\doxysubsubsection{\texorpdfstring{getQueryMap()}{getQueryMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ Http\+Helpers.\+get\+Query\+Map (\begin{DoxyParamCaption}\item[{String}]{query }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parses a query string and returns a map of key-\/value pairs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & the query string to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a map containing the key-\/value pairs from the query string 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00055}{55}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ String[]\ \mbox{\hyperlink{class_i_factory}{params}}\ =\ query.split(\textcolor{stringliteral}{"{}\&"{}});}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Map<String,\ String>}}\ \mbox{\hyperlink{class_i_factory}{map}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{TreeMap<>}}(String.CASE\_INSENSITIVE\_ORDER);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ \mbox{\hyperlink{class_i_factory}{param}}\ :\ \mbox{\hyperlink{class_i_factory}{params}})\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ String[]\ \mbox{\hyperlink{class_i_factory}{parts}}\ =\ \mbox{\hyperlink{class_i_factory}{param}}.split(\textcolor{stringliteral}{"{}="{}});}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ String\ name\ =\ \mbox{\hyperlink{class_i_factory}{parts}}[0];}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ String\ value\ =\ parts.length\ >\ 1\ ?\ \mbox{\hyperlink{class_i_factory}{parts}}[1]\ :\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{map}}.put(name,\ value);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{map}};}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_http_request_context_info_8java_source_l00022}{Http\+Request\+Context\+Info.\+Http\+Request\+Context\+Info()}}.
+
+\Hypertarget{class_http_helpers_a63f65f8f210281cbfdac723a8e8cfaa3}\label{class_http_helpers_a63f65f8f210281cbfdac723a8e8cfaa3} 
+\index{HttpHelpers@{HttpHelpers}!getQueryString@{getQueryString}}
+\index{getQueryString@{getQueryString}!HttpHelpers@{HttpHelpers}}
+\doxysubsubsection{\texorpdfstring{getQueryString()}{getQueryString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String Http\+Helpers.\+get\+Query\+String (\begin{DoxyParamCaption}\item[{String}]{request\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the query string from the given request URI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Uri} & the request URI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the query string 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00041}{41}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ String[]\ \mbox{\hyperlink{class_i_factory}{parts}}\ =\ \mbox{\hyperlink{class_i_factory}{requestUri}}.split(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)?"{}});}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_i_factory}{parts}}.length\ >\ 1)\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{parts}}[1];}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_http_request_context_info_8java_source_l00022}{Http\+Request\+Context\+Info.\+Http\+Request\+Context\+Info()}}.
+
+\Hypertarget{class_http_helpers_a473ffd81b8b174b2e9153bfa14398e62}\label{class_http_helpers_a473ffd81b8b174b2e9153bfa14398e62} 
+\index{HttpHelpers@{HttpHelpers}!parseCookies@{parseCookies}}
+\index{parseCookies@{parseCookies}!HttpHelpers@{HttpHelpers}}
+\doxysubsubsection{\texorpdfstring{parseCookies()}{parseCookies()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ Http\+Helpers.\+parse\+Cookies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{List}}$<$ String $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parses a list of cookies and returns a map of cookie names to their corresponding values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & The list of cookies to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A map of cookie names to their corresponding values. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00107}{107}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Map<String,\ String>}}\ cookies\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{TreeMap<String,\ String>}}(String.CASE\_INSENSITIVE\_ORDER);}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ \mbox{\hyperlink{class_i_factory}{cookie}}\ :\ \mbox{\hyperlink{class_i_factory}{list}})\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_http_helpers_a473ffd81b8b174b2e9153bfa14398e62}{parseCookies}}(\mbox{\hyperlink{class_i_factory}{cookie}},\ cookies);}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ cookies;}
+\DoxyCodeLine{00113\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_http_helpers_8java_source_l00107}{parse\+Cookies()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_http_request_context_info_8java_source_l00022}{Http\+Request\+Context\+Info.\+Http\+Request\+Context\+Info()}}, and \mbox{\hyperlink{_http_helpers_8java_source_l00107}{parse\+Cookies()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{class_http_helpers_a473ffd81b8b174b2e9153bfa14398e62_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http_helpers_ac91c6d43023ec04403cd1e5676d037aa}\label{class_http_helpers_ac91c6d43023ec04403cd1e5676d037aa} 
+\index{HttpHelpers@{HttpHelpers}!parseCookies@{parseCookies}}
+\index{parseCookies@{parseCookies}!HttpHelpers@{HttpHelpers}}
+\doxysubsubsection{\texorpdfstring{parseCookies()}{parseCookies()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} Http\+Helpers.\+parse\+Cookies (\begin{DoxyParamCaption}\item[{String}]{cookie\+String,  }\item[{\mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$}]{cookies }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Parses the cookie string and populates the provided map with the extracted cookies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cookie\+String} & The string containing the cookies in the format "{}key1=value1; key2=value2; ..."{} \\
+\hline
+{\em cookies} & The map to store the extracted cookies, where the key is the cookie name and the value is the cookie value. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00124}{124}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ String[]\ \mbox{\hyperlink{class_i_factory}{cookiePairs}}\ =\ \mbox{\hyperlink{class_i_factory}{cookieString}}.split(\textcolor{stringliteral}{"{};\ "{}});}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ \mbox{\hyperlink{class_i_factory}{cookiePair}}\ :\ \mbox{\hyperlink{class_i_factory}{cookiePairs}})\ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ String[]\ \mbox{\hyperlink{class_i_factory}{cookieValue}}\ =\ \mbox{\hyperlink{class_i_factory}{cookiePair}}.split(\textcolor{stringliteral}{"{}="{}});}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{key}}\ =\ \mbox{\hyperlink{class_i_factory}{cookieValue}}[0];}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ String\ value\ =\ cookieValue.length\ >\ 1\ ?\ \mbox{\hyperlink{class_i_factory}{cookieValue}}[1]\ :\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ cookies.put(\mbox{\hyperlink{class_i_factory}{key}},\ value);}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00132\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_http_helpers_a8ef8502a796a27eb6ef0dc06c8891baf}\label{class_http_helpers_a8ef8502a796a27eb6ef0dc06c8891baf} 
+\index{HttpHelpers@{HttpHelpers}!parseFormData@{parseFormData}}
+\index{parseFormData@{parseFormData}!HttpHelpers@{HttpHelpers}}
+\doxysubsubsection{\texorpdfstring{parseFormData()}{parseFormData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Map}}$<$ String, String $>$ Http\+Helpers.\+parse\+Form\+Data (\begin{DoxyParamCaption}\item[{String}]{form\+Data }\end{DoxyParamCaption}) \mbox{\hyperlink{class_i_factory}{throws}} \mbox{\hyperlink{class_i_factory}{Unsupported\+Encoding\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parses the given form data and returns a map of key-\/value pairs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em form\+Data} & the form data to be parsed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a map containing the parsed key-\/value pairs 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Encoding\+Exception} & if the encoding is not supported \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00141}{141}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Map<String,\ String>}}\ \mbox{\hyperlink{class_i_factory}{map}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_i_factory}{TreeMap<>}}();}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ String[]\ \mbox{\hyperlink{class_i_factory}{pairs}}\ =\ \mbox{\hyperlink{class_i_factory}{formData}}.split(\textcolor{stringliteral}{"{}\&"{}});}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ \mbox{\hyperlink{class_i_factory}{pair}}\ :\ \mbox{\hyperlink{class_i_factory}{pairs}})\ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ String[]\ \mbox{\hyperlink{class_i_factory}{keyValue}}\ =\ \mbox{\hyperlink{class_i_factory}{pair}}.split(\textcolor{stringliteral}{"{}="{}});}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ String\ value\ =\ \mbox{\hyperlink{class_i_factory}{URLDecoder}}.decode(\mbox{\hyperlink{class_i_factory}{keyValue}}[1],\ \textcolor{stringliteral}{"{}UTF-\/8"{}});}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{map}}.put(\mbox{\hyperlink{class_i_factory}{keyValue}}[0],\ value);}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{map}};}
+\DoxyCodeLine{00151\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_base_route_handler_8java_source_l00154}{Base\+Route\+Handler.\+parse\+Form\+Data()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_http_helpers_a18efe57c647b64e93906038abe4aeffd}\label{class_http_helpers_a18efe57c647b64e93906038abe4aeffd} 
+\index{HttpHelpers@{HttpHelpers}!env@{env}}
+\index{env@{env}!HttpHelpers@{HttpHelpers}}
+\doxysubsubsection{\texorpdfstring{env}{env}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_environment}{IEnvironment}} Http\+Helpers.\+env = \mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Environment.\+Instance}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The environment instance used by the \doxylink{class_http_helpers}{Http\+Helpers} class. 
+
+
+
+Definition at line \mbox{\hyperlink{_http_helpers_8java_source_l00018}{18}} of file \mbox{\hyperlink{_http_helpers_8java_source}{Http\+Helpers.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_http_helpers_8java}{Http\+Helpers.\+java}}\end{DoxyCompactItemize}

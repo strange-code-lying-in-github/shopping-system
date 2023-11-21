@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_http_handler.html" title=" " alt="" coords="5,31,97,56"/>
+<area shape="rect" id="Node000001" href="$interface_i_http_route_handler.html" title="This interface represents a handler for HTTP routes." alt="" coords="145,31,275,56"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="112,41,145,41,145,46,112,46"/>
+<area shape="rect" id="Node000002" href="$class_base_route_handler.html" title=" " alt="" coords="323,31,454,56"/>
+<area shape="poly" id="edge8_Node000001_Node000002" title=" " alt="" coords="290,41,322,41,322,46,290,46"/>
+<area shape="rect" id="Node000003" href="$class_base_shopping_system_handler.html" title=" " alt="" coords="502,5,698,31"/>
+<area shape="poly" id="edge9_Node000002_Node000003" title=" " alt="" coords="470,31,502,27,502,33,470,36"/>
+<area shape="rect" id="Node000004" href="$class_echo_handler.html" title=" " alt="" coords="552,55,648,80"/>
+<area shape="poly" id="edge10_Node000002_Node000004" title=" " alt="" coords="470,50,552,59,551,65,470,55"/>
+</map>

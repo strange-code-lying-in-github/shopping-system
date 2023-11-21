@@ -1,0 +1,520 @@
+\doxysection{User\+Interaction Class Reference}
+\hypertarget{class_user_interaction}{}\label{class_user_interaction}\index{UserInteraction@{UserInteraction}}
+
+
+The \doxylink{class_user_interaction}{User\+Interaction} class provides methods for interacting with the user through the console.  
+
+
+
+
+Collaboration diagram for User\+Interaction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_user_interaction__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_interaction_ad782cdfb9ead2ecf2b4556844f759b64}{User\+Interaction}} ()
+\begin{DoxyCompactList}\small\item\em This class represents the user interaction functionality of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_user_interaction_ad9e64b28cd3e2f5b3cb4d7bb06e77451}{send\+Prompt}} (String \mbox{\hyperlink{class_i_factory}{prompt}})
+\begin{DoxyCompactList}\small\item\em Prints the given prompt to the console and flushes the output stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_user_interaction_af749aa98cd8bcf4637bfbc109d251804}{send\+Prompt}} (String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory}{prompt}})
+\begin{DoxyCompactList}\small\item\em Prints the given prompt to the console and flushes the output stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_user_interaction_a7930e328442d2ac9d85b44cfb02c5ab3}{get\+Console\+Input\+String}} ()
+\begin{DoxyCompactList}\small\item\em Reads a line of text from the console input and returns it as a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_user_interaction_afc8875b1ee699c681f6e0e9bef74956e}{get\+Console\+Input\+Boolean}} ()
+\begin{DoxyCompactList}\small\item\em Reads a boolean value from the console input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} Integer \mbox{\hyperlink{class_user_interaction_a76e69f578d3a991e58fb592e9b0aa3fa}{get\+Console\+Input\+Integer}} ()
+\begin{DoxyCompactList}\small\item\em Reads an integer value from the console input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Double}} \mbox{\hyperlink{class_user_interaction_ac6bdefde89741bca6cfead1a70e13ad0}{get\+Console\+Input\+Double}} ()
+\begin{DoxyCompactList}\small\item\em Reads a double value from the console input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} String \mbox{\hyperlink{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8}{get\+Input}} (String \mbox{\hyperlink{class_i_factory}{prompt}})
+\begin{DoxyCompactList}\small\item\em Prompts the user for input and returns the input as a String. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Boolean}} \mbox{\hyperlink{class_user_interaction_affdc7037b2dc76a4fa3448981eb8a86b}{get\+Input\+Boolean}} (String \mbox{\hyperlink{class_i_factory}{prompt}})
+\begin{DoxyCompactList}\small\item\em Prompts the user for a boolean input using the given prompt message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} Integer \mbox{\hyperlink{class_user_interaction_a4f74d6780c139cacb84872affd425155}{get\+Input\+Integer}} (String \mbox{\hyperlink{class_i_factory}{prompt}})
+\begin{DoxyCompactList}\small\item\em Prompts the user for an input and returns the input as an Integer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Double}} \mbox{\hyperlink{class_user_interaction_aca125a15aa48a74e080126791e02fc8e}{get\+Input\+Double}} (String \mbox{\hyperlink{class_i_factory}{prompt}})
+\begin{DoxyCompactList}\small\item\em Prompts the user for input and returns the input as a Double. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_interaction_adc0833f4ccf7d392e6d4e29b3531015f}{\mbox{[}static initializer\mbox{]}}}
+\begin{DoxyCompactList}\small\item\em The output stream used for writing to the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_user_interaction_ac38cb038d48b3de130e6d791d064da83}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\begin{DoxyCompactList}\small\item\em The function returns an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Scanner}} \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{console\+In}} = \mbox{\hyperlink{class_i_factory}{null}}
+\begin{DoxyCompactList}\small\item\em Scanner object used to read input from the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_user_interaction}{User\+Interaction} class provides methods for interacting with the user through the console. 
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00007}{7}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_user_interaction_ad782cdfb9ead2ecf2b4556844f759b64}\label{class_user_interaction_ad782cdfb9ead2ecf2b4556844f759b64} 
+\index{UserInteraction@{UserInteraction}!UserInteraction@{UserInteraction}}
+\index{UserInteraction@{UserInteraction}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{UserInteraction()}{UserInteraction()}}
+{\footnotesize\ttfamily User\+Interaction.\+User\+Interaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This class represents the user interaction functionality of the program. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00035}{35}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_user_interaction_adc0833f4ccf7d392e6d4e29b3531015f}\label{class_user_interaction_adc0833f4ccf7d392e6d4e29b3531015f} 
+\index{UserInteraction@{UserInteraction}!\mbox{[}static initializer\mbox{]}@{[static initializer]}}
+\index{\mbox{[}static initializer\mbox{]}@{[static initializer]}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{[static initializer]()}{[static initializer]()}}
+{\footnotesize\ttfamily User\+Interaction.\mbox{[}\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{initializer}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+The output stream used for writing to the console. 
+
+Initializes the console input and output streams.
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00018}{console\+In}}.
+
+\Hypertarget{class_user_interaction_afc8875b1ee699c681f6e0e9bef74956e}\label{class_user_interaction_afc8875b1ee699c681f6e0e9bef74956e} 
+\index{UserInteraction@{UserInteraction}!getConsoleInputBoolean@{getConsoleInputBoolean}}
+\index{getConsoleInputBoolean@{getConsoleInputBoolean}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{getConsoleInputBoolean()}{getConsoleInputBoolean()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Boolean}} User\+Interaction.\+get\+Console\+Input\+Boolean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads a boolean value from the console input. 
+
+\begin{DoxyReturn}{Returns}
+the boolean value read from the console input 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00078}{78}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{consoleIn}}.nextBoolean();}
+\DoxyCodeLine{00080\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00018}{console\+In}}.
+
+\Hypertarget{class_user_interaction_ac6bdefde89741bca6cfead1a70e13ad0}\label{class_user_interaction_ac6bdefde89741bca6cfead1a70e13ad0} 
+\index{UserInteraction@{UserInteraction}!getConsoleInputDouble@{getConsoleInputDouble}}
+\index{getConsoleInputDouble@{getConsoleInputDouble}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{getConsoleInputDouble()}{getConsoleInputDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Double}} User\+Interaction.\+get\+Console\+Input\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads a double value from the console input. 
+
+\begin{DoxyReturn}{Returns}
+the double value read from the console input. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00096}{96}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{consoleIn}}.nextDouble();}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00018}{console\+In}}.
+
+\Hypertarget{class_user_interaction_a76e69f578d3a991e58fb592e9b0aa3fa}\label{class_user_interaction_a76e69f578d3a991e58fb592e9b0aa3fa} 
+\index{UserInteraction@{UserInteraction}!getConsoleInputInteger@{getConsoleInputInteger}}
+\index{getConsoleInputInteger@{getConsoleInputInteger}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{getConsoleInputInteger()}{getConsoleInputInteger()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} Integer User\+Interaction.\+get\+Console\+Input\+Integer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads an integer value from the console input. 
+
+\begin{DoxyReturn}{Returns}
+the integer value read from the console input 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00087}{87}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{consoleIn}}.nextInt();}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00018}{console\+In}}.
+
+\Hypertarget{class_user_interaction_a7930e328442d2ac9d85b44cfb02c5ab3}\label{class_user_interaction_a7930e328442d2ac9d85b44cfb02c5ab3} 
+\index{UserInteraction@{UserInteraction}!getConsoleInputString@{getConsoleInputString}}
+\index{getConsoleInputString@{getConsoleInputString}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{getConsoleInputString()}{getConsoleInputString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String User\+Interaction.\+get\+Console\+Input\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads a line of text from the console input and returns it as a string. 
+
+\begin{DoxyReturn}{Returns}
+the line of text entered by the user 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00069}{69}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}{consoleIn}}.nextLine();}
+\DoxyCodeLine{00071\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00018}{console\+In}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_interaction_8java_source_l00106}{get\+Input()}}.
+
+\Hypertarget{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8}\label{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8} 
+\index{UserInteraction@{UserInteraction}!getInput@{getInput}}
+\index{getInput@{getInput}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} String User\+Interaction.\+get\+Input (\begin{DoxyParamCaption}\item[{String}]{prompt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Prompts the user for input and returns the input as a String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prompt} & the message to display to the user as a prompt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the user\textquotesingle{}s input as a String 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00106}{106}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_interaction_ad9e64b28cd3e2f5b3cb4d7bb06e77451}{sendPrompt}}(\mbox{\hyperlink{class_i_factory}{prompt}});}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ String\ \mbox{\hyperlink{class_i_factory}{nextString}}\ =\ \mbox{\hyperlink{class_user_interaction_a7930e328442d2ac9d85b44cfb02c5ab3}{getConsoleInputString}}();}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_interaction_ad9e64b28cd3e2f5b3cb4d7bb06e77451}{sendPrompt}}(\textcolor{stringliteral}{"{}\ >>\ "{}}\ +\ \mbox{\hyperlink{class_i_factory}{nextString}});}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{nextString}};}
+\DoxyCodeLine{00111\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00069}{get\+Console\+Input\+String()}}, and \mbox{\hyperlink{_user_interaction_8java_source_l00043}{send\+Prompt()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_interaction_8java_source_l00119}{get\+Input\+Boolean()}}, \mbox{\hyperlink{_user_interaction_8java_source_l00148}{get\+Input\+Double()}}, and \mbox{\hyperlink{_user_interaction_8java_source_l00137}{get\+Input\+Integer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_interaction_affdc7037b2dc76a4fa3448981eb8a86b}\label{class_user_interaction_affdc7037b2dc76a4fa3448981eb8a86b} 
+\index{UserInteraction@{UserInteraction}!getInputBoolean@{getInputBoolean}}
+\index{getInputBoolean@{getInputBoolean}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{getInputBoolean()}{getInputBoolean()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Boolean}} User\+Interaction.\+get\+Input\+Boolean (\begin{DoxyParamCaption}\item[{String}]{prompt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Prompts the user for a boolean input using the given prompt message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prompt} & the message to display to the user as a prompt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the boolean value entered by the user 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00119}{119}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ String\ value\ =\ \mbox{\hyperlink{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8}{getInput}}(\mbox{\hyperlink{class_i_factory}{prompt}});}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value.toLowerCase().startsWith(\textcolor{stringliteral}{"{}y"{}}))\ \{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value.toLowerCase().startsWith(\textcolor{stringliteral}{"{}n"{}}))\ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Boolean}}\ \mbox{\hyperlink{class_i_factory}{nextBoolean}}\ =\ \mbox{\hyperlink{class_i_factory}{Boolean}}.valueOf(value);}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{nextBoolean}};}
+\DoxyCodeLine{00129\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00106}{get\+Input()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_interaction_affdc7037b2dc76a4fa3448981eb8a86b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_interaction_aca125a15aa48a74e080126791e02fc8e}\label{class_user_interaction_aca125a15aa48a74e080126791e02fc8e} 
+\index{UserInteraction@{UserInteraction}!getInputDouble@{getInputDouble}}
+\index{getInputDouble@{getInputDouble}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{getInputDouble()}{getInputDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{Double}} User\+Interaction.\+get\+Input\+Double (\begin{DoxyParamCaption}\item[{String}]{prompt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Prompts the user for input and returns the input as a Double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prompt} & the message to display to the user as a prompt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the user\textquotesingle{}s input as a Double 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00148}{148}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{Double}}\ \mbox{\hyperlink{class_i_factory}{nextDouble}}\ =\ \mbox{\hyperlink{class_i_factory}{Double}}.valueOf(\mbox{\hyperlink{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8}{getInput}}(\mbox{\hyperlink{class_i_factory}{prompt}}));}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{nextDouble}};}
+\DoxyCodeLine{00151\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00106}{get\+Input()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_interaction_aca125a15aa48a74e080126791e02fc8e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_interaction_a4f74d6780c139cacb84872affd425155}\label{class_user_interaction_a4f74d6780c139cacb84872affd425155} 
+\index{UserInteraction@{UserInteraction}!getInputInteger@{getInputInteger}}
+\index{getInputInteger@{getInputInteger}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{getInputInteger()}{getInputInteger()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} Integer User\+Interaction.\+get\+Input\+Integer (\begin{DoxyParamCaption}\item[{String}]{prompt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Prompts the user for an input and returns the input as an Integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prompt} & the message to display to the user as a prompt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the user\textquotesingle{}s input as an Integer 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00137}{137}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ Integer\ \mbox{\hyperlink{class_i_factory}{nextInt}}\ =\ Integer.valueOf(\mbox{\hyperlink{class_user_interaction_a7e4ef3cbfbb07de6c597b972a1c7f8a8}{getInput}}(\mbox{\hyperlink{class_i_factory}{prompt}}));}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_i_factory}{nextInt}};}
+\DoxyCodeLine{00140\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00106}{get\+Input()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_interaction_a4f74d6780c139cacb84872affd425155_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_interaction_ad9e64b28cd3e2f5b3cb4d7bb06e77451}\label{class_user_interaction_ad9e64b28cd3e2f5b3cb4d7bb06e77451} 
+\index{UserInteraction@{UserInteraction}!sendPrompt@{sendPrompt}}
+\index{sendPrompt@{sendPrompt}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{sendPrompt()}{sendPrompt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} User\+Interaction.\+send\+Prompt (\begin{DoxyParamCaption}\item[{String}]{prompt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Prints the given prompt to the console and flushes the output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prompt} & the prompt to be printed to the console \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00043}{43}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\textcolor{comment}{}}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ \ \ \ \ \ \ \ ////\ print\ the\ given\ prompt\ to\ the\ console}}
+\DoxyCodeLine{00045\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{comment}{//\ consoleOut.println(prompt);}\textcolor{comment}{}}
+\DoxyCodeLine{00046\ \textcolor{comment}{\ \ \ \ \ \ \ \ ////\ flush\ the\ output\ stream}}
+\DoxyCodeLine{00047\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{comment}{//\ consoleOut.flush();}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_interaction_ac38cb038d48b3de130e6d791d064da83}{logging}}.log(\mbox{\hyperlink{class_i_factory}{prompt}});}
+\DoxyCodeLine{00049\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00013}{logging}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_interaction_8java_source_l00106}{get\+Input()}}.
+
+\Hypertarget{class_user_interaction_af749aa98cd8bcf4637bfbc109d251804}\label{class_user_interaction_af749aa98cd8bcf4637bfbc109d251804} 
+\index{UserInteraction@{UserInteraction}!sendPrompt@{sendPrompt}}
+\index{sendPrompt@{sendPrompt}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{sendPrompt()}{sendPrompt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} User\+Interaction.\+send\+Prompt (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{prompt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Prints the given prompt to the console and flushes the output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prompt} & the prompt to be printed to the console \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00056}{56}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\textcolor{comment}{}}
+\DoxyCodeLine{00057\ \textcolor{comment}{\ \ \ \ \ \ \ \ ////\ print\ the\ given\ prompt\ to\ the\ console}}
+\DoxyCodeLine{00058\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{comment}{//\ consoleOut.println(prompt);}\textcolor{comment}{}}
+\DoxyCodeLine{00059\ \textcolor{comment}{\ \ \ \ \ \ \ \ ////\ flush\ the\ output\ stream}}
+\DoxyCodeLine{00060\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{comment}{//\ consoleOut.flush();}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_interaction_ac38cb038d48b3de130e6d791d064da83}{logging}}.log(\mbox{\hyperlink{class_i_factory}{prompt}});}
+\DoxyCodeLine{00062\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_interaction_8java_source_l00013}{logging}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1}\label{class_user_interaction_a3aaf45bb85aea0f9cc007dd233ec0ee1} 
+\index{UserInteraction@{UserInteraction}!consoleIn@{consoleIn}}
+\index{consoleIn@{consoleIn}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{consoleIn}{consoleIn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{Scanner}} User\+Interaction.\+console\+In = \mbox{\hyperlink{class_i_factory}{null}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Scanner object used to read input from the console. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00018}{18}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_user_interaction_adc0833f4ccf7d392e6d4e29b3531015f}{\mbox{[}static initializer\mbox{]}()}}, \mbox{\hyperlink{_user_interaction_8java_source_l00078}{get\+Console\+Input\+Boolean()}}, \mbox{\hyperlink{_user_interaction_8java_source_l00096}{get\+Console\+Input\+Double()}}, \mbox{\hyperlink{_user_interaction_8java_source_l00087}{get\+Console\+Input\+Integer()}}, and \mbox{\hyperlink{_user_interaction_8java_source_l00069}{get\+Console\+Input\+String()}}.
+
+\Hypertarget{class_user_interaction_ac38cb038d48b3de130e6d791d064da83}\label{class_user_interaction_ac38cb038d48b3de130e6d791d064da83} 
+\index{UserInteraction@{UserInteraction}!logging@{logging}}
+\index{logging@{logging}!UserInteraction@{UserInteraction}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} User\+Interaction.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The function returns an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. 
+
+\begin{DoxyReturn}{Returns}
+The method is returning an instance of the \doxylink{class_app_logging_agent}{App\+Logging\+Agent} class. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_interaction_8java_source_l00013}{13}} of file \mbox{\hyperlink{_user_interaction_8java_source}{User\+Interaction.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_interaction_8java_source_l00043}{send\+Prompt()}}, and \mbox{\hyperlink{_user_interaction_8java_source_l00056}{send\+Prompt()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_user_interaction_8java}{User\+Interaction.\+java}}\end{DoxyCompactItemize}

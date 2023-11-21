@@ -1,0 +1,119 @@
+\doxysection{Environment.\+java}
+\hypertarget{_environment_8java_source}{}\label{_environment_8java_source}\mbox{\hyperlink{_environment_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00001}00001\ \textcolor{keyword}{import}\ java.io.IOException;}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00002}00002\ \textcolor{keyword}{import}\ java.io.InputStream;}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00003}00003\ \textcolor{keyword}{import}\ java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00004}00004\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00005}00005\ \textcolor{keyword}{import}\ java.util.Properties;}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00006}00006\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00007}00007\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00008}00008\ \textcolor{comment}{\ *\ The\ Environment\ class\ represents\ the\ environment\ in\ which\ the\ application\ is\ running.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00009}00009\ \textcolor{comment}{\ *\ It\ provides\ access\ to\ command\ line\ arguments,\ properties,\ and\ other\ environment-\/related\ information.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00010}00010\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00011}\mbox{\hyperlink{class_environment}{00011}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_environment}{Environment}}\ \textcolor{keyword}{implements}\ \mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00012}00012\ \ \ \ \ \textcolor{comment}{//\ simple\ singleton\ per\ instance}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00013}\mbox{\hyperlink{class_environment_aaa5f8b09050bb1b68699acbfd3904f44}{00013}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \mbox{\hyperlink{class_environment_aaa5f8b09050bb1b68699acbfd3904f44}{\_instance}}\ =\ \mbox{\hyperlink{class_environment_a133c13aea6743baf35be8263279d9862}{getInstance}}();}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00014}00014\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00015}00015\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00016}00016\ \textcolor{comment}{\ \ \ \ \ *\ Represents\ an\ environment.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00017}00017\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00018}\mbox{\hyperlink{class_environment_a133c13aea6743baf35be8263279d9862}{00018}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \mbox{\hyperlink{class_environment_a133c13aea6743baf35be8263279d9862}{getInstance}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_environment}{Environment}}(ProcessHandle.current().info().arguments().orElse(\textcolor{keyword}{new}\ String[0]));}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00021}00021\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00022}00022\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00023}00023\ \textcolor{comment}{\ \ \ \ \ *\ Represents\ an\ interface\ for\ the\ environment.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00024}00024\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00025}\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{00025}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ \mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_environment_aaa5f8b09050bb1b68699acbfd3904f44}{\_instance}};}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00028}00028\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00029}00029\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ *\ The\ logging\ agent\ used\ for\ logging\ application\ events.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00032}\mbox{\hyperlink{class_environment_a7595b526e73e5b5b3e5461d66bf36ef3}{00032}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}\ \mbox{\hyperlink{class_environment_a7595b526e73e5b5b3e5461d66bf36ef3}{logging}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_agent}{AppLoggingAgent}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_app_logging_stream}{AppLoggingStream}}());\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00033}00033\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ *\ The\ properties\ for\ the\ environment.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00035}00035\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00036}\mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{00036}}\ \ \ \ \ \textcolor{keyword}{private}\ Properties\ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}\ =\ \textcolor{keyword}{new}\ Properties(System.getProperties());}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00037}00037\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00038}00038\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00039}00039\ \textcolor{comment}{\ \ \ \ \ *\ The\ command\ line\ arguments\ passed\ to\ the\ program.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00040}00040\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00041}\mbox{\hyperlink{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1}{00041}}\ \ \ \ \ \textcolor{keyword}{private}\ String[]\ \mbox{\hyperlink{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1}{args}};}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00042}00042\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00043}00043\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ *\ The\ Environment\ class\ represents\ the\ environment\ settings\ for\ the\ shopping\ system.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ *\ It\ loads\ the\ properties\ from\ a\ file\ and\ provides\ access\ to\ them\ through\ the\ \_properties\ map.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00047}\mbox{\hyperlink{class_environment_aad43e7196b530e06f8b88ba181226bdf}{00047}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_environment_aad43e7196b530e06f8b88ba181226bdf}{Environment}}(String[]\ \mbox{\hyperlink{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1}{args}})\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ this.args\ =\ \mbox{\hyperlink{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1}{args}};}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ String\ filename\ =\ System.getProperty(\textcolor{stringliteral}{"{}PROPERTY\_FILE\_NAME"{}},\ \textcolor{stringliteral}{"{}app.properties"{}});}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (InputStream\ input\ =\ getClass().getClassLoader().getResourceAsStream(filename))\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ Properties\ prop\ =\ \textcolor{keyword}{new}\ Properties();}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ is\ stream\ valid?}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (input\ ==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_environment_a7595b526e73e5b5b3e5461d66bf36ef3}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(\textcolor{stringliteral}{"{}Error\ finding\ "{}}\ +\ filename);}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ load\ a\ properties\ file\ from\ class\ path}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ prop.load(input);}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ overlay\ properties\ from\ file}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ prop.forEach((key,\ value)\ -\/>\ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}.put(key,\ value));}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}.put(\textcolor{stringliteral}{"{}PROPERTY\_FILE\_NAME"{}},\ filename);}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00065}00065\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (IOException\ ex)\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_environment_a7595b526e73e5b5b3e5461d66bf36ef3}{logging}}.\mbox{\hyperlink{class_app_logging_agent_afc74c9adb1329480c9906d620eecc2d2}{log}}(ex.getMessage(),\ ex);}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00067}00067\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00068}00068\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00069}00069\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00070}00070\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00071}00071\ \textcolor{comment}{\ \ \ \ \ *\ Returns\ the\ command\ line\ arguments\ passed\ to\ the\ application.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00072}00072\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00073}00073\ \textcolor{comment}{\ \ \ \ \ *\ @return\ an\ array\ of\ strings\ representing\ the\ command\ line\ arguments}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00074}00074\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00075}00075\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00076}\mbox{\hyperlink{class_environment_a395eb7f345e4c2146ff698ae75f42124}{00076}}\ \ \ \ \ \textcolor{keyword}{public}\ String[]\ \mbox{\hyperlink{class_environment_a395eb7f345e4c2146ff698ae75f42124}{getComnandLineArgs}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_environment_a46c2e9f070c2b1dd638df18aad2ab7a1}{args}};}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00078}00078\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00079}00079\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00080}00080\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00081}00081\ \textcolor{comment}{\ \ \ \ \ *\ Retrieves\ the\ value\ associated\ with\ the\ specified\ key\ from\ the\ properties.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00082}00082\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00083}00083\ \textcolor{comment}{\ \ \ \ \ *\ @param\ key\ the\ key\ whose\ associated\ value\ is\ to\ be\ retrieved}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00084}00084\ \textcolor{comment}{\ \ \ \ \ *\ @return\ the\ value\ to\ which\ the\ specified\ key\ is\ mapped,\ or\ null\ if\ the\ key\ is\ not\ found}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00085}00085\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00086}00086\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00087}\mbox{\hyperlink{class_environment_a343e9ee063043034d7d99b6aa02aef93}{00087}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{class_environment_a343e9ee063043034d7d99b6aa02aef93}{getValue}}(String\ key)\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00088}00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}.getProperty(key,\ \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00089}00089\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00090}00090\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00091}00091\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00092}00092\ \textcolor{comment}{\ \ \ \ \ *\ Returns\ a\ list\ of\ keys\ in\ the\ environment.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00093}00093\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00094}00094\ \textcolor{comment}{\ \ \ \ \ *\ @return\ a\ list\ of\ keys}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00095}00095\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00096}00096\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00097}\mbox{\hyperlink{class_environment_aa53b3f0ee353c45adcb129e3ba446ddb}{00097}}\ \ \ \ \ \textcolor{keyword}{public}\ List<String>\ \mbox{\hyperlink{class_environment_aa53b3f0ee353c45adcb129e3ba446ddb}{getKeys}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00098}00098\ \ \ \ \ \ \ \ \ List<String>\ keys\ =\ \textcolor{keyword}{new}\ ArrayList<String>();}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00099}00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}.forEach((key,\ value)\ -\/>\ keys.add((String)\ key));}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00100}00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ keys;}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00101}00101\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00102}00102\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00103}00103\ \textcolor{comment}{\ \ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00104}00104\ \textcolor{comment}{\ \ \ \ \ *\ Checks\ if\ the\ specified\ key\ exists\ in\ the\ environment.}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00105}00105\ \textcolor{comment}{\ \ \ \ \ *\ }}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00106}00106\ \textcolor{comment}{\ \ \ \ \ *\ @param\ key\ the\ key\ to\ check}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00107}00107\ \textcolor{comment}{\ \ \ \ \ *\ @return\ true\ if\ the\ key\ exists,\ false\ otherwise}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00108}00108\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00109}00109\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00110}\mbox{\hyperlink{class_environment_a241d85d54357b361f03889f1e420629e}{00110}}\ \ \ \ \ \textcolor{keyword}{public}\ Boolean\ \mbox{\hyperlink{class_environment_a241d85d54357b361f03889f1e420629e}{HasKey}}(String\ key)\ \{}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00111}00111\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_environment_a064a75ea8c135e0924cfd19b5241bec2}{\_properties}}.containsKey(key);}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00112}00112\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{_environment_8java_source_l00114}00114\ \}}
+
+\end{DoxyCode}

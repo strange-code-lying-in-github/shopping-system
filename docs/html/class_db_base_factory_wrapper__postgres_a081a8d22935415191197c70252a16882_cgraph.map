@@ -1,0 +1,11 @@
+<map id="DbBaseFactoryWrapper_postgres.DbBaseFactoryWrapper_postgres" name="DbBaseFactoryWrapper_postgres.DbBaseFactoryWrapper_postgres">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,227,83"/>
+<area shape="rect" id="Node000002" href="$class_app_logging_agent.html#afc74c9adb1329480c9906d620eecc2d2" title="The log function logs a message to the application stream." alt="" coords="275,42,419,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,52,259,52,259,58,227,58"/>
+<area shape="rect" id="Node000003" href="$class_app_logging_agent.html#aa91e56af2da6676601b055a0983d10f9" title="Returns a string representation of the log header." alt="" coords="467,5,675,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="419,43,451,39,452,44,420,48"/>
+<area shape="rect" id="Node000005" href="$interface_i_app_logging_stream.html#a07605f37b7cbd1c3d4f807d1aa269f8a" title="The log function is used to print a message to the console." alt="" coords="493,70,649,96"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="420,61,478,69,477,74,419,67"/>
+<area shape="rect" id="Node000004" href="$class_app_logging_agent.html#adc7272a61a36119a4416b16f302843f1" title="Returns the calling method information as a string." alt="" coords="723,5,909,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="676,23,707,23,707,28,676,28"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="AppLoggingStream.log" name="AppLoggingStream.log">
+<area shape="rect" id="Node000001" title="The log function prints the error message and stack trace of a Throwable object to an output stream." alt="" coords="5,5,158,31"/>
+<area shape="rect" id="Node000002" href="$class_app_logging_stream.html#af56eb81085f284d32dc24a58a60bf1a2" title="The log function takes an array of strings as input and prints each string to the output stream,..." alt="" coords="206,5,358,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,16,190,16,190,21,158,21"/>
+</map>

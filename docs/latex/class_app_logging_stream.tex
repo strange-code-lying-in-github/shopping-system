@@ -1,0 +1,293 @@
+\doxysection{App\+Logging\+Stream Class Reference}
+\hypertarget{class_app_logging_stream}{}\label{class_app_logging_stream}\index{AppLoggingStream@{AppLoggingStream}}
+
+
+The \doxylink{class_app_logging_stream}{App\+Logging\+Stream} class implements the \doxylink{interface_i_app_logging_stream}{IApp\+Logging\+Stream} interface and provides methods for logging messages to an output stream.  
+
+
+
+
+Inheritance diagram for App\+Logging\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_app_logging_stream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for App\+Logging\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_app_logging_stream__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_stream_af56eb81085f284d32dc24a58a60bf1a2}{log}} (String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_i_factory}{messages}})
+\begin{DoxyCompactList}\small\item\em The log function takes an array of strings as input and prints each string to the output stream, followed by flushing the stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_stream_af09cc8fb81d0cd73aeef49407b8fc4e8}{log}} (\mbox{\hyperlink{class_i_factory}{Object}} \mbox{\hyperlink{class_i_factory}{object}})
+\begin{DoxyCompactList}\small\item\em The log function takes an object as input and prints the object\textquotesingle{}s string representation to the output stream, followed by flushing the stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_stream_a5423b45be366ef8faba299f4e107f334}{log}} (String \mbox{\hyperlink{class_i_factory}{message}})
+\begin{DoxyCompactList}\small\item\em The log function prints a message to the output stream and flushes it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_stream_a4f3785154d0188f594f23fe127bfa571}{log}} (\mbox{\hyperlink{class_i_factory}{Throwable}} \mbox{\hyperlink{class_i_factory}{throwable}})
+\begin{DoxyCompactList}\small\item\em The log function prints the error message and stack trace of a Throwable object to an output stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_stream_a0bc37eca9b2ea6e81f9fd42b7cbf703c}{log}} (String \mbox{\hyperlink{class_i_factory}{message}}, \mbox{\hyperlink{class_i_factory}{Throwable}} \mbox{\hyperlink{class_i_factory}{throwable}})
+\begin{DoxyCompactList}\small\item\em The log function prints a message, the throwable\textquotesingle{}s message, and the stack trace to the output stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_app_logging_stream_a637eb2d25c9a2df1175517f0ab3e80d9}{flush}} ()
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_app_logging_stream_a637eb2d25c9a2df1175517f0ab3e80d9}{flush()} function flushes the output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Print\+Stream \mbox{\hyperlink{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}{o\+Stream}} = \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+out}}
+\begin{DoxyCompactList}\small\item\em The o\+Stream property is an instance of the Print\+Stream class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_app_logging_stream}{App\+Logging\+Stream} class implements the \doxylink{interface_i_app_logging_stream}{IApp\+Logging\+Stream} interface and provides methods for logging messages to an output stream. 
+
+It includes methods for logging strings, objects, and throwables, as well as a method for flushing the output stream. 
+
+Definition at line \mbox{\hyperlink{_app_logging_stream_8java_source_l00011}{11}} of file \mbox{\hyperlink{_app_logging_stream_8java_source}{App\+Logging\+Stream.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_logging_stream_a637eb2d25c9a2df1175517f0ab3e80d9}\label{class_app_logging_stream_a637eb2d25c9a2df1175517f0ab3e80d9} 
+\index{AppLoggingStream@{AppLoggingStream}!flush@{flush}}
+\index{flush@{flush}!AppLoggingStream@{AppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Stream.\+flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The \doxylink{class_app_logging_stream_a637eb2d25c9a2df1175517f0ab3e80d9}{flush()} function flushes the output stream. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_af76cb4770110d6c1f03b201589825eb7}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_stream_8java_source_l00100}{100}} of file \mbox{\hyperlink{_app_logging_stream_8java_source}{App\+Logging\+Stream.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}{oStream}}.flush();}
+\DoxyCodeLine{00102\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_app_logging_stream_af09cc8fb81d0cd73aeef49407b8fc4e8}\label{class_app_logging_stream_af09cc8fb81d0cd73aeef49407b8fc4e8} 
+\index{AppLoggingStream@{AppLoggingStream}!log@{log}}
+\index{log@{log}!AppLoggingStream@{AppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Stream.\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Object}}}]{object }\end{DoxyParamCaption})}
+
+
+
+The log function takes an object as input and prints the object\textquotesingle{}s string representation to the output stream, followed by flushing the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The "{}object"{} parameter is an instance of the Object class, which is the base class for all classes in Java. It represents an object that can be used to store any type of data. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_afd9935ad95e271fe768061f09383d920}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_stream_8java_source_l00043}{43}} of file \mbox{\hyperlink{_app_logging_stream_8java_source}{App\+Logging\+Stream.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_stream_af56eb81085f284d32dc24a58a60bf1a2}{log}}(\textcolor{keywordtype}{object}.toString());}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_stream_8java_source_l00025}{log()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_app_logging_stream_af09cc8fb81d0cd73aeef49407b8fc4e8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_app_logging_stream_a5423b45be366ef8faba299f4e107f334}\label{class_app_logging_stream_a5423b45be366ef8faba299f4e107f334} 
+\index{AppLoggingStream@{AppLoggingStream}!log@{log}}
+\index{log@{log}!AppLoggingStream@{AppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Stream.\+log (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})}
+
+
+
+The log function prints a message to the output stream and flushes it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message parameter is a string that represents the log message that you want to print. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_a07605f37b7cbd1c3d4f807d1aa269f8a}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_stream_8java_source_l00054}{54}} of file \mbox{\hyperlink{_app_logging_stream_8java_source}{App\+Logging\+Stream.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}{oStream}}.println(\mbox{\hyperlink{class_i_factory}{message}});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}{oStream}}.flush();}
+\DoxyCodeLine{00057\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_app_logging_stream_a0bc37eca9b2ea6e81f9fd42b7cbf703c}\label{class_app_logging_stream_a0bc37eca9b2ea6e81f9fd42b7cbf703c} 
+\index{AppLoggingStream@{AppLoggingStream}!log@{log}}
+\index{log@{log}!AppLoggingStream@{AppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Stream.\+log (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{\mbox{\hyperlink{class_i_factory}{Throwable}}}]{throwable }\end{DoxyParamCaption})}
+
+
+
+The log function prints a message, the throwable\textquotesingle{}s message, and the stack trace to the output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & A string message that you want to log. This can be any information or description that you want to include in the log. \\
+\hline
+{\em throwable} & The "{}throwable"{} parameter is an object of type Throwable, which represents an exception or error that has occurred in the code. It can be used to retrieve information about the exception, such as its message and stack trace. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_a64840174268902c21881ebc8cac8651d}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_stream_8java_source_l00090}{90}} of file \mbox{\hyperlink{_app_logging_stream_8java_source}{App\+Logging\+Stream.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}{oStream}}.println(\mbox{\hyperlink{class_i_factory}{message}});}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}{oStream}}.println(throwable.getMessage());}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{throwable}}.printStackTrace(this.\mbox{\hyperlink{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}{oStream}});}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}{oStream}}.flush();}
+\DoxyCodeLine{00095\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_app_logging_stream_af56eb81085f284d32dc24a58a60bf1a2}\label{class_app_logging_stream_af56eb81085f284d32dc24a58a60bf1a2} 
+\index{AppLoggingStream@{AppLoggingStream}!log@{log}}
+\index{log@{log}!AppLoggingStream@{AppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Stream.\+log (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{messages }\end{DoxyParamCaption})}
+
+
+
+The log function takes an array of strings as input and prints each string to the output stream, followed by flushing the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messages} & An array of strings containing the messages to be logged. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_a21d58084a30ed9137b00d5921cd9f26b}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_stream_8java_source_l00025}{25}} of file \mbox{\hyperlink{_app_logging_stream_8java_source}{App\+Logging\+Stream.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ \mbox{\hyperlink{class_i_factory}{message}}\ :\ \mbox{\hyperlink{class_i_factory}{messages}})\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}{oStream}}.println(\mbox{\hyperlink{class_i_factory}{message}});}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}{oStream}}.flush();}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_app_logging_stream_8java_source_l00043}{log()}}, and \mbox{\hyperlink{_app_logging_stream_8java_source_l00072}{log()}}.
+
+\Hypertarget{class_app_logging_stream_a4f3785154d0188f594f23fe127bfa571}\label{class_app_logging_stream_a4f3785154d0188f594f23fe127bfa571} 
+\index{AppLoggingStream@{AppLoggingStream}!log@{log}}
+\index{log@{log}!AppLoggingStream@{AppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} App\+Logging\+Stream.\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_factory}{Throwable}}}]{throwable }\end{DoxyParamCaption})}
+
+
+
+The log function prints the error message and stack trace of a Throwable object to an output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em throwable} & The "{}throwable"{} parameter is an instance of the Throwable class, which represents an object that can be thrown and caught. It can be any subclass of Throwable, such as Exception or Error. In this method, the throwable object is used to log an error message and stack trace. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_app_logging_stream_a2ae8561471fb4276f8095365094d3e8c}{IApp\+Logging\+Stream}}.
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_stream_8java_source_l00072}{72}} of file \mbox{\hyperlink{_app_logging_stream_8java_source}{App\+Logging\+Stream.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_app_logging_stream_af56eb81085f284d32dc24a58a60bf1a2}{log}}(\textcolor{stringliteral}{"{}"{}},\ throwable);}
+\DoxyCodeLine{00074\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_app_logging_stream_8java_source_l00025}{log()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_app_logging_stream_a4f3785154d0188f594f23fe127bfa571_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843}\label{class_app_logging_stream_a071bfa7fdde0f353bf8f232853cb2843} 
+\index{AppLoggingStream@{AppLoggingStream}!oStream@{oStream}}
+\index{oStream@{oStream}!AppLoggingStream@{AppLoggingStream}}
+\doxysubsubsection{\texorpdfstring{oStream}{oStream}}
+{\footnotesize\ttfamily Print\+Stream App\+Logging\+Stream.\+o\+Stream = \mbox{\hyperlink{class_i_factory_a456b12973815b2eebc7fcb50f14c9c53}{System.\+out}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The o\+Stream property is an instance of the Print\+Stream class. 
+
+
+
+Definition at line \mbox{\hyperlink{_app_logging_stream_8java_source_l00016}{16}} of file \mbox{\hyperlink{_app_logging_stream_8java_source}{App\+Logging\+Stream.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_app_logging_stream_8java}{App\+Logging\+Stream.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,191 @@
+\doxysection{Main\+Class Class Reference}
+\hypertarget{class_main_class}{}\label{class_main_class}\index{MainClass@{MainClass}}
+
+
+The \doxylink{class_main_class}{Main\+Class} class represents the entry point of the program.  
+
+
+
+
+Collaboration diagram for Main\+Class\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_class__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_class_a7659aa00183605795bd8a3fbb4a9d907}{Main\+Class}} (String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{args}})
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_main_class}{Main\+Class} class represents the entry point of the program. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_main_class_ab7f3903f43cbce281397fe9b4b4bb779}{start}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} \mbox{\hyperlink{class_main_class_af6b73c414bdc9720685db8b0011ae3a3}{main}} (String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{args}})
+\begin{DoxyCompactList}\small\item\em The main method is the entry point of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} \mbox{\hyperlink{class_main_class_a7f979721eda6e00b25da90b3aec1eccf}{logging}} = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{args}} = \mbox{\hyperlink{class_i_factory}{null}}
+\begin{DoxyCompactList}\small\item\em The command line arguments passed to the program. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shopping_system}{Shopping\+System}} \mbox{\hyperlink{class_main_class_acdc044ec79b6e9c22d655dd3bb81c8a9}{shopping\+System}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_main_class}{Main\+Class} class represents the entry point of the program. 
+
+It contains a constructor that initializes the args field. It also contains methods for validating user input and executing database operations. 
+
+Definition at line \mbox{\hyperlink{_main_class_8java_source_l00010}{10}} of file \mbox{\hyperlink{_main_class_8java_source}{Main\+Class.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_main_class_a7659aa00183605795bd8a3fbb4a9d907}\label{class_main_class_a7659aa00183605795bd8a3fbb4a9d907} 
+\index{MainClass@{MainClass}!MainClass@{MainClass}}
+\index{MainClass@{MainClass}!MainClass@{MainClass}}
+\doxysubsubsection{\texorpdfstring{MainClass()}{MainClass()}}
+{\footnotesize\ttfamily Main\+Class.\+Main\+Class (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+The \doxylink{class_main_class}{Main\+Class} class represents the entry point of the program. 
+
+It contains a constructor that initializes the args field. 
+
+Definition at line \mbox{\hyperlink{_main_class_8java_source_l00037}{37}} of file \mbox{\hyperlink{_main_class_8java_source}{Main\+Class.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ this.args\ =\ \mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{args}};}
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_main_class_8java_source_l00029}{args}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_main_class_af6b73c414bdc9720685db8b0011ae3a3}\label{class_main_class_af6b73c414bdc9720685db8b0011ae3a3} 
+\index{MainClass@{MainClass}!main@{main}}
+\index{main@{main}!MainClass@{MainClass}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{static}} \mbox{\hyperlink{class_i_factory}{void}} Main\+Class.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The main method is the entry point of the program. 
+
+It creates an instance of \doxylink{class_main_class}{Main\+Class} and calls the run\+Hospital method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & an array of command-\/line arguments for the program \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_main_class_8java_source_l00053}{53}} of file \mbox{\hyperlink{_main_class_8java_source}{Main\+Class.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_class}{MainClass}}\ \mbox{\hyperlink{class_i_factory}{myMainClass}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_main_class}{MainClass}}(\mbox{\hyperlink{class_main_class_a728866487cbf4283a7df3d44af92b6cb}{args}});}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_factory}{myMainClass}}.start();}
+\DoxyCodeLine{00056\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_main_class_8java_source_l00029}{args}}.
+
+\Hypertarget{class_main_class_ab7f3903f43cbce281397fe9b4b4bb779}\label{class_main_class_ab7f3903f43cbce281397fe9b4b4bb779} 
+\index{MainClass@{MainClass}!start@{start}}
+\index{start@{start}!MainClass@{MainClass}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_factory}{void}} Main\+Class.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_main_class_8java_source_l00041}{41}} of file \mbox{\hyperlink{_main_class_8java_source}{Main\+Class.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{interface_i_environment}{IEnvironment}}\ environment\ =\ \mbox{\hyperlink{class_environment}{Environment}}.\mbox{\hyperlink{class_environment_ae31191f88d1cd997ba32eb753a5fa4cc}{Instance}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ this.shoppingSystem\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_shopping_system}{ShoppingSystem}}(environment);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_main_class_acdc044ec79b6e9c22d655dd3bb81c8a9}{shoppingSystem}}.\mbox{\hyperlink{class_shopping_system_a11e0c3f52363fcd354652581a5cb435f}{start}}();}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_environment_8java_source_l00025}{Environment.\+Instance()}}, and \mbox{\hyperlink{_shopping_system_8java_source_l00036}{Shopping\+System.\+start()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_class_ab7f3903f43cbce281397fe9b4b4bb779_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_main_class_a728866487cbf4283a7df3d44af92b6cb}\label{class_main_class_a728866487cbf4283a7df3d44af92b6cb} 
+\index{MainClass@{MainClass}!args@{args}}
+\index{args@{args}!MainClass@{MainClass}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} Main\+Class.\+args = \mbox{\hyperlink{class_i_factory}{null}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The command line arguments passed to the program. 
+
+
+
+Definition at line \mbox{\hyperlink{_main_class_8java_source_l00029}{29}} of file \mbox{\hyperlink{_main_class_8java_source}{Main\+Class.\+java}}.
+
+
+
+Referenced by \mbox{\hyperlink{_main_class_8java_source_l00053}{main()}}, and \mbox{\hyperlink{_main_class_8java_source_l00037}{Main\+Class()}}.
+
+\Hypertarget{class_main_class_a7f979721eda6e00b25da90b3aec1eccf}\label{class_main_class_a7f979721eda6e00b25da90b3aec1eccf} 
+\index{MainClass@{MainClass}!logging@{logging}}
+\index{logging@{logging}!MainClass@{MainClass}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}} Main\+Class.\+logging = \mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_agent}{App\+Logging\+Agent}}(\mbox{\hyperlink{class_i_factory}{new}} \mbox{\hyperlink{class_app_logging_stream}{App\+Logging\+Stream}}())\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_class_8java_source_l00024}{24}} of file \mbox{\hyperlink{_main_class_8java_source}{Main\+Class.\+java}}.
+
+\Hypertarget{class_main_class_acdc044ec79b6e9c22d655dd3bb81c8a9}\label{class_main_class_acdc044ec79b6e9c22d655dd3bb81c8a9} 
+\index{MainClass@{MainClass}!shoppingSystem@{shoppingSystem}}
+\index{shoppingSystem@{shoppingSystem}!MainClass@{MainClass}}
+\doxysubsubsection{\texorpdfstring{shoppingSystem}{shoppingSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shopping_system}{Shopping\+System}} Main\+Class.\+shopping\+System\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_class_8java_source_l00031}{31}} of file \mbox{\hyperlink{_main_class_8java_source}{Main\+Class.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_main_class_8java}{Main\+Class.\+java}}\end{DoxyCompactItemize}
