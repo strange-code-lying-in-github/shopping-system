@@ -1,0 +1,1047 @@
+bradkyer@Brads-MBP2 shopping-system % ./buildme.sh                    
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "POSTGRES_LINK" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "POSTGRES_LINK" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+[+] Building 0.0s (0/0)                                                                                                                                                       docker:desktop-linux
+[+] Running 2/0
+ ✔ Container shopping-system-base-oracle-java21-fp-1  Created                                                                                                                                 0.0s 
+ ✔ Container base-oracle-jdk-setup-server-fp          Created                                                                                                                                 0.0s 
+Attaching to base-oracle-jdk-setup-server-fp
+base-oracle-jdk-setup-server-fp  | cleaning and setting up db directories
+base-oracle-jdk-setup-server-fp  | list directory
+base-oracle-jdk-setup-server-fp  | total 0
+base-oracle-jdk-setup-server-fp  | drwxr-xr-x  2 root root  64 Nov 21 03:47 .
+base-oracle-jdk-setup-server-fp  | drwxr-xr-x 26 root root 832 Nov 21 03:47 ..
+base-oracle-jdk-setup-server-fp  | removing class files
+base-oracle-jdk-setup-server-fp  | java 21.0.1 2023-10-17 LTS
+base-oracle-jdk-setup-server-fp  | Java(TM) SE Runtime Environment (build 21.0.1+12-LTS-29)
+base-oracle-jdk-setup-server-fp  | Java HotSpot(TM) 64-Bit Server VM (build 21.0.1+12-LTS-29, mixed mode, sharing)
+base-oracle-jdk-setup-server-fp exited with code 0
+WARN[0000] The "POSTGRES_LINK" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "POSTGRES_LINK" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+[+] Running 8/8
+ ✔ Container shopping-system-oracle-java21-finalproj_all-fp-1        Removed                                                                                                                  0.0s 
+ ✔ Container shopping-system-oracle-java21-finalproj_all-junit-fp-1  Removed                                                                                                                  0.0s 
+ ✔ Container shopping-system-oracle-java21-finalproj_delay-fp-1      Removed                                                                                                                  0.0s 
+ ✔ Container base-oracle-jdk-build-server-fp                         Removed                                                                                                                  0.0s 
+ ✔ Container postgres-db                                             Removed                                                                                                                  0.0s 
+ ✔ Container base-oracle-jdk-setup-server-fp                         Removed                                                                                                                  0.0s 
+ ✔ Container shopping-system-base-oracle-java21-fp-1                 Removed                                                                                                                  0.0s 
+ ✔ Network shopping-system_default                                   Removed                                                                                                                  0.1s 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "POSTGRES_LINK" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "POSTGRES_LINK" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "POSTGRES_LINK" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "POSTGRES_LINK" variable is not set. Defaulting to a blank string. 
+WARN[0000] The "CLASSPATH" variable is not set. Defaulting to a blank string. 
+[+] Building 0.0s (0/0)                                                                                                                                                       docker:desktop-linux
+[+] Running 8/8
+ ✔ Network shopping-system_default                                   Created                                                                                                                  0.1s 
+ ✔ Container shopping-system-base-oracle-java21-fp-1                 Created                                                                                                                  0.0s 
+ ✔ Container base-oracle-jdk-setup-server-fp                         Created                                                                                                                  0.0s 
+ ✔ Container postgres-db                                             Created                                                                                                                  0.0s 
+ ✔ Container base-oracle-jdk-build-server-fp                         Created                                                                                                                  0.0s 
+ ✔ Container shopping-system-oracle-java21-finalproj_delay-fp-1      Created                                                                                                                  0.0s 
+ ✔ Container shopping-system-oracle-java21-finalproj_all-junit-fp-1  Created                                                                                                                  0.0s 
+ ✔ Container shopping-system-oracle-java21-finalproj_all-fp-1        Created                                                                                                                  0.0s 
+Attaching to base-oracle-jdk-build-server-fp, base-oracle-jdk-setup-server-fp, postgres-db, shopping-system-base-oracle-java21-fp-1, shopping-system-oracle-java21-finalproj_all-fp-1, shopping-system-oracle-java21-finalproj_all-junit-fp-1, shopping-system-oracle-java21-finalproj_delay-fp-1
+shopping-system-base-oracle-java21-fp-1 exited with code 0
+base-oracle-jdk-setup-server-fp                         | cleaning and setting up db directories
+base-oracle-jdk-setup-server-fp                         | list directory
+base-oracle-jdk-setup-server-fp                         | total 0
+base-oracle-jdk-setup-server-fp                         | drwxr-xr-x  2 root root  64 Nov 21 03:47 .
+base-oracle-jdk-setup-server-fp                         | drwxr-xr-x 26 root root 832 Nov 21 03:47 ..
+base-oracle-jdk-setup-server-fp                         | removing class files
+base-oracle-jdk-setup-server-fp                         | java 21.0.1 2023-10-17 LTS
+base-oracle-jdk-setup-server-fp                         | Java(TM) SE Runtime Environment (build 21.0.1+12-LTS-29)
+base-oracle-jdk-setup-server-fp                         | Java HotSpot(TM) 64-Bit Server VM (build 21.0.1+12-LTS-29, mixed mode, sharing)
+base-oracle-jdk-setup-server-fp exited with code 0
+postgres-db                                             | The files belonging to this database system will be owned by user "postgres".
+postgres-db                                             | This user must also own the server process.
+postgres-db                                             | 
+postgres-db                                             | The database cluster will be initialized with locale "en_US.utf8".
+postgres-db                                             | The default database encoding has accordingly been set to "UTF8".
+postgres-db                                             | The default text search configuration will be set to "english".
+postgres-db                                             | 
+postgres-db                                             | Data page checksums are disabled.
+postgres-db                                             | 
+postgres-db                                             | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres-db                                             | creating subdirectories ... ok
+postgres-db                                             | selecting dynamic shared memory implementation ... posix
+base-oracle-jdk-build-server-fp                         | removing class files
+base-oracle-jdk-build-server-fp                         | list directory
+base-oracle-jdk-build-server-fp                         | AppConstants.java
+base-oracle-jdk-build-server-fp                         | AppLoggingAgent.java
+base-oracle-jdk-build-server-fp                         | AppLoggingStream.java
+base-oracle-jdk-build-server-fp                         | app.properties
+base-oracle-jdk-build-server-fp                         | AuditTrailDTOHome.java
+base-oracle-jdk-build-server-fp                         | AuditTrailDTO.java
+base-oracle-jdk-build-server-fp                         | BaseDTOHome.java
+base-oracle-jdk-build-server-fp                         | BaseDTO.java
+base-oracle-jdk-build-server-fp                         | BaseRouteHandler.java
+base-oracle-jdk-build-server-fp                         | BaseShoppingSystemHandler.java
+base-oracle-jdk-build-server-fp                         | CartDTOHome.java
+base-oracle-jdk-build-server-fp                         | CartDTO.java
+base-oracle-jdk-build-server-fp                         | CartItemDTOHome.java
+base-oracle-jdk-build-server-fp                         | CartItemDTO.java
+base-oracle-jdk-build-server-fp                         | CoreUtils.java
+base-oracle-jdk-build-server-fp                         | DbBaseFactoryWrapper.java
+base-oracle-jdk-build-server-fp                         | DbBaseFactoryWrapper_postgres.java
+base-oracle-jdk-build-server-fp                         | DbFactory.java
+base-oracle-jdk-build-server-fp                         | DbUtils.java
+base-oracle-jdk-build-server-fp                         | DTOTypes.java
+base-oracle-jdk-build-server-fp                         | EchoHandler.java
+base-oracle-jdk-build-server-fp                         | EnumUtils.java
+base-oracle-jdk-build-server-fp                         | Environment.java
+base-oracle-jdk-build-server-fp                         | ExecuteQueryOperation.java
+base-oracle-jdk-build-server-fp                         | Header.java
+base-oracle-jdk-build-server-fp                         | HttpCookie.java
+base-oracle-jdk-build-server-fp                         | HttpHelpers.java
+base-oracle-jdk-build-server-fp                         | HttpRequestContextInfo.java
+base-oracle-jdk-build-server-fp                         | HttpResponseTextType.java
+base-oracle-jdk-build-server-fp                         | IAppLoggingStream.java
+base-oracle-jdk-build-server-fp                         | IDbConnectionOperation.java
+base-oracle-jdk-build-server-fp                         | IDbConnectionWrapper.java
+base-oracle-jdk-build-server-fp                         | IDbResultProcessor.java
+base-oracle-jdk-build-server-fp                         | IDTOHome.java
+base-oracle-jdk-build-server-fp                         | IDTO.java
+base-oracle-jdk-build-server-fp                         | IEnvironment.java
+base-oracle-jdk-build-server-fp                         | IFactory.java
+base-oracle-jdk-build-server-fp                         | IHttpCookie.java
+base-oracle-jdk-build-server-fp                         | IHttpRequestContextInfo.java
+base-oracle-jdk-build-server-fp                         | IHttpRouteHandler.java
+base-oracle-jdk-build-server-fp                         | lib
+base-oracle-jdk-build-server-fp                         | MainClass.java
+base-oracle-jdk-build-server-fp                         | OrderDTOHome.java
+base-oracle-jdk-build-server-fp                         | OrderDTO.java
+base-oracle-jdk-build-server-fp                         | OrderItemDTOHome.java
+base-oracle-jdk-build-server-fp                         | OrderItemDTO.java
+base-oracle-jdk-build-server-fp                         | PaymentProfileDTOHome.java
+base-oracle-jdk-build-server-fp                         | PaymentProfileDTO.java
+base-oracle-jdk-build-server-fp                         | ProductDTOHome.java
+base-oracle-jdk-build-server-fp                         | ProductDTO.java
+base-oracle-jdk-build-server-fp                         | PurchaseDTOHome.java
+base-oracle-jdk-build-server-fp                         | PurchaseDTO.java
+base-oracle-jdk-build-server-fp                         | RoleDTOHome.java
+base-oracle-jdk-build-server-fp                         | RoleDTO.java
+base-oracle-jdk-build-server-fp                         | script_all.tmp.txt
+base-oracle-jdk-build-server-fp                         | script_all.txt
+base-oracle-jdk-build-server-fp                         | script_all.txt.join
+base-oracle-jdk-build-server-fp                         | script_pg.txt
+base-oracle-jdk-build-server-fp                         | ShoppingBusinessLayerService.java
+base-oracle-jdk-build-server-fp                         | ShoppingDataLayerService.java
+base-oracle-jdk-build-server-fp                         | ShoppingSystem.java
+base-oracle-jdk-build-server-fp                         | ShoppingWebAuthenticator.java
+base-oracle-jdk-build-server-fp                         | ShoppingWebInterfaceAdapter.java
+base-oracle-jdk-build-server-fp                         | ShoppingWebInterfaceController.java
+base-oracle-jdk-build-server-fp                         | SimpleQueryOperation.java
+base-oracle-jdk-build-server-fp                         | StringDbResultProcessor.java
+base-oracle-jdk-build-server-fp                         | TestDTO.java
+base-oracle-jdk-build-server-fp                         | TestJunit.java
+base-oracle-jdk-build-server-fp                         | UserDTOHome.java
+base-oracle-jdk-build-server-fp                         | UserDTO.java
+base-oracle-jdk-build-server-fp                         | UserInteraction.java
+base-oracle-jdk-build-server-fp                         | UserProfileDTOHome.java
+base-oracle-jdk-build-server-fp                         | UserProfileDTO.java
+base-oracle-jdk-build-server-fp                         | UserRoleDTOHome.java
+base-oracle-jdk-build-server-fp                         | UserRoleDTO.java
+base-oracle-jdk-build-server-fp                         | WebServer.java
+base-oracle-jdk-build-server-fp                         | get version
+postgres-db                                             | selecting default max_connections ... 100
+base-oracle-jdk-build-server-fp                         | java version "21.0.1" 2023-10-17 LTS
+base-oracle-jdk-build-server-fp                         | Java(TM) SE Runtime Environment (build 21.0.1+12-LTS-29)
+base-oracle-jdk-build-server-fp                         | Java HotSpot(TM) 64-Bit Server VM (build 21.0.1+12-LTS-29, mixed mode, sharing)
+base-oracle-jdk-build-server-fp                         | compile *.java
+postgres-db                                             | selecting default shared_buffers ... 128MB
+postgres-db                                             | selecting default time zone ... Etc/UTC
+postgres-db                                             | creating configuration files ... ok
+postgres-db                                             | running bootstrap script ... ok
+base-oracle-jdk-build-server-fp                         | Note: IFactory.java uses unchecked or unsafe operations.
+base-oracle-jdk-build-server-fp                         | Note: Recompile with -Xlint:unchecked for details.
+base-oracle-jdk-build-server-fp                         | list directory
+base-oracle-jdk-build-server-fp                         | AppConstants.class
+base-oracle-jdk-build-server-fp                         | AppConstants.java
+base-oracle-jdk-build-server-fp                         | AppLoggingAgent.class
+base-oracle-jdk-build-server-fp                         | AppLoggingAgent.java
+base-oracle-jdk-build-server-fp                         | AppLoggingStream.class
+base-oracle-jdk-build-server-fp                         | AppLoggingStream.java
+base-oracle-jdk-build-server-fp                         | app.properties
+base-oracle-jdk-build-server-fp                         | AuditTrailDTO$1.class
+base-oracle-jdk-build-server-fp                         | AuditTrailDTO$2.class
+base-oracle-jdk-build-server-fp                         | AuditTrailDTO.class
+base-oracle-jdk-build-server-fp                         | AuditTrailDTOHome.class
+base-oracle-jdk-build-server-fp                         | AuditTrailDTOHome.java
+base-oracle-jdk-build-server-fp                         | AuditTrailDTO.java
+base-oracle-jdk-build-server-fp                         | BaseDTO$1.class
+base-oracle-jdk-build-server-fp                         | BaseDTO$1LoadResultProcessor.class
+base-oracle-jdk-build-server-fp                         | BaseDTO$1SaveResultProcessor.class
+base-oracle-jdk-build-server-fp                         | BaseDTO.class
+base-oracle-jdk-build-server-fp                         | BaseDTOHome$1.class
+base-oracle-jdk-build-server-fp                         | BaseDTOHome$1LoadResultProcessor.class
+base-oracle-jdk-build-server-fp                         | BaseDTOHome$1SaveResultProcessor.class
+base-oracle-jdk-build-server-fp                         | BaseDTOHome.class
+base-oracle-jdk-build-server-fp                         | BaseDTOHome.java
+base-oracle-jdk-build-server-fp                         | BaseDTO.java
+base-oracle-jdk-build-server-fp                         | BaseRouteHandler$1.class
+base-oracle-jdk-build-server-fp                         | BaseRouteHandler.class
+base-oracle-jdk-build-server-fp                         | BaseRouteHandler.java
+base-oracle-jdk-build-server-fp                         | BaseShoppingSystemHandler.class
+base-oracle-jdk-build-server-fp                         | BaseShoppingSystemHandler.java
+base-oracle-jdk-build-server-fp                         | CartDTO$1.class
+base-oracle-jdk-build-server-fp                         | CartDTO$2.class
+base-oracle-jdk-build-server-fp                         | CartDTO.class
+base-oracle-jdk-build-server-fp                         | CartDTOHome.class
+base-oracle-jdk-build-server-fp                         | CartDTOHome.java
+base-oracle-jdk-build-server-fp                         | CartDTO.java
+base-oracle-jdk-build-server-fp                         | CartItemDTO$1.class
+base-oracle-jdk-build-server-fp                         | CartItemDTO$2.class
+base-oracle-jdk-build-server-fp                         | CartItemDTO.class
+base-oracle-jdk-build-server-fp                         | CartItemDTOHome.class
+base-oracle-jdk-build-server-fp                         | CartItemDTOHome.java
+base-oracle-jdk-build-server-fp                         | CartItemDTO.java
+base-oracle-jdk-build-server-fp                         | CoreUtils.class
+base-oracle-jdk-build-server-fp                         | CoreUtils.java
+base-oracle-jdk-build-server-fp                         | DbBaseFactoryWrapper.class
+base-oracle-jdk-build-server-fp                         | DbBaseFactoryWrapper.java
+base-oracle-jdk-build-server-fp                         | DbBaseFactoryWrapper_postgres.class
+base-oracle-jdk-build-server-fp                         | DbBaseFactoryWrapper_postgres.java
+base-oracle-jdk-build-server-fp                         | DbFactory.class
+base-oracle-jdk-build-server-fp                         | DbFactory.java
+base-oracle-jdk-build-server-fp                         | DbUtils.class
+base-oracle-jdk-build-server-fp                         | DbUtils.java
+base-oracle-jdk-build-server-fp                         | DTOTypes.class
+base-oracle-jdk-build-server-fp                         | DTOTypes.java
+base-oracle-jdk-build-server-fp                         | EchoHandler.class
+base-oracle-jdk-build-server-fp                         | EchoHandler.java
+base-oracle-jdk-build-server-fp                         | EnumUtils.class
+base-oracle-jdk-build-server-fp                         | EnumUtils.java
+base-oracle-jdk-build-server-fp                         | Environment.class
+base-oracle-jdk-build-server-fp                         | Environment.java
+base-oracle-jdk-build-server-fp                         | ExecuteQueryOperation.class
+base-oracle-jdk-build-server-fp                         | ExecuteQueryOperation.java
+base-oracle-jdk-build-server-fp                         | Header.java
+base-oracle-jdk-build-server-fp                         | HttpCookie.class
+base-oracle-jdk-build-server-fp                         | HttpCookie.java
+base-oracle-jdk-build-server-fp                         | HttpHelpers$1.class
+base-oracle-jdk-build-server-fp                         | HttpHelpers.class
+base-oracle-jdk-build-server-fp                         | HttpHelpers.java
+base-oracle-jdk-build-server-fp                         | HttpRequestContextInfo.class
+base-oracle-jdk-build-server-fp                         | HttpRequestContextInfo.java
+base-oracle-jdk-build-server-fp                         | HttpResponseTextType.class
+base-oracle-jdk-build-server-fp                         | HttpResponseTextType.java
+base-oracle-jdk-build-server-fp                         | IAppLoggingStream.class
+base-oracle-jdk-build-server-fp                         | IAppLoggingStream.java
+base-oracle-jdk-build-server-fp                         | IDbConnectionOperation.class
+base-oracle-jdk-build-server-fp                         | IDbConnectionOperation.java
+base-oracle-jdk-build-server-fp                         | IDbConnectionWrapper.class
+base-oracle-jdk-build-server-fp                         | IDbConnectionWrapper.java
+base-oracle-jdk-build-server-fp                         | IDbResultProcessor.class
+base-oracle-jdk-build-server-fp                         | IDbResultProcessor.java
+base-oracle-jdk-build-server-fp                         | IDTO.class
+base-oracle-jdk-build-server-fp                         | IDTOHome.class
+base-oracle-jdk-build-server-fp                         | IDTOHome.java
+base-oracle-jdk-build-server-fp                         | IDTO.java
+base-oracle-jdk-build-server-fp                         | IEnvironment.class
+base-oracle-jdk-build-server-fp                         | IEnvironment.java
+base-oracle-jdk-build-server-fp                         | IFactory$InstanceHolder.class
+base-oracle-jdk-build-server-fp                         | IFactory.class
+base-oracle-jdk-build-server-fp                         | IFactory.java
+base-oracle-jdk-build-server-fp                         | IHttpCookie.class
+base-oracle-jdk-build-server-fp                         | IHttpCookie.java
+base-oracle-jdk-build-server-fp                         | IHttpRequestContextInfo.class
+base-oracle-jdk-build-server-fp                         | IHttpRequestContextInfo.java
+base-oracle-jdk-build-server-fp                         | IHttpRouteHandler.class
+base-oracle-jdk-build-server-fp                         | IHttpRouteHandler.java
+base-oracle-jdk-build-server-fp                         | lib
+base-oracle-jdk-build-server-fp                         | MainClass.class
+base-oracle-jdk-build-server-fp                         | MainClass.java
+base-oracle-jdk-build-server-fp                         | OrderDTO$1.class
+base-oracle-jdk-build-server-fp                         | OrderDTO$2.class
+base-oracle-jdk-build-server-fp                         | OrderDTO.class
+base-oracle-jdk-build-server-fp                         | OrderDTOHome.class
+base-oracle-jdk-build-server-fp                         | OrderDTOHome.java
+base-oracle-jdk-build-server-fp                         | OrderDTO.java
+base-oracle-jdk-build-server-fp                         | OrderItemDTO$1.class
+base-oracle-jdk-build-server-fp                         | OrderItemDTO$2.class
+base-oracle-jdk-build-server-fp                         | OrderItemDTO.class
+base-oracle-jdk-build-server-fp                         | OrderItemDTOHome.class
+base-oracle-jdk-build-server-fp                         | OrderItemDTOHome.java
+base-oracle-jdk-build-server-fp                         | OrderItemDTO.java
+base-oracle-jdk-build-server-fp                         | PaymentProfileDTO$1.class
+base-oracle-jdk-build-server-fp                         | PaymentProfileDTO$2.class
+base-oracle-jdk-build-server-fp                         | PaymentProfileDTO.class
+base-oracle-jdk-build-server-fp                         | PaymentProfileDTOHome.class
+base-oracle-jdk-build-server-fp                         | PaymentProfileDTOHome.java
+base-oracle-jdk-build-server-fp                         | PaymentProfileDTO.java
+base-oracle-jdk-build-server-fp                         | ProductDTO$1.class
+base-oracle-jdk-build-server-fp                         | ProductDTO$2.class
+base-oracle-jdk-build-server-fp                         | ProductDTO.class
+base-oracle-jdk-build-server-fp                         | ProductDTOHome.class
+base-oracle-jdk-build-server-fp                         | ProductDTOHome.java
+base-oracle-jdk-build-server-fp                         | ProductDTO.java
+base-oracle-jdk-build-server-fp                         | PurchaseDTO$1.class
+base-oracle-jdk-build-server-fp                         | PurchaseDTO$2.class
+base-oracle-jdk-build-server-fp                         | PurchaseDTO.class
+base-oracle-jdk-build-server-fp                         | PurchaseDTOHome.class
+base-oracle-jdk-build-server-fp                         | PurchaseDTOHome.java
+base-oracle-jdk-build-server-fp                         | PurchaseDTO.java
+base-oracle-jdk-build-server-fp                         | RoleDTO$1.class
+base-oracle-jdk-build-server-fp                         | RoleDTO$2.class
+base-oracle-jdk-build-server-fp                         | RoleDTO.class
+base-oracle-jdk-build-server-fp                         | RoleDTOHome.class
+base-oracle-jdk-build-server-fp                         | RoleDTOHome.java
+base-oracle-jdk-build-server-fp                         | RoleDTO.java
+base-oracle-jdk-build-server-fp                         | script_all.tmp.txt
+base-oracle-jdk-build-server-fp                         | script_all.txt
+base-oracle-jdk-build-server-fp                         | script_all.txt.join
+base-oracle-jdk-build-server-fp                         | script_pg.txt
+base-oracle-jdk-build-server-fp                         | ShoppingBusinessLayerService.class
+base-oracle-jdk-build-server-fp                         | ShoppingBusinessLayerService.java
+base-oracle-jdk-build-server-fp                         | ShoppingDataLayerService.class
+base-oracle-jdk-build-server-fp                         | ShoppingDataLayerService.java
+base-oracle-jdk-build-server-fp                         | ShoppingSystem.class
+base-oracle-jdk-build-server-fp                         | ShoppingSystem.java
+base-oracle-jdk-build-server-fp                         | ShoppingWebAuthenticator.class
+base-oracle-jdk-build-server-fp                         | ShoppingWebAuthenticator.java
+base-oracle-jdk-build-server-fp                         | ShoppingWebInterfaceAdapter.class
+base-oracle-jdk-build-server-fp                         | ShoppingWebInterfaceAdapter.java
+base-oracle-jdk-build-server-fp                         | ShoppingWebInterfaceController.class
+base-oracle-jdk-build-server-fp                         | ShoppingWebInterfaceController.java
+base-oracle-jdk-build-server-fp                         | SimpleQueryOperation.class
+base-oracle-jdk-build-server-fp                         | SimpleQueryOperation.java
+base-oracle-jdk-build-server-fp                         | StringDbResultProcessor.class
+base-oracle-jdk-build-server-fp                         | StringDbResultProcessor.java
+base-oracle-jdk-build-server-fp                         | TestDTO.class
+base-oracle-jdk-build-server-fp                         | TestDTO.java
+base-oracle-jdk-build-server-fp                         | TestJunit.class
+base-oracle-jdk-build-server-fp                         | TestJunit.java
+base-oracle-jdk-build-server-fp                         | UserDTO$1.class
+base-oracle-jdk-build-server-fp                         | UserDTO$2.class
+base-oracle-jdk-build-server-fp                         | UserDTO.class
+base-oracle-jdk-build-server-fp                         | UserDTOHome.class
+base-oracle-jdk-build-server-fp                         | UserDTOHome.java
+base-oracle-jdk-build-server-fp                         | UserDTO.java
+base-oracle-jdk-build-server-fp                         | UserInteraction.class
+base-oracle-jdk-build-server-fp                         | UserInteraction.java
+base-oracle-jdk-build-server-fp                         | UserProfileDTO$1.class
+base-oracle-jdk-build-server-fp                         | UserProfileDTO$2.class
+base-oracle-jdk-build-server-fp                         | UserProfileDTO.class
+base-oracle-jdk-build-server-fp                         | UserProfileDTOHome.class
+base-oracle-jdk-build-server-fp                         | UserProfileDTOHome.java
+base-oracle-jdk-build-server-fp                         | UserProfileDTO.java
+base-oracle-jdk-build-server-fp                         | UserRoleDTO$1.class
+base-oracle-jdk-build-server-fp                         | UserRoleDTO$2.class
+base-oracle-jdk-build-server-fp                         | UserRoleDTO.class
+base-oracle-jdk-build-server-fp                         | UserRoleDTOHome.class
+base-oracle-jdk-build-server-fp                         | UserRoleDTOHome.java
+base-oracle-jdk-build-server-fp                         | UserRoleDTO.java
+base-oracle-jdk-build-server-fp                         | WebServer.class
+base-oracle-jdk-build-server-fp                         | WebServer.java
+base-oracle-jdk-build-server-fp exited with code 0
+postgres-db                                             | performing post-bootstrap initialization ... ok
+postgres-db                                             | syncing data to disk ... ok
+postgres-db                                             | 
+postgres-db                                             | 
+postgres-db                                             | Success. You can now start the database server using:
+postgres-db                                             | 
+postgres-db                                             |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres-db                                             | 
+postgres-db                                             | initdb: warning: enabling "trust" authentication for local connections
+postgres-db                                             | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres-db                                             | waiting for server to start....2023-11-21 03:48:07.015 UTC [49] LOG:  starting PostgreSQL 16.1 (Debian 16.1-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+postgres-db                                             | 2023-11-21 03:48:07.017 UTC [49] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-db                                             | 2023-11-21 03:48:07.041 UTC [52] LOG:  database system was shut down at 2023-11-21 03:48:05 UTC
+postgres-db                                             | 2023-11-21 03:48:07.061 UTC [49] LOG:  database system is ready to accept connections
+postgres-db                                             |  done
+postgres-db                                             | server started
+postgres-db                                             | CREATE DATABASE
+postgres-db                                             | 
+postgres-db                                             | 
+postgres-db                                             | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+postgres-db                                             | CREATE SCHEMA
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | CREATE TABLE
+postgres-db                                             | 
+postgres-db                                             | 
+postgres-db                                             | 2023-11-21 03:48:09.850 UTC [49] LOG:  received fast shutdown request
+postgres-db                                             | waiting for server to shut down....2023-11-21 03:48:09.855 UTC [49] LOG:  aborting any active transactions
+postgres-db                                             | 2023-11-21 03:48:09.857 UTC [49] LOG:  background worker "logical replication launcher" (PID 55) exited with exit code 1
+postgres-db                                             | 2023-11-21 03:48:09.861 UTC [50] LOG:  shutting down
+postgres-db                                             | 2023-11-21 03:48:09.865 UTC [50] LOG:  checkpoint starting: shutdown immediate
+shopping-system-oracle-java21-finalproj_delay-fp-1      | pasuing until start up of databases complete
+shopping-system-oracle-java21-finalproj_delay-fp-1 exited with code 0
+postgres-db                                             | .2023-11-21 03:48:12.021 UTC [50] LOG:  checkpoint complete: wrote 963 buffers (5.9%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.430 s, sync=1.714 s, total=2.161 s; sync files=348, longest=0.742 s, average=0.005 s; distance=4541 kB, estimate=4541 kB; lsn=0/1959EA0, redo lsn=0/1959EA0
+postgres-db                                             | 2023-11-21 03:48:12.107 UTC [49] LOG:  database system is shut down
+postgres-db                                             |  done
+postgres-db                                             | server stopped
+postgres-db                                             | 
+postgres-db                                             | PostgreSQL init process complete; ready for start up.
+postgres-db                                             | 
+postgres-db                                             | 2023-11-21 03:48:12.223 UTC [1] LOG:  starting PostgreSQL 16.1 (Debian 16.1-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+postgres-db                                             | 2023-11-21 03:48:12.224 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-db                                             | 2023-11-21 03:48:12.224 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-db                                             | 2023-11-21 03:48:12.227 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-db                                             | 2023-11-21 03:48:12.246 UTC [67] LOG:  database system was shut down at 2023-11-21 03:48:12 UTC
+postgres-db                                             | 2023-11-21 03:48:12.269 UTC [1] LOG:  database system is ready to accept connections
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.201164166Z | IFactory.processPath:253 | 1 | loading class: DbBaseFactoryWrapper_postgres.class
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.260969534Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.277464516Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.280477161Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.283022334Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.283321652Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.user (email_address, first_name, last_name, password_hash) VALUES ('admin', 'admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.694985134Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.695810551Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.697886707Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.698193137Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.699416524Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.699730846Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.699969712Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'admin' AND first_name = 'admin' AND last_name = 'admin' AND password_hash = '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.751708584Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.752008236Z | TestDTO.testUserDTO_1:41 | 1 | user: active = active, date_created = 2023-11-21, date_modified = 2023-11-21, email_address = admin, first_name = admin, id = 1, last_name = admin, password_hash = 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.766437406Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.766788605Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.767044168Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.767333327Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.767581417Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.user (email_address, first_name, last_name, password_hash) VALUES ('joesample', 'joe', 'sample', '26d3963aab313d52a79d7dbee662fb476b6d5a63ff3df44899817d73382b4281')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.795319405Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.796073404Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.796569373Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.796790379Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.796901758Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.797446382Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.797660269Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'joesample' AND first_name = 'joe' AND last_name = 'sample' AND password_hash = '26d3963aab313d52a79d7dbee662fb476b6d5a63ff3df44899817d73382b4281'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.827558480Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.828130237Z | TestDTO.testUserDTO_2:61 | 1 | user: active = active, date_created = 2023-11-21, date_modified = 2023-11-21, email_address = joesample, first_name = joe, id = 2, last_name = sample, password_hash = 26d3963aab313d52a79d7dbee662fb476b6d5a63ff3df44899817d73382b4281
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.831288903Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.831622416Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.832337813Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.832927403Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.833213506Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.user (email_address, first_name, last_name, password_hash) VALUES ('jillsample', 'jill', 'sample', '263dbee9b4401472c3dff643eb5a05f4a56041edbfc3a94544b4a24ebdfcb96d')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.855535101Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.855985345Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.856204316Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.856364962Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.856526985Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.856886223Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.857043026Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'jillsample' AND first_name = 'jill' AND last_name = 'sample' AND password_hash = '263dbee9b4401472c3dff643eb5a05f4a56041edbfc3a94544b4a24ebdfcb96d'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.879723514Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.880161016Z | TestDTO.testUserDTO_3:81 | 1 | user: active = active, date_created = 2023-11-21, date_modified = 2023-11-21, email_address = jillsample, first_name = jill, id = 3, last_name = sample, password_hash = 263dbee9b4401472c3dff643eb5a05f4a56041edbfc3a94544b4a24ebdfcb96d
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.886948910Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.887265693Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.887435962Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.887539184Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.887711981Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.role (description, name) VALUES ('administrator', 'admin')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.911106812Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.911688382Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.912015594Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.912308239Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.912508544Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.912886498Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.913170714Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.role WHERE description = 'administrator' AND name = 'admin'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.942454552Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.942947484Z | TestDTO.testRoleDTO_1:108 | 1 | role: date_created = 2023-11-21, date_modified = 2023-11-21, description = administrator, id = 1, name = admin
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.946524987Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.947930808Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.949407408Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.949924117Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.950261252Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.role (description, name) VALUES ('user', 'user')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.978495003Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.979420795Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.980701367Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.981363506Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.981727446Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.982041963Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:16.982259877Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.role WHERE description = 'user' AND name = 'user'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.009916404Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.010514788Z | TestDTO.testRoleDTO_2:126 | 1 | role: date_created = 2023-11-21, date_modified = 2023-11-21, description = user, id = 2, name = user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.018138113Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.018460930Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.019396286Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.020453734Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.020819193Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.product (description, name, price) VALUES ('soap', 'cleaner', '10.0')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.051280018Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.052163679Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.052936743Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.053576278Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.054006321Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.054176232Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.054387993Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.product WHERE description = 'soap' AND name = 'cleaner' AND price = '10.0'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.084463494Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.085110708Z | TestDTO.testProductDTO_1:153 | 1 | product: date_created = 2023-11-21, date_modified = 2023-11-21, description = soap, id = 1, name = cleaner, price = 10.0
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.089647639Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.090587085Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.091457334Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.091879498Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.092052890Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.product (description, name, price) VALUES ('UNL92', 'gasoline', '4.5')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.112254849Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.112761920Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.113529811Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.113955962Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.114119710Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.114871155Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.115130272Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.product WHERE description = 'UNL92' AND name = 'gasoline' AND price = '4.5'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.136011679Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.136245608Z | TestDTO.testProductDTO_2:172 | 1 | product: date_created = 2023-11-21, date_modified = 2023-11-21, description = UNL92, id = 2, name = gasoline, price = 4.5
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.138554658Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.139092255Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.139360610Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.139499870Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.139855622Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.product (description, name, price) VALUES ('runflats', 'tires', '300.0')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.158699689Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.159068484Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.159287882Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.159510806Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.159846219Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.160079101Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.160270830Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.product WHERE description = 'runflats' AND name = 'tires' AND price = '300.0'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.181093285Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.181433607Z | TestDTO.testProductDTO_3:191 | 1 | product: date_created = 2023-11-21, date_modified = 2023-11-21, description = runflats, id = 3, name = tires, price = 300.0
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.184347525Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.184711920Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.184962343Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.185208899Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.185382166Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.product (description, name, price) VALUES ('porsche', 'car', '300000.0')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.205902642Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.206459486Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.206810507Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.207054949Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.207225856Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.207402681Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.207539217Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.product WHERE description = 'porsche' AND name = 'car' AND price = '300000.0'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.226017212Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.226839372Z | TestDTO.testProductDTO_4:210 | 1 | product: date_created = 2023-11-21, date_modified = 2023-11-21, description = porsche, id = 4, name = car, price = 300000.0
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.234872656Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.235378263Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.235571339Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.235844350Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.236010075Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.paymentprofile (description, name, type) VALUES ('banking', 'ach', 'ach')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.255970363Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.256382436Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.256617691Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.256841965Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.256940821Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.257137883Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.257308276Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.paymentprofile WHERE description = 'banking' AND name = 'ach' AND type = 'ach'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.274710191Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.274931217Z | TestDTO.testPaymentProfileDTO_1:237 | 1 | paymentprofile: date_created = 2023-11-21, date_modified = 2023-11-21, description = banking, id = 1, name = ach, type = ach
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.276731830Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.276947781Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.277082414Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.277186456Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.277320047Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.paymentprofile (description, name, type) VALUES ('creditcard', 'cc', 'cc')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.294111335Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.294489238Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.294746878Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.294946626Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.295115469Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.295343399Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.295574588Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.paymentprofile WHERE description = 'creditcard' AND name = 'cc' AND type = 'cc'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.315067994Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.315355170Z | TestDTO.testPaymentProfileDTO_2:256 | 1 | paymentprofile: date_created = 2023-11-21, date_modified = 2023-11-21, description = creditcard, id = 2, name = cc, type = cc
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.318549265Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.318966600Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.319182436Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.319365686Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.319609880Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'joesample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.337306234Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.337597082Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.337923559Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.338082200Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.338187391Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.338460167Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.paymentprofile WHERE name = 'ach'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.354772732Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.358283770Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.358539233Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.358844419Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.358967158Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.359085439Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.userprofile (paymentprofile_id, user_id) VALUES (1, 2)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.380788679Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.381375626Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.381727082Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.381993668Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.382671172Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.383160244Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.383349716Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.userprofile WHERE paymentprofile_id = 1 AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.403413092Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.403809636Z | TestDTO.testUserProfileDTO_1:290 | 1 | userprofile: date_created = 2023-11-21, date_modified = 2023-11-21, id = 1, paymentprofile_id = 1, user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.406270346Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.406553403Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.407169654Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.407418408Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.407743182Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'jillsample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.427539682Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.427824210Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.427987836Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.428122149Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.428352949Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.428610782Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.paymentprofile WHERE name = 'cc'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.447271598Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.447727337Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.448119216Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.448391732Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.448592328Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.448899936Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.userprofile (paymentprofile_id, user_id) VALUES (2, 3)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.470281187Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.470896869Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.471147204Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.471441686Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.472003240Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.472146436Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.472281383Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.userprofile WHERE paymentprofile_id = 2 AND user_id = 3
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.489774059Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.490013714Z | TestDTO.testUserProfileDTO_2:317 | 1 | userprofile: date_created = 2023-11-21, date_modified = 2023-11-21, id = 2, paymentprofile_id = 2, user_id = 3
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.492514074Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.492800659Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.493215561Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.493401721Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.493559404Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'joesample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.512815315Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.513138480Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.513425355Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.513676488Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.513873630Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.514100651Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.paymentprofile WHERE name = 'ach'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.535113721Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.539953676Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.540255028Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.540399183Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.540534931Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.541471337Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.purchase (paymentprofile_id, user_id) VALUES (1, 2)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.563345435Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.564027042Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.564880719Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.565275553Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.565980976Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.566213357Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.566385905Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.purchase WHERE paymentprofile_id = 1 AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.584038415Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.584728319Z | TestDTO.testPurchaseDTO_1:351 | 1 | purchase: date_created = 2023-11-21, date_modified = 2023-11-21, id = 1, paymentprofile_id = 1, user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.587115677Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.587352897Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.587484436Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.587602838Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.587757534Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'jillsample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.603490751Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.603825975Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.604026305Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.604157258Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.604282617Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.604449695Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.paymentprofile WHERE name = 'cc'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.620966009Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.621239526Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.622208584Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.622456080Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.622684225Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.623176624Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.purchase (paymentprofile_id, user_id) VALUES (2, 3)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.642477368Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.643134470Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.643337907Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.644230495Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.645078024Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.645363628Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.646274785Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.purchase WHERE paymentprofile_id = 2 AND user_id = 3
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.662632224Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.663121472Z | TestDTO.testPurchaseDTO_2:378 | 1 | purchase: date_created = 2023-11-21, date_modified = 2023-11-21, id = 2, paymentprofile_id = 2, user_id = 3
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.665345923Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.665866396Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.666081984Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.666282469Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.666445881Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'joesample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.684659082Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.688618059Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.688962522Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.689083217Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.689195157Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.689274514Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.cart (status, user_id) VALUES ('pending', 2)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.713270305Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.713940593Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.714656305Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.715384826Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.715813972Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.716035593Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.716269075Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.cart WHERE status = 'pending' AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.734570688Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.734845280Z | TestDTO.testCartDTO_1:407 | 1 | cart: date_created = 2023-11-21, date_modified = 2023-11-21, id = 1, status = pending, user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.738037869Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.738280773Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.738500320Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.738822044Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.738929361Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'jillsample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.756879162Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.757147924Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.757917382Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.758086982Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.758215127Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.758333226Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.cart (status, user_id) VALUES ('complete', 3)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.779180421Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.780123799Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.780496773Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.781021785Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.781332387Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.781597396Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.781951636Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.cart WHERE status = 'complete' AND user_id = 3
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.803470692Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.803886990Z | TestDTO.testCartDTO_2:429 | 1 | cart: date_created = 2023-11-21, date_modified = 2023-11-21, id = 2, status = complete, user_id = 3
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.806529108Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.807138245Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.807311032Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.807400555Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.807553233Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'joesample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.827096920Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.827369339Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.827902480Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.828095937Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.828236265Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.828376979Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.cart WHERE status = 'pending' AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.846168897Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.846422642Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.846877941Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.847134030Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.847280556Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.847433871Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.product WHERE name = 'car'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.865211034Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.869045025Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.869526880Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.869836182Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.869969943Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.870105048Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.cartitem (cart_id, product_id, quantity) VALUES (1, 4, 2)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.890168221Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.890601642Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.890867204Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.891076324Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.891256656Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.891430851Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.891568707Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.cartitem WHERE cart_id = 1 AND product_id = 4 AND quantity = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.929311035Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.929582330Z | TestDTO.testCartItemDTO_1:472 | 1 | cartitem: cart_id = 1, date_created = 2023-11-21, date_modified = 2023-11-21, id = 1, product_id = 4, quantity = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.932616688Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.933034187Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.933186122Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.933351204Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.933513645Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'joesample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.972854536Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.973138696Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.973315648Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.973431745Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.973518691Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.973584625Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.cart WHERE status = 'pending' AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.999058346Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.999388718Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.999597899Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.999796734Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:17.999965247Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.000118493Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.product WHERE name = 'gasoline'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.018902758Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.019431970Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.020002497Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.020270677Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.020521847Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.020828635Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.cartitem (cart_id, product_id, quantity) VALUES (1, 2, 10)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.037815526Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.038567283Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.038826232Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.039377682Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.039653250Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.040045565Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.040229172Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.cartitem WHERE cart_id = 1 AND product_id = 2 AND quantity = 10
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.055297252Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.055496695Z | TestDTO.testCartItemDTO_2:506 | 1 | cartitem: cart_id = 1, date_created = 2023-11-21, date_modified = 2023-11-21, id = 2, product_id = 2, quantity = 10
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.057449501Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.057757489Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.057886460Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.057970448Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.058075392Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'joesample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.073998640Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.074236549Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.074402705Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.074546186Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.074778157Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.074943861Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.role WHERE name = 'user'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.090114232Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.093247394Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.093725997Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.093845920Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.093922195Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.093986105Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.userrole (role_id, user_id) VALUES (2, 2)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.123278937Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.123933268Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.124248852Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.125089482Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.126092786Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.126265079Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.126426631Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.userrole WHERE role_id = 2 AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.143993247Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.144318714Z | TestDTO.testUserRoleDTO_1:540 | 1 | userrole: date_created = 2023-11-21, date_modified = 2023-11-21, id = 1, role_id = 2, user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.147281515Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.147532391Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.147788273Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.148041671Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.148180327Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'admin'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.164104833Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.164315018Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.164453707Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.164563483Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.165091123Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.165328174Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.role WHERE name = 'admin'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.180876930Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.181127218Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.181348368Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.181507546Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.181713449Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.181805757Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.userrole (role_id, user_id) VALUES (1, 1)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.198080495Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.198468307Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.199138562Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.199347353Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.199468227Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.199737318Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.199889727Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.userrole WHERE role_id = 1 AND user_id = 1
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.216236364Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.216424194Z | TestDTO.testUserRoleDTO_2:567 | 1 | userrole: date_created = 2023-11-21, date_modified = 2023-11-21, id = 2, role_id = 1, user_id = 1
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.218574585Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.218824320Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.218959024Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.219132014Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.219219233Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'joesample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.234648986Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.234906040Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.235058859Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.235155088Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.235237944Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.235345285Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.cart WHERE status = 'pending' AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.252805908Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.253234331Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.253546579Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.253853679Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.253945438Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.254000391Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.paymentprofile WHERE name = 'ach'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.269298358Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.269531737Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.269660983Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.269910448Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.270032639Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.270166179Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.purchase WHERE paymentprofile_id = 1 AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.284374478Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.287920608Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.288127649Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.288228735Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.288316602Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.288373435Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.order (cart_id, purchase_id, status, user_id) VALUES (1, 1, 'pending', 2)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.308451712Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.308915568Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.309408068Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.309612220Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.309821352Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.309923472Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.310011870Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.order WHERE cart_id = 1 AND purchase_id = 1 AND status = 'pending' AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.327093586Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.327265638Z | TestDTO.testOrderDTO_1:616 | 1 | order: cart_id = 1, date_created = 2023-11-21, date_modified = 2023-11-21, id = 1, purchase_id = 1, status = pending, user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.330011401Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.330221106Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.330305888Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.330392658Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.330493853Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'joesample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.344807276Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.345027544Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.345171559Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.345260852Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.345325124Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.345396373Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.cart WHERE status = 'pending' AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.360296041Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.360506527Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.360731141Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.360860494Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.360951374Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.361072837Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.paymentprofile WHERE name = 'cc'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.376527987Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.376736484Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.377027360Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.377100567Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.377192052Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.377269156Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.purchase (paymentprofile_id, user_id) VALUES (2, 2)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.395158552Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.395571172Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.395854807Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.395987619Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.396051399Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.396134720Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.396232248Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.purchase WHERE paymentprofile_id = 2 AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.410723342Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.410987035Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.411456627Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.411973851Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.412066035Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.412150419Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.order (cart_id, purchase_id, status, user_id) VALUES (1, 3, 'pending', 2)
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.431294151Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.431955808Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.432772654Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.433014161Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.433149189Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.433248220Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.433366510Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.order WHERE cart_id = 1 AND purchase_id = 3 AND status = 'pending' AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.450413762Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.450587421Z | TestDTO.testOrderDTO_2:656 | 1 | order: cart_id = 1, date_created = 2023-11-21, date_modified = 2023-11-21, id = 2, purchase_id = 3, status = pending, user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.452856878Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.453055795Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.453161405Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.453262658Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.453354531Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.user WHERE email_address = 'joesample'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.469398147Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.469614411Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.469918527Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.470068223Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.470151747Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.470202206Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.cart WHERE status = 'pending' AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.485544325Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.486045872Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.486323187Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.486467760Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.486553980Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.486793850Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.product WHERE name = 'car'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.502343602Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.502550737Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.502785210Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.502901401Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.502964177Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.503008701Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.paymentprofile WHERE name = 'ach'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.519179445Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.519415101Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.519571819Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.519856892Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.519971781Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.520162626Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.purchase WHERE paymentprofile_id = 1 AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.535607330Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.535874453Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.536345054Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.536460445Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.536528338Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.536736693Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.cartitem WHERE cart_id = 1 AND product_id = 4 AND quantity = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.550791141Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.550997983Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.551154773Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.551240793Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.551303100Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.551348811Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.order WHERE cart_id = 1 AND purchase_id = 1 AND status = 'pending' AND user_id = 2
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.567157419Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.571136866Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.571338096Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.571440522Z | DbBaseFactoryWrapper.execute:235 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.571527720Z | DbBaseFactoryWrapper.execute:236 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.571582395Z | DbBaseFactoryWrapper.execute:237 | 1 | query: INSERT INTO example_db.orderitem (cartitem_id, order_id, price) VALUES (1, 1, '125000.0')
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.591178628Z | DbBaseFactoryWrapper.execute:244 | 1 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.591496095Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.591666179Z | IFactory.create:74 | 1 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.592245386Z | DbBaseFactoryWrapper.connectionProperties:178 | 1 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.592331798Z | DbBaseFactoryWrapper.query:208 | 1 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.592431633Z | DbBaseFactoryWrapper.query:209 | 1 | password: 32
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.592539554Z | DbBaseFactoryWrapper.query:210 | 1 | query: SELECT * FROM example_db.orderitem WHERE cartitem_id = 1 AND order_id = 1 AND price = '125000.0'
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.608530613Z | DbBaseFactoryWrapper.close:195 | 1 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 2023-11-21T03:48:18.608760860Z | TestDTO.testOrderItemDTO_1:724 | 1 | orderitem: cartitem_id = 1, date_created = 2023-11-21, date_modified = 2023-11-21, id = 1, order_id = 1, price = 125000.0
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | ╷
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | ├─ JUnit Jupiter ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  ├─ TestDTO ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testUserDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testUserDTO_2() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testUserDTO_3() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testRoleDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testRoleDTO_2() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testProductDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testProductDTO_2() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testProductDTO_3() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testProductDTO_4() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testPaymentProfileDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testPaymentProfileDTO_2() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testUserProfileDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testUserProfileDTO_2() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testPurchaseDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testPurchaseDTO_2() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testCartDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testCartDTO_2() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testCartItemDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testCartItemDTO_2() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testUserRoleDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testUserRoleDTO_2() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testOrderDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  ├─ testOrderDTO_2() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  │  └─ testOrderItemDTO_1() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │  └─ TestJunit ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | │     └─ testNotEqual() ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | ├─ JUnit Vintage ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | └─ JUnit Platform Suite ✔
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | Test run finished after 2550 ms
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [         5 containers found      ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [         0 containers skipped    ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [         5 containers started    ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [         0 containers aborted    ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [         5 containers successful ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [         0 containers failed     ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [        25 tests found           ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [         0 tests skipped         ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [        25 tests started         ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [         0 tests aborted         ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [        25 tests successful      ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | [         0 tests failed          ]
+shopping-system-oracle-java21-finalproj_all-junit-fp-1  | 
+shopping-system-oracle-java21-finalproj_all-junit-fp-1 exited with code 0
+shopping-system-oracle-java21-finalproj_all-fp-1        | 
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:24.149779688Z | IFactory.processPath:253 | 1 | loading class: DbBaseFactoryWrapper_postgres.class
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:24.227427421Z | WebServer.start:75 | 1 | Server started
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:24.228807204Z | WebServer.start:78 | 1 |  Starting server at => 0.0.0.0:80
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.317697656Z | IFactory.create:74 | 31 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.341055298Z | DbBaseFactoryWrapper.connectionProperties:178 | 31 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.343352006Z | DbBaseFactoryWrapper.query:208 | 31 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.346245273Z | DbBaseFactoryWrapper.query:209 | 31 | password: 32
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.346511154Z | DbBaseFactoryWrapper.query:210 | 31 | query: SELECT * FROM example_db.user WHERE email_address = 'admin'
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.686428382Z | DbBaseFactoryWrapper.close:195 | 31 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.699111527Z | IFactory.create:74 | 31 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.699335017Z | DbBaseFactoryWrapper.connectionProperties:178 | 31 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.700755471Z | DbBaseFactoryWrapper.execute:235 | 31 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.701242687Z | DbBaseFactoryWrapper.execute:236 | 31 | password: 32
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.701441430Z | DbBaseFactoryWrapper.execute:237 | 31 | query: INSERT INTO example_db.audittrail (action, user_id) VALUES ('Login attempt for user: admin with password: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918 - Success', 1)
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.746150533Z | DbBaseFactoryWrapper.execute:244 | 31 | query execute status: false
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.747068421Z | DbBaseFactoryWrapper.close:195 | 31 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.747466829Z | IFactory.create:74 | 31 | factoryString: postgres
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.747704377Z | DbBaseFactoryWrapper.connectionProperties:178 | 31 | URL: jdbc:postgresql://postgres-db:5432/example_postgres_db
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.747794334Z | DbBaseFactoryWrapper.query:208 | 31 | username: example_postgres_user
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.747915580Z | DbBaseFactoryWrapper.query:209 | 31 | password: 32
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.748755333Z | DbBaseFactoryWrapper.query:210 | 31 | query: SELECT * FROM example_db.audittrail WHERE action = 'Login attempt for user: admin with password: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918 - Success' AND user_id = 1
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.777370231Z | DbBaseFactoryWrapper.close:195 | 31 | DbBaseFactoryWrapper_postgres closed
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.779278913Z | EchoHandler.handle:20 | 31 | httpExchange: GET /echo/?param1=value1&param2=value2
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.819716405Z | BaseRouteHandler.buildResponse:39 | 31 | [BaseRouteHandler] Response: <html><body><br> 'URI' : '/echo/?param1=value1&amp;param2=value2' <br> 'path' : '/echo/' <br> 'body' : 'sun.net.httpserver.FixedLengthInputStream@2409fe16' <br> 'queryParams' : '{param1=value1, param2=value2}' <br></body></html>
+shopping-system-oracle-java21-finalproj_all-fp-1        | 2023-11-21T03:48:48.820010176Z | EchoHandler.handle:28 | 31 | Response: <html><body><br> 'URI' : '/echo/?param1=value1&amp;param2=value2' <br> 'path' : '/echo/' <br> 'body' : 'sun.net.httpserver.FixedLengthInputStream@2409fe16' <br> 'queryParams' : '{param1=value1, param2=value2}' <br></body></html>
+^CGracefully stopping... (press Ctrl+C again to force)
+Aborting on container exit...
+[+] Stopping 7/5
+ ✔ Container shopping-system-oracle-java21-finalproj_all-fp-1        Stopped                                                                                                                  0.5s 
+ ✔ Container shopping-system-oracle-java21-finalproj_all-junit-fp-1  Stopped                                                                                                                  0.0s 
+ ✔ Container shopping-system-oracle-java21-finalproj_delay-fp-1      Stopped                                                                                                                  0.0s 
+ ✔ Container base-oracle-jdk-build-server-fp                         Stopped                                                                                                                  0.0s 
+ ✔ Container postgres-db                                             Stopped                                                                                                                  0.3s 
+ ✔ Container base-oracle-jdk-setup-server-fp                         Stopped                                                                                                                  0.0s 
+ ✔ Container shopping-system-base-oracle-java21-fp-1                 Stopped                                                                                                                  0.0s 
+canceled
+bradkyer@Brads-MBP2 shopping-system % 
